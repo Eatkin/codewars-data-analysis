@@ -4604,3 +4604,38 @@ public class Kata
   }
 
 }",https://www.codewars.com/kata/557cd6882bfa3c8a9f0000c1,2023-05-03 12:55:15.402,8 kyu,Parse nice int from char problem,57474,Joz,['Fundamentals']
+56170e844da7c6f647000063,Python,1,"def people_with_age_drink(age):
+
+    ages = [14, 18, 21, 500000]
+
+    drinks = [""toddy"", ""coke"", ""beer"", ""whisky""]
+
+    for tuple in zip(ages, drinks):
+
+        if age < tuple[0]:
+
+            return f""drink {tuple[1]}""
+
+        
+
+    return ""You are dead""",https://www.codewars.com/kata/56170e844da7c6f647000063,2023-05-14 20:44:52.494,8 kyu,Drink about,28940,darlanmendonca,['Fundamentals']
+59a96d71dbe3b06c0200009c,BF,1,",[>>++++[<++++++++++>-]<+++
+
+<[>>+>+<<<-]
+
+++++++++++
+
+>>[->>+<<<.>]
+
+>>[<<+>>-]<-
+
+[<<<.>>[<.>->>+<<]>>[<<+>>-]<-]<<<[-]]",https://www.codewars.com/kata/59a96d71dbe3b06c0200009c,2023-05-15 10:16:06.091,7 kyu,Build a square,14606,Capocaccia,"['Fundamentals', 'ASCII Art']"
+596f7ec359f9e9b017000006,BF,1,",>,[<.>-]",https://www.codewars.com/kata/596f7ec359f9e9b017000006,2023-05-15 08:02:43.256,7 kyu,BF basics #2: Repeat the input,381,ice1000,['Fundamentals']
+596f80b5f468ae8daa000013,BF,1,.+[.+],https://www.codewars.com/kata/596f80b5f468ae8daa000013,2023-05-15 08:04:13.013,7 kyu,BF basics #1: All ascii characters,454,ice1000,['Fundamentals']
+596f7d99f468ae8daa00000b,BF,1,"++++>+++++++[<++++>-]++>+++++>+++++[<++++++>-]<[<++>-]+++++>++++>+++[<+++++>-]<[<+++++>-]
+
+<<.>+.+++++++..+++.<<.>+++++++++++++++.>.+++.------.--------.<<+.",https://www.codewars.com/kata/596f7d99f468ae8daa00000b,2023-05-15 07:54:40.541,7 kyu,BF basics #0: Hello World,420,ice1000,"['Fundamentals', 'Mathematics']"
+596f88f359f9e99030000012,BF,1,",>,[<+>-]<.",https://www.codewars.com/kata/596f88f359f9e99030000012,2023-05-15 09:35:43.460,7 kyu,BF basics #3: Plusing,383,ice1000,"['Fundamentals', 'Mathematics']"
+5a79601b373c2e3b4a00013c,BF,1,"++++++>++++++[<++++++>-]
+
+,[<.>,]",https://www.codewars.com/kata/5a79601b373c2e3b4a00013c,2023-05-15 08:09:03.498,7 kyu,[BF] Hide the Password,224,iNont,"['Fundamentals', 'Algorithms', 'Strings']"

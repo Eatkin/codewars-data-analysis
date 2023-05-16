@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/551b4501ac0447318f0009cd
-2023-03-10T22:09:44.563+0000
+// 2023-03-10T22:09:44.563+0000
 #include <stdbool.h>
 
 //The returned string should be statically allocated and it won't be freed

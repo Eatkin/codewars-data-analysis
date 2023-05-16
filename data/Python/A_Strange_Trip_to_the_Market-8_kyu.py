@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/55ccdf1512938ce3ac000056
-2023-05-05T12:45:51.388+0000
+# 2023-05-05T12:45:51.388+0000
 import re
 def is_lock_ness_monster(string):
     print(string)

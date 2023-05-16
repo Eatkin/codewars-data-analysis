@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/57b06f90e298a7b53d000a86
-2023-03-24T08:18:21.929+0000
+# 2023-03-24T08:18:21.929+0000
 def queue_time(customers, n):
     # If there are no customers, return 0
     if len(customers) == 0:

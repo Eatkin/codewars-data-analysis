@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/576bb71bbbcf0951d5000044
-2023-03-31T13:29:12.165+0000
+// 2023-03-31T13:29:12.165+0000
 #include <stddef.h>
 #include <stdlib.h>
 

@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/523b4ff7adca849afe000035
-2023-03-09T12:58:55.478+0000
+// 2023-03-09T12:58:55.478+0000
 const greet = function()  {
   let greeting = "";
   while (greeting != "hello world!")  {

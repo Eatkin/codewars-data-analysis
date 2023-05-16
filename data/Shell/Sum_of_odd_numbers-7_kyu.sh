@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/55fd2d567d94ac3bc9000064
-2023-04-22T16:12:31.860+0000
+# 2023-04-22T16:12:31.860+0000
 n=$1
 # Sum of the first n natural numbers = 0.5n(n+1)
 # Sum of first n even numbers = n(n+1)

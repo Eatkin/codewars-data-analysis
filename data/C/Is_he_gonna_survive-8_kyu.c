@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/59ca8246d751df55cc00014c
-2023-03-13T18:32:54.494+0000
+// 2023-03-13T18:32:54.494+0000
 #include <stdbool.h>
 #include <stdint.h>
 

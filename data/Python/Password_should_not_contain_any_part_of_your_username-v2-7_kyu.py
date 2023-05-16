@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/5c511d8877c0070e2c195faf
-2023-05-08T17:56:43.393+0000
+# 2023-05-08T17:56:43.393+0000
 import math;
 def validate(username, password):
     print(username, password)

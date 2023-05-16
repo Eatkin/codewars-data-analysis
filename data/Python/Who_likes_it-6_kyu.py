@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/5266876b8f4bf2da9b000362
-2023-05-11T14:19:39.890+0000
+# 2023-05-11T14:19:39.890+0000
 def likes(names):
     if not names:
         return "no one likes this"

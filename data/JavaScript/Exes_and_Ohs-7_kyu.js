@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/55908aad6620c066bc00002a
-2023-03-10T11:40:16.708+0000
+// 2023-03-10T11:40:16.708+0000
 function XO(str) {
     //code here
   str = str.toLowerCase();

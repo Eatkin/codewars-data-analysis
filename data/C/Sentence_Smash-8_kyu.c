@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/53dc23c68a0c93699800041d
-2023-03-17T21:27:52.960+0000
+// 2023-03-17T21:27:52.960+0000
 #include <stdlib.h>
 #include <string.h>
 

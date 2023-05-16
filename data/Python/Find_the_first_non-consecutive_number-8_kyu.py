@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/58f8a3a27a5c28d92e000144
-2023-05-12T09:02:31.166+0000
+# 2023-05-12T09:02:31.166+0000
 def first_non_consecutive(arr):
     if len(arr) < 2:
         return None

@@ -1,5 +1,5 @@
 -- https://www.codewars.com/kata/642ff90503d3e2c9426fd500
-2023-05-14T07:09:36.431+0000
+-- 2023-05-14T07:09:36.431+0000
 SELECT customer.customer_id,
 customer.first_name || ' ' || customer.last_name AS full_name,
 COUNT(CASE WHEN film.rating != 'NC-17' THEN rental.customer_id END) AS total_rentals

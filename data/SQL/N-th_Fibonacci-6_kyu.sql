@@ -1,5 +1,5 @@
 -- https://www.codewars.com/kata/522551eee9abb932420004a0
-2023-05-07T15:00:36.789+0000
+-- 2023-05-07T15:00:36.789+0000
 --# write your SQL statement here: 
 -- you are given a table 'fibo' with column 'n'.
 -- return a table with:

@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/5bb904724c47249b10000131
-2023-03-09T11:37:03.255+0000
+// 2023-03-09T11:37:03.255+0000
 function points(games) {
   return games.reduce(function(points, str) {
       // Extract scores

@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/587136ba2eefcb92a9000027
-2023-04-28T16:24:55.944+0000
+# 2023-04-28T16:24:55.944+0000
 class SnakesLadders():
 
     def __init__(self):

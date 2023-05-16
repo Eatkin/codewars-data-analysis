@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/57a429e253ba3381850000fb
-2023-03-12T08:29:23.016+0000
+// 2023-03-12T08:29:23.016+0000
 function bmi(weight, height) {
   let bmi = weight / height ** 2;
   if (bmi <= 18.5)

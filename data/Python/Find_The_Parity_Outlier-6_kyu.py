@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/5526fc09a1bbd946250002dc
-2023-03-08T09:38:39.639+0000
+# 2023-03-08T09:38:39.639+0000
 def find_outlier(integers):
     evens = []
     odds = []

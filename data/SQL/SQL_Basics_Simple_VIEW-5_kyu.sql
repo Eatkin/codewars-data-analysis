@@ -1,5 +1,5 @@
 -- https://www.codewars.com/kata/5811527d9d278b242f000006
-2023-05-08T04:54:32.769+0000
+-- 2023-05-08T04:54:32.769+0000
 CREATE VIEW departments_over_10k_sales AS (
 SELECT departments.id AS id
 FROM departments

@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/57d814e4950d8489720008db
-2023-05-12T14:36:05.126+0000
+# 2023-05-12T14:36:05.126+0000
 def index(array, n):
     try:
         return array[n] ** n

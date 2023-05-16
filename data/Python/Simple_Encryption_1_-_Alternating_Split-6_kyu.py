@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/57814d79a56c88e3e0000786
-2023-05-11T14:00:41.869+0000
+# 2023-05-11T14:00:41.869+0000
 def decrypt(encrypted_text, n):
     if not encrypted_text or n <= 0:
         return encrypted_text

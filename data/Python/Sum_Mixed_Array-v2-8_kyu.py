@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/57eaeb9578748ff92a000009
-2023-05-07T08:40:03.115+0000
+# 2023-05-07T08:40:03.115+0000
 class list_of_numbers:
     def __init__(self, num_list):
         self.my_nums = num_list

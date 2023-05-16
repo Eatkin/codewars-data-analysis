@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/56a921fa8c5167d8e7000053
-2023-04-18T16:56:11.043+0000
+# 2023-04-18T16:56:11.043+0000
 def password(string):    
     if len(string) < 8:
         return False

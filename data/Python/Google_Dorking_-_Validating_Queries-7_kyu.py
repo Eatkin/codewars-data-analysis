@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/62cb487e43b37a5829ab5752
-2023-05-08T13:00:37.229+0000
+# 2023-05-08T13:00:37.229+0000
 from preloaded import FILTERS
 import re
 

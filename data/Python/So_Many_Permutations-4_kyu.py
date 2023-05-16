@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/5254ca2719453dcc0b00027d
-2023-03-11T12:12:22.763+0000
+# 2023-03-11T12:12:22.763+0000
 def permutations(s):
     if len(s) == 1:
         return [s]

@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/515bb423de843ea99400000a
-2023-04-26T17:52:42.325+0000
+# 2023-04-26T17:52:42.325+0000
 # TODO: complete this class
 
 def sign(x):

@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/5a48fab7bdb9b5b3690009b6
-2023-05-10T19:00:47.023+0000
+# 2023-05-10T19:00:47.023+0000
 import numpy as np
 
 def reorder(a, b):

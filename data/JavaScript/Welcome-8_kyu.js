@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/577ff15ad648a14b780000e7
-2023-05-09T08:14:55.671+0000
+// 2023-05-09T08:14:55.671+0000
 function greet(language) {
   greeting_json = {
     english: 'Welcome',

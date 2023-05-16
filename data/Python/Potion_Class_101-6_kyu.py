@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/5981ff1daf72e8747d000091
-2023-04-19T18:34:38.470+0000
+# 2023-04-19T18:34:38.470+0000
 import math
 
 class Potion:

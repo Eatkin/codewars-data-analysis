@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/5279f6fe5ab7f447890006a7
-2023-03-09T07:23:30.695+0000
+# 2023-03-09T07:23:30.695+0000
 def pick_peaks(arr):
     pos = []
     peaks = []

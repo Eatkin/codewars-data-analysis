@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/597d75744f4190857a00008d
-2023-03-24T07:25:15.629+0000
+# 2023-03-24T07:25:15.629+0000
 def paint_letterboxes(start, finish):
     # Create dictionary
     letterbox = {str(i): 0 for i in range(10)}

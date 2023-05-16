@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/57a0885cbb9944e24c00008e
-2023-03-11T15:56:53.707+0000
+// 2023-03-11T15:56:53.707+0000
 #include <string.h>
 
 // Write resulting string into buffer pointed by str_out

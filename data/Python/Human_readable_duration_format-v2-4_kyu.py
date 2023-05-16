@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/52742f58faf5485cae000b9a
-2023-04-27T15:48:31.865+0000
+# 2023-04-27T15:48:31.865+0000
 def format_duration(seconds):
     if seconds == 0:
         return "now"

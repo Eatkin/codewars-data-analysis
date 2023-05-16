@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/555eded1ad94b00403000071
-2023-05-07T10:36:51.981+0000
+# 2023-05-07T10:36:51.981+0000
 def real_series_sum(n):
     if n <= 0:
         return 0

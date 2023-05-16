@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/5a03af9606d5b65ff7000009
-2023-04-19T18:22:15.910+0000
+# 2023-04-19T18:22:15.910+0000
 class User(object):
     def __init__(self, name, balance, checking_account):
         self.name = name

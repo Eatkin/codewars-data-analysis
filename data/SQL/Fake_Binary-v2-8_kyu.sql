@@ -1,5 +1,5 @@
 -- https://www.codewars.com/kata/57eae65a4321032ce000002d
-2023-05-03T07:37:59.367+0000
+-- 2023-05-03T07:37:59.367+0000
 SELECT x, REPLACE(
   REPLACE(
     REPLACE(

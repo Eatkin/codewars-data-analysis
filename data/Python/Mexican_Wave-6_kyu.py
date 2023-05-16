@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
-2023-04-18T17:09:01.181+0000
+# 2023-04-18T17:09:01.181+0000
 def wave(people):
     if len(people) == 0:
         return []

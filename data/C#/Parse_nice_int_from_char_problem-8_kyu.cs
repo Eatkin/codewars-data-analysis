@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/557cd6882bfa3c8a9f0000c1
-2023-05-03T12:55:15.402+0000
+// 2023-05-03T12:55:15.402+0000
 using System;
 
 public class Kata

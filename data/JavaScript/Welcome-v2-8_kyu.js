@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/577ff15ad648a14b780000e7
-2023-05-09T08:15:43.121+0000
+// 2023-05-09T08:15:43.121+0000
 function greet(language) {
   return (language in greeting_json) ? greeting_json[language] : greeting_json['english'];
 }

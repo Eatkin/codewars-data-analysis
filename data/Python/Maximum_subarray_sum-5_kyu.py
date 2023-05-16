@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c
-2023-05-12T05:52:44.712+0000
+# 2023-05-12T05:52:44.712+0000
 def max_sequence(arr):
     if not arr:
         return 0

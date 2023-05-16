@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/5b817c2a0ce070ace8002be0
-2023-04-22T13:49:49.588+0000
+# 2023-04-22T13:49:49.588+0000
 def display_board(board, width):
     cells = len(board) + 1
     # Shouldn't get an irregular shaped board but just in case

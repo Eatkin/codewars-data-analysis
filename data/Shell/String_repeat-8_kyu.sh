@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/57a0e5c372292dd76d000d7e
-2023-03-27T12:31:12.252+0000
+# 2023-03-27T12:31:12.252+0000
 #!/bin/bash
 repeat=$1
 string=$2

@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/54a91a4883a7de5d7800009c
-2023-05-11T14:47:06.790+0000
+# 2023-05-11T14:47:06.790+0000
 import re
 def increment_string(strng):
     str1 = re.match(r"^(.*?)\d*$", strng)

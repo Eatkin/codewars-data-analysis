@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/5583090cbe83f4fd8c000051
-2023-03-10T09:11:44.810+0000
+// 2023-03-10T09:11:44.810+0000
 function digitize(n) {
   //code here
   n = String(n)

@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/5c511d8877c0070e2c195faf
-2023-05-08T17:22:14.954+0000
+# 2023-05-08T17:22:14.954+0000
 import math
 def validate(username, password):
     substr_length = max(math.ceil(len(username) / 2), 1)

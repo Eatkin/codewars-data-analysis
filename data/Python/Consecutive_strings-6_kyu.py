@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/56a5d994ac971f1ac500003e
-2023-05-12T10:05:59.543+0000
+# 2023-05-12T10:05:59.543+0000
 def longest_consec(strarr, k):
     # Trivial cases
     if not strarr or k > len(strarr) or k <= 0:

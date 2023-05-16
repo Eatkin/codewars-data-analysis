@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1
-2023-03-08T17:29:14.345+0000
+# 2023-03-08T17:29:14.345+0000
 def snail(snail_map):
     #This solution sucks, sorry
     array_size = len(snail_map)

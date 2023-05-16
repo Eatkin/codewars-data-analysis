@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/55aa075506463dac6600010d
-2023-03-08T19:40:01.996+0000
+# 2023-03-08T19:40:01.996+0000
 from math import sqrt
 from functools import reduce
 

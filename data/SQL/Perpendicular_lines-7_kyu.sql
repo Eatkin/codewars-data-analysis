@@ -1,5 +1,5 @@
 -- https://www.codewars.com/kata/6391fe3f322221003db3bad6
-2023-05-03T14:54:59.289+0000
+-- 2023-05-03T14:54:59.289+0000
 --# write your SQL statement here: 
 -- you are given a table 'perpendicular' with column 'n'
 -- return a table with this column and your result in a column named 'res'.

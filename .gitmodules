@@ -1,0 +1,3 @@
+[submodule "codewars_scraper"]
+	path = codewars_scraper
+	url = https://github.com/Eatkin/codewars-scraper.git

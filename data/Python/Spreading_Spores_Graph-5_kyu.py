@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/60f3639b539c06001a076267
-2023-05-11T06:03:04.616+0000
+# 2023-05-11T06:03:04.616+0000
 from typing import Dict, List
 
 import numpy as np

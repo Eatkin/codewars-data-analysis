@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/5715eaedb436cf5606000381
-2023-05-03T14:16:10.209+0000
+// 2023-05-03T14:16:10.209+0000
 using System;
 using System.Linq;
 

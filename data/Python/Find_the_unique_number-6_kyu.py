@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/585d7d5adb20cf33cb000235
-2023-05-13T09:13:53.805+0000
+# 2023-05-13T09:13:53.805+0000
 import math as MathematicsLibrary
 
 def find_uniq(arr):

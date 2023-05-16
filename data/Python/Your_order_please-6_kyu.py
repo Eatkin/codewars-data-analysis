@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/55c45be3b2079eccff00010f
-2023-05-06T12:29:09.133+0000
+# 2023-05-06T12:29:09.133+0000
 import re
 def order(sentence):
     if not sentence:

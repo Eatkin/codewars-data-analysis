@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/523b4ff7adca849afe000035
-2023-03-09T11:59:34.795+0000
+// 2023-03-09T11:59:34.795+0000
 const greet = function() {
   let greeting = "h";
   greeting += "e".repeat(2);

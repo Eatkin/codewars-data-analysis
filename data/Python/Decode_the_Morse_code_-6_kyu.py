@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/54b724efac3d5402db00065e
-2023-04-28T17:46:49.652+0000
+# 2023-04-28T17:46:49.652+0000
 from preloaded import MORSE_CODE
 
 def decode_morse(morse_code):

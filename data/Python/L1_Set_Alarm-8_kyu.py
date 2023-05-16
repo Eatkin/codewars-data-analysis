@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/568dcc3c7f12767a62000038
-2023-05-12T09:42:11.505+0000
+# 2023-05-12T09:42:11.505+0000
 class Person:
     def __init__(self, name, employed, vacation):
         self.employed = employed

@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/540afbe2dc9f615d5e000425
-2023-04-24T09:57:50.421+0000
+# 2023-04-24T09:57:50.421+0000
 import numpy as np
 import math
 
