@@ -1,4 +1,4 @@
-problem_id,language,revision,solution,link,date_time,difficulty,title,completion_count,author,tags
+problem_id,language,revision,solution,link,date_time,title,difficulty,difficulty_category,attempts,completion_count,author,tags,published_at,category,total_stars,vote_score,issues,suggestions
 58ce8725c835848ad6000007,Shell,1,"#!/bin/bash
 
 pi=$1
@@ -9,7 +9,7 @@ pf=$3
 
 
 
-echo ""$w*(100-$pi)/(100-$pf)"" | bc",https://www.codewars.com/kata/58ce8725c835848ad6000007,2023-04-08 15:13:48.626,7 kyu,Drying Potatoes,9448,g964,"['Fundamentals', 'Puzzles']"
+echo ""$w*(100-$pi)/(100-$pf)"" | bc",https://www.codewars.com/kata/58ce8725c835848ad6000007,2023-04-08 15:13:48.626,Drying Potatoes,7 kyu,white,62954,9461,g964,"['Fundamentals', 'Puzzles']",2017-03-19T13:30:31.186Z,reference,295,522,2,7
 56bc28ad5bdaeb48760009b0,Shell,1,"function removeChar() {
 
   local str=$1
@@ -18,11 +18,11 @@ echo ""$w*(100-$pi)/(100-$pf)"" | bc",https://www.codewars.com/kata/58ce8725c835
 
 }
 
-removeChar $1",https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0,2023-03-27 11:00:44.662,8 kyu,Remove First and Last Character,215262,Steadyx,"['Strings', 'Fundamentals']"
-59bfe5f15227ddf81900007b,Shell,1,ls -t | head -n 1,https://www.codewars.com/kata/59bfe5f15227ddf81900007b,2023-04-08 15:20:55.441,7 kyu,Return the latest modified file,327,ddellaquila,['Fundamentals']
+removeChar $1",https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0,2023-03-27 11:00:44.662,Remove First and Last Character,8 kyu,white,470694,216076,Steadyx,"['Strings', 'Fundamentals']",2016-02-11T21:14:31.636Z,reference,1191,13257,3,1
+59bfe5f15227ddf81900007b,Shell,1,ls -t | head -n 1,https://www.codewars.com/kata/59bfe5f15227ddf81900007b,2023-04-08 15:20:55.441,Return the latest modified file,7 kyu,white,740,327,ddellaquila,['Fundamentals'],2017-09-18T15:38:39.371Z,reference,5,99,1,0
 582cb0224e56e068d800003c,Shell,1,"def litres(time):
 
-    return (time * 0.5)//1",https://www.codewars.com/kata/582cb0224e56e068d800003c,2023-04-17 18:06:43.289,8 kyu,Keep Hydrated!,154528,paulrichard,"['Algorithms', 'Mathematics', 'Fundamentals']"
+    return (time * 0.5)//1",https://www.codewars.com/kata/582cb0224e56e068d800003c,2023-04-17 18:06:43.289,Keep Hydrated!,8 kyu,white,297590,155844,paulrichard,"['Algorithms', 'Mathematics', 'Fundamentals']",2016-11-16T19:47:07.378Z,reference,738,8784,0,3
 563a631f7cbbc236cf0000c2,Shell,1,"position=$1
 
 roll=$2
@@ -37,7 +37,7 @@ move()  {
 
 
 
-move",https://www.codewars.com/kata/563a631f7cbbc236cf0000c2,2023-03-31 06:07:28.588,8 kyu,Grasshopper - Terminal game move function,44795,danleavitt0,['Fundamentals']
+move",https://www.codewars.com/kata/563a631f7cbbc236cf0000c2,2023-03-31 06:07:28.588,Grasshopper - Terminal game move function,8 kyu,white,62662,45039,danleavitt0,['Fundamentals'],2015-11-07T17:40:01.344Z,reference,152,3129,0,4
 582cd9033c1acf1d45000052,Shell,1,"#!/bin/bash
 
 
@@ -54,14 +54,14 @@ countToTwenty() {
 
 
 
-countToTwenty",https://www.codewars.com/kata/582cd9033c1acf1d45000052,2023-03-31 06:10:18.776,8 kyu,Bash Basics - While Loop,1937,user5196477,['Fundamentals']
+countToTwenty",https://www.codewars.com/kata/582cd9033c1acf1d45000052,2023-03-31 06:10:18.776,Bash Basics - While Loop,8 kyu,white,4657,1941,user5196477,['Fundamentals'],2016-11-16T22:09:07.401Z,reference,15,293,2,0
 582cb0224e56e068d800003c,Shell,2,"#!/bin/bash
 
 time=$1
 
 # The fun begins here.
 
-echo ""$(echo ""scale=0; $time*0.5/1"" | bc)""",https://www.codewars.com/kata/582cb0224e56e068d800003c,2023-04-08 14:49:00.663,8 kyu,Keep Hydrated!,154528,paulrichard,"['Algorithms', 'Mathematics', 'Fundamentals']"
+echo ""$(echo ""scale=0; $time*0.5/1"" | bc)""",https://www.codewars.com/kata/582cb0224e56e068d800003c,2023-04-08 14:49:00.663,Keep Hydrated!,8 kyu,white,297590,155844,paulrichard,"['Algorithms', 'Mathematics', 'Fundamentals']",2016-11-16T19:47:07.378Z,reference,738,8784,0,3
 57a0e5c372292dd76d000d7e,Shell,1,"#!/bin/bash
 
 repeat=$1
@@ -86,7 +86,7 @@ done
 
 
 
-echo $concat_str",https://www.codewars.com/kata/57a0e5c372292dd76d000d7e,2023-03-27 12:31:12.252,8 kyu,String repeat,226341,wichu,"['Fundamentals', 'Strings']"
+echo $concat_str",https://www.codewars.com/kata/57a0e5c372292dd76d000d7e,2023-03-27 12:31:12.252,String repeat,8 kyu,white,453521,227209,wichu,"['Fundamentals', 'Strings']",2016-08-02T18:26:32.109Z,reference,1289,12791,3,2
 51f2b4448cadf20ed0000386,Shell,1,"#!/bin/bash
 
 
@@ -95,7 +95,7 @@ echo $concat_str",https://www.codewars.com/kata/57a0e5c372292dd76d000d7e,2023-03
 
 string=""$1""
 
-echo ""${string%%#*}""",https://www.codewars.com/kata/51f2b4448cadf20ed0000386,2023-04-10 16:53:32.655,7 kyu,Remove anchor from URL,32863,jhoffner,"['Regular Expressions', 'Strings', 'Fundamentals']"
+echo ""${string%%#*}""",https://www.codewars.com/kata/51f2b4448cadf20ed0000386,2023-04-10 16:53:32.655,Remove anchor from URL,7 kyu,white,83925,32983,jhoffner,"['Regular Expressions', 'Strings', 'Fundamentals']",2013-07-26T18:05:22.863Z,reference,293,2761,3,3
 58261acb22be6e2ed800003a,Shell,1,"#!/bin/bash
 
 length=$1
@@ -110,7 +110,7 @@ volume=$(echo ""$length * $width * $height"" |bc)
 
 
 
-echo $volume",https://www.codewars.com/kata/58261acb22be6e2ed800003a,2023-03-29 09:01:36.238,8 kyu,Volume of a Cuboid,72068,user5196477,"['Geometry', 'Fundamentals', 'Mathematics']"
+echo $volume",https://www.codewars.com/kata/58261acb22be6e2ed800003a,2023-03-29 09:01:36.238,Volume of a Cuboid,8 kyu,white,97217,72386,user5196477,"['Geometry', 'Fundamentals', 'Mathematics']",2016-11-11T19:23:58.296Z,reference,216,3600,2,1
 55cb632c1a5d7b3ad0000145,Shell,1,"#!/bin/bash
 
 n=$1
@@ -127,12 +127,12 @@ else
 
   echo ""Keep at it until you get it""
 
-fi",https://www.codewars.com/kata/55cb632c1a5d7b3ad0000145,2023-03-31 06:00:33.014,8 kyu,Keep up the hoop,52475,Tam Borine,['Fundamentals']
+fi",https://www.codewars.com/kata/55cb632c1a5d7b3ad0000145,2023-03-31 06:00:33.014,Keep up the hoop,8 kyu,white,98551,52744,Tam Borine,['Fundamentals'],2015-08-12T15:15:56.361Z,reference,142,4035,5,4
 554e4a2f232cdd87d9000038,Shell,1,"#!/bin/sh
 
 
 
-echo $1 | tr ""TACG"" ""ATGC""",https://www.codewars.com/kata/554e4a2f232cdd87d9000038,2023-04-22 16:05:19.947,7 kyu,Complementary DNA,179913,JustyFY,"['Strings', 'Fundamentals']"
+echo $1 | tr ""TACG"" ""ATGC""",https://www.codewars.com/kata/554e4a2f232cdd87d9000038,2023-04-22 16:05:19.947,Complementary DNA,7 kyu,white,438629,180392,JustyFY,"['Strings', 'Fundamentals']",2015-05-09T18:11:08.627Z,reference,2070,12998,3,2
 56541980fa08ab47a0000040,Shell,1,"#!/bin/bash
 
 printerError() {
@@ -141,15 +141,15 @@ printerError() {
 
 }
 
-printerError $1",https://www.codewars.com/kata/56541980fa08ab47a0000040,2023-04-23 09:51:29.146,7 kyu,Printer Errors,123855,g964,['Fundamentals']
+printerError $1",https://www.codewars.com/kata/56541980fa08ab47a0000040,2023-04-23 09:51:29.146,Printer Errors,7 kyu,white,368693,124158,g964,['Fundamentals'],2015-11-24T08:02:08.936Z,reference,1390,9492,2,1
 5a03b3f6a1c9040084001765,Shell,1,"n=$1
 
-echo $(( ($n - 2) * 180 ))",https://www.codewars.com/kata/5a03b3f6a1c9040084001765,2023-04-08 15:24:45.419,7 kyu,Sum of angles,27594,DemonKing,"['Geometry', 'Fundamentals']"
+echo $(( ($n - 2) * 180 ))",https://www.codewars.com/kata/5a03b3f6a1c9040084001765,2023-04-08 15:24:45.419,Sum of angles,7 kyu,white,52435,27669,DemonKing,"['Geometry', 'Fundamentals']",2017-11-09T01:48:38.732Z,reference,157,1830,2,0
 55a70521798b14d4750000a4,Shell,1,"#!/bin/bash
 
 #your code here
 
-echo ""Hello, $1 how are you doing today?""",https://www.codewars.com/kata/55a70521798b14d4750000a4,2023-03-27 10:22:19.563,8 kyu,Returning Strings,151454,Aweson1,"['Strings', 'Fundamentals']"
+echo ""Hello, $1 how are you doing today?""",https://www.codewars.com/kata/55a70521798b14d4750000a4,2023-03-27 10:22:19.563,Returning Strings,8 kyu,white,264902,152319,Aweson1,"['Strings', 'Fundamentals']",2015-07-16T01:30:45.770Z,reference,469,7911,0,1
 55fd2d567d94ac3bc9000064,Shell,1,"n=$1
 
 # Sum of the first n natural numbers = 0.5n(n+1)
@@ -168,7 +168,7 @@ echo ""Hello, $1 how are you doing today?""",https://www.codewars.com/kata/55a70
 
 
 
-echo $(($1**3))",https://www.codewars.com/kata/55fd2d567d94ac3bc9000064,2023-04-22 16:12:31.860,7 kyu,Sum of odd numbers,133479,hhelwich,"['Arrays', 'Lists', 'Mathematics', 'Fundamentals']"
+echo $(($1**3))",https://www.codewars.com/kata/55fd2d567d94ac3bc9000064,2023-04-22 16:12:31.860,Sum of odd numbers,7 kyu,white,350841,133829,hhelwich,"['Arrays', 'Lists', 'Mathematics', 'Fundamentals']",2015-09-19T09:40:03.734Z,reference,2919,8571,0,1
 58261acb22be6e2ed800003a,Shell,2,"#!/bin/bash
 
 length=$1
@@ -179,7 +179,7 @@ height=$3
 
 
 
-echo $length * $width * $height | bc",https://www.codewars.com/kata/58261acb22be6e2ed800003a,2023-03-29 09:02:07.896,8 kyu,Volume of a Cuboid,72068,user5196477,"['Geometry', 'Fundamentals', 'Mathematics']"
+echo $length * $width * $height | bc",https://www.codewars.com/kata/58261acb22be6e2ed800003a,2023-03-29 09:02:07.896,Volume of a Cuboid,8 kyu,white,97217,72386,user5196477,"['Geometry', 'Fundamentals', 'Mathematics']",2016-11-11T19:23:58.296Z,reference,216,3600,2,1
 5625618b1fe21ab49f00001f,Shell,1,"#!/bin/bash 
 
 say_hello(){
@@ -190,7 +190,7 @@ say_hello(){
 
 }
 
-say_hello ""$1""",https://www.codewars.com/kata/5625618b1fe21ab49f00001f,2023-03-31 06:02:51.105,8 kyu,Grasshopper - Debug sayHello,45929,danleavitt0,['Fundamentals']
+say_hello ""$1""",https://www.codewars.com/kata/5625618b1fe21ab49f00001f,2023-03-31 06:02:51.105,Grasshopper - Debug sayHello,8 kyu,white,76769,46158,danleavitt0,['Fundamentals'],2015-10-24T02:47:19.016Z,reference,149,3162,0,1
 5625618b1fe21ab49f00001f,Shell,2,"#!/bin/bash 
 
 say_hello(){
@@ -199,12 +199,12 @@ say_hello(){
 
 }
 
-say_hello ""$1""",https://www.codewars.com/kata/5625618b1fe21ab49f00001f,2023-03-31 06:04:12.816,8 kyu,Grasshopper - Debug sayHello,45929,danleavitt0,['Fundamentals']
+say_hello ""$1""",https://www.codewars.com/kata/5625618b1fe21ab49f00001f,2023-03-31 06:04:12.816,Grasshopper - Debug sayHello,8 kyu,white,76769,46158,danleavitt0,['Fundamentals'],2015-10-24T02:47:19.016Z,reference,149,3162,0,1
 634913db7611b9003dff49ad,Python,1,"import re
 
 def purify(s: str) -> str:
 
-    return re.sub(r"" {2,}"", "" "", re.sub(r""\w[iI]+\w|[iI]+\w|\w[iI]+|[iI]+"", """", s).strip())",https://www.codewars.com/kata/634913db7611b9003dff49ad,2023-05-08 12:53:50.397,7 kyu,The Culling of Stratholme,673,renzo.rt,"['Strings', 'Games', 'Regular Expressions']"
+    return re.sub(r"" {2,}"", "" "", re.sub(r""\w[iI]+\w|[iI]+\w|\w[iI]+|[iI]+"", """", s).strip())",https://www.codewars.com/kata/634913db7611b9003dff49ad,2023-05-08 12:53:50.397,The Culling of Stratholme,7 kyu,white,5971,675,renzo.rt,"['Strings', 'Games', 'Regular Expressions']",2022-10-14T08:00:47.159Z,reference,40,108,0,0
 52685f7382004e774f0001f7,Python,1,"def make_readable(seconds):
 
     # Do something
@@ -215,15 +215,15 @@ def purify(s: str) -> str:
 
     seconds = seconds % 60
 
-    return f""{hours:02d}:{minutes:02d}:{seconds:02d}""",https://www.codewars.com/kata/52685f7382004e774f0001f7,2023-03-08 11:18:55.462,5 kyu,Human Readable Time,113226,BattleRattle,"['Date Time', 'Mathematics', 'Algorithms']"
+    return f""{hours:02d}:{minutes:02d}:{seconds:02d}""",https://www.codewars.com/kata/52685f7382004e774f0001f7,2023-03-08 11:18:55.462,Human Readable Time,5 kyu,yellow,309795,113526,BattleRattle,"['Date Time', 'Mathematics', 'Algorithms']",2013-10-23T23:44:51.078Z,algorithms,1829,6610,2,3
 523b623152af8a30c6000027,Python,1,"def square(n):
 
-    return 2 * sum(range(n + 1)) - n",https://www.codewars.com/kata/523b623152af8a30c6000027,2023-05-12 09:34:49.399,8 kyu,Function 2 - squaring an argument,53722,ineiti,['Fundamentals']
+    return 2 * sum(range(n + 1)) - n",https://www.codewars.com/kata/523b623152af8a30c6000027,2023-05-12 09:34:49.399,Function 2 - squaring an argument,8 kyu,white,84901,54007,ineiti,['Fundamentals'],2013-09-19T20:50:51.837Z,reference,152,3087,3,0
 53da6d8d112bd1a0dc00008b,Python,1,"def reverse_list(l):
 
     l.reverse()
 
-    return l",https://www.codewars.com/kata/53da6d8d112bd1a0dc00008b,2023-05-13 14:51:19.172,8 kyu,Reverse List Order,32956,cmgerber,"['Lists', 'Fundamentals']"
+    return l",https://www.codewars.com/kata/53da6d8d112bd1a0dc00008b,2023-05-13 14:51:19.172,Reverse List Order,8 kyu,white,58589,33155,cmgerber,"['Lists', 'Fundamentals']",2014-07-31T16:23:45.162Z,reference,143,2618,0,2
 5552101f47fc5178b1000050,Python,1,"def dig_pow(n, p):
 
     # your code
@@ -234,15 +234,15 @@ def purify(s: str) -> str:
 
     
 
-    return summation // n if summation % n == 0 else -1",https://www.codewars.com/kata/5552101f47fc5178b1000050,2023-03-08 14:26:51.851,6 kyu,Playing with digits,114089,g964,"['Fundamentals', 'Mathematics']"
+    return summation // n if summation % n == 0 else -1",https://www.codewars.com/kata/5552101f47fc5178b1000050,2023-03-08 14:26:51.851,Playing with digits,6 kyu,yellow,430584,114320,g964,"['Fundamentals', 'Mathematics']",2015-05-12T14:38:35.669Z,reference,2975,9858,1,8
 51f2d1cafc9c0f745c00037d,Python,1,"def solution(text, ending):
 
-    return text[-len(ending):] == ending",https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d,2023-05-11 13:43:59.686,7 kyu,String ends with?,157372,jhoffner,"['Strings', 'Fundamentals']"
+    return text[-len(ending):] == ending",https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d,2023-05-11 13:43:59.686,String ends with?,7 kyu,white,545991,158046,jhoffner,"['Strings', 'Fundamentals']",2013-07-26T21:35:07.850Z,reference,1166,8250,5,4
 585d7d5adb20cf33cb000235,Python,2,"def find_uniq(arr):
 
     a, b = set(arr)
 
-    return a if arr.count(a) == 1 else b",https://www.codewars.com/kata/585d7d5adb20cf33cb000235,2023-05-13 09:14:32.963,6 kyu,Find the unique number,112872,isqua,"['Fundamentals', 'Algorithms', 'Arrays']"
+    return a if arr.count(a) == 1 else b",https://www.codewars.com/kata/585d7d5adb20cf33cb000235,2023-05-13 09:14:32.963,Find the unique number,6 kyu,yellow,535768,113180,isqua,"['Fundamentals', 'Algorithms', 'Arrays']",2016-12-23T20:13:56.102Z,reference,2320,7652,7,6
 6361bdb5d41160000ee6db86,Python,1,"# Each of the given inputs will be a word of 
 
 # mixed case characters followed by either `cat` or `dog`.
@@ -253,7 +253,7 @@ search = r""\b(\w+)\b(?=\s+cat)|\b(\w+)\b(?=\s+dog)""
 
 
 
-substitute = ""blue""",https://www.codewars.com/kata/6361bdb5d41160000ee6db86,2023-05-08 11:37:04.913,7 kyu,Painting Pets Blue (with regex),230,Captain Quack,"['Strings', 'Regular Expressions']"
+substitute = ""blue""",https://www.codewars.com/kata/6361bdb5d41160000ee6db86,2023-05-08 11:37:04.913,Painting Pets Blue (with regex),7 kyu,white,1021,232,Captain Quack,"['Strings', 'Regular Expressions']",2022-11-02T01:12:08.114Z,games,5,51,0,0
 5208f99aee097e6552000148,Python,1,"def solution(s):
 
     formatted_string = """"
@@ -268,7 +268,7 @@ substitute = ""blue""",https://www.codewars.com/kata/6361bdb5d41160000ee6db86,20
 
     
 
-    return formatted_string",https://www.codewars.com/kata/5208f99aee097e6552000148,2023-03-08 11:12:30.259,6 kyu,Break camelCase,83463,hakt,"['Strings', 'Fundamentals']"
+    return formatted_string",https://www.codewars.com/kata/5208f99aee097e6552000148,2023-03-08 11:12:30.259,Break camelCase,6 kyu,yellow,221146,83856,hakt,"['Strings', 'Fundamentals']",2013-08-12T15:05:03.693Z,reference,1188,4978,1,4
 5667e8f4e3f572a8f2000039,Python,1,"def accum(s):
 
     output_list = []
@@ -279,7 +279,7 @@ substitute = ""blue""",https://www.codewars.com/kata/6361bdb5d41160000ee6db86,20
 
     
 
-    return ""-"".join(output_list)",https://www.codewars.com/kata/5667e8f4e3f572a8f2000039,2023-05-11 13:45:48.417,7 kyu,Mumbling,187480,g964,"['Fundamentals', 'Strings', 'Puzzles']"
+    return ""-"".join(output_list)",https://www.codewars.com/kata/5667e8f4e3f572a8f2000039,2023-05-11 13:45:48.417,Mumbling,7 kyu,white,584440,187921,g964,"['Fundamentals', 'Strings', 'Puzzles']",2015-12-09T08:40:29.276Z,reference,2913,15393,0,1
 566044325f8fddc1c000002c,Python,1,"def even_chars(st): 
 
     if len(st) < 2 or len(st) > 100:
@@ -288,10 +288,10 @@ substitute = ""blue""",https://www.codewars.com/kata/6361bdb5d41160000ee6db86,20
 
     
 
-    return [char for i, char in enumerate(st) if i%2 == 1]",https://www.codewars.com/kata/566044325f8fddc1c000002c,2023-04-18 17:02:17.388,7 kyu,Return a string's even characters.,5534,tu6619,"['Fundamentals', 'Strings', 'Arrays']"
+    return [char for i, char in enumerate(st) if i%2 == 1]",https://www.codewars.com/kata/566044325f8fddc1c000002c,2023-04-18 17:02:17.388,Return a string's even characters.,7 kyu,white,20149,5543,tu6619,"['Fundamentals', 'Strings', 'Arrays']",2015-12-03T13:46:51.804Z,reference,55,544,2,3
 5a3dd29055519e23ec000074,Python,1,"def check_exam(arr1,arr2):
 
-    return max(0, sum([4 if arr1[i] == arr2[i] else (0 if arr2[i] == """" else -1) for i in range(len(arr1))]))",https://www.codewars.com/kata/5a3dd29055519e23ec000074,2023-05-14 13:02:41.930,7 kyu,Check the exam,22972,Dmitry Kudla,"['Fundamentals', 'Arrays']"
+    return max(0, sum([4 if arr1[i] == arr2[i] else (0 if arr2[i] == """" else -1) for i in range(len(arr1))]))",https://www.codewars.com/kata/5a3dd29055519e23ec000074,2023-05-14 13:02:41.930,Check the exam,7 kyu,white,77482,23029,Dmitry Kudla,"['Fundamentals', 'Arrays']",2017-12-23T04:25:04.961Z,reference,296,2511,3,1
 517abf86da9663f1d2000003,Python,2,"import re
 
 
@@ -300,7 +300,7 @@ def to_camel_case(text):
 
     regex = r'[\W]+|_+'
 
-    return """".join([word.capitalize() if i > 0 else word for i, word in enumerate(re.split(regex, text))])",https://www.codewars.com/kata/517abf86da9663f1d2000003,2023-04-29 12:25:36.646,6 kyu,Convert string to camel case,149192,jhoffner,"['Regular Expressions', 'Algorithms', 'Strings']"
+    return """".join([word.capitalize() if i > 0 else word for i, word in enumerate(re.split(regex, text))])",https://www.codewars.com/kata/517abf86da9663f1d2000003,2023-04-29 12:25:36.646,Convert string to camel case,6 kyu,yellow,650305,149605,jhoffner,"['Regular Expressions', 'Algorithms', 'Strings']",2013-07-25T01:40:25.970Z,algorithms,2670,10803,20,8
 5641275f07335295f10000d0,Python,1,"def split_the_bill(x):
 
     # Code Away!
@@ -311,7 +311,7 @@ def to_camel_case(text):
 
     x = {friend: round(x[friend] - bill_split, 2) for friend in x}
 
-    return x",https://www.codewars.com/kata/5641275f07335295f10000d0,2023-03-07 19:15:07.662,7 kyu,Split The Bill,6747,otajor,"['Fundamentals', 'Data Structures']"
+    return x",https://www.codewars.com/kata/5641275f07335295f10000d0,2023-03-07 19:15:07.662,Split The Bill,7 kyu,white,61473,6757,otajor,"['Fundamentals', 'Data Structures']",2015-11-10T00:28:08.820Z,reference,179,640,3,1
 54bf85e3d5b56c7a05000cf9,Python,1,"def number(lines):
 
     if len(lines) == 0:
@@ -320,7 +320,7 @@ def to_camel_case(text):
 
     
 
-    return [f""{i + 1}: {line}"" for i, line in enumerate(lines)]",https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9,2023-04-18 16:44:05.715,7 kyu,Testing 1-2-3,51326,acr,"['Arrays', 'Fundamentals']"
+    return [f""{i + 1}: {line}"" for i, line in enumerate(lines)]",https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9,2023-04-18 16:44:05.715,Testing 1-2-3,7 kyu,white,110103,51549,acr,"['Arrays', 'Fundamentals']",2015-01-21T12:51:39.022Z,reference,502,4507,1,3
 57b06f90e298a7b53d000a86,Python,1,"def queue_time(customers, n):
 
     # If there are no customers, return 0
@@ -384,10 +384,10 @@ def to_camel_case(text):
 
 
     return time
-",https://www.codewars.com/kata/57b06f90e298a7b53d000a86,2023-03-24 08:18:21.929,6 kyu,The Supermarket Queue,40363,mattlub,"['Arrays', 'Fundamentals']"
+",https://www.codewars.com/kata/57b06f90e298a7b53d000a86,2023-03-24 08:18:21.929,The Supermarket Queue,6 kyu,yellow,248308,40481,mattlub,"['Arrays', 'Fundamentals']",2016-08-14T14:29:29.351Z,reference,3976,4468,1,3
 53dbd5315a3c69eed20002dd,Python,1,"def filter_list(l):
 
-    return list(filter(lambda x: type(x) == int, l))",https://www.codewars.com/kata/53dbd5315a3c69eed20002dd,2023-05-07 08:43:06.153,7 kyu,List Filtering,213140,cmgerber,"['Lists', 'Filtering', 'Data Structures', 'Fundamentals']"
+    return list(filter(lambda x: type(x) == int, l))",https://www.codewars.com/kata/53dbd5315a3c69eed20002dd,2023-05-07 08:43:06.153,List Filtering,7 kyu,white,528615,213827,cmgerber,"['Lists', 'Filtering', 'Data Structures', 'Fundamentals']",2014-08-01T17:58:35.185Z,reference,1467,15046,2,2
 5ad0d8356165e63c140014d4,Python,1,"def final_grade(exam, projects):
 
     if exam > 90 or projects > 10:
@@ -402,7 +402,7 @@ def to_camel_case(text):
 
         return 75
 
-    return 0",https://www.codewars.com/kata/5ad0d8356165e63c140014d4,2023-05-12 12:59:39.048,8 kyu,Student's Final Grade,40841,ledocod,['Fundamentals']
+    return 0",https://www.codewars.com/kata/5ad0d8356165e63c140014d4,2023-05-12 12:59:39.048,Student's Final Grade,8 kyu,white,202405,40981,ledocod,['Fundamentals'],2018-04-13T16:17:57.650Z,reference,222,3310,0,1
 5842df8ccbd22792a4000245,Python,1,"def expanded_form(num):
 
     extended_form = """"
@@ -417,7 +417,7 @@ def to_camel_case(text):
 
         
 
-    return extended_form[:-3]",https://www.codewars.com/kata/5842df8ccbd22792a4000245,2023-05-11 08:13:51.966,6 kyu,Write Number in Expanded Form,61951,Belax8,"['Strings', 'Mathematics', 'Algorithms', 'Fundamentals']"
+    return extended_form[:-3]",https://www.codewars.com/kata/5842df8ccbd22792a4000245,2023-05-11 08:13:51.966,Write Number in Expanded Form,6 kyu,yellow,260707,62207,Belax8,"['Strings', 'Mathematics', 'Algorithms', 'Fundamentals']",2016-12-06T05:05:44.878Z,reference,1722,5141,7,6
 540afbe2dc9f615d5e000425,Python,1,"import numpy as np
 
 import math
@@ -518,7 +518,7 @@ class Sudoku(object):
 
         # If we pass all tests then the grid is valid
 
-        return True",https://www.codewars.com/kata/540afbe2dc9f615d5e000425,2023-04-24 09:57:50.421,4 kyu,Validate Sudoku with size `NxN`,7805,cbmono,"['Arrays', 'Puzzles', 'Algorithms']"
+        return True",https://www.codewars.com/kata/540afbe2dc9f615d5e000425,2023-04-24 09:57:50.421,Validate Sudoku with size `NxN`,4 kyu,blue,124960,7817,cbmono,"['Arrays', 'Puzzles', 'Algorithms']",2014-09-06T18:10:16.213Z,games,768,778,14,7
 5266876b8f4bf2da9b000362,Python,1,"def likes(names):
 
     if not names:
@@ -539,12 +539,12 @@ class Sudoku(object):
 
     
 
-    return f""{names[0]}, {names[1]} and {len(names) - 2} others like this""",https://www.codewars.com/kata/5266876b8f4bf2da9b000362,2023-05-11 14:19:39.890,6 kyu,Who likes it?,269429,BattleRattle,"['Strings', 'Fundamentals']"
+    return f""{names[0]}, {names[1]} and {len(names) - 2} others like this""",https://www.codewars.com/kata/5266876b8f4bf2da9b000362,2023-05-11 14:19:39.890,Who likes it?,6 kyu,yellow,813756,270388,BattleRattle,"['Strings', 'Fundamentals']",2013-10-22T14:42:45.469Z,reference,4177,17541,1,5
 567bf4f7ee34510f69000032,Python,2,"import re
 
 def is_digit(n):
 
-    return re.fullmatch(r""\d"", n) is not None",https://www.codewars.com/kata/567bf4f7ee34510f69000032,2023-05-05 12:33:11.930,8 kyu,Regexp Basics - is it a digit?,13409,taw,"['Regular Expressions', 'Fundamentals']"
+    return re.fullmatch(r""\d"", n) is not None",https://www.codewars.com/kata/567bf4f7ee34510f69000032,2023-05-05 12:33:11.930,Regexp Basics - is it a digit?,8 kyu,white,104808,13431,taw,"['Regular Expressions', 'Fundamentals']",2015-12-24T13:36:55.333Z,reference,219,1281,5,2
 521c2db8ddc89b9b7a0000c1,Python,1,"def snail(snail_map):
 
     #This solution sucks, sorry
@@ -609,7 +609,7 @@ def is_digit(n):
 
     # I made a mistake so there's one extra value on the end lol
 
-    return snail_array[:-1]",https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1,2023-03-08 17:29:14.345,4 kyu,Snail,60339,stevenbarragan,"['Arrays', 'Algorithms']"
+    return snail_array[:-1]",https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1,2023-03-08 17:29:14.345,Snail,4 kyu,blue,438349,60519,stevenbarragan,"['Arrays', 'Algorithms']",2013-08-28T04:56:02.580Z,algorithms,5151,6329,9,6
 55ccdf1512938ce3ac000056,Python,1,"import re
 
 def is_lock_ness_monster(string):
@@ -618,12 +618,12 @@ def is_lock_ness_monster(string):
 
     pattern = re.compile(r""(tree fiddy)|(3\.50)|(three fifty)"")
 
-    return re.search(pattern, string) is not None",https://www.codewars.com/kata/55ccdf1512938ce3ac000056,2023-05-05 12:45:51.388,8 kyu,A Strange Trip to the Market,12398,sergarrick,"['Regular Expressions', 'Strings', 'Fundamentals']"
+    return re.search(pattern, string) is not None",https://www.codewars.com/kata/55ccdf1512938ce3ac000056,2023-05-05 12:45:51.388,A Strange Trip to the Market,8 kyu,white,42281,12423,sergarrick,"['Regular Expressions', 'Strings', 'Fundamentals']",2015-08-13T18:17:04.657Z,reference,139,1400,4,3
 57a37f3cbb99449513000cd8,Python,1,"import re
 
 def get_number_from_string(string):
 
-    return int(re.sub(r""\D"", """", string))",https://www.codewars.com/kata/57a37f3cbb99449513000cd8,2023-05-05 12:49:03.120,8 kyu,Get number from string,8819,wichu,"['Strings', 'Regular Expressions', 'Fundamentals']"
+    return int(re.sub(r""\D"", """", string))",https://www.codewars.com/kata/57a37f3cbb99449513000cd8,2023-05-05 12:49:03.120,Get number from string,8 kyu,white,31477,8868,wichu,"['Strings', 'Regular Expressions', 'Fundamentals']",2016-08-04T17:45:45.761Z,reference,105,1425,3,4
 57d814e4950d8489720008db,Python,1,"def index(array, n):
 
     try:
@@ -650,10 +650,10 @@ def get_number_from_string(string):
 
         """""")
 
-        return -1",https://www.codewars.com/kata/57d814e4950d8489720008db,2023-05-12 14:36:05.126,8 kyu,N-th Power,34412,Milford,"['Fundamentals', 'Arrays']"
+        return -1",https://www.codewars.com/kata/57d814e4950d8489720008db,2023-05-12 14:36:05.126,N-th Power,8 kyu,white,114970,34518,Milford,"['Fundamentals', 'Arrays']",2016-10-01T01:27:22.411Z,reference,242,3012,6,2
 57cebe1dc6fdc20c57000ac9,Python,1,"def find_short(s):
 
-    return len(sorted(s.split(), key = len)[0])",https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9,2023-05-12 14:23:26.089,7 kyu,Shortest Word,194088,PG1,['Fundamentals']
+    return len(sorted(s.split(), key = len)[0])",https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9,2023-05-12 14:23:26.089,Shortest Word,7 kyu,white,510241,194507,PG1,['Fundamentals'],2016-09-06T13:21:09.673Z,reference,1599,13585,1,1
 52c31f8e6605bcc646000082,Python,2,"def two_sum(numbers, target):
 
     cache = {}
@@ -670,13 +670,13 @@ def get_number_from_string(string):
 
     
 
-    return [-1, -1]",https://www.codewars.com/kata/52c31f8e6605bcc646000082,2023-05-11 05:06:23.259,6 kyu,Two Sum,56154,wthit56,"['Arrays', 'Fundamentals', 'Algorithms']"
+    return [-1, -1]",https://www.codewars.com/kata/52c31f8e6605bcc646000082,2023-05-11 05:06:23.259,Two Sum,6 kyu,yellow,186765,56376,wthit56,"['Arrays', 'Fundamentals', 'Algorithms']",2013-12-31T20:03:10.317Z,reference,1201,3939,10,3
 57a083a57cb1f31db7000028,Python,1,"def powers_of_two(n):
 
-    return [2**x for x in range(n + 1)]",https://www.codewars.com/kata/57a083a57cb1f31db7000028,2023-05-11 20:36:43.312,8 kyu,Powers of 2,43592,wichu,"['Mathematics', 'Fundamentals']"
+    return [2**x for x in range(n + 1)]",https://www.codewars.com/kata/57a083a57cb1f31db7000028,2023-05-11 20:36:43.312,Powers of 2,8 kyu,white,104402,43760,wichu,"['Mathematics', 'Fundamentals']",2016-08-02T11:28:05.004Z,reference,431,3504,0,0
 559590633066759614000063,Python,1,"def min_max(lst):
 
-    return [min(lst), max(lst)]",https://www.codewars.com/kata/559590633066759614000063,2023-05-08 11:38:32.628,7 kyu,The highest profit wins!,70754,bkaes,"['Lists', 'Arrays', 'Fundamentals']"
+    return [min(lst), max(lst)]",https://www.codewars.com/kata/559590633066759614000063,2023-05-08 11:38:32.628,The highest profit wins!,7 kyu,white,137885,71035,bkaes,"['Lists', 'Arrays', 'Fundamentals']",2015-07-02T19:46:08.778Z,reference,384,4493,1,1
 62cb487e43b37a5829ab5752,Python,1,"from preloaded import FILTERS
 
 import re
@@ -696,7 +696,7 @@ def is_valid(query: str) -> bool:
         
 
     return True
-",https://www.codewars.com/kata/62cb487e43b37a5829ab5752,2023-05-08 13:00:37.229,7 kyu,Google Dorking - Validating Queries,299,chr3st5an,['Regular Expressions']
+",https://www.codewars.com/kata/62cb487e43b37a5829ab5752,2023-05-08 13:00:37.229,Google Dorking - Validating Queries,7 kyu,white,968,301,chr3st5an,['Regular Expressions'],2022-07-10T23:26:04.732Z,reference,10,116,0,0
 60f3639b539c06001a076267,Python,1,"from typing import Dict, List
 
 
@@ -749,7 +749,7 @@ def get_greatest_spore_multiplier(graph: Dict[int, List[int]]) -> float:
 
     # Remember to add 1 since Av = (a-1)v = lambdav => a = lambda + 1            
 
-    return max(eigenvalues[0]) + 1",https://www.codewars.com/kata/60f3639b539c06001a076267,2023-05-11 06:03:04.616,5 kyu,Spreading Spores Graph,29,cmistrata,"['Linear Algebra', 'Mathematics', 'Combinatorics', 'NumPy', 'Algorithms', 'Graph Theory']"
+    return max(eigenvalues[0]) + 1",https://www.codewars.com/kata/60f3639b539c06001a076267,2023-05-11 06:03:04.616,Spreading Spores Graph,5 kyu,yellow,120,29,cmistrata,"['Linear Algebra', 'Mathematics', 'Combinatorics', 'NumPy', 'Algorithms', 'Graph Theory']",2021-07-18T21:57:37.975Z,algorithms,15,21,0,0
 52b305bec65ea40fe90007a7,Python,1,"def grabscrab(said, possible_words):
 
     # Sort the words because fuck you I do what I want
@@ -758,12 +758,12 @@ def get_greatest_spore_multiplier(graph: Dict[int, List[int]]) -> float:
 
     sorted_words = ["""".join(sorted(word)) for word in possible_words]
 
-    return [possible_words[i] for i, word in enumerate(sorted_words) if said == word]",https://www.codewars.com/kata/52b305bec65ea40fe90007a7,2023-04-18 18:27:40.934,6 kyu,"Arrh, grabscrab!",5507,matstc,"['Strings', 'Algorithms']"
+    return [possible_words[i] for i, word in enumerate(sorted_words) if said == word]",https://www.codewars.com/kata/52b305bec65ea40fe90007a7,2023-04-18 18:27:40.934,"Arrh, grabscrab!",6 kyu,yellow,15726,5514,matstc,"['Strings', 'Algorithms']",2013-12-19T15:06:20.797Z,algorithms,88,725,0,8
 56a946cd7bd95ccab2000055,Python,1,"import re
 
 def lowercase_count(string):
 
-    return len(re.findall(r""[a-z]"", string))",https://www.codewars.com/kata/56a946cd7bd95ccab2000055,2023-05-05 12:54:03.589,8 kyu,Regex count lowercase letters,13983,tdowek1,"['Fundamentals', 'Regular Expressions', 'Algorithms']"
+    return len(re.findall(r""[a-z]"", string))",https://www.codewars.com/kata/56a946cd7bd95ccab2000055,2023-05-05 12:54:03.589,Regex count lowercase letters,8 kyu,white,34691,14035,tdowek1,"['Fundamentals', 'Regular Expressions', 'Algorithms']",2016-01-28T17:34:34.219Z,reference,138,1603,1,3
 55aa075506463dac6600010d,Python,1,"from math import sqrt
 
 from functools import reduce
@@ -794,12 +794,12 @@ def list_squared(m, n):
 
     return squares
 
-    pass",https://www.codewars.com/kata/55aa075506463dac6600010d,2023-03-08 19:40:01.996,5 kyu,Integers: Recreation One,22444,g964,"['Fundamentals', 'Algorithms']"
+    pass",https://www.codewars.com/kata/55aa075506463dac6600010d,2023-03-08 19:40:01.996,Integers: Recreation One,5 kyu,yellow,103830,22490,g964,"['Fundamentals', 'Algorithms']",2015-07-18T07:59:18.010Z,reference,1841,2139,1,9
 54da539698b8a2ad76000228,Python,1,"def is_valid_walk(walk):
 
     #determine if walk is valid
 
-    return len(walk) == 10 and walk.count(""n"") - walk.count(""s"") == 0 and walk.count(""e"") - walk.count(""w"") == 0",https://www.codewars.com/kata/54da539698b8a2ad76000228,2023-03-07 20:09:09.139,6 kyu,Take a Ten Minutes Walk,159453,JKphobic,"['Arrays', 'Fundamentals']"
+    return len(walk) == 10 and walk.count(""n"") - walk.count(""s"") == 0 and walk.count(""e"") - walk.count(""w"") == 0",https://www.codewars.com/kata/54da539698b8a2ad76000228,2023-03-07 20:09:09.139,Take a Ten Minutes Walk,6 kyu,yellow,689992,159857,JKphobic,"['Arrays', 'Fundamentals']",2015-02-10T18:53:10.952Z,reference,3156,13623,17,11
 583203e6eb35d7980400002a,Python,1,"import re as RegularExpressionLibrary
 
 def count_smileys(arr):
@@ -818,7 +818,7 @@ def count_smileys(arr):
 
             smiley_count += 1
 
-    return smiley_count",https://www.codewars.com/kata/583203e6eb35d7980400002a,2023-05-12 06:07:47.401,6 kyu,Count the smiley faces!,76641,St3f4n,"['Regular Expressions', 'Fundamentals']"
+    return smiley_count",https://www.codewars.com/kata/583203e6eb35d7980400002a,2023-05-12 06:07:47.401,Count the smiley faces!,6 kyu,yellow,344871,76855,St3f4n,"['Regular Expressions', 'Fundamentals']",2016-11-20T20:13:26.138Z,reference,1600,5808,8,4
 57f609022f4d534f05000024,Python,1,"def stray(arr):
 
     result = 0
@@ -829,12 +829,12 @@ def count_smileys(arr):
 
         
 
-    return result",https://www.codewars.com/kata/57f609022f4d534f05000024,2023-05-12 05:41:37.781,7 kyu,Find the stray number,51307,janitormeir,"['Fundamentals', 'Algorithms']"
+    return result",https://www.codewars.com/kata/57f609022f4d534f05000024,2023-05-12 05:41:37.781,Find the stray number,7 kyu,white,213897,51447,janitormeir,"['Fundamentals', 'Algorithms']",2016-10-06T09:12:57.114Z,reference,710,3857,3,4
 58cb43f4256836ed95000f97,Python,1,"from math import prod
 
 def find_difference(a, b):
 
-    return abs(prod(a) - prod(b))",https://www.codewars.com/kata/58cb43f4256836ed95000f97,2023-05-12 14:24:45.412,8 kyu,Difference of Volumes of Cuboids,38631,Spherixo,['Fundamentals']
+    return abs(prod(a) - prod(b))",https://www.codewars.com/kata/58cb43f4256836ed95000f97,2023-05-12 14:24:45.412,Difference of Volumes of Cuboids,8 kyu,white,84988,38747,Spherixo,['Fundamentals'],2017-03-17T02:03:33.107Z,reference,258,3323,0,0
 55f2b110f61eb01779000053,Python,1,"def get_sum(a,b):
 
     a, b = min(a, b), max(a, b)
@@ -845,24 +845,24 @@ def find_difference(a, b):
 
         sum += i
 
-    return sum",https://www.codewars.com/kata/55f2b110f61eb01779000053,2023-05-11 08:50:57.890,7 kyu,Beginner Series #3 Sum of Numbers,168027,Vortus,"['Fundamentals', 'Algorithms']"
+    return sum",https://www.codewars.com/kata/55f2b110f61eb01779000053,2023-05-11 08:50:57.890,Beginner Series #3 Sum of Numbers,7 kyu,white,721218,168461,Vortus,"['Fundamentals', 'Algorithms']",2015-09-11T10:50:22.676Z,reference,1987,11440,0,3
 55685cd7ad70877c23000102,Python,1,"def make_negative( number ):
 
-    return min(number, number * -1)",https://www.codewars.com/kata/55685cd7ad70877c23000102,2023-05-11 20:34:16.325,8 kyu,Return Negative,241547,Deantwo,['Fundamentals']
+    return min(number, number * -1)",https://www.codewars.com/kata/55685cd7ad70877c23000102,2023-05-11 20:34:16.325,Return Negative,8 kyu,white,566821,242687,Deantwo,['Fundamentals'],2015-05-29T12:54:23.562Z,reference,978,15027,0,0
 514a024011ea4fb54200004b,Python,1,"import re
 
 def domain_name(url):
 
     pattern = r""(?:https?://)?(?:www\.)?([\w-]+)(?:\.\w+)?""
 
-    return re.search(pattern, url).group(1)",https://www.codewars.com/kata/514a024011ea4fb54200004b,2023-05-11 08:58:06.763,5 kyu,Extract the domain name from a URL,60534,xianpants,"['Parsing', 'Regular Expressions']"
+    return re.search(pattern, url).group(1)",https://www.codewars.com/kata/514a024011ea4fb54200004b,2023-05-11 08:58:06.763,Extract the domain name from a URL,5 kyu,yellow,437887,60720,xianpants,"['Parsing', 'Regular Expressions']",2013-03-21T02:42:47.315Z,reference,2092,3499,11,12
 5a35f08b9e5f4923790010dc,Python,1,"import numpy as np
 
 
 
 def looper(start, stop, number):
 
-    return list(np.linspace(start, stop, num=number))",https://www.codewars.com/kata/5a35f08b9e5f4923790010dc,2023-05-10 12:15:29.611,7 kyu,Looper,324,Beast,"['NumPy', 'Puzzles']"
+    return list(np.linspace(start, stop, num=number))",https://www.codewars.com/kata/5a35f08b9e5f4923790010dc,2023-05-10 12:15:29.611,Looper,7 kyu,white,1688,324,Beast,"['NumPy', 'Puzzles']",2017-12-17T04:20:27.865Z,games,14,37,1,0
 525f50e3b73515a6db000b83,Python,1,"def create_phone_number(n):
 
     # Convert number to string
@@ -871,10 +871,10 @@ def looper(start, stop, number):
 
     # Format number
 
-    return f""({n[0:3]}) {n[3:6]}-{n[6:]}""",https://www.codewars.com/kata/525f50e3b73515a6db000b83,2023-03-24 07:29:43.248,6 kyu,Create Phone Number,264601,xDranik,"['Arrays', 'Strings', 'Regular Expressions', 'Algorithms']"
+    return f""({n[0:3]}) {n[3:6]}-{n[6:]}""",https://www.codewars.com/kata/525f50e3b73515a6db000b83,2023-03-24 07:29:43.248,Create Phone Number,6 kyu,yellow,630145,265309,xDranik,"['Arrays', 'Strings', 'Regular Expressions', 'Algorithms']",2013-10-17T02:52:21.801Z,algorithms,2972,17019,0,2
 57cfdf34902f6ba3d300001e,Python,1,"def two_sort(array):
 
-    return ""***"".join(sorted(array, key = lambda x: tuple(ord(i) for i in x))[0])",https://www.codewars.com/kata/57cfdf34902f6ba3d300001e,2023-05-14 12:58:45.199,8 kyu,Sort and Star,34390,PG1,"['Fundamentals', 'Strings', 'Arrays', 'Sorting']"
+    return ""***"".join(sorted(array, key = lambda x: tuple(ord(i) for i in x))[0])",https://www.codewars.com/kata/57cfdf34902f6ba3d300001e,2023-05-14 12:58:45.199,Sort and Star,8 kyu,white,101581,34505,PG1,"['Fundamentals', 'Strings', 'Arrays', 'Sorting']",2016-09-07T09:54:44.187Z,reference,447,3259,1,1
 5ae62fcf252e66d44d00008e,Python,1,"def expression_matter(a, b, c):
 
     # Find the largest combination of a, b and c
@@ -891,34 +891,34 @@ def looper(start, stop, number):
 
               (a * b) + c]
 
-    return max(combos)",https://www.codewars.com/kata/5ae62fcf252e66d44d00008e,2023-05-11 13:42:38.920,8 kyu,Expressions Matter ,42739,MrZizoScream,"['Algorithms', 'Fundamentals']"
+    return max(combos)",https://www.codewars.com/kata/5ae62fcf252e66d44d00008e,2023-05-11 13:42:38.920,Expressions Matter ,8 kyu,white,119394,42946,MrZizoScream,"['Algorithms', 'Fundamentals']",2018-04-29T21:49:35.298Z,reference,765,3244,1,0
 56efc695740d30f963000557,Python,1,"def to_alternating_case(string):
 
-    return string.swapcase()",https://www.codewars.com/kata/56efc695740d30f963000557,2023-05-11 09:16:22.466,8 kyu,altERnaTIng cAsE <=> ALTerNAtiNG CaSe,43766,donaldsebleung,['Fundamentals']
+    return string.swapcase()",https://www.codewars.com/kata/56efc695740d30f963000557,2023-05-11 09:16:22.466,altERnaTIng cAsE <=> ALTerNAtiNG CaSe,8 kyu,white,114496,43966,donaldsebleung,['Fundamentals'],2016-03-21T12:31:01.865Z,reference,589,3629,2,5
 5875b200d520904a04000003,Python,1,"def enough(cap, on, wait):
 
-    return max(0, wait - cap + on)",https://www.codewars.com/kata/5875b200d520904a04000003,2023-05-12 10:12:09.509,8 kyu,Will there be enough space?,49446,user2514386,['Fundamentals']
+    return max(0, wait - cap + on)",https://www.codewars.com/kata/5875b200d520904a04000003,2023-05-12 10:12:09.509,Will there be enough space?,8 kyu,white,121612,49597,user2514386,['Fundamentals'],2017-01-11T04:18:08.847Z,reference,301,4096,0,2
 5a3fe3dde1ce0e8ed6000097,Python,1,"def century(year):
 
-    return (year - 1) // 100 + 1",https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097,2023-05-12 12:56:34.454,8 kyu,Century From Year,147579,MrZizoScream,"['Fundamentals', 'Mathematics']"
+    return (year - 1) // 100 + 1",https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097,2023-05-12 12:56:34.454,Century From Year,8 kyu,white,382693,148232,MrZizoScream,"['Fundamentals', 'Mathematics']",2017-12-24T17:33:52.696Z,reference,1280,8764,1,1
 596343a24489a8b2a00000a2,Python,1,"import re
 
 def is_it_a_num(s: str) -> str:
 
     cleaned_num = re.sub(r""\D"", """", s)
 
-    return cleaned_num if len(cleaned_num) == 11 and cleaned_num[0] == ""0""  else ""Not a phone number""",https://www.codewars.com/kata/596343a24489a8b2a00000a2,2023-05-05 12:57:32.906,7 kyu,Fix My Phone Numbers!,3636,caralemony,"['Strings', 'Regular Expressions', 'Fundamentals']"
+    return cleaned_num if len(cleaned_num) == 11 and cleaned_num[0] == ""0""  else ""Not a phone number""",https://www.codewars.com/kata/596343a24489a8b2a00000a2,2023-05-05 12:57:32.906,Fix My Phone Numbers!,7 kyu,white,10421,3648,caralemony,"['Strings', 'Regular Expressions', 'Fundamentals']",2017-07-11T20:55:45.001Z,reference,49,473,0,3
 55ecd718f46fba02e5000029,Python,1,"def between(a,b):
 
-    return list(range(a, b + 1))",https://www.codewars.com/kata/55ecd718f46fba02e5000029,2023-05-12 05:55:46.165,8 kyu,What is between?,41096,sgwozdz,"['Fundamentals', 'Algorithms']"
+    return list(range(a, b + 1))",https://www.codewars.com/kata/55ecd718f46fba02e5000029,2023-05-12 05:55:46.165,What is between?,8 kyu,white,76301,41285,sgwozdz,"['Fundamentals', 'Algorithms']",2015-09-07T00:16:46.324Z,reference,269,3193,0,3
 5aa736a455f906981800360d,Python,1,"def feast(beast, dish):
 
-    return beast[0] == dish[0] and beast[-1] == dish[-1]",https://www.codewars.com/kata/5aa736a455f906981800360d,2023-05-14 13:04:06.101,8 kyu,The Feast of Many Beasts,59522,MollyJeanB-pdx,"['Strings', 'Fundamentals']"
+    return beast[0] == dish[0] and beast[-1] == dish[-1]",https://www.codewars.com/kata/5aa736a455f906981800360d,2023-05-14 13:04:06.101,The Feast of Many Beasts,8 kyu,white,130083,59784,MollyJeanB-pdx,"['Strings', 'Fundamentals']",2018-03-13T02:25:40.271Z,reference,451,4812,0,0
 5513795bd3fafb56c200049e,Python,1,"def count_by(x, n):
 
     return [x * coefficient for coefficient in range(1, n + 1)]
 
-    ",https://www.codewars.com/kata/5513795bd3fafb56c200049e,2023-05-10 18:48:30.358,8 kyu,Count by X,84989,shums16,"['Arrays', 'Fundamentals']"
+    ",https://www.codewars.com/kata/5513795bd3fafb56c200049e,2023-05-10 18:48:30.358,Count by X,8 kyu,white,188658,85492,shums16,"['Arrays', 'Fundamentals']",2015-03-26T03:54:39.758Z,reference,716,5729,0,1
 55a5bfaa756cfede78000026,Python,1,"def problem(a):
 
     try:
@@ -929,16 +929,16 @@ def is_it_a_num(s: str) -> str:
 
         print(""You absolute doofus, you didn't supply a number, what were you thinking?"")
 
-        return ""Error""",https://www.codewars.com/kata/55a5bfaa756cfede78000026,2023-05-12 14:33:52.041,8 kyu,Super Duper Easy,23138,Aweson1,['Fundamentals']
+        return ""Error""",https://www.codewars.com/kata/55a5bfaa756cfede78000026,2023-05-12 14:33:52.041,Super Duper Easy,8 kyu,white,62625,23230,Aweson1,['Fundamentals'],2015-07-15T02:04:37.314Z,reference,126,2782,2,1
 5ab6538b379d20ad880000ab,Python,1,"def area_or_perimeter(l , w):
 
-    return l ** 2 if l == w else 2 * (l + w)",https://www.codewars.com/kata/5ab6538b379d20ad880000ab,2023-04-17 18:05:01.937,8 kyu,Area or Perimeter,68696,no one,"['Fundamentals', 'Mathematics', 'Geometry']"
+    return l ** 2 if l == w else 2 * (l + w)",https://www.codewars.com/kata/5ab6538b379d20ad880000ab,2023-04-17 18:05:01.937,Area or Perimeter,8 kyu,white,112518,68996,no one,"['Fundamentals', 'Mathematics', 'Geometry']",2018-03-24T13:33:04.289Z,reference,208,4818,1,4
 57eb8fcdf670e99d9b000272,Python,1,"def high(x):
 
-    return sorted(x.split(), key = lambda w: sum([ord(c) - 96 for c in w]), reverse = True)[0]",https://www.codewars.com/kata/57eb8fcdf670e99d9b000272,2023-05-12 12:51:36.097,6 kyu,Highest Scoring Word,76709,PG1,"['Fundamentals', 'Strings', 'Arrays']"
+    return sorted(x.split(), key = lambda w: sum([ord(c) - 96 for c in w]), reverse = True)[0]",https://www.codewars.com/kata/57eb8fcdf670e99d9b000272,2023-05-12 12:51:36.097,Highest Scoring Word,6 kyu,yellow,289791,76928,PG1,"['Fundamentals', 'Strings', 'Arrays']",2016-09-28T10:35:24.874Z,reference,2273,6117,2,0
 57e3f79c9cb119374600046b,Python,1,"def hello(name=""""):
 
-    return f""Hello, {name[0].upper() + name[1:].lower()}!"" if name else ""Hello, World!""",https://www.codewars.com/kata/57e3f79c9cb119374600046b,2023-04-17 18:04:02.137,8 kyu,"Hello, Name or World!",24907,tadan,['Fundamentals']
+    return f""Hello, {name[0].upper() + name[1:].lower()}!"" if name else ""Hello, World!""",https://www.codewars.com/kata/57e3f79c9cb119374600046b,2023-04-17 18:04:02.137,"Hello, Name or World!",8 kyu,white,105303,24957,tadan,['Fundamentals'],2016-09-22T15:24:57.913Z,reference,286,2378,4,2
 545cedaa9943f7fe7b000048,Python,1,"def is_pangram(s):
 
     for i in range(26):
@@ -949,7 +949,7 @@ def is_it_a_num(s: str) -> str:
 
         
 
-    return True",https://www.codewars.com/kata/545cedaa9943f7fe7b000048,2023-05-11 14:22:24.549,6 kyu,Detect Pangram,135434,anindyabd,"['Strings', 'Data Structures', 'Fundamentals']"
+    return True",https://www.codewars.com/kata/545cedaa9943f7fe7b000048,2023-05-11 14:22:24.549,Detect Pangram,6 kyu,yellow,531061,135887,anindyabd,"['Strings', 'Data Structures', 'Fundamentals']",2014-11-07T16:04:58.811Z,reference,2021,9204,4,8
 56a5d994ac971f1ac500003e,Python,1,"def longest_consec(strarr, k):
 
     # Trivial cases
@@ -986,15 +986,15 @@ def is_it_a_num(s: str) -> str:
 
     return longest
 
-        ",https://www.codewars.com/kata/56a5d994ac971f1ac500003e,2023-05-12 10:05:59.543,6 kyu,Consecutive strings,65688,g964,['Fundamentals']
+        ",https://www.codewars.com/kata/56a5d994ac971f1ac500003e,2023-05-12 10:05:59.543,Consecutive strings,6 kyu,yellow,458701,65834,g964,['Fundamentals'],2016-01-25T08:15:25.087Z,reference,2991,5316,0,13
 529eef7a9194e0cbc1000255,Python,1,"# write the function is_anagram
 
 def is_anagram(test, original):
 
-    return sorted(test.lower()) == sorted(original.lower())",https://www.codewars.com/kata/529eef7a9194e0cbc1000255,2023-05-13 14:46:20.015,7 kyu,Anagram Detection,36198,user3793153,"['Strings', 'Fundamentals']"
+    return sorted(test.lower()) == sorted(original.lower())",https://www.codewars.com/kata/529eef7a9194e0cbc1000255,2023-05-13 14:46:20.015,Anagram Detection,7 kyu,white,117132,36288,user3793153,"['Strings', 'Fundamentals']",2013-12-04T09:01:46.504Z,reference,407,2788,2,3
 586f6741c66d18c22800010a,Python,1,"def sequence_sum(begin_number, end_number, step):
 
-    return sum(range(begin_number, end_number + 1, step))",https://www.codewars.com/kata/586f6741c66d18c22800010a,2023-05-13 09:21:21.511,7 kyu,Sum of a sequence,34950,fyvfyv,"['Fundamentals', 'Algorithms', 'Mathematics']"
+    return sum(range(begin_number, end_number + 1, step))",https://www.codewars.com/kata/586f6741c66d18c22800010a,2023-05-13 09:21:21.511,Sum of a sequence,7 kyu,white,102187,35021,fyvfyv,"['Fundamentals', 'Algorithms', 'Mathematics']",2017-01-06T09:49:51.407Z,reference,427,2910,1,1
 5526fc09a1bbd946250002dc,Python,1,"def find_outlier(integers):
 
     evens = []
@@ -1011,7 +1011,7 @@ def is_anagram(test, original):
 
         odds.append(n)
 
-    return evens[0] if len(evens) < len(odds) else odds[0]",https://www.codewars.com/kata/5526fc09a1bbd946250002dc,2023-03-08 09:38:39.639,6 kyu,Find The Parity Outlier,177658,obnounce,['Algorithms']
+    return evens[0] if len(evens) < len(odds) else odds[0]",https://www.codewars.com/kata/5526fc09a1bbd946250002dc,2023-03-08 09:38:39.639,Find The Parity Outlier,6 kyu,yellow,636700,178056,obnounce,['Algorithms'],2015-04-09T22:24:09.437Z,algorithms,2471,14645,0,5
 56576f82ab83ee8268000059,Python,1,"def spacey(array):
 
     output = []
@@ -1024,7 +1024,7 @@ def is_anagram(test, original):
 
             output[i] += array[j]
 
-    return output",https://www.codewars.com/kata/56576f82ab83ee8268000059,2023-04-18 16:46:15.901,7 kyu,Running out of space,4556,coding251,['Fundamentals']
+    return output",https://www.codewars.com/kata/56576f82ab83ee8268000059,2023-04-18 16:46:15.901,Running out of space,7 kyu,white,9866,4825,coding251,['Fundamentals'],2015-11-26T20:45:59.910Z,reference,49,500,1,2
 585d7d5adb20cf33cb000235,Python,1,"import math as MathematicsLibrary
 
 
@@ -1089,7 +1089,7 @@ def find_uniq(arr):
 
             
 
-    return ""poop""",https://www.codewars.com/kata/585d7d5adb20cf33cb000235,2023-05-13 09:13:53.805,6 kyu,Find the unique number,112873,isqua,"['Fundamentals', 'Algorithms', 'Arrays']"
+    return ""poop""",https://www.codewars.com/kata/585d7d5adb20cf33cb000235,2023-05-13 09:13:53.805,Find the unique number,6 kyu,yellow,535768,113180,isqua,"['Fundamentals', 'Algorithms', 'Arrays']",2016-12-23T20:13:56.102Z,reference,2320,7652,7,6
 515bb423de843ea99400000a,Python,1,"# TODO: complete this class
 
 
@@ -1209,17 +1209,17 @@ class PaginationHelper:
         return item_index // self.items_per_page
 
         pass
-",https://www.codewars.com/kata/515bb423de843ea99400000a,2023-04-26 17:52:42.325,5 kyu,PaginationHelper,31005,jhoffner,"['Object-oriented Programming', 'Arrays', 'Algorithms']"
+",https://www.codewars.com/kata/515bb423de843ea99400000a,2023-04-26 17:52:42.325,PaginationHelper,5 kyu,yellow,392902,31076,jhoffner,"['Object-oriented Programming', 'Arrays', 'Algorithms']",2013-04-11T19:24:05.848Z,algorithms,1501,1845,7,5
 525c65e51bf619685c000059,Python,1,"def cakes(recipe, available):
 
     # Check if all ingredients in the recipe are available, if not return 0
 
     # If all ingredients are available, return the minimum floor division out of all ingredients available
 
-    return 0 if not all(ingredient in available for ingredient in recipe) else min([available[ingredient] // recipe[ingredient] for ingredient in recipe])",https://www.codewars.com/kata/525c65e51bf619685c000059,2023-03-09 06:57:47.386,5 kyu,"Pete, the baker",58625,BattleRattle,['Algorithms']
+    return 0 if not all(ingredient in available for ingredient in recipe) else min([available[ingredient] // recipe[ingredient] for ingredient in recipe])",https://www.codewars.com/kata/525c65e51bf619685c000059,2023-03-09 06:57:47.386,"Pete, the baker",5 kyu,yellow,210631,58802,BattleRattle,['Algorithms'],2013-10-14T22:22:43.459Z,algorithms,1429,4142,4,10
 546f922b54af40e1e90001da,Python,1,"def alphabet_position(text):
 
-    return "" "".join([str(ord(letter.lower()) - 96) for word in text.split() for letter in word if letter.isalpha()])",https://www.codewars.com/kata/546f922b54af40e1e90001da,2023-05-07 08:05:42.084,6 kyu,Replace With Alphabet Position,162749,MysteriousMagenta,"['Strings', 'Fundamentals']"
+    return "" "".join([str(ord(letter.lower()) - 96) for word in text.split() for letter in word if letter.isalpha()])",https://www.codewars.com/kata/546f922b54af40e1e90001da,2023-05-07 08:05:42.084,Replace With Alphabet Position,6 kyu,yellow,707360,163151,MysteriousMagenta,"['Strings', 'Fundamentals']",2014-11-21T19:27:44.612Z,reference,2969,13169,3,3
 5279f6fe5ab7f447890006a7,Python,1,"def pick_peaks(arr):
 
     pos = []
@@ -1282,10 +1282,10 @@ class PaginationHelper:
 
     
 
-    return {""pos"": pos, ""peaks"": peaks}",https://www.codewars.com/kata/5279f6fe5ab7f447890006a7,2023-03-09 07:23:30.695,5 kyu,Pick peaks,23467,frenetic_be,"['Arrays', 'Algorithms']"
+    return {""pos"": pos, ""peaks"": peaks}",https://www.codewars.com/kata/5279f6fe5ab7f447890006a7,2023-03-09 07:23:30.695,Pick peaks,5 kyu,yellow,210686,23511,frenetic_be,"['Arrays', 'Algorithms']",2013-11-06T07:59:58.961Z,algorithms,1646,2052,3,6
 5390bac347d09b7da40006f6,Python,1,"def to_jaden_case(string):
 
-    return "" "".join([word.capitalize() for word in string.split()])",https://www.codewars.com/kata/5390bac347d09b7da40006f6,2023-05-06 12:16:45.797,7 kyu,Jaden Casing Strings,194944,jacobb,"['Strings', 'Fundamentals']"
+    return "" "".join([word.capitalize() for word in string.split()])",https://www.codewars.com/kata/5390bac347d09b7da40006f6,2023-05-06 12:16:45.797,Jaden Casing Strings,7 kyu,white,684845,195461,jacobb,"['Strings', 'Fundamentals']",2014-06-05T18:45:23.182Z,reference,2440,13616,14,10
 58f8a3a27a5c28d92e000144,Python,1,"def first_non_consecutive(arr):
 
     if len(arr) < 2:
@@ -1324,7 +1324,7 @@ class PaginationHelper:
 
     
 
-    return None",https://www.codewars.com/kata/58f8a3a27a5c28d92e000144,2023-05-12 09:02:31.166,8 kyu,Find the first non-consecutive number,51182,thecodeite,"['Arrays', 'Fundamentals']"
+    return None",https://www.codewars.com/kata/58f8a3a27a5c28d92e000144,2023-05-12 09:02:31.166,Find the first non-consecutive number,8 kyu,white,244745,51338,thecodeite,"['Arrays', 'Fundamentals']",2017-04-20T12:05:17.428Z,reference,811,4224,1,1
 52742f58faf5485cae000b9a,Python,1,"def format_duration(seconds):
 
     if seconds == 0:
@@ -1417,7 +1417,7 @@ class PaginationHelper:
 
             
 
-    return formatted_time",https://www.codewars.com/kata/52742f58faf5485cae000b9a,2023-04-27 15:44:01.247,4 kyu,Human readable duration format,66419,davazp,"['Strings', 'Date Time', 'Algorithms']"
+    return formatted_time",https://www.codewars.com/kata/52742f58faf5485cae000b9a,2023-04-27 15:44:01.247,Human readable duration format,4 kyu,blue,520240,66560,davazp,"['Strings', 'Date Time', 'Algorithms']",2013-11-02T02:14:13.565Z,algorithms,3288,5546,2,5
 57814d79a56c88e3e0000786,Python,1,"def decrypt(encrypted_text, n):
 
     if not encrypted_text or n <= 0:
@@ -1484,10 +1484,10 @@ def encrypt(text, n):
 
                 
 
-    return text",https://www.codewars.com/kata/57814d79a56c88e3e0000786,2023-05-11 14:00:41.869,6 kyu,Simple Encryption #1 - Alternating Split,24560,user5036852,"['Cryptography', 'Algorithms', 'Strings', 'Arrays', 'Fundamentals']"
+    return text",https://www.codewars.com/kata/57814d79a56c88e3e0000786,2023-05-11 14:00:41.869,Simple Encryption #1 - Alternating Split,6 kyu,yellow,192447,24606,user5036852,"['Cryptography', 'Algorithms', 'Strings', 'Arrays', 'Fundamentals']",2016-07-09T19:30:38.588Z,reference,2374,3220,2,7
 544675c6f971f7399a000e79,Python,1,"def string_to_number(s):
 
-    return int(s)",https://www.codewars.com/kata/544675c6f971f7399a000e79,2023-05-11 08:43:05.117,8 kyu,Convert a String to a Number!,182423,bkaes,"['Parsing', 'Strings', 'Fundamentals']"
+    return int(s)",https://www.codewars.com/kata/544675c6f971f7399a000e79,2023-05-11 08:43:05.117,Convert a String to a Number!,8 kyu,white,279139,183269,bkaes,"['Parsing', 'Strings', 'Fundamentals']",2014-11-04T00:38:33.708Z,reference,646,8576,0,0
 54b42f9314d9229fd6000d9c,Python,1,"def duplicate_encode(word):
 
     word = word.lower()
@@ -1512,10 +1512,10 @@ def encrypt(text, n):
 
     trans = str.maketrans(dict)
 
-    return word.translate(trans)",https://www.codewars.com/kata/54b42f9314d9229fd6000d9c,2023-04-18 18:14:46.423,6 kyu,Duplicate Encoder,177730,obnounce,"['Strings', 'Arrays', 'Fundamentals']"
+    return word.translate(trans)",https://www.codewars.com/kata/54b42f9314d9229fd6000d9c,2023-04-18 18:14:46.423,Duplicate Encoder,6 kyu,yellow,725258,178173,obnounce,"['Strings', 'Arrays', 'Fundamentals']",2015-01-12T20:44:23.917Z,reference,3487,14013,7,2
 50654ddff44f800200000004,Python,1,"def multiply(a, b):
 
-    return a * b",https://www.codewars.com/kata/50654ddff44f800200000004,2023-03-07 19:01:20.838,8 kyu,Multiply,5475116,,"['Debugging', 'Fundamentals']"
+    return a * b",https://www.codewars.com/kata/50654ddff44f800200000004,2023-03-07 19:01:20.838,Multiply,8 kyu,white,6650401,5475790,,"['Debugging', 'Fundamentals']",2013-05-18T18:40:17.975Z,bug_fixes,2165,17925,1,0
 550f22f4d758534c1100025a,Python,1,"import re
 
 
@@ -1530,7 +1530,7 @@ def dirReduc(arr):
 
     
 
-    return new_directions",https://www.codewars.com/kata/550f22f4d758534c1100025a,2023-05-07 08:57:16.048,5 kyu,Directions Reduction,72497,g964,['Fundamentals']
+    return new_directions",https://www.codewars.com/kata/550f22f4d758534c1100025a,2023-05-07 08:57:16.048,Directions Reduction,5 kyu,yellow,483155,72634,g964,['Fundamentals'],2015-03-22T20:52:05.306Z,reference,4407,5807,2,9
 5981ff1daf72e8747d000091,Python,1,"import math
 
 
@@ -1557,7 +1557,7 @@ class Potion:
 
         
 
-        return Potion(tuple(new_color), total_volume)",https://www.codewars.com/kata/5981ff1daf72e8747d000091,2023-04-19 18:34:38.470,6 kyu,Potion Class 101,1711,Mishaboo,['Algorithms']
+        return Potion(tuple(new_color), total_volume)",https://www.codewars.com/kata/5981ff1daf72e8747d000091,2023-04-19 18:34:38.470,Potion Class 101,6 kyu,yellow,9072,1712,Mishaboo,['Algorithms'],2017-08-02T21:59:58.761Z,algorithms,70,181,3,1
 54c27a33fb7da0db0100040e,Python,1,"def is_square(n):    
 
     # Trivial cases
@@ -1594,10 +1594,10 @@ class Potion:
 
         
 
-    return False",https://www.codewars.com/kata/54c27a33fb7da0db0100040e,2023-05-07 08:22:08.501,7 kyu,You're a square!,222398,bkaes,"['Fundamentals', 'Mathematics']"
+    return False",https://www.codewars.com/kata/54c27a33fb7da0db0100040e,2023-05-07 08:22:08.501,You're a square!,7 kyu,white,708287,222968,bkaes,"['Fundamentals', 'Mathematics']",2015-01-23T16:56:54.174Z,reference,1896,15182,0,3
 54e6533c92449cc251001667,Python,1,"def unique_in_order(sequence):
 
-    return [sequence[char] for char in range(len(sequence)) if char == 0 or sequence[char] != sequence[char - 1]]",https://www.codewars.com/kata/54e6533c92449cc251001667,2023-03-08 06:33:05.228,6 kyu,Unique In Order,148876,pinelopi,"['Algorithms', 'Fundamentals']"
+    return [sequence[char] for char in range(len(sequence)) if char == 0 or sequence[char] != sequence[char - 1]]",https://www.codewars.com/kata/54e6533c92449cc251001667,2023-03-08 06:33:05.228,Unique In Order,6 kyu,yellow,738844,149239,pinelopi,"['Algorithms', 'Fundamentals']",2015-02-19T21:46:17.357Z,reference,2664,10298,7,14
 537e18b6147aa838f600001b,Python,1,"import math
 
 
@@ -1708,7 +1708,7 @@ def justify(text, width):
 
     lines.append(line.rstrip())
 
-    return """".join(lines).rstrip()",https://www.codewars.com/kata/537e18b6147aa838f600001b,2023-03-11 13:55:50.542,4 kyu,Text align justify,6128,kesheshyan,"['Strings', 'Algorithms']"
+    return """".join(lines).rstrip()",https://www.codewars.com/kata/537e18b6147aa838f600001b,2023-03-11 13:55:50.542,Text align justify,4 kyu,blue,148534,6134,kesheshyan,"['Strings', 'Algorithms']",2014-05-22T17:19:32.164Z,algorithms,1177,748,24,6
 577a98a6ae28071780000989,Python,1,"def minimum(arr):
 
     return min(arr)
@@ -1717,7 +1717,7 @@ def justify(text, width):
 
 def maximum(arr):
 
-    return max(arr)",https://www.codewars.com/kata/577a98a6ae28071780000989,2023-05-11 08:09:12.450,8 kyu,Find Maximum and Minimum Values of a List,98696,Goncalerta,['Fundamentals']
+    return max(arr)",https://www.codewars.com/kata/577a98a6ae28071780000989,2023-05-11 08:09:12.450,Find Maximum and Minimum Values of a List,8 kyu,white,200275,99297,Goncalerta,['Fundamentals'],2016-07-04T17:11:05.664Z,reference,597,5768,2,3
 54521e9ec8e60bc4de000d6c,Python,1,"def max_sequence(arr):
 
     if not arr:
@@ -1742,7 +1742,7 @@ def maximum(arr):
 
         
 
-    return max_sum",https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c,2023-05-12 05:52:44.712,5 kyu,Maximum  subarray sum,64927,knotman90,"['Algorithms', 'Lists', 'Dynamic Programming', 'Fundamentals', 'Performance']"
+    return max_sum",https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c,2023-05-12 05:52:44.712,Maximum  subarray sum,5 kyu,yellow,352204,65062,knotman90,"['Algorithms', 'Lists', 'Dynamic Programming', 'Fundamentals', 'Performance']",2014-10-30T12:00:48.793Z,reference,3349,4453,3,13
 5c511d8877c0070e2c195faf,Python,3,"import math;
 
 def validate(username, password):
@@ -1757,10 +1757,10 @@ def validate(username, password):
 
         
 
-    return True",https://www.codewars.com/kata/5c511d8877c0070e2c195faf,2023-05-08 17:58:09.226,7 kyu,Password should not contain any part of your username.,455,Bethany,"['Regular Expressions', 'Strings', 'Fundamentals']"
+    return True",https://www.codewars.com/kata/5c511d8877c0070e2c195faf,2023-05-08 17:58:09.226,Password should not contain any part of your username.,7 kyu,white,8071,455,Bethany,"['Regular Expressions', 'Strings', 'Fundamentals']",2019-01-30T07:11:10.766Z,reference,40,80,1,0
 57eaeb9578748ff92a000009,Python,1,"def sum_mix(arr):
 
-    return sum([int(num) for num in arr])",https://www.codewars.com/kata/57eaeb9578748ff92a000009,2023-05-07 08:32:29.495,8 kyu,Sum Mixed Array,67445,PG1,"['Fundamentals', 'Strings', 'Arrays']"
+    return sum([int(num) for num in arr])",https://www.codewars.com/kata/57eaeb9578748ff92a000009,2023-05-07 08:32:29.495,Sum Mixed Array,8 kyu,white,144026,67733,PG1,"['Fundamentals', 'Strings', 'Arrays']",2016-09-27T21:58:45.715Z,reference,560,4948,1,1
 54bf1c2cd5b56cc47f0007a1,Python,1,"from collections import Counter
 
 def duplicate_count(text):
@@ -1779,7 +1779,22 @@ def duplicate_count(text):
 
             
 
-    return repeats",https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1,2023-04-18 18:10:29.528,6 kyu,Counting Duplicates,183865,kgashok,"['Strings', 'Fundamentals']"
+    return repeats",https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1,2023-04-18 18:10:29.528,Counting Duplicates,6 kyu,yellow,737570,184276,kgashok,"['Strings', 'Fundamentals']",2015-01-21T03:54:27.392Z,reference,3684,14321,8,6
+56170e844da7c6f647000063,Python,1,"def people_with_age_drink(age):
+
+    ages = [14, 18, 21, 500000]
+
+    drinks = [""toddy"", ""coke"", ""beer"", ""whisky""]
+
+    for tuple in zip(ages, drinks):
+
+        if age < tuple[0]:
+
+            return f""drink {tuple[1]}""
+
+        
+
+    return ""You are dead""",https://www.codewars.com/kata/56170e844da7c6f647000063,2023-05-14 20:44:52.494,Drink about,8 kyu,white,76517,29023,darlanmendonca,['Fundamentals'],2015-10-09T00:50:22.874Z,reference,145,2428,0,3
 54da5a58ea159efa38000836,Python,1,"from collections import Counter
 
 def find_it(seq):
@@ -1790,10 +1805,10 @@ def find_it(seq):
 
         if occurences%2 != 0:
 
-            return num",https://www.codewars.com/kata/54da5a58ea159efa38000836,2023-04-18 18:19:17.774,6 kyu,Find the odd int,240993,rbuckley,['Fundamentals']
+            return num",https://www.codewars.com/kata/54da5a58ea159efa38000836,2023-04-18 18:19:17.774,Find the odd int,6 kyu,yellow,692051,241947,rbuckley,['Fundamentals'],2015-02-10T19:33:24.293Z,reference,4024,17994,4,2
 555086d53eac039a2a000083,Python,1,"def lovefunc( flower1, flower2 ):
 
-    return flower1 % 2 != flower2 % 2",https://www.codewars.com/kata/555086d53eac039a2a000083,2023-03-07 19:10:17.873,8 kyu,Opposites Attract,115140,jbarget,['Fundamentals']
+    return flower1 % 2 != flower2 % 2",https://www.codewars.com/kata/555086d53eac039a2a000083,2023-03-07 19:10:17.873,Opposites Attract,8 kyu,white,254930,115837,jbarget,['Fundamentals'],2015-05-11T10:39:59.159Z,reference,584,7306,1,4
 576757b1df89ecf5bd00073b,Python,1,"def tower_builder(n_floors):
 
     tower_list = []
@@ -1806,15 +1821,15 @@ def find_it(seq):
 
     tower_list.reverse()
 
-    return tower_list",https://www.codewars.com/kata/576757b1df89ecf5bd00073b,2023-05-11 08:08:21.013,6 kyu,Build Tower,791368,8fdafs2,"['Strings', 'ASCII Art', 'Fundamentals']"
+    return tower_list",https://www.codewars.com/kata/576757b1df89ecf5bd00073b,2023-05-11 08:08:21.013,Build Tower,6 kyu,yellow,267232,79347,8fdafs2,"['Strings', 'ASCII Art', 'Fundamentals']",2016-06-20T02:50:29.318Z,reference,2411,6343,0,1
 57e76bc428d6fbc2d500036d,Python,1,"def string_to_array(s):
 
-    return s.split() if s else ['']",https://www.codewars.com/kata/57e76bc428d6fbc2d500036d,2023-05-11 08:10:14.724,8 kyu,Convert a string to an array,89850,samjam48,"['Arrays', 'Strings', 'Fundamentals']"
+    return s.split() if s else ['']",https://www.codewars.com/kata/57e76bc428d6fbc2d500036d,2023-05-11 08:10:14.724,Convert a string to an array,8 kyu,white,161125,90328,samjam48,"['Arrays', 'Strings', 'Fundamentals']",2016-09-25T06:52:30.655Z,reference,474,5474,3,3
 56606694ec01347ce800001b,Python,1,"def is_triangle(a, b, c):
 
     # Use triangle inequality
 
-    return sorted([a, b, c])[-1] < sum(sorted([a, b, c])[:2])",https://www.codewars.com/kata/56606694ec01347ce800001b,2023-05-07 07:52:37.139,7 kyu,Is this a triangle?,137269,silentZaika,"['Mathematics', 'Fundamentals']"
+    return sorted([a, b, c])[-1] < sum(sorted([a, b, c])[:2])",https://www.codewars.com/kata/56606694ec01347ce800001b,2023-05-07 07:52:37.139,Is this a triangle?,7 kyu,white,445397,137631,silentZaika,"['Mathematics', 'Fundamentals']",2015-12-03T16:11:41.669Z,reference,957,8721,2,2
 5679aa472b8f57fb8c000047,Python,1,"def find_even_index(arr):
 
     left = 0
@@ -1843,27 +1858,27 @@ def find_it(seq):
 
     return left
 
-    ",https://www.codewars.com/kata/5679aa472b8f57fb8c000047,2023-05-11 09:13:26.728,6 kyu,Equal Sides Of An Array,101854,Shivo,"['Algorithms', 'Arrays', 'Fundamentals']"
+    ",https://www.codewars.com/kata/5679aa472b8f57fb8c000047,2023-05-11 09:13:26.728,Equal Sides Of An Array,6 kyu,yellow,421607,102076,Shivo,"['Algorithms', 'Arrays', 'Fundamentals']",2015-12-22T22:03:35.429Z,reference,3002,9614,0,3
 52fba66badcd10859f00097e,Python,1,"import re
 
 def disemvowel(string_):
 
-    return re.sub(r""[aeiou]"", """", string_, flags = re.IGNORECASE)",https://www.codewars.com/kata/52fba66badcd10859f00097e,2023-05-05 13:17:48.415,7 kyu,Disemvowel Trolls,276358,osuushi,"['Strings', 'Regular Expressions', 'Fundamentals']"
+    return re.sub(r""[aeiou]"", """", string_, flags = re.IGNORECASE)",https://www.codewars.com/kata/52fba66badcd10859f00097e,2023-05-05 13:17:48.415,Disemvowel Trolls,7 kyu,white,803185,277580,osuushi,"['Strings', 'Regular Expressions', 'Fundamentals']",2014-02-12T16:54:28.937Z,reference,2605,19077,3,2
 5c1a334516537ccd450000d8,Python,1,"# This is the dumbest regex I've ever written
 
-REGEX = r'^ *a* *b* *c* *d* *e* *f* *g* *h* *i* *j* *k* *l* *m* *n* *o* *p* *q* *r* *s* *t* *u* *v* *w* *x* *y* *z* *\Z'",https://www.codewars.com/kata/5c1a334516537ccd450000d8,2023-05-08 19:09:37.612,7 kyu,RegEx Like a Boss #2:  Alphabetical Order String,215,sgerodes,"['Regular Expressions', 'Algorithms']"
+REGEX = r'^ *a* *b* *c* *d* *e* *f* *g* *h* *i* *j* *k* *l* *m* *n* *o* *p* *q* *r* *s* *t* *u* *v* *w* *x* *y* *z* *\Z'",https://www.codewars.com/kata/5c1a334516537ccd450000d8,2023-05-08 19:09:37.612,RegEx Like a Boss #2:  Alphabetical Order String,7 kyu,white,2391,215,sgerodes,"['Regular Expressions', 'Algorithms']",2018-12-19T13:25:42.707Z,algorithms,19,60,2,1
 539ee3b6757843632d00026b,Python,1,"def capitals(word):
 
-    return [i for i, letter in enumerate(word) if letter == letter.upper()]",https://www.codewars.com/kata/539ee3b6757843632d00026b,2023-05-13 08:55:53.007,7 kyu,Find the capitals,30021,ankr,"['Strings', 'Arrays', 'Fundamentals']"
+    return [i for i, letter in enumerate(word) if letter == letter.upper()]",https://www.codewars.com/kata/539ee3b6757843632d00026b,2023-05-13 08:55:53.007,Find the capitals,7 kyu,white,81920,30136,ankr,"['Strings', 'Arrays', 'Fundamentals']",2014-06-16T12:35:01.769Z,reference,324,2670,4,1
 5547929140907378f9000039,Python,1,"def shortcut( s ):
 
-    return s.replace(""a"","""").replace(""e"","""").replace(""i"","""").replace(""o"","""").replace(""u"","""")",https://www.codewars.com/kata/5547929140907378f9000039,2023-05-13 16:09:06.687,8 kyu,Vowel remover,32648,naaz,"['Strings', 'Fundamentals']"
+    return s.replace(""a"","""").replace(""e"","""").replace(""i"","""").replace(""o"","""").replace(""u"","""")",https://www.codewars.com/kata/5547929140907378f9000039,2023-05-13 16:09:06.687,Vowel remover,8 kyu,white,78990,32757,naaz,"['Strings', 'Fundamentals']",2015-05-04T15:39:18.345Z,reference,301,2770,2,5
 56cd44e1aa4ac7879200010b,Python,1,"def is_uppercase(inp):
 
-    return inp == inp.upper()",https://www.codewars.com/kata/56cd44e1aa4ac7879200010b,2023-04-17 18:07:27.032,8 kyu,Is the string uppercase?,44003,donaldsebleung,"['Fundamentals', 'Strings']"
+    return inp == inp.upper()",https://www.codewars.com/kata/56cd44e1aa4ac7879200010b,2023-04-17 18:07:27.032,Is the string uppercase?,8 kyu,white,152996,44164,donaldsebleung,"['Fundamentals', 'Strings']",2016-02-24T08:36:38.413Z,reference,466,3040,4,3
 52998bf8caa22d98b800003a,Python,1,"def manhattan_distance(pointA, pointB):
 
-    return abs(pointA[0] - pointB[0]) + abs(pointA[1] - pointB[1])",https://www.codewars.com/kata/52998bf8caa22d98b800003a,2023-04-18 17:03:35.259,6 kyu,Manhattan Distance,4795,xDranik,"['Arrays', 'Algorithms']"
+    return abs(pointA[0] - pointB[0]) + abs(pointA[1] - pointB[1])",https://www.codewars.com/kata/52998bf8caa22d98b800003a,2023-04-18 17:03:35.259,Manhattan Distance,6 kyu,yellow,7306,4798,xDranik,"['Arrays', 'Algorithms']",2013-11-30T07:42:05.748Z,algorithms,39,398,1,5
 5c511d8877c0070e2c195faf,Python,2,"import math;
 
 def validate(username, password):
@@ -1880,7 +1895,7 @@ def validate(username, password):
 
         
 
-    return True",https://www.codewars.com/kata/5c511d8877c0070e2c195faf,2023-05-08 17:56:43.393,7 kyu,Password should not contain any part of your username.,455,Bethany,"['Regular Expressions', 'Strings', 'Fundamentals']"
+    return True",https://www.codewars.com/kata/5c511d8877c0070e2c195faf,2023-05-08 17:56:43.393,Password should not contain any part of your username.,7 kyu,white,8071,455,Bethany,"['Regular Expressions', 'Strings', 'Fundamentals']",2019-01-30T07:11:10.766Z,reference,40,80,1,0
 597d75744f4190857a00008d,Python,1,"def paint_letterboxes(start, finish):
 
     # Create dictionary
@@ -1913,7 +1928,7 @@ def validate(username, password):
 
     print(letterbox)
 
-    return letterbox",https://www.codewars.com/kata/597d75744f4190857a00008d,2023-03-24 07:25:15.629,7 kyu,Letterbox Paint-Squad,5409,dinglemouse,['Fundamentals']
+    return letterbox",https://www.codewars.com/kata/597d75744f4190857a00008d,2023-03-24 07:25:15.629,Letterbox Paint-Squad,7 kyu,white,14030,5416,dinglemouse,['Fundamentals'],2017-07-30T09:14:54.948Z,reference,94,778,1,0
 5b817c2a0ce070ace8002be0,Python,1,"def display_board(board, width):
 
     cells = len(board) + 1
@@ -1944,7 +1959,7 @@ def validate(username, password):
 
             
 
-    return ascii_board",https://www.codewars.com/kata/5b817c2a0ce070ace8002be0,2023-04-22 13:49:49.588,6 kyu,Tic-Tac-Toe-like table Generator,1426,GiacomoSorbi,"['ASCII Art', 'Fundamentals']"
+    return ascii_board",https://www.codewars.com/kata/5b817c2a0ce070ace8002be0,2023-04-22 13:49:49.588,Tic-Tac-Toe-like table Generator,6 kyu,yellow,5181,1430,GiacomoSorbi,"['ASCII Art', 'Fundamentals']",2018-08-25T15:56:26.122Z,reference,38,192,1,0
 576b93db1129fcf2200001e6,Python,1,"def sum_array(arr):
 
     if not arr or len(arr) <= 1:
@@ -1955,12 +1970,12 @@ def validate(username, password):
 
     arr.pop(arr.index(min(arr)))
 
-    return sum(arr)",https://www.codewars.com/kata/576b93db1129fcf2200001e6,2023-05-11 13:29:54.099,8 kyu,Sum without highest and lowest number,63369,user5036852,['Fundamentals']
+    return sum(arr)",https://www.codewars.com/kata/576b93db1129fcf2200001e6,2023-05-11 13:29:54.099,Sum without highest and lowest number,8 kyu,white,412153,63616,user5036852,['Fundamentals'],2016-06-23T07:59:49.554Z,reference,1034,5186,0,2
 52adc142b2651f25a8000643,Python,1,"class Sleigh(object):
 
     def authenticate(self, name, password):
 
-        return name == ""Santa Claus"" and password == ""Ho Ho Ho!""",https://www.codewars.com/kata/52adc142b2651f25a8000643,2023-04-19 18:12:51.486,8 kyu,Sleigh Authentication,18148,BattleRattle,['Fundamentals']
+        return name == ""Santa Claus"" and password == ""Ho Ho Ho!""",https://www.codewars.com/kata/52adc142b2651f25a8000643,2023-04-19 18:12:51.486,Sleigh Authentication,8 kyu,white,29617,18172,BattleRattle,['Fundamentals'],2013-12-15T14:48:34.256Z,reference,106,1448,2,0
 578553c3a1b8d5c40300037c,Python,1,"def binary_array_to_number(arr):
 
     integer = 0
@@ -1969,7 +1984,7 @@ def validate(username, password):
 
         integer += bin<<(len(arr) - i - 1)
 
-    return integer",https://www.codewars.com/kata/578553c3a1b8d5c40300037c,2023-05-10 19:16:27.331,7 kyu,Ones and Zeros,114054,user4386369,"['Fundamentals', 'Arrays']"
+    return integer",https://www.codewars.com/kata/578553c3a1b8d5c40300037c,2023-05-10 19:16:27.331,Ones and Zeros,7 kyu,white,287279,114341,user4386369,"['Fundamentals', 'Arrays']",2016-07-12T20:32:10.254Z,reference,1276,8290,2,3
 57eaeb9578748ff92a000009,Python,2,"class list_of_numbers:
 
     def __init__(self, num_list):
@@ -2032,7 +2047,7 @@ def sum_mix(arr):
 
     return sum
 
-    ",https://www.codewars.com/kata/57eaeb9578748ff92a000009,2023-05-07 08:40:03.115,8 kyu,Sum Mixed Array,67445,PG1,"['Fundamentals', 'Strings', 'Arrays']"
+    ",https://www.codewars.com/kata/57eaeb9578748ff92a000009,2023-05-07 08:40:03.115,Sum Mixed Array,8 kyu,white,144026,67733,PG1,"['Fundamentals', 'Strings', 'Arrays']",2016-09-27T21:58:45.715Z,reference,560,4948,1,1
 58f5c63f1e26ecda7e000029,Python,1,"def wave(people):
 
     if len(people) == 0:
@@ -2053,7 +2068,7 @@ def sum_mix(arr):
 
     
 
-    return wave",https://www.codewars.com/kata/58f5c63f1e26ecda7e000029,2023-04-18 17:09:01.181,6 kyu,Mexican Wave,52908,adrian.eyre,"['Arrays', 'Strings', 'Fundamentals']"
+    return wave",https://www.codewars.com/kata/58f5c63f1e26ecda7e000029,2023-04-18 17:09:01.181,Mexican Wave,6 kyu,yellow,181878,53082,adrian.eyre,"['Arrays', 'Strings', 'Fundamentals']",2017-04-18T08:47:19.272Z,reference,1551,4417,0,1
 534d2f5b5371ecf8d2000a08,Python,1,"def multiplication_table(size):
 
     table = []
@@ -2072,7 +2087,7 @@ def sum_mix(arr):
 
     return table
 
-        ",https://www.codewars.com/kata/534d2f5b5371ecf8d2000a08,2023-04-18 17:12:12.110,6 kyu,Multiplication table,27657,Bugari,"['Arrays', 'Fundamentals']"
+        ",https://www.codewars.com/kata/534d2f5b5371ecf8d2000a08,2023-04-18 17:12:12.110,Multiplication table,6 kyu,yellow,65845,27985,Bugari,"['Arrays', 'Fundamentals']",2014-04-15T13:37:56.659Z,reference,515,2100,5,1
 5672a98bdbdd995fad00000f,Python,1,"def rps(p1, p2):
 
     rps_list = [""rock"", ""paper"", ""scissors""]
@@ -2087,7 +2102,7 @@ def sum_mix(arr):
 
         return ""Player 1 won!"" if rps_list.index(p1) > rps_list.index(p2) else ""Player 2 won!""
 
-    return ""Player 1 won!"" if rps_list.index(p1) < rps_list.index(p2) else ""Player 2 won!""",https://www.codewars.com/kata/5672a98bdbdd995fad00000f,2023-05-07 07:58:30.428,8 kyu,Rock Paper Scissors!,76646,brunolm,['Fundamentals']
+    return ""Player 1 won!"" if rps_list.index(p1) < rps_list.index(p2) else ""Player 2 won!""",https://www.codewars.com/kata/5672a98bdbdd995fad00000f,2023-05-07 07:58:30.428,Rock Paper Scissors!,8 kyu,white,179314,77089,brunolm,['Fundamentals'],2015-12-17T12:24:55.936Z,reference,1142,5419,2,2
 587136ba2eefcb92a9000027,Python,1,"class SnakesLadders():
 
 
@@ -2256,17 +2271,17 @@ class Player():
 
         self.player_num = player_num
 
-        self.pos = 0",https://www.codewars.com/kata/587136ba2eefcb92a9000027,2023-04-28 16:24:55.944,5 kyu,Snakes and Ladders,6025,adrian.eyre,"['Design Patterns', 'Games', 'Fundamentals']"
+        self.pos = 0",https://www.codewars.com/kata/587136ba2eefcb92a9000027,2023-04-28 16:24:55.944,Snakes and Ladders,5 kyu,yellow,75352,6032,adrian.eyre,"['Design Patterns', 'Games', 'Fundamentals']",2017-01-07T18:47:19.539Z,reference,1088,974,0,3
 523f5d21c841566fde000009,Python,1,"def array_diff(a, b):
 
     #your code here
 
-    return [elem for elem in a if not elem in b]",https://www.codewars.com/kata/523f5d21c841566fde000009,2023-03-07 19:19:10.251,6 kyu,Array.diff,221481,marcinbunsch,"['Arrays', 'Fundamentals', 'Algorithms']"
+    return [elem for elem in a if not elem in b]",https://www.codewars.com/kata/523f5d21c841566fde000009,2023-03-07 19:19:10.251,Array.diff,6 kyu,yellow,794345,222137,marcinbunsch,"['Arrays', 'Fundamentals', 'Algorithms']",2013-09-22T21:34:42.482Z,reference,3232,17409,2,7
 567bf4f7ee34510f69000032,Python,1,"import re
 
 def is_digit(n):
 
-    return re.search(r""^[0-9]$"", n) is not None and len(n) == 1",https://www.codewars.com/kata/567bf4f7ee34510f69000032,2023-05-05 12:31:21.645,8 kyu,Regexp Basics - is it a digit?,13409,taw,"['Regular Expressions', 'Fundamentals']"
+    return re.search(r""^[0-9]$"", n) is not None and len(n) == 1",https://www.codewars.com/kata/567bf4f7ee34510f69000032,2023-05-05 12:31:21.645,Regexp Basics - is it a digit?,8 kyu,white,104808,13431,taw,"['Regular Expressions', 'Fundamentals']",2015-12-24T13:36:55.333Z,reference,219,1281,5,2
 56a3f08aa9a6cc9b75000023,Python,1,"import re
 
 
@@ -2277,10 +2292,10 @@ def validate_usr(username):
 
     res =  re.match(regex, username)
 
-    return res is not None",https://www.codewars.com/kata/56a3f08aa9a6cc9b75000023,2023-05-05 12:13:20.233,8 kyu,Simple validation of a username with regex,18412,daymos,"['Regular Expressions', 'Fundamentals']"
+    return res is not None",https://www.codewars.com/kata/56a3f08aa9a6cc9b75000023,2023-05-05 12:13:20.233,Simple validation of a username with regex,8 kyu,white,71169,18445,daymos,"['Regular Expressions', 'Fundamentals']",2016-01-23T21:34:57.060Z,reference,288,1650,3,0
 5656b6906de340bd1b0000ac,Python,1,"def longest(a1, a2):
 
-    return """".join(sorted(set(a1 + a2)))",https://www.codewars.com/kata/5656b6906de340bd1b0000ac,2023-05-07 08:29:40.672,7 kyu,Two to One,134211,g964,['Fundamentals']
+    return """".join(sorted(set(a1 + a2)))",https://www.codewars.com/kata/5656b6906de340bd1b0000ac,2023-05-07 08:29:40.672,Two to One,7 kyu,white,375485,134576,g964,['Fundamentals'],2015-11-26T07:37:03.397Z,reference,1685,10280,1,5
 55c45be3b2079eccff00010f,Python,1,"import re
 
 def order(sentence):
@@ -2297,7 +2312,7 @@ def order(sentence):
 
 
 
-    return "" "".join([sentence_dict[str(i)] for i in range(1, 10) if str(i) in sentence_dict])",https://www.codewars.com/kata/55c45be3b2079eccff00010f,2023-05-06 12:29:09.133,6 kyu,"Your order,  please",134802,iamstone,"['Strings', 'Fundamentals']"
+    return "" "".join([sentence_dict[str(i)] for i in range(1, 10) if str(i) in sentence_dict])",https://www.codewars.com/kata/55c45be3b2079eccff00010f,2023-05-06 12:29:09.133,"Your order,  please",6 kyu,yellow,450386,135152,iamstone,"['Strings', 'Fundamentals']",2015-08-07T07:46:19.523Z,reference,3293,10882,2,1
 555eded1ad94b00403000071,Python,1,"def real_series_sum(n):
 
     if n <= 0:
@@ -2322,15 +2337,15 @@ def order(sentence):
 
 def series_sum(n):
 
-    return ""%0.2f"" % real_series_sum(n)",https://www.codewars.com/kata/555eded1ad94b00403000071,2023-05-07 10:36:51.981,7 kyu,Sum of the first nth term of Series,73398,DivyanshBatham,['Fundamentals']
+    return ""%0.2f"" % real_series_sum(n)",https://www.codewars.com/kata/555eded1ad94b00403000071,2023-05-07 10:36:51.981,Sum of the first nth term of Series,7 kyu,white,392932,73557,DivyanshBatham,['Fundamentals'],2015-05-22T08:10:53.519Z,reference,1407,5247,1,6
 5412509bd436bd33920011bc,Python,1,"# return masked string
 
 def maskify(cc):
 
-    return ""#"" * max(0, (len(cc) - 4)) + cc[-4:]",https://www.codewars.com/kata/5412509bd436bd33920011bc,2023-03-07 19:24:39.991,7 kyu,Credit Card Mask,152502,samranjbari,"['Strings', 'Algorithms']"
+    return ""#"" * max(0, (len(cc) - 4)) + cc[-4:]",https://www.codewars.com/kata/5412509bd436bd33920011bc,2023-03-07 19:24:39.991,Credit Card Mask,7 kyu,white,437214,152907,samranjbari,"['Strings', 'Algorithms']",2014-09-16T21:32:47.811Z,algorithms,1526,12702,2,3
 5a00e05cc374cb34d100000d,Python,1,"def reverse_seq(n):
 
-    return list(range(n, 0, -1))",https://www.codewars.com/kata/5a00e05cc374cb34d100000d,2023-05-11 14:15:32.749,8 kyu,Reversed sequence ,91910,jamad,['Fundamentals']
+    return list(range(n, 0, -1))",https://www.codewars.com/kata/5a00e05cc374cb34d100000d,2023-05-11 14:15:32.749,Reversed sequence ,8 kyu,white,209190,92284,jamad,['Fundamentals'],2017-11-06T22:34:41.440Z,reference,581,6247,2,5
 521c2db8ddc89b9b7a0000c1,Python,2,"def snail(snail_map):
 
     #This solution sucks, sorry
@@ -2396,7 +2411,7 @@ def maskify(cc):
     # Yeah so this takes one too many turns
 
     return snail_array[:-1]
-",https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1,2023-03-08 18:20:14.445,4 kyu,Snail,60339,stevenbarragan,"['Arrays', 'Algorithms']"
+",https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1,2023-03-08 18:20:14.445,Snail,4 kyu,blue,438349,60519,stevenbarragan,"['Arrays', 'Algorithms']",2013-08-28T04:56:02.580Z,algorithms,5151,6329,9,6
 5637b03c6be7e01d99000046,Python,1,"def make_password(phrase):
 
     words = phrase.split()
@@ -2405,7 +2420,7 @@ def maskify(cc):
 
     translation = str.maketrans(""iIoOsS"", ""110055"")
 
-    return password.translate(translation)",https://www.codewars.com/kata/5637b03c6be7e01d99000046,2023-04-18 17:00:08.170,7 kyu,Password maker,3940,ChavXO,"['Strings', 'Regular Expressions', 'Fundamentals']"
+    return password.translate(translation)",https://www.codewars.com/kata/5637b03c6be7e01d99000046,2023-04-18 17:00:08.170,Password maker,7 kyu,white,9669,3948,ChavXO,"['Strings', 'Regular Expressions', 'Fundamentals']",2015-11-02T18:49:32.841Z,reference,41,552,3,0
 57e1e61ba396b3727c000251,Python,1,"import re
 
 def string_clean(s):
@@ -2420,20 +2435,20 @@ def string_clean(s):
 
     s = re.sub(regex, """", s)
 
-    return s",https://www.codewars.com/kata/57e1e61ba396b3727c000251,2023-05-05 12:40:39.902,8 kyu,String cleaning,18800,mkelty,"['Regular Expressions', 'Fundamentals', 'Strings']"
+    return s",https://www.codewars.com/kata/57e1e61ba396b3727c000251,2023-05-05 12:40:39.902,String cleaning,8 kyu,white,41626,18839,mkelty,"['Regular Expressions', 'Fundamentals', 'Strings']",2016-09-21T01:45:15.589Z,reference,193,2086,0,1
 53af2b8861023f1d88000832,Python,1,"def are_you_playing_banjo(name):
 
     # Implement me!
 
-    return name + "" plays banjo"" if name[0].lower() == ""r"" else name + "" does not play banjo""",https://www.codewars.com/kata/53af2b8861023f1d88000832,2023-03-07 19:08:51.647,8 kyu,Are You Playing Banjo?,112105,MRodalgaard,"['Strings', 'Fundamentals']"
+    return name + "" plays banjo"" if name[0].lower() == ""r"" else name + "" does not play banjo""",https://www.codewars.com/kata/53af2b8861023f1d88000832,2023-03-07 19:08:51.647,Are You Playing Banjo?,8 kyu,white,244977,112750,MRodalgaard,"['Strings', 'Fundamentals']",2014-06-28T20:54:55.477Z,reference,554,6885,2,1
 56a25ba95df27b7743000016,Python,1,"import re
 
 def validate_code(code):
 
-    return re.match(r""^[1-3]"", str(code)) is not None",https://www.codewars.com/kata/56a25ba95df27b7743000016,2023-05-05 12:51:39.685,8 kyu,validate code with simple regex,10437,daymos,"['Regular Expressions', 'Fundamentals']"
+    return re.match(r""^[1-3]"", str(code)) is not None",https://www.codewars.com/kata/56a25ba95df27b7743000016,2023-05-05 12:51:39.685,validate code with simple regex,8 kyu,white,26369,10468,daymos,"['Regular Expressions', 'Fundamentals']",2016-01-22T16:43:29.500Z,reference,117,1388,2,4
 5556282156230d0e5e000089,Python,1,"def dna_to_rna(dna):
 
-    return dna.translate(str.maketrans(""T"", ""U""))",https://www.codewars.com/kata/5556282156230d0e5e000089,2023-03-07 19:04:38.040,8 kyu,DNA to RNA Conversion,95315,torret,"['Fundamentals', 'Strings']"
+    return dna.translate(str.maketrans(""T"", ""U""))",https://www.codewars.com/kata/5556282156230d0e5e000089,2023-03-07 19:04:38.040,DNA to RNA Conversion,8 kyu,white,190472,95853,torret,"['Fundamentals', 'Strings']",2015-05-15T17:09:06.268Z,reference,721,5916,3,2
 563f037412e5ada593000114,Python,1,"def calculate_years(principal, interest, tax, desired):
 
     years = 0
@@ -2448,30 +2463,30 @@ def validate_code(code):
 
         
 
-    return years",https://www.codewars.com/kata/563f037412e5ada593000114,2023-05-12 05:58:13.648,7 kyu,"Money, Money, Money",37900,bmw318mt,['Fundamentals']
+    return years",https://www.codewars.com/kata/563f037412e5ada593000114,2023-05-12 05:58:13.648,"Money, Money, Money",7 kyu,white,105793,37957,bmw318mt,['Fundamentals'],2015-11-08T08:44:15.286Z,reference,703,3393,1,4
 558fc85d8fd1938afb000014,Python,1,"def sum_two_smallest_numbers(numbers):
 
-    return numbers.pop(numbers.index(min(numbers))) + numbers.pop(numbers.index(min(numbers)))",https://www.codewars.com/kata/558fc85d8fd1938afb000014,2023-04-18 16:49:48.553,7 kyu,Sum of two lowest positive integers,173396,emporio,"['Arrays', 'Fundamentals']"
+    return numbers.pop(numbers.index(min(numbers))) + numbers.pop(numbers.index(min(numbers)))",https://www.codewars.com/kata/558fc85d8fd1938afb000014,2023-04-18 16:49:48.553,Sum of two lowest positive integers,7 kyu,white,471358,173855,emporio,"['Arrays', 'Fundamentals']",2015-06-28T10:12:30.557Z,reference,1254,11666,5,4
 55968ab32cf633c3f8000008,Python,1,"import re
 
 def initials(name):
 
     name_components = re.findall(r""(\w)\w+\b(?!$)|(\w+)$"", name)
 
-    return ""."".join([word[0].capitalize() if word[0] else word[1].capitalize() for word in name_components])",https://www.codewars.com/kata/55968ab32cf633c3f8000008,2023-05-05 13:34:26.466,7 kyu,C.Wars,3237,debri,"['Strings', 'Regular Expressions', 'Fundamentals']"
+    return ""."".join([word[0].capitalize() if word[0] else word[1].capitalize() for word in name_components])",https://www.codewars.com/kata/55968ab32cf633c3f8000008,2023-05-05 13:34:26.466,C.Wars,7 kyu,white,8331,3244,debri,"['Strings', 'Regular Expressions', 'Fundamentals']",2015-07-03T13:20:29.517Z,reference,61,461,0,2
 57eadb7ecd143f4c9c0000a3,Python,1,"import re
 
 def abbrev_name(name):
 
     return ""."".join(re.findall(r""\b(\w)"", name)).upper()
 
-    ",https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3,2023-05-12 10:41:08.635,8 kyu,Abbreviate a Two Word Name,122470,samjam48,"['Strings', 'Fundamentals']"
+    ",https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3,2023-05-12 10:41:08.635,Abbreviate a Two Word Name,8 kyu,white,374863,123106,samjam48,"['Strings', 'Fundamentals']",2016-09-27T20:50:06.759Z,reference,1072,8693,5,4
 554ca54ffa7d91b236000023,Python,1,"def delete_nth(order,max_e):
 
-    return [num for index, num in enumerate(order) if order[:index].count(num) < max_e]",https://www.codewars.com/kata/554ca54ffa7d91b236000023,2023-03-08 11:33:54.167,6 kyu,Delete occurrences of an element if it occurs more than n times,76190,JustyFY,"['Lists', 'Fundamentals']"
+    return [num for index, num in enumerate(order) if order[:index].count(num) < max_e]",https://www.codewars.com/kata/554ca54ffa7d91b236000023,2023-03-08 11:33:54.167,Delete occurrences of an element if it occurs more than n times,6 kyu,yellow,299419,76381,JustyFY,"['Lists', 'Fundamentals']",2015-05-08T12:19:32.179Z,reference,2635,5836,3,10
 5264d2b162488dc400000001,Python,1,"def spin_words(sentence):
 
-    return "" "".join([word[::-1] if len(word) >= 5 else word for word in sentence.split()])",https://www.codewars.com/kata/5264d2b162488dc400000001,2023-04-20 17:32:28.547,6 kyu,Stop gninnipS My sdroW!,218493,xDranik,"['Strings', 'Algorithms']"
+    return "" "".join([word[::-1] if len(word) >= 5 else word for word in sentence.split()])",https://www.codewars.com/kata/5264d2b162488dc400000001,2023-04-20 17:32:28.547,Stop gninnipS My sdroW!,6 kyu,yellow,772667,219065,xDranik,"['Strings', 'Algorithms']",2013-10-21T07:21:38.528Z,algorithms,2842,18741,3,2
 54b724efac3d5402db00065e,Python,1,"from preloaded import MORSE_CODE
 
 
@@ -2499,7 +2514,7 @@ def decode_morse(morse_code):
     
 
     return "" "".join(decoded_list)
-",https://www.codewars.com/kata/54b724efac3d5402db00065e,2023-04-28 17:46:49.652,6 kyu,Decode the Morse code ,98226,jolaf,['Algorithms']
+",https://www.codewars.com/kata/54b724efac3d5402db00065e,2023-04-28 17:46:49.652,Decode the Morse code ,6 kyu,yellow,962885,98406,jolaf,['Algorithms'],2015-01-15T02:40:31.646Z,algorithms,4823,9914,5,6
 563cf89eb4747c5fb100001b,Python,1,"def remove_smallest(numbers):
 
     if numbers:
@@ -2508,10 +2523,10 @@ def decode_morse(morse_code):
 
         poop.pop(poop.index(min(poop)))
 
-    return numbers if not numbers else poop",https://www.codewars.com/kata/563cf89eb4747c5fb100001b,2023-05-14 06:39:08.191,7 kyu,Remove the minimum,62855,bkaes,"['Lists', 'Arrays', 'Fundamentals']"
+    return numbers if not numbers else poop",https://www.codewars.com/kata/563cf89eb4747c5fb100001b,2023-05-14 06:39:08.191,Remove the minimum,7 kyu,white,361029,63056,bkaes,"['Lists', 'Arrays', 'Fundamentals']",2015-11-06T18:59:58.978Z,reference,1056,4980,2,13
 57a55c8b72292d057b000594,Python,1,"def reverse(st):
 
-    return "" "".join(reversed(st.split()))",https://www.codewars.com/kata/57a55c8b72292d057b000594,2023-05-14 06:40:37.346,8 kyu,Reversing Words in a String,18776,user2514386,"['Fundamentals', 'Strings']"
+    return "" "".join(reversed(st.split()))",https://www.codewars.com/kata/57a55c8b72292d057b000594,2023-05-14 06:40:37.346,Reversing Words in a String,8 kyu,white,69769,18863,user2514386,"['Fundamentals', 'Strings']",2016-08-07T18:00:03.578Z,reference,175,2485,1,0
 55a144eff5124e546400005a,Python,1,"class Person(object):
 
     def __init__(self,name,age):
@@ -2526,7 +2541,7 @@ def decode_morse(morse_code):
 
     def getInfo(self):
 
-        return self.indo",https://www.codewars.com/kata/55a144eff5124e546400005a,2023-04-19 18:05:18.795,8 kyu,Classy Classes,11462,matt c,['Fundamentals']
+        return self.indo",https://www.codewars.com/kata/55a144eff5124e546400005a,2023-04-19 18:05:18.795,Classy Classes,8 kyu,white,29514,11480,matt c,['Fundamentals'],2015-07-11T16:38:51.695Z,reference,103,1185,0,3
 5254ca2719453dcc0b00027d,Python,1,"def permutations(s):
 
     if len(s) == 1:
@@ -2541,7 +2556,7 @@ def decode_morse(morse_code):
 
             output_set.add(letter + perm)
 
-    return list(output_set)",https://www.codewars.com/kata/5254ca2719453dcc0b00027d,2023-03-11 12:12:22.763,4 kyu,So Many Permutations!,38772,BattleRattle,"['Permutations', 'Strings', 'Algorithms']"
+    return list(output_set)",https://www.codewars.com/kata/5254ca2719453dcc0b00027d,2023-03-11 12:12:22.763,So Many Permutations!,4 kyu,blue,170280,38857,BattleRattle,"['Permutations', 'Strings', 'Algorithms']",2013-10-09T03:53:44.752Z,algorithms,2768,2880,2,6
 52efefcbcdf57161d4000091,Python,1,"def count(s):
 
     char_dict = {}
@@ -2560,12 +2575,12 @@ def decode_morse(morse_code):
 
     return char_dict
 
-        ",https://www.codewars.com/kata/52efefcbcdf57161d4000091,2023-05-11 20:32:39.232,6 kyu,Count characters in your string,65059,riston,"['Strings', 'Fundamentals']"
+        ",https://www.codewars.com/kata/52efefcbcdf57161d4000091,2023-05-11 20:32:39.232,Count characters in your string,6 kyu,yellow,144497,65328,riston,"['Strings', 'Fundamentals']",2014-02-03T19:36:46.721Z,reference,969,4112,2,3
 5545f109004975ea66000086,Python,1,"def is_divisible(n,x,y):
 
     #your code here
 
-    return n / x == n // x and n / y == n // y",https://www.codewars.com/kata/5545f109004975ea66000086,2023-04-17 18:01:39.112,8 kyu,Is n divisible by x and y?,97858,naaz,['Refactoring']
+    return n / x == n // x and n / y == n // y",https://www.codewars.com/kata/5545f109004975ea66000086,2023-04-17 18:01:39.112,Is n divisible by x and y?,8 kyu,white,188213,98229,naaz,['Refactoring'],2015-05-03T09:57:41.202Z,refactoring,471,8371,0,2
 5a03af9606d5b65ff7000009,Python,1,"class User(object):
 
     def __init__(self, name, balance, checking_account):
@@ -2622,18 +2637,18 @@ def decode_morse(morse_code):
 
         return f""{self.name} has {self.balance}.""
 
-        ",https://www.codewars.com/kata/5a03af9606d5b65ff7000009,2023-04-19 18:22:15.910,7 kyu,User class for Banking System,2703,FourthFan,['Fundamentals']
+        ",https://www.codewars.com/kata/5a03af9606d5b65ff7000009,2023-04-19 18:22:15.910,User class for Banking System,7 kyu,white,18156,2705,FourthFan,['Fundamentals'],2017-11-19T00:55:51.627Z,reference,61,272,2,2
 568d0dd208ee69389d000016,Python,1,"def rental_car_cost(d):
 
-    return d * 40 if d < 3 else (d * 40 - 50 if d >= 7 else d * 40 - 20)",https://www.codewars.com/kata/568d0dd208ee69389d000016,2023-05-07 08:31:27.002,8 kyu,Transportation on vacation ,78712,Milford,['Fundamentals']
+    return d * 40 if d < 3 else (d * 40 - 50 if d >= 7 else d * 40 - 20)",https://www.codewars.com/kata/568d0dd208ee69389d000016,2023-05-07 08:31:27.002,Transportation on vacation ,8 kyu,white,149249,79048,Milford,['Fundamentals'],2016-01-06T14:19:20.635Z,reference,363,4726,1,2
 57ea5b0b75ae11d1e800006c,Python,1,"def sort_by_length(arr):
 
-    return sorted(arr, key = len)",https://www.codewars.com/kata/57ea5b0b75ae11d1e800006c,2023-05-13 08:56:32.738,7 kyu,Sort array by string length,33082,stevehopkinson,"['Sorting', 'Arrays', 'Fundamentals']"
+    return sorted(arr, key = len)",https://www.codewars.com/kata/57ea5b0b75ae11d1e800006c,2023-05-13 08:56:32.738,Sort array by string length,7 kyu,white,72393,33227,stevehopkinson,"['Sorting', 'Arrays', 'Fundamentals']",2016-09-27T11:42:33.872Z,reference,367,3196,4,5
 5899dc03bc95b1bf1b0000ad,Python,1,"import numpy as np
 
 def invert(lst):
 
-    return list(np.array(lst)*-1)",https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad,2023-05-11 08:15:08.962,8 kyu,Invert values,110616,user7657844,"['Lists', 'Fundamentals', 'Arrays']"
+    return list(np.array(lst)*-1)",https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad,2023-05-11 08:15:08.962,Invert values,8 kyu,white,244686,111219,user7657844,"['Lists', 'Fundamentals', 'Arrays']",2017-02-07T14:39:10.859Z,reference,715,6918,2,1
 5626b561280a42ecc50000d1,Python,1,"def sum_dig_pow(a, b): # range(a, b + 1) will be studied by the function
 
     cache = {(n, 1): n for n in range(1, 10)}
@@ -2670,7 +2685,7 @@ def invert(lst):
 
     
 
-    return eureka_numbers",https://www.codewars.com/kata/5626b561280a42ecc50000d1,2023-05-12 08:43:05.896,6 kyu,Take a Number And Sum  Its Digits Raised To The Consecutive Powers And ....¡Eureka!!,45216,raulbc777,"['Fundamentals', 'Mathematics']"
+    return eureka_numbers",https://www.codewars.com/kata/5626b561280a42ecc50000d1,2023-05-12 08:43:05.896,Take a Number And Sum  Its Digits Raised To The Consecutive Powers And ....¡Eureka!!,6 kyu,yellow,139492,45325,raulbc777,"['Fundamentals', 'Mathematics']",2015-10-20T21:49:11.450Z,reference,1340,3959,2,0
 55bf01e5a717a0d57e0000ec,Python,1,"import functools
 
 
@@ -2687,7 +2702,7 @@ def persistence(n):
 
     
 
-    return reductions",https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec,2023-05-11 08:48:02.476,6 kyu,Persistent Bugger.,158964,joh_pot,['Fundamentals']
+    return reductions",https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec,2023-05-11 08:48:02.476,Persistent Bugger.,6 kyu,yellow,549215,159362,joh_pot,['Fundamentals'],2015-08-03T05:56:01.635Z,reference,3817,12961,1,1
 542c0f198e077084c0000c2e,Python,1,"def divisors(n):
 
     divisor_set = {1, n}
@@ -2700,19 +2715,19 @@ def persistence(n):
 
             
 
-    return len(divisor_set)",https://www.codewars.com/kata/542c0f198e077084c0000c2e,2023-05-12 14:30:16.188,7 kyu,Count the divisors of a number,54560,tiriana,"['Number Theory', 'Mathematics', 'Fundamentals']"
+    return len(divisor_set)",https://www.codewars.com/kata/542c0f198e077084c0000c2e,2023-05-12 14:30:16.188,Count the divisors of a number,7 kyu,white,115068,54713,tiriana,"['Number Theory', 'Mathematics', 'Fundamentals']",2014-10-05T14:13:49.491Z,reference,495,3621,0,0
 55c45be3b2079eccff00010f,Python,2,"import re
 
 def order(sentence):
 
-    return """" if not sentence else "" "".join(sorted(sentence.split(), key = lambda word: re.findall(r""\d"", word)))",https://www.codewars.com/kata/55c45be3b2079eccff00010f,2023-05-06 12:32:20.551,6 kyu,"Your order,  please",134802,iamstone,"['Strings', 'Fundamentals']"
+    return """" if not sentence else "" "".join(sorted(sentence.split(), key = lambda word: re.findall(r""\d"", word)))",https://www.codewars.com/kata/55c45be3b2079eccff00010f,2023-05-06 12:32:20.551,"Your order,  please",6 kyu,yellow,450386,135152,iamstone,"['Strings', 'Fundamentals']",2015-08-07T07:46:19.523Z,reference,3293,10882,2,1
 5641275f07335295f10000d0,Python,2,"def split_the_bill(x):
 
     # Code Away!
 
     bill_split = sum(x.values()) / len(x)
 
-    return {friend: round(x[friend] - bill_split, 2) for friend in x}",https://www.codewars.com/kata/5641275f07335295f10000d0,2023-03-07 19:16:11.237,7 kyu,Split The Bill,6747,otajor,"['Fundamentals', 'Data Structures']"
+    return {friend: round(x[friend] - bill_split, 2) for friend in x}",https://www.codewars.com/kata/5641275f07335295f10000d0,2023-03-07 19:16:11.237,Split The Bill,7 kyu,white,61473,6757,otajor,"['Fundamentals', 'Data Structures']",2015-11-10T00:28:08.820Z,reference,179,640,3,1
 551f37452ff852b7bd000139,Python,1,"def add_binary(a,b):
 
     sum = a + b
@@ -2727,21 +2742,21 @@ def order(sentence):
 
         
 
-    return bin",https://www.codewars.com/kata/551f37452ff852b7bd000139,2023-05-10 19:08:51.545,7 kyu,Binary Addition,136528,garrettguy457,"['Binary', 'Fundamentals']"
+    return bin",https://www.codewars.com/kata/551f37452ff852b7bd000139,2023-05-10 19:08:51.545,Binary Addition,7 kyu,white,316143,136924,garrettguy457,"['Binary', 'Fundamentals']",2015-04-04T04:35:30.481Z,reference,1133,9091,0,3
 550498447451fbbd7600041c,Python,1,"def comp(array1, array2):
 
     if array1 is None or array2 is None:
 
         return False
 
-    return [x ** 2 for x in sorted(array1, key=lambda x: abs(x))] == sorted(array2)",https://www.codewars.com/kata/550498447451fbbd7600041c,2023-05-11 09:03:34.779,6 kyu,"Are they the ""same""?",86183,g964,['Fundamentals']
+    return [x ** 2 for x in sorted(array1, key=lambda x: abs(x))] == sorted(array2)",https://www.codewars.com/kata/550498447451fbbd7600041c,2023-05-11 09:03:34.779,"Are they the ""same""?",6 kyu,yellow,1716344,86365,g964,['Fundamentals'],2015-03-14T20:24:22.537Z,reference,3384,4943,2,36
 5a48fab7bdb9b5b3690009b6,Python,1,"import numpy as np
 
 
 
 def reorder(a, b):
 
-    return [list(np.roll(np.linspace(0, a//2 - 1, a//2, dtype = int), b)), list(np.roll(np.linspace(a//2, a - 1, a//2, dtype = int),b))]",https://www.codewars.com/kata/5a48fab7bdb9b5b3690009b6,2023-05-10 19:00:47.023,6 kyu,Reorder Array 2,404,Beast,"['NumPy', 'Fundamentals']"
+    return [list(np.roll(np.linspace(0, a//2 - 1, a//2, dtype = int), b)), list(np.roll(np.linspace(a//2, a - 1, a//2, dtype = int),b))]",https://www.codewars.com/kata/5a48fab7bdb9b5b3690009b6,2023-05-10 19:00:47.023,Reorder Array 2,6 kyu,yellow,1189,405,Beast,"['NumPy', 'Fundamentals']",2017-12-31T14:56:55.136Z,reference,20,101,2,1
 52c31f8e6605bcc646000082,Python,1,"def two_sum(numbers, target):
 
     for i, a in enumerate(numbers):
@@ -2752,7 +2767,7 @@ def reorder(a, b):
 
                 return [i, i + j + 1]
 
-    return -1",https://www.codewars.com/kata/52c31f8e6605bcc646000082,2023-05-10 18:44:29.657,6 kyu,Two Sum,56155,wthit56,"['Arrays', 'Fundamentals', 'Algorithms']"
+    return -1",https://www.codewars.com/kata/52c31f8e6605bcc646000082,2023-05-10 18:44:29.657,Two Sum,6 kyu,yellow,186768,56376,wthit56,"['Arrays', 'Fundamentals', 'Algorithms']",2013-12-31T20:03:10.317Z,reference,1201,3939,10,3
 57ee4a67108d3fd9eb0000e7,Python,1,"geese = [""African"", ""Roman Tufted"", ""Toulouse"", ""Pilgrim"", ""Steinbacher""]
 
 def goose_filter(birds):
@@ -2761,15 +2776,15 @@ def goose_filter(birds):
 
     birdsbutangry = geese
 
-    return [birdbirdbirdbirdbird for birdbirdbirdbirdbird in biiiiiiiiiiiirrrrrrrrdddddddddsssssssssssss if not birdbirdbirdbirdbird in birdsbutangry]",https://www.codewars.com/kata/57ee4a67108d3fd9eb0000e7,2023-05-12 12:55:31.002,8 kyu,Filter out the geese,33682,stevehopkinson,"['Arrays', 'Fundamentals']"
+    return [birdbirdbirdbirdbird for birdbirdbirdbirdbird in biiiiiiiiiiiirrrrrrrrdddddddddsssssssssssss if not birdbirdbirdbirdbird in birdsbutangry]",https://www.codewars.com/kata/57ee4a67108d3fd9eb0000e7,2023-05-12 12:55:31.002,Filter out the geese,8 kyu,white,77857,33780,stevehopkinson,"['Arrays', 'Fundamentals']",2016-09-30T11:20:18.585Z,reference,396,3218,1,2
 53f0f358b9cb376eca001079,Python,1,"class Ball(object):
 
     def __init__(self, ball_type=""regular""):
 
-        self.ball_type = ball_type",https://www.codewars.com/kata/53f0f358b9cb376eca001079,2023-04-19 18:08:39.907,8 kyu,Regular Ball Super Ball,29874,ogryzek,['Fundamentals']
+        self.ball_type = ball_type",https://www.codewars.com/kata/53f0f358b9cb376eca001079,2023-04-19 18:08:39.907,Regular Ball Super Ball,8 kyu,white,70411,29912,ogryzek,['Fundamentals'],2014-08-17T18:50:15.319Z,reference,322,1981,0,1
 5966e33c4e686b508700002d,Python,1,"def sum_str(a, b):
 
-    return str(sum([int(x) if x else 0 for x in [a, b]]))",https://www.codewars.com/kata/5966e33c4e686b508700002d,2023-05-11 19:36:11.010,8 kyu,Sum The Strings,38701,K-Calderon-ASC,['Fundamentals']
+    return str(sum([int(x) if x else 0 for x in [a, b]]))",https://www.codewars.com/kata/5966e33c4e686b508700002d,2023-05-11 19:36:11.010,Sum The Strings,8 kyu,white,145674,38834,K-Calderon-ASC,['Fundamentals'],2017-07-13T17:27:09.719Z,reference,297,3462,1,1
 541c8630095125aba6000c00,Python,1,"def digital_root(n):
 
     # Explode the number
@@ -2782,7 +2797,7 @@ def goose_filter(birds):
 
         
 
-    return digits[0]",https://www.codewars.com/kata/541c8630095125aba6000c00,2023-04-20 17:29:07.363,6 kyu,Sum of Digits / Digital Root,223622,user578387,"['Mathematics', 'Algorithms']"
+    return digits[0]",https://www.codewars.com/kata/541c8630095125aba6000c00,2023-04-20 17:29:07.363,Sum of Digits / Digital Root,6 kyu,yellow,866631,224118,user578387,"['Mathematics', 'Algorithms']",2014-09-19T20:00:24.356Z,algorithms,3827,17749,2,8
 5acbc3b3481ebb23a400007d,Python,1,"def is_flush(cards):
 
     # Get the final character of each card
@@ -2791,7 +2806,7 @@ def goose_filter(birds):
 
     # Return if all suits are the same
 
-    return len(set(suits)) == 1",https://www.codewars.com/kata/5acbc3b3481ebb23a400007d,2023-03-24 07:27:08.880,7 kyu,Determine if the poker hand is flush,3634,CodingWarrior,"['Arrays', 'Algorithms', 'Logic', 'Strings', 'Games']"
+    return len(set(suits)) == 1",https://www.codewars.com/kata/5acbc3b3481ebb23a400007d,2023-03-24 07:27:08.880,Determine if the poker hand is flush,7 kyu,white,10893,3647,CodingWarrior,"['Arrays', 'Algorithms', 'Logic', 'Strings', 'Games']",2018-04-10T18:10:13.891Z,games,46,556,2,0
 556deca17c58da83c00002db,Python,1,"def tribonacci(signature, n):
 
     if n <= 3:
@@ -2816,7 +2831,7 @@ def goose_filter(birds):
 
     
 
-    return signature",https://www.codewars.com/kata/556deca17c58da83c00002db,2023-05-12 07:26:47.171,6 kyu,Tribonacci Sequence,127593,GiacomoSorbi,"['Number Theory', 'Arrays', 'Lists', 'Fundamentals']"
+    return signature",https://www.codewars.com/kata/556deca17c58da83c00002db,2023-05-12 07:26:47.171,Tribonacci Sequence,6 kyu,yellow,534855,127866,GiacomoSorbi,"['Number Theory', 'Arrays', 'Lists', 'Fundamentals']",2015-06-02T17:49:21.747Z,reference,2774,10596,5,1
 51c8e37cee245da6b40000bd,Python,1,"def strip_comments(strng, markers):
 
     lines = strng.split(""\n"")
@@ -2839,13 +2854,13 @@ def goose_filter(birds):
 
         
 
-    return ""\n"".join(output_lines)",https://www.codewars.com/kata/51c8e37cee245da6b40000bd,2023-03-08 15:27:52.412,4 kyu,Strip Comments,43233,jhoffner,"['Strings', 'Algorithms']"
+    return ""\n"".join(output_lines)",https://www.codewars.com/kata/51c8e37cee245da6b40000bd,2023-03-08 15:27:52.412,Strip Comments,4 kyu,blue,420562,43322,jhoffner,"['Strings', 'Algorithms']",2013-06-25T05:10:21.783Z,algorithms,1946,2972,14,12
 530e15517bc88ac656000716,Python,1,"def rot13(message):
 
-    return message.translate(str.maketrans(""abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"", ""nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM""))",https://www.codewars.com/kata/530e15517bc88ac656000716,2023-05-13 14:49:14.038,5 kyu,Rot13,73315,Rubikan,"['Ciphers', 'Fundamentals']"
+    return message.translate(str.maketrans(""abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"", ""nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM""))",https://www.codewars.com/kata/530e15517bc88ac656000716,2023-05-13 14:49:14.038,Rot13,5 kyu,yellow,354383,73516,Rubikan,"['Ciphers', 'Fundamentals']",2014-02-26T16:25:05.912Z,reference,1874,4896,3,4
 577bd026df78c19bca0002c0,Python,1,"def correct(s):
 
-    return s.translate(str.maketrans(""501"", ""SOI""))",https://www.codewars.com/kata/577bd026df78c19bca0002c0,2023-05-12 13:57:38.096,8 kyu,Correct the mistakes of the character recognition software,40884,denesnori,"['Fundamentals', 'Strings']"
+    return s.translate(str.maketrans(""501"", ""SOI""))",https://www.codewars.com/kata/577bd026df78c19bca0002c0,2023-05-12 13:57:38.096,Correct the mistakes of the character recognition software,8 kyu,white,103158,41040,denesnori,"['Fundamentals', 'Strings']",2016-07-05T16:57:28.344Z,reference,404,3818,2,3
 54a91a4883a7de5d7800009c,Python,1,"import re
 
 def increment_string(strng):
@@ -2889,10 +2904,10 @@ def increment_string(strng):
         
 
     return  str1 + leading_zeros + str2
-",https://www.codewars.com/kata/54a91a4883a7de5d7800009c,2023-05-11 14:47:06.790,5 kyu,String incrementer,37315,parceval,"['Regular Expressions', 'Strings']"
+",https://www.codewars.com/kata/54a91a4883a7de5d7800009c,2023-05-11 14:47:06.790,String incrementer,5 kyu,yellow,358923,37426,parceval,"['Regular Expressions', 'Strings']",2015-01-04T10:47:36.748Z,reference,2419,3304,7,9
 5949481f86420f59480000e7,Python,1,"def odd_or_even(arr):
 
-    return ""even"" if len([x for x in arr if x % 2 == 1]) % 2 == 0 else ""odd""",https://www.codewars.com/kata/5949481f86420f59480000e7,2023-05-11 13:31:08.518,7 kyu,Odd or Even?,101787,ethaning,"['Fundamentals', 'Arrays']"
+    return ""even"" if len([x for x in arr if x % 2 == 1]) % 2 == 0 else ""odd""",https://www.codewars.com/kata/5949481f86420f59480000e7,2023-05-11 13:31:08.518,Odd or Even?,7 kyu,white,208626,102191,ethaning,"['Fundamentals', 'Arrays']",2017-06-20T16:07:05.006Z,reference,520,7069,1,0
 517abf86da9663f1d2000003,Python,1,"import re
 
 
@@ -2905,7 +2920,7 @@ def to_camel_case(text):
 
     words = re.split(r'_+', words)
 
-    return """".join([word.capitalize() if i > 0 else word for i, word in enumerate(words)])",https://www.codewars.com/kata/517abf86da9663f1d2000003,2023-04-29 12:17:55.855,6 kyu,Convert string to camel case,149197,jhoffner,"['Regular Expressions', 'Algorithms', 'Strings']"
+    return """".join([word.capitalize() if i > 0 else word for i, word in enumerate(words)])",https://www.codewars.com/kata/517abf86da9663f1d2000003,2023-04-29 12:17:55.855,Convert string to camel case,6 kyu,yellow,650309,149606,jhoffner,"['Regular Expressions', 'Algorithms', 'Strings']",2013-07-25T01:40:25.970Z,algorithms,2670,10803,20,8
 5571f712ddf00b54420000ee,Python,1,"import math
 
 def loose_change(cents):
@@ -2928,7 +2943,7 @@ def loose_change(cents):
 
     
 
-    return change_dict",https://www.codewars.com/kata/5571f712ddf00b54420000ee,2023-04-20 17:42:14.126,6 kyu,Loose Change,4751,ghost_pilot,"['Mathematics', 'Fundamentals']"
+    return change_dict",https://www.codewars.com/kata/5571f712ddf00b54420000ee,2023-04-20 17:42:14.126,Loose Change,6 kyu,yellow,14403,4753,ghost_pilot,"['Mathematics', 'Fundamentals']",2015-06-05T19:23:17.867Z,reference,95,669,2,2
 5279f6fe5ab7f447890006a7,Python,2,"def pick_peaks(arr):
 
     pos = []
@@ -2985,7 +3000,7 @@ def loose_change(cents):
 
     
 
-    return {""pos"": pos, ""peaks"": peaks}",https://www.codewars.com/kata/5279f6fe5ab7f447890006a7,2023-03-09 07:29:20.666,5 kyu,Pick peaks,23467,frenetic_be,"['Arrays', 'Algorithms']"
+    return {""pos"": pos, ""peaks"": peaks}",https://www.codewars.com/kata/5279f6fe5ab7f447890006a7,2023-03-09 07:29:20.666,Pick peaks,5 kyu,yellow,210686,23511,frenetic_be,"['Arrays', 'Algorithms']",2013-11-06T07:59:58.961Z,algorithms,1646,2052,3,6
 54fe05c4762e2e3047000add,Python,1,"class Ship:
 
     def __init__(self, draft, crew):
@@ -2998,7 +3013,7 @@ def loose_change(cents):
 
     def is_worth_it(self):
 
-        return self.draft - self.crew * 1.5 > 20",https://www.codewars.com/kata/54fe05c4762e2e3047000add,2023-04-19 18:10:13.459,8 kyu,OOP: Object Oriented Piracy ,14260,By-The-Ocean,"['Object-oriented Programming', 'Fundamentals']"
+        return self.draft - self.crew * 1.5 > 20",https://www.codewars.com/kata/54fe05c4762e2e3047000add,2023-04-19 18:10:13.459,OOP: Object Oriented Piracy ,8 kyu,white,61122,14301,By-The-Ocean,"['Object-oriented Programming', 'Fundamentals']",2015-03-09T21:55:36.128Z,reference,246,1271,4,2
 52742f58faf5485cae000b9a,Python,2,"def format_duration(seconds):
 
     if seconds == 0:
@@ -3075,10 +3090,10 @@ def loose_change(cents):
 
             
 
-    return formatted_time",https://www.codewars.com/kata/52742f58faf5485cae000b9a,2023-04-27 15:48:31.865,4 kyu,Human readable duration format,66420,davazp,"['Strings', 'Date Time', 'Algorithms']"
+    return formatted_time",https://www.codewars.com/kata/52742f58faf5485cae000b9a,2023-04-27 15:48:31.865,Human readable duration format,4 kyu,blue,520240,66560,davazp,"['Strings', 'Date Time', 'Algorithms']",2013-11-02T02:14:13.565Z,algorithms,3288,5546,2,5
 5ce9c1000bab0b001134f5af,Python,1,"def quarter_of(month):
 
-    return (month - 1) // 3 + 1",https://www.codewars.com/kata/5ce9c1000bab0b001134f5af,2023-05-12 14:27:03.960,8 kyu,Quarter of the year,77925,Orses,"['Fundamentals', 'Mathematics']"
+    return (month - 1) // 3 + 1",https://www.codewars.com/kata/5ce9c1000bab0b001134f5af,2023-05-12 14:27:03.960,Quarter of the year,8 kyu,white,160100,78414,Orses,"['Fundamentals', 'Mathematics']",2019-05-25T22:43:07.584Z,reference,452,4598,1,1
 5592e3bd57b64d00f3000047,Python,1,"def find_nb(m):
 
     # This is the sum of the first n cubes
@@ -3115,7 +3130,7 @@ def loose_change(cents):
 
         
 
-    return -1",https://www.codewars.com/kata/5592e3bd57b64d00f3000047,2023-05-11 11:48:14.414,6 kyu,Build a pile of Cubes,73868,g964,"['Mathematics', 'Algorithms']"
+    return -1",https://www.codewars.com/kata/5592e3bd57b64d00f3000047,2023-05-11 11:48:14.414,Build a pile of Cubes,6 kyu,yellow,309245,73996,g964,"['Mathematics', 'Algorithms']",2015-06-30T18:45:29.086Z,reference,2568,5576,0,3
 5c511d8877c0070e2c195faf,Python,1,"import math
 
 def validate(username, password):
@@ -3140,7 +3155,7 @@ def validate(username, password):
 
 
 
-    return True",https://www.codewars.com/kata/5c511d8877c0070e2c195faf,2023-05-08 17:22:14.954,7 kyu,Password should not contain any part of your username.,455,Bethany,"['Regular Expressions', 'Strings', 'Fundamentals']"
+    return True",https://www.codewars.com/kata/5c511d8877c0070e2c195faf,2023-05-08 17:22:14.954,Password should not contain any part of your username.,7 kyu,white,8071,455,Bethany,"['Regular Expressions', 'Strings', 'Fundamentals']",2019-01-30T07:11:10.766Z,reference,40,80,1,0
 568dcc3c7f12767a62000038,Python,1,"class Person:
 
     def __init__(self, name, employed, vacation):
@@ -3169,7 +3184,7 @@ def set_alarm(employed, vacation):
 
     Geoffrey = Person(""Geoffrey"", employed, vacation)
 
-    return Geoffrey.is_employed() and not Geoffrey.is_on_vacation()",https://www.codewars.com/kata/568dcc3c7f12767a62000038,2023-05-12 09:42:11.505,8 kyu,L1: Set Alarm,65872,Swolebrain,"['Fundamentals', 'Logic']"
+    return Geoffrey.is_employed() and not Geoffrey.is_on_vacation()",https://www.codewars.com/kata/568dcc3c7f12767a62000038,2023-05-12 09:42:11.505,L1: Set Alarm,8 kyu,white,110814,66174,Swolebrain,"['Fundamentals', 'Logic']",2016-01-07T02:24:01.699Z,reference,277,4512,0,1
 55a144eff5124e546400005a,Python,2,"class Person(object):
 
     def __init__(self, name,age):
@@ -3184,17 +3199,17 @@ def set_alarm(employed, vacation):
 
     def info(self):
 
-        return f""{self.name}s age is {self.age}""",https://www.codewars.com/kata/55a144eff5124e546400005a,2023-04-19 18:07:51.568,8 kyu,Classy Classes,11462,matt c,['Fundamentals']
+        return f""{self.name}s age is {self.age}""",https://www.codewars.com/kata/55a144eff5124e546400005a,2023-04-19 18:07:51.568,Classy Classes,8 kyu,white,29514,11480,matt c,['Fundamentals'],2015-07-11T16:38:51.695Z,reference,103,1185,0,3
 5b39e91ee7a2c103300018b3,Python,1,"import re
 
 def remove_consecutive_duplicates(s : str) -> str:
 
-    return "" "".join(re.findall(r""\b(\S+)\b(?! \b\1\b)"", s))",https://www.codewars.com/kata/5b39e91ee7a2c103300018b3,2023-05-05 14:03:34.261,7 kyu,Remove consecutive duplicate words,6533,e.mihaylin,"['Strings', 'Regular Expressions', 'Algorithms']"
+    return "" "".join(re.findall(r""\b(\S+)\b(?! \b\1\b)"", s))",https://www.codewars.com/kata/5b39e91ee7a2c103300018b3,2023-05-05 14:03:34.261,Remove consecutive duplicate words,7 kyu,white,22354,6569,e.mihaylin,"['Strings', 'Regular Expressions', 'Algorithms']",2018-07-02T08:58:06.179Z,algorithms,136,843,0,0
 55f8a9c06c018a0d6e000132,Python,1,"import re
 
 def validate_pin(pin):
 
-    return bool(re.match(r""^(?:\d{4})(?# I just found out you can write regex comments, pretty cool)(?:\d{2})?(?![\n\r])(?# This is all really obvious so no need to explain it)$"", pin))",https://www.codewars.com/kata/55f8a9c06c018a0d6e000132,2023-05-06 12:43:15.248,7 kyu,Regex validate PIN code,134912,JMurphyWeb,"['Regular Expressions', 'Fundamentals']"
+    return bool(re.match(r""^(?:\d{4})(?# I just found out you can write regex comments, pretty cool)(?:\d{2})?(?![\n\r])(?# This is all really obvious so no need to explain it)$"", pin))",https://www.codewars.com/kata/55f8a9c06c018a0d6e000132,2023-05-06 12:43:15.248,Regex validate PIN code,7 kyu,white,760516,135345,JMurphyWeb,"['Regular Expressions', 'Fundamentals']",2015-09-15T23:37:56.294Z,reference,1781,9218,1,8
 56a921fa8c5167d8e7000053,Python,1,"def password(string):    
 
     if len(string) < 8:
@@ -3217,21 +3232,41 @@ def validate_pin(pin):
 
     
 
-    return True",https://www.codewars.com/kata/56a921fa8c5167d8e7000053,2023-04-18 16:56:11.043,7 kyu,Password validator,3504,tdowek1,"['Fundamentals', 'Regular Expressions', 'Algorithms']"
-56b1f01c247c01db92000076,BF,1,">,[>,]<[<]>[..>]",https://www.codewars.com/kata/56b1f01c247c01db92000076,2023-05-06 17:37:34.375,8 kyu,Double Char,59145,Alpri Else,"['Fundamentals', 'Strings']"
+    return True",https://www.codewars.com/kata/56a921fa8c5167d8e7000053,2023-04-18 16:56:11.043,Password validator,7 kyu,white,12140,3508,tdowek1,"['Fundamentals', 'Regular Expressions', 'Algorithms']",2016-01-30T14:42:26.183Z,reference,69,378,1,2
+56b1f01c247c01db92000076,BF,1,">,[>,]<[<]>[..>]",https://www.codewars.com/kata/56b1f01c247c01db92000076,2023-05-06 17:37:34.375,Double Char,8 kyu,white,116994,59387,Alpri Else,"['Fundamentals', 'Strings']",2016-02-03T12:18:36.981Z,reference,473,4491,0,2
+59a96d71dbe3b06c0200009c,BF,1,",[>>++++[<++++++++++>-]<+++
+
+<[>>+>+<<<-]
+
+++++++++++
+
+>>[->>+<<<.>]
+
+>>[<<+>>-]<-
+
+[<<<.>>[<.>->>+<<]>>[<<+>>-]<-]<<<[-]]",https://www.codewars.com/kata/59a96d71dbe3b06c0200009c,2023-05-15 10:16:06.091,Build a square,7 kyu,white,41173,14636,Capocaccia,"['Fundamentals', 'ASCII Art']",2017-09-01T14:24:01.237Z,reference,150,1445,2,2
+596f7ec359f9e9b017000006,BF,1,",>,[<.>-]",https://www.codewars.com/kata/596f7ec359f9e9b017000006,2023-05-15 08:02:43.256,BF basics #2: Repeat the input,7 kyu,white,1112,381,ice1000,['Fundamentals'],2017-07-19T16:18:34.316Z,reference,2,109,0,0
+596f80b5f468ae8daa000013,BF,1,.+[.+],https://www.codewars.com/kata/596f80b5f468ae8daa000013,2023-05-15 08:04:13.013,BF basics #1: All ascii characters,7 kyu,white,1661,454,ice1000,['Fundamentals'],2017-07-19T15:54:30.907Z,reference,2,103,0,0
 60b9c96dce6b05000eccac7d,BF,1,"[][*][a][*][b][*][c][*][d][*][]
 
->++++++++++++++++++++++++++++++++++++++++++>,[>++++++++++++++++++++++++++++++++++++++++++>,]<[<]>[.>]",https://www.codewars.com/kata/60b9c96dce6b05000eccac7d,2023-05-09 08:48:36.942,8 kyu,[BF] Insert Asterisks,118,RNOH,['Fundamentals']
-60b9c96dce6b05000eccac7d,BF,2,"++++++>++++++[<++++++>-]<.>,[.<.>,]",https://www.codewars.com/kata/60b9c96dce6b05000eccac7d,2023-05-09 08:53:50.746,8 kyu,[BF] Insert Asterisks,118,RNOH,['Fundamentals']
-57a0556c7cb1f31ab3000ad7,BF,1,",[--------------------------------.>,]",https://www.codewars.com/kata/57a0556c7cb1f31ab3000ad7,2023-05-06 17:41:46.198,8 kyu,MakeUpperCase,112680,wichu,"['Fundamentals', 'Strings']"
-57fae964d80daa229d000126,BF,1,">,[[>,]<[<]>>[<.>>]+++++++++++[<--->-]<[+++++++++++++++++++++++++++++++++.>][-]]",https://www.codewars.com/kata/57fae964d80daa229d000126,2023-05-07 06:48:38.161,8 kyu,Exclamation marks series #1: Remove an exclamation mark from the end of string,22131,myjinxin2015,"['Fundamentals', 'Strings']"
+>++++++++++++++++++++++++++++++++++++++++++>,[>++++++++++++++++++++++++++++++++++++++++++>,]<[<]>[.>]",https://www.codewars.com/kata/60b9c96dce6b05000eccac7d,2023-05-09 08:48:36.942,[BF] Insert Asterisks,8 kyu,white,242,118,RNOH,['Fundamentals'],2021-06-05T08:00:35.390Z,reference,2,39,0,0
+60b9c96dce6b05000eccac7d,BF,2,"++++++>++++++[<++++++>-]<.>,[.<.>,]",https://www.codewars.com/kata/60b9c96dce6b05000eccac7d,2023-05-09 08:53:50.746,[BF] Insert Asterisks,8 kyu,white,242,118,RNOH,['Fundamentals'],2021-06-05T08:00:35.390Z,reference,2,39,0,0
+596f7d99f468ae8daa00000b,BF,1,"++++>+++++++[<++++>-]++>+++++>+++++[<++++++>-]<[<++>-]+++++>++++>+++[<+++++>-]<[<+++++>-]
+
+<<.>+.+++++++..+++.<<.>+++++++++++++++.>.+++.------.--------.<<+.",https://www.codewars.com/kata/596f7d99f468ae8daa00000b,2023-05-15 07:54:40.541,BF basics #0: Hello World,7 kyu,white,807,420,ice1000,"['Fundamentals', 'Mathematics']",2017-07-19T15:41:14.449Z,reference,5,103,0,1
+57a0556c7cb1f31ab3000ad7,BF,1,",[--------------------------------.>,]",https://www.codewars.com/kata/57a0556c7cb1f31ab3000ad7,2023-05-06 17:41:46.198,MakeUpperCase,8 kyu,white,178637,113235,wichu,"['Fundamentals', 'Strings']",2016-08-02T08:10:24.014Z,reference,358,6097,2,3
+57fae964d80daa229d000126,BF,1,">,[[>,]<[<]>>[<.>>]+++++++++++[<--->-]<[+++++++++++++++++++++++++++++++++.>][-]]",https://www.codewars.com/kata/57fae964d80daa229d000126,2023-05-07 06:48:38.161,Exclamation marks series #1: Remove an exclamation mark from the end of string,8 kyu,white,86456,22204,myjinxin2015,"['Fundamentals', 'Strings']",2016-10-10T01:18:33.551Z,reference,236,2643,1,1
+596f88f359f9e99030000012,BF,1,",>,[<+>-]<.",https://www.codewars.com/kata/596f88f359f9e99030000012,2023-05-15 09:35:43.460,BF basics #3: Plusing,7 kyu,white,886,383,ice1000,"['Fundamentals', 'Mathematics']",2017-07-19T16:30:02.419Z,reference,3,103,0,1
+5a79601b373c2e3b4a00013c,BF,1,"++++++>++++++[<++++++>-]
+
+,[<.>,]",https://www.codewars.com/kata/5a79601b373c2e3b4a00013c,2023-05-15 08:09:03.498,[BF] Hide the Password,7 kyu,white,486,224,iNont,"['Fundamentals', 'Algorithms', 'Strings']",2018-02-06T07:58:23.836Z,reference,3,66,0,0
 5e5f09dc0a17be0023920f6f,SQL,1,"SELECT capital FROM countries
 
 WHERE (continent = 'Africa' OR continent = 'Afrika') AND (country LIKE 'E%')
 
 ORDER BY capital ASC
 
-LIMIT 3;",https://www.codewars.com/kata/5e5f09dc0a17be0023920f6f,2023-05-03 08:24:34.378,7 kyu,Countries Capitals for Trivia Night (SQL for Beginners #6),10172,MaikelNabil,"['Fundamentals', 'SQL', 'Databases', 'Data Science']"
+LIMIT 3;",https://www.codewars.com/kata/5e5f09dc0a17be0023920f6f,2023-05-03 08:24:34.378,Countries Capitals for Trivia Night (SQL for Beginners #6),7 kyu,white,46047,10204,MaikelNabil,"['Fundamentals', 'SQL', 'Databases', 'Data Science']",2020-03-04T03:28:39.410Z,reference,101,853,2,1
 5a023c426975981341000014,SQL,1,"--# write your SQL statement here: 
 
 -- you are given a table 'otherangle' with columns 'a' and 'b'.
@@ -3242,7 +3277,7 @@ LIMIT 3;",https://www.codewars.com/kata/5e5f09dc0a17be0023920f6f,2023-05-03 08:2
 
 SELECT a, b, 180 - a - b AS res
 
-FROM otherangle",https://www.codewars.com/kata/5a023c426975981341000014,2023-05-05 08:12:49.491,8 kyu,Third Angle of a Triangle,75382,user5651159,['Fundamentals']
+FROM otherangle",https://www.codewars.com/kata/5a023c426975981341000014,2023-05-05 08:12:49.491,Third Angle of a Triangle,8 kyu,white,102663,75711,user5651159,['Fundamentals'],2017-11-07T23:12:18.238Z,reference,187,4192,0,4
 580878d5d27b84b64c000b51,SQL,1,"--# write your SQL statement here: 
 
 -- you are given a table 'sumtriangular' with column 'n'
@@ -3265,10 +3300,10 @@ CASE
 
 END AS res
 
-FROM sumtriangular;",https://www.codewars.com/kata/580878d5d27b84b64c000b51,2023-05-03 19:18:38.728,7 kyu,Sum of Triangular Numbers,14472,ThomasL,"['Mathematics', 'Fundamentals']"
+FROM sumtriangular;",https://www.codewars.com/kata/580878d5d27b84b64c000b51,2023-05-03 19:18:38.728,Sum of Triangular Numbers,7 kyu,white,38111,14490,ThomasL,"['Mathematics', 'Fundamentals']",2016-10-20T07:57:16.184Z,reference,211,1503,0,0
 5910b0d378cc2ba91400000b,SQL,1,"SELECT * FROM students
 
-WHERE tuition_received = false;",https://www.codewars.com/kata/5910b0d378cc2ba91400000b,2023-05-03 07:57:35.102,8 kyu,Collect Tuition (SQL for Beginners #4),18909,MaikelNabil,"['Fundamentals', 'SQL', 'Databases']"
+WHERE tuition_received = false;",https://www.codewars.com/kata/5910b0d378cc2ba91400000b,2023-05-03 07:57:35.102,Collect Tuition (SQL for Beginners #4),8 kyu,white,31370,18961,MaikelNabil,"['Fundamentals', 'SQL', 'Databases']",2017-05-08T18:06:21.119Z,reference,64,1799,1,0
 594257d4db68b6e99200002c,SQL,1,"/*  SQL  */
 
 SELECT project,
@@ -3277,7 +3312,7 @@ REGEXP_REPLACE(address, '[^a-zA-Z]+', '', 'g') AS letters,
 
 REGEXP_REPLACE(address, '[^0-9]+', '', 'g') AS numbers
 
-FROM repositories;",https://www.codewars.com/kata/594257d4db68b6e99200002c,2023-05-07 15:09:59.090,6 kyu,SQL: Regex AlphaNumeric Split,2873,PG1,"['Fundamentals', 'Regular Expressions', 'SQL']"
+FROM repositories;",https://www.codewars.com/kata/594257d4db68b6e99200002c,2023-05-07 15:09:59.090,SQL: Regex AlphaNumeric Split,6 kyu,yellow,20426,2878,PG1,"['Fundamentals', 'Regular Expressions', 'SQL']",2017-06-15T16:01:43.675Z,reference,84,351,2,1
 5811527d9d278b242f000006,SQL,1,"CREATE VIEW departments_over_10k_sales AS (
 
 SELECT departments.id AS id
@@ -3328,7 +3363,7 @@ GROUP BY members.id, m.total_spending
 
 HAVING m.total_spending > 1000
 
-ORDER BY members.id;",https://www.codewars.com/kata/5811527d9d278b242f000006,2023-05-08 04:54:32.769,5 kyu,SQL Basics: Simple VIEW,3510,matt c,"['SQL', 'Fundamentals']"
+ORDER BY members.id;",https://www.codewars.com/kata/5811527d9d278b242f000006,2023-05-08 04:54:32.769,SQL Basics: Simple VIEW,5 kyu,yellow,36074,3524,matt c,"['SQL', 'Fundamentals']",2016-10-27T02:02:15.296Z,reference,242,385,3,2
 57eae65a4321032ce000002d,SQL,2,"SELECT x, REPLACE(
 
   REPLACE(
@@ -3363,7 +3398,7 @@ ORDER BY members.id;",https://www.codewars.com/kata/5811527d9d278b242f000006,202
 
   , '9', '1')
 
-as res FROM fakebin;",https://www.codewars.com/kata/57eae65a4321032ce000002d,2023-05-03 07:37:59.367,8 kyu,Fake Binary,97729,PG1,"['Fundamentals', 'Strings', 'Arrays']"
+as res FROM fakebin;",https://www.codewars.com/kata/57eae65a4321032ce000002d,2023-05-03 07:37:59.367,Fake Binary,8 kyu,white,251372,98119,PG1,"['Fundamentals', 'Strings', 'Arrays']",2016-09-27T21:44:04.295Z,reference,952,6526,1,1
 594633020a561e329a0000a2,SQL,1,"SELECT race,
 
 COUNT(race) AS count
@@ -3372,7 +3407,7 @@ FROM demographics
 
 GROUP BY race
 
-ORDER BY count DESC",https://www.codewars.com/kata/594633020a561e329a0000a2,2023-05-14 06:55:05.789,7 kyu,Easy SQL: Counting and Grouping,12639,PG1,"['Fundamentals', 'SQL']"
+ORDER BY count DESC",https://www.codewars.com/kata/594633020a561e329a0000a2,2023-05-14 06:55:05.789,Easy SQL: Counting and Grouping,7 kyu,white,31366,12660,PG1,"['Fundamentals', 'SQL']",2017-06-18T08:48:51.987Z,reference,38,1176,2,0
 594a50bafd3b7031c1000013,SQL,1,"SELECT
 
   TO_HEX(legs) AS legs,
@@ -3380,7 +3415,7 @@ ORDER BY count DESC",https://www.codewars.com/kata/594633020a561e329a0000a2,2023
   TO_HEX(arms) AS arms
 
 FROM monsters;
-",https://www.codewars.com/kata/594a50bafd3b7031c1000013,2023-05-03 12:22:05.209,8 kyu,Easy SQL: Convert to Hexadecimal,7846,PG1,"['Fundamentals', 'SQL']"
+",https://www.codewars.com/kata/594a50bafd3b7031c1000013,2023-05-03 12:22:05.209,Easy SQL: Convert to Hexadecimal,8 kyu,white,25260,7867,PG1,"['Fundamentals', 'SQL']",2017-06-21T10:58:36.445Z,reference,54,558,1,1
 590cc86f7557c0494000007e,SQL,1,"INSERT INTO participants (""name"", age)
 
 VALUES ('Ed', 31);
@@ -3408,8 +3443,8 @@ SET attending =
 
 
 SELECT * FROM participants;
-",https://www.codewars.com/kata/590cc86f7557c0494000007e,2023-05-03 08:15:07.119,8 kyu,Register for the Party (SQL for Beginners #3),17152,MaikelNabil,"['Fundamentals', 'SQL', 'Databases']"
-581113dce10b531b1d0000bd,SQL,1,"SELECT MIN(age) AS age_min, MAX(age) AS age_max FROM people;",https://www.codewars.com/kata/581113dce10b531b1d0000bd,2023-05-03 11:37:19.792,8 kyu,SQL Basics: Simple MIN / MAX,16939,matt c,"['SQL', 'Fundamentals']"
+",https://www.codewars.com/kata/590cc86f7557c0494000007e,2023-05-03 08:15:07.119,Register for the Party (SQL for Beginners #3),8 kyu,white,40356,17194,MaikelNabil,"['Fundamentals', 'SQL', 'Databases']",2017-05-05T19:07:55.421Z,reference,83,1407,0,0
+581113dce10b531b1d0000bd,SQL,1,"SELECT MIN(age) AS age_min, MAX(age) AS age_max FROM people;",https://www.codewars.com/kata/581113dce10b531b1d0000bd,2023-05-03 11:37:19.792,SQL Basics: Simple MIN / MAX,8 kyu,white,36955,16982,matt c,"['SQL', 'Fundamentals']",2016-10-26T20:36:50.784Z,reference,48,1516,0,1
 582cba7d3be8ce3a8300007c,SQL,1,"SELECT 
 
   s.transaction_date::date as day,
@@ -3425,10 +3460,10 @@ SELECT * FROM participants;
   group by day, name
 
   order by day asc, name asc
-",https://www.codewars.com/kata/582cba7d3be8ce3a8300007c,2023-05-14 06:53:15.391,6 kyu,SQL Bug Fixing: Fix the QUERY - Totaling,7658,matt c,"['Fundamentals', 'SQL', 'Data Science']"
+",https://www.codewars.com/kata/582cba7d3be8ce3a8300007c,2023-05-14 06:53:15.391,SQL Bug Fixing: Fix the QUERY - Totaling,6 kyu,yellow,33817,7673,matt c,"['Fundamentals', 'SQL', 'Data Science']",2016-11-16T20:17:26.562Z,reference,135,791,0,2
 590ba881fe13cfdcc20001b4,SQL,1,"SELECT * FROM travelers
 
-WHERE NOT (country = 'Canada' OR country = 'Mexico' OR country = 'USA');",https://www.codewars.com/kata/590ba881fe13cfdcc20001b4,2023-05-03 08:04:45.145,8 kyu,On the Canadian Border (SQL for Beginners #2),21061,MaikelNabil,"['Fundamentals', 'SQL', 'Databases', 'Data Science']"
+WHERE NOT (country = 'Canada' OR country = 'Mexico' OR country = 'USA');",https://www.codewars.com/kata/590ba881fe13cfdcc20001b4,2023-05-03 08:04:45.145,On the Canadian Border (SQL for Beginners #2),8 kyu,white,46940,21114,MaikelNabil,"['Fundamentals', 'SQL', 'Databases', 'Data Science']",2017-05-04T22:17:38.004Z,reference,88,2021,0,2
 522551eee9abb932420004a0,SQL,1,"--# write your SQL statement here: 
 
 -- you are given a table 'fibo' with column 'n'.
@@ -3459,13 +3494,13 @@ FROM fibo
 
 JOIN fib on fibo.n = fib.n
 
-ORDER BY fibo.n ASC",https://www.codewars.com/kata/522551eee9abb932420004a0,2023-05-07 15:00:36.789,6 kyu,N-th Fibonacci,19135,boatmeme,['Algorithms']
+ORDER BY fibo.n ASC",https://www.codewars.com/kata/522551eee9abb932420004a0,2023-05-07 15:00:36.789,N-th Fibonacci,6 kyu,yellow,61220,19157,boatmeme,['Algorithms'],2013-09-03T03:17:34.968Z,algorithms,181,951,1,4
 5168bb5dfe9a00b126000018,SQL,1,"Start
 
->,[>,]<[.<]",https://www.codewars.com/kata/5168bb5dfe9a00b126000018,2023-05-06 17:34:44.818,8 kyu,Reversed Strings,250801,jhoffner,"['Strings', 'Fundamentals']"
+>,[>,]<[.<]",https://www.codewars.com/kata/5168bb5dfe9a00b126000018,2023-05-06 17:34:44.818,Reversed Strings,8 kyu,white,482993,252010,jhoffner,"['Strings', 'Fundamentals']",2013-04-13T02:22:17.697Z,reference,1331,14288,1,1
 58111670e10b53be31000108,SQL,1,"-- Create your SELECT statement here
 
-SELECT DISTINCT age FROM people",https://www.codewars.com/kata/58111670e10b53be31000108,2023-05-14 06:41:15.878,8 kyu,SQL Basics: Simple DISTINCT,18266,matt c,"['SQL', 'Fundamentals']"
+SELECT DISTINCT age FROM people",https://www.codewars.com/kata/58111670e10b53be31000108,2023-05-14 06:41:15.878,SQL Basics: Simple DISTINCT,8 kyu,white,25260,18304,matt c,"['SQL', 'Fundamentals']",2016-10-26T20:53:23.684Z,reference,39,1453,0,0
 580fe518cefeff16d00000c0,SQL,1,"CREATE FUNCTION increment_by_one(num INT)
 
 RETURNS INT
@@ -3478,7 +3513,7 @@ $$
 
 $$
 
-LANGUAGE SQL;",https://www.codewars.com/kata/580fe518cefeff16d00000c0,2023-05-06 12:15:21.643,7 kyu,SQL Basics: Create a FUNCTION,5960,matt c,"['SQL', 'Fundamentals']"
+LANGUAGE SQL;",https://www.codewars.com/kata/580fe518cefeff16d00000c0,2023-05-06 12:15:21.643,SQL Basics: Create a FUNCTION,7 kyu,white,25847,5967,matt c,"['SQL', 'Fundamentals']",2016-10-26T08:21:34.974Z,reference,119,373,1,1
 642ff90503d3e2c9426fd500,SQL,1,"SELECT customer.customer_id,
 
 customer.first_name || ' ' || customer.last_name AS full_name,
@@ -3507,26 +3542,26 @@ HAVING COUNT(CASE WHEN film.rating = 'NC-17' THEN rental.customer_id END) = 0
 
 ORDER BY total_rentals DESC, customer.last_name ASC
 
-LIMIT 5",https://www.codewars.com/kata/642ff90503d3e2c9426fd500,2023-05-14 07:09:36.431,6 kyu,Exclude 'Adults only' films watchers,47,bornForThis,"['Databases', 'SQL', 'Fundamentals', 'Restricted']"
+LIMIT 5",https://www.codewars.com/kata/642ff90503d3e2c9426fd500,2023-05-14 07:09:36.431,Exclude 'Adults only' films watchers,6 kyu,yellow,387,56,bornForThis,"['Databases', 'SQL', 'Fundamentals', 'Restricted']",2023-04-07T11:08:43.993Z,reference,4,29,0,1
 59413d53f5c3947364000016,SQL,1,"/*  SQL  */
 
 SELECT regexp_split_to_table(text, '[aeiouAEIOU]') AS results
 
-FROM random_string",https://www.codewars.com/kata/59413d53f5c3947364000016,2023-05-05 18:09:06.611,7 kyu,SQL: Regex String to Table,2123,PG1,"['Fundamentals', 'Regular Expressions', 'SQL']"
+FROM random_string",https://www.codewars.com/kata/59413d53f5c3947364000016,2023-05-05 18:09:06.611,SQL: Regex String to Table,7 kyu,white,11579,2128,PG1,"['Fundamentals', 'Regular Expressions', 'SQL']",2017-06-14T15:10:08.909Z,reference,64,266,1,0
 5809508cc47d327c12000084,SQL,1,"-- Create your SELECT statement here
 
 SELECT * FROM people
 
 WHERE age > 50
 
-ORDER BY age DESC;",https://www.codewars.com/kata/5809508cc47d327c12000084,2023-05-03 07:48:31.220,8 kyu,SQL Basics: Simple WHERE and ORDER BY,19993,matt c,"['SQL', 'Filtering', 'Databases', 'Fundamentals']"
+ORDER BY age DESC;",https://www.codewars.com/kata/5809508cc47d327c12000084,2023-05-03 07:48:31.220,SQL Basics: Simple WHERE and ORDER BY,8 kyu,white,37476,20051,matt c,"['SQL', 'Filtering', 'Databases', 'Fundamentals']",2016-10-20T23:42:08.703Z,reference,53,1594,1,0
 58111f4ee10b5301a7000175,SQL,1,"-- Create your SELECT statement here
 
 SELECT age, COUNT(age) AS people_count
 
 FROM people
 
-GROUP BY age;",https://www.codewars.com/kata/58111f4ee10b5301a7000175,2023-05-05 18:05:28.082,7 kyu,SQL Basics: Simple GROUP BY,19147,matt c,"['SQL', 'Fundamentals']"
+GROUP BY age;",https://www.codewars.com/kata/58111f4ee10b5301a7000175,2023-05-05 18:05:28.082,SQL Basics: Simple GROUP BY,7 kyu,white,43585,19179,matt c,"['SQL', 'Fundamentals']",2016-10-26T21:25:40.958Z,reference,61,1573,1,0
 55fc061cc4f485a39900001f,SQL,1,"-- # write your SQL statement here: you are given a table 'numofopenlockers' with column 'n',
 
 -- return a table with column 'n' and your result in a column named 'res'.
@@ -3537,7 +3572,7 @@ SELECT n,
 
 CAST(FLOOR(SQRT(n)) AS INT) AS res
 
-FROM numofopenlockers;",https://www.codewars.com/kata/55fc061cc4f485a39900001f,2023-05-06 12:05:26.870,7 kyu,Strange principal,1098,bereket2015,"['Mathematics', 'Algorithms', 'Fundamentals']"
+FROM numofopenlockers;",https://www.codewars.com/kata/55fc061cc4f485a39900001f,2023-05-06 12:05:26.870,Strange principal,7 kyu,white,5214,1099,bereket2015,"['Mathematics', 'Algorithms', 'Fundamentals']",2015-09-18T12:40:02.322Z,reference,63,122,0,0
 5694cb0ec554589633000036,SQL,1,"-- create recursively the table with n up to and including 16
 
 WITH RECURSIVE factorial(n, value) AS (
@@ -3557,7 +3592,7 @@ WITH RECURSIVE factorial(n, value) AS (
 SELECT n, value AS fact
 
 FROM factorial;
-",https://www.codewars.com/kata/5694cb0ec554589633000036,2023-05-05 08:22:27.491,7 kyu,Recursion #1 - Factorial,8265,gabrielsiedler,"['Fundamentals', 'Recursion', 'Mathematics']"
+",https://www.codewars.com/kata/5694cb0ec554589633000036,2023-05-05 08:22:27.491,Recursion #1 - Factorial,7 kyu,white,27606,8288,gabrielsiedler,"['Fundamentals', 'Recursion', 'Mathematics']",2016-01-12T10:18:46.637Z,reference,189,991,4,3
 53369039d7ab3ac506000467,SQL,1,"-- # write your SQL statement here: you are given a table 'booltoword' with column 'bool', return a table with column 'bool' and your result in a column named 'res'.
 
 
@@ -3578,12 +3613,12 @@ SELECT ""bool"",
 
   AS res
 
-FROM booltoword",https://www.codewars.com/kata/53369039d7ab3ac506000467,2023-05-03 12:43:24.905,8 kyu,Convert boolean values to strings 'Yes' or 'No'.,245673,weavermedia,['Fundamentals']
+FROM booltoword",https://www.codewars.com/kata/53369039d7ab3ac506000467,2023-05-03 12:43:24.905,Convert boolean values to strings 'Yes' or 'No'.,8 kyu,white,444142,246606,weavermedia,['Fundamentals'],2014-03-29T09:19:53.875Z,reference,878,13898,2,0
 59414360f5c3947364000070,SQL,1,"/*  SQL  */
 
 SELECT REPEAT(name, 3) AS name, REVERSE(characteristics) AS characteristics
 
-FROM monsters;",https://www.codewars.com/kata/59414360f5c3947364000070,2023-05-06 06:40:53.367,7 kyu,SQL Basics: Repeat and Reverse,9097,PG1,"['Fundamentals', 'SQL']"
+FROM monsters;",https://www.codewars.com/kata/59414360f5c3947364000070,2023-05-06 06:40:53.367,SQL Basics: Repeat and Reverse,7 kyu,white,23542,9117,PG1,"['Fundamentals', 'SQL']",2017-06-14T14:09:46.173Z,reference,42,845,1,1
 59401e0e54a655a298000040,SQL,1,"/*  SQL  */
 
 
@@ -3594,7 +3629,7 @@ POSITION(',' IN characteristics) AS comma
 
 FROM monsters
 
-ORDER BY comma ASC;",https://www.codewars.com/kata/59401e0e54a655a298000040,2023-05-05 08:11:23.454,7 kyu,SQL Basics - Position,9642,PG1,"['Fundamentals', 'SQL']"
+ORDER BY comma ASC;",https://www.codewars.com/kata/59401e0e54a655a298000040,2023-05-05 08:11:23.454,SQL Basics - Position,7 kyu,white,23912,9665,PG1,"['Fundamentals', 'SQL']",2017-06-13T17:24:06.233Z,reference,56,899,2,0
 583710ccaa6717322c000105,SQL,1,"-- # write your SQL statement here: you are given a table 'multiplication' with column 'number', return a table with column 'number' and your result in a column named 'res'.
 
 SELECT number,
@@ -3611,7 +3646,7 @@ SELECT number,
 
   END as res
 
-FROM multiplication;",https://www.codewars.com/kata/583710ccaa6717322c000105,2023-05-03 11:42:27.258,8 kyu,Simple multiplication,111769,grace555,['Fundamentals']
+FROM multiplication;",https://www.codewars.com/kata/583710ccaa6717322c000105,2023-05-03 11:42:27.258,Simple multiplication,8 kyu,white,167182,112426,grace555,['Fundamentals'],2016-11-24T16:10:57.141Z,reference,369,6526,1,2
 54ff3102c1bad923760001f3,SQL,1,"-- # write your SQL statement here: you are given a table 'getcount' with column 'str', return a table with column 'str' and your result in a column named 'res'.
 
 
@@ -3630,10 +3665,10 @@ LENGTH(str) - LENGTH(REPLACE(str, 'a', ''))
 
 AS res
 
-FROM getcount",https://www.codewars.com/kata/54ff3102c1bad923760001f3,2023-05-05 08:16:23.571,7 kyu,Vowel Count,327466,jayeshcp,"['Strings', 'Fundamentals']"
+FROM getcount",https://www.codewars.com/kata/54ff3102c1bad923760001f3,2023-05-05 08:16:23.571,Vowel Count,7 kyu,white,822093,328306,jayeshcp,"['Strings', 'Fundamentals']",2015-03-10T17:59:30.654Z,reference,2460,22326,1,5
 57a1fd2ce298a731b20006a4,SQL,1,"-- # write your SQL statement here: you are given a table 'ispalindrome' with column 'str', return a table with column 'str' and your result in a column named 'res'.
 
-SELECT str, LOWER(str) = REVERSE(LOWER(str)) as res FROM ispalindrome",https://www.codewars.com/kata/57a1fd2ce298a731b20006a4,2023-05-03 07:41:37.855,8 kyu,Is it a palindrome?,39348,wichu,['Fundamentals']
+SELECT str, LOWER(str) = REVERSE(LOWER(str)) as res FROM ispalindrome",https://www.codewars.com/kata/57a1fd2ce298a731b20006a4,2023-05-03 07:41:37.855,Is it a palindrome?,8 kyu,white,106181,39532,wichu,['Fundamentals'],2016-08-03T14:18:32.754Z,reference,341,3506,2,7
 5861d28f124b35723e00005e,SQL,1,"--# write your SQL statement here: you are given a table 'zerofuel' with columns 'distance_to_pump', 'mpg' and 'fuel_left', return a table with all the columns and your result in a column named 'res'.
 
 
@@ -3652,12 +3687,12 @@ SELECT distance_to_pump, mpg, fuel_left,
 
   END as res
 
-FROM zerofuel",https://www.codewars.com/kata/5861d28f124b35723e00005e,2023-05-03 11:47:07.428,8 kyu,Will you make it?,96093,user2514386,"['Mathematics', 'Fundamentals']"
+FROM zerofuel",https://www.codewars.com/kata/5861d28f124b35723e00005e,2023-05-03 11:47:07.428,Will you make it?,8 kyu,white,228796,96516,user2514386,"['Mathematics', 'Fundamentals']",2016-12-27T02:31:43.625Z,reference,397,6040,0,1
 591127cbe8b9fb05bd00004b,SQL,1,"SELECT * FROM books
 
 ORDER BY copies_sold DESC
 
-LIMIT 5;",https://www.codewars.com/kata/591127cbe8b9fb05bd00004b,2023-05-03 08:18:10.593,7 kyu,Best-Selling Books (SQL for Beginners #5),19687,MaikelNabil,"['Fundamentals', 'SQL', 'Databases']"
+LIMIT 5;",https://www.codewars.com/kata/591127cbe8b9fb05bd00004b,2023-05-03 08:18:10.593,Best-Selling Books (SQL for Beginners #5),7 kyu,white,45331,19725,MaikelNabil,"['Fundamentals', 'SQL', 'Databases']",2017-05-09T02:26:40.521Z,reference,78,1870,0,0
 6391fe3f322221003db3bad6,SQL,1,"--# write your SQL statement here: 
 
 -- you are given a table 'perpendicular' with column 'n'
@@ -3718,7 +3753,7 @@ Reduces to n // 2 * (n // 2 + n % 2)
 
 SELECT n, n / 2 * (n / 2 + n % 2) as res
 
-FROM perpendicular;",https://www.codewars.com/kata/6391fe3f322221003db3bad6,2023-05-03 14:54:59.289,7 kyu,Perpendicular lines,934,MelonFruit,"['Fundamentals', 'Algorithms', 'Geometry']"
+FROM perpendicular;",https://www.codewars.com/kata/6391fe3f322221003db3bad6,2023-05-03 14:54:59.289,Perpendicular lines,7 kyu,white,2099,938,MelonFruit,"['Fundamentals', 'Algorithms', 'Geometry']",2022-12-08T15:28:11.734Z,reference,19,135,1,0
 5ab828bcedbcfc65ea000099,SQL,1,"-- i choose you! --
 
 SELECT pokemon.pokemon_name, pokemon.str * multipliers.multiplier AS modifiedStrength, multipliers.element
@@ -3729,28 +3764,28 @@ INNER JOIN multipliers ON pokemon.element_id = multipliers.id
 
 WHERE modifiedStrength >= 40
 
-ORDER BY modifiedStrength DESC;",https://www.codewars.com/kata/5ab828bcedbcfc65ea000099,2023-05-03 14:30:28.925,7 kyu,SQL with Pokemon:  Damage Multipliers,6372,sHale,"['Fundamentals', 'SQL', 'Databases', 'Data Science']"
+ORDER BY modifiedStrength DESC;",https://www.codewars.com/kata/5ab828bcedbcfc65ea000099,2023-05-03 14:30:28.925,SQL with Pokemon:  Damage Multipliers,7 kyu,white,40960,6382,sHale,"['Fundamentals', 'SQL', 'Databases', 'Data Science']",2018-03-25T23:04:54.760Z,reference,83,562,1,1
 594a691720ac16a544000075,SQL,1,"SELECT
 
   SQRT(number1) as root,
 
   LOG10(number2) as log
 
-FROM decimals",https://www.codewars.com/kata/594a691720ac16a544000075,2023-05-03 12:26:45.013,8 kyu,Easy SQL: Square Root and Log,7396,PG1,"['Fundamentals', 'Mathematics', 'SQL']"
+FROM decimals",https://www.codewars.com/kata/594a691720ac16a544000075,2023-05-03 12:26:45.013,Easy SQL: Square Root and Log,8 kyu,white,18284,7414,PG1,"['Fundamentals', 'Mathematics', 'SQL']",2017-06-21T12:46:14.168Z,reference,39,732,3,0
 580918e24a85b05ad000010c,SQL,1,"-- Create your SELECT statement here
 
 SELECT people.*, COUNT(toys.id) AS toy_count
 
 FROM toys JOIN people ON people.id = toys.people_id
 
-GROUP BY people.id;",https://www.codewars.com/kata/580918e24a85b05ad000010c,2023-05-05 08:08:12.074,7 kyu,SQL Basics: Simple JOIN with COUNT,16816,matt c,"['SQL', 'Databases', 'Fundamentals']"
+GROUP BY people.id;",https://www.codewars.com/kata/580918e24a85b05ad000010c,2023-05-05 08:08:12.074,SQL Basics: Simple JOIN with COUNT,7 kyu,white,63349,16849,matt c,"['SQL', 'Databases', 'Fundamentals']",2016-10-20T20:26:42.070Z,reference,130,1341,0,2
 5168bb5dfe9a00b126000018,SQL,2,"-- # write your SQL statement here: you are given a table 'solution' with column 'str', return a table with column 'str' and your result in a column named 'res'.
 
 SELECT str,
 
 REVERSE(str) as res
 
-FROM solution;",https://www.codewars.com/kata/5168bb5dfe9a00b126000018,2023-05-05 18:03:27.482,8 kyu,Reversed Strings,250801,jhoffner,"['Strings', 'Fundamentals']"
+FROM solution;",https://www.codewars.com/kata/5168bb5dfe9a00b126000018,2023-05-05 18:03:27.482,Reversed Strings,8 kyu,white,482993,252010,jhoffner,"['Strings', 'Fundamentals']",2013-04-13T02:22:17.697Z,reference,1331,14288,1,1
 57eae65a4321032ce000002d,SQL,1,"DO $$ 
 
 BEGIN
@@ -3769,10 +3804,10 @@ UPDATE fakebin SET res = REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE
 
 
 
-SELECT x, res FROM fakebin;",https://www.codewars.com/kata/57eae65a4321032ce000002d,2023-05-03 07:35:18.381,8 kyu,Fake Binary,97730,PG1,"['Fundamentals', 'Strings', 'Arrays']"
+SELECT x, res FROM fakebin;",https://www.codewars.com/kata/57eae65a4321032ce000002d,2023-05-03 07:35:18.381,Fake Binary,8 kyu,white,251372,98119,PG1,"['Fundamentals', 'Strings', 'Arrays']",2016-09-27T21:44:04.295Z,reference,952,6526,1,1
 590a95eede09f87472000213,SQL,1,"SELECT * FROM users
 
-WHERE age >= 18;",https://www.codewars.com/kata/590a95eede09f87472000213,2023-05-03 07:59:17.250,8 kyu,Adults only  (SQL for Beginners #1),26311,MaikelNabil,"['Fundamentals', 'SQL', 'Databases', 'Data Science']"
+WHERE age >= 18;",https://www.codewars.com/kata/590a95eede09f87472000213,2023-05-03 07:59:17.250,Adults only  (SQL for Beginners #1),8 kyu,white,42240,26387,MaikelNabil,"['Fundamentals', 'SQL', 'Databases', 'Data Science']",2017-05-04T02:46:07.752Z,reference,139,2564,0,0
 577ff15ad648a14b780000e7,JavaScript,2,"function greet(language) {
 
   return (language in greeting_json) ? greeting_json[language] : greeting_json['english'];
@@ -3817,32 +3852,32 @@ const greeting_json = {
 
     welsh: 'Croeso'
 
-  };",https://www.codewars.com/kata/577ff15ad648a14b780000e7,2023-05-09 08:15:43.121,8 kyu,Welcome!,36592,lucymonie,['Fundamentals']
+  };",https://www.codewars.com/kata/577ff15ad648a14b780000e7,2023-05-09 08:15:43.121,Welcome!,8 kyu,white,111956,36703,lucymonie,['Fundamentals'],2016-07-08T21:12:04.106Z,reference,594,3537,1,1
 56676e8fabd2d1ff3000000c,JavaScript,1,"function findNeedle(haystack) {
 
   return ""found the needle at position "" + haystack.findIndex(elem => elem === ""needle"")
 
-}",https://www.codewars.com/kata/56676e8fabd2d1ff3000000c,2023-03-09 12:20:24.764,8 kyu,A Needle in the Haystack,116652,andrewMacmurray,"['Arrays', 'Fundamentals']"
+}",https://www.codewars.com/kata/56676e8fabd2d1ff3000000c,2023-03-09 12:20:24.764,A Needle in the Haystack,8 kyu,white,266006,117127,andrewMacmurray,"['Arrays', 'Fundamentals']",2015-12-09T00:07:01.382Z,reference,905,7757,5,2
 5648b12ce68d9daa6b000099,JavaScript,2,"var number = function(busStops){
 
   return busStops.reduce((acc, [on, off]) => acc + on - off, 0);
 
-}",https://www.codewars.com/kata/5648b12ce68d9daa6b000099,2023-03-11 20:57:32.858,7 kyu,Number of People in the Bus,111492,aryan-firouzian,['Fundamentals']
-57eae20f5500ad98e50002c5,JavaScript,1,"const noSpace = x => x.replace(/\s/g, """");",https://www.codewars.com/kata/57eae20f5500ad98e50002c5,2023-03-10 16:12:47.854,8 kyu,Remove String Spaces,190344,PG1,"['Fundamentals', 'Strings']"
+}",https://www.codewars.com/kata/5648b12ce68d9daa6b000099,2023-03-11 20:57:32.858,Number of People in the Bus,7 kyu,white,216860,111841,aryan-firouzian,['Fundamentals'],2015-11-15T16:22:07.159Z,reference,1452,7951,1,1
+57eae20f5500ad98e50002c5,JavaScript,1,"const noSpace = x => x.replace(/\s/g, """");",https://www.codewars.com/kata/57eae20f5500ad98e50002c5,2023-03-10 16:12:47.854,Remove String Spaces,8 kyu,white,377309,191067,PG1,"['Fundamentals', 'Strings']",2016-09-27T21:24:05.698Z,reference,1091,11625,0,0
 55f9bca8ecaa9eac7100004a,JavaScript,1,"function past(h, m, s){
 
   let seconds = s + 60 * (m + 60 * h);
 
   return seconds * 1000;  //1s = 1000ms
 
-}",https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a,2023-03-09 11:06:06.719,8 kyu,Beginner Series #2 Clock,120132,Vortus,['Fundamentals']
+}",https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a,2023-03-09 11:06:06.719,Beginner Series #2 Clock,8 kyu,white,191881,120799,Vortus,['Fundamentals'],2015-09-16T19:17:38.292Z,reference,585,7207,0,3
 58649884a1659ed6cb000072,JavaScript,1,"function updateLight(current) {
 
   const lights = [""green"", ""yellow"", ""red""];
 
   return lights[(lights.indexOf(current) + 1) % lights.length]
 
-}",https://www.codewars.com/kata/58649884a1659ed6cb000072,2023-03-09 14:31:18.305,8 kyu,Thinkful - Logic Drills: Traffic light,70752,Grae-Drake,['Fundamentals']
+}",https://www.codewars.com/kata/58649884a1659ed6cb000072,2023-03-09 14:31:18.305,Thinkful - Logic Drills: Traffic light,8 kyu,white,114087,71434,Grae-Drake,['Fundamentals'],2016-12-29T05:00:52.120Z,reference,339,4671,0,0
 56269eb78ad2e4ced1000013,JavaScript,1,"function findNextSquare(sq) {
 
   // Return the next square if sq is a perfect square, -1 otherwise
@@ -3867,7 +3902,7 @@ const greeting_json = {
 
   return -1
 
-}",https://www.codewars.com/kata/56269eb78ad2e4ced1000013,2023-05-09 05:53:33.392,7 kyu,Find the next perfect square!,130855,kphurley,"['Algebra', 'Fundamentals']"
+}",https://www.codewars.com/kata/56269eb78ad2e4ced1000013,2023-05-09 05:53:33.392,Find the next perfect square!,7 kyu,white,331006,131205,kphurley,"['Algebra', 'Fundamentals']",2015-10-20T20:16:03.142Z,reference,1061,9543,7,2
 5bb904724c47249b10000131,JavaScript,1,"function points(games) {
 
   return games.reduce(function(points, str) {
@@ -3882,7 +3917,7 @@ const greeting_json = {
 
     },0);
 
-}",https://www.codewars.com/kata/5bb904724c47249b10000131,2023-03-09 11:37:03.255,8 kyu,Total amount of points,70734,petrosernivka,"['Fundamentals', 'Arrays', 'Strings']"
+}",https://www.codewars.com/kata/5bb904724c47249b10000131,2023-03-09 11:37:03.255,Total amount of points,8 kyu,white,174086,71750,petrosernivka,"['Fundamentals', 'Arrays', 'Strings']",2018-10-06T19:44:25.206Z,reference,1049,5258,1,0
 55908aad6620c066bc00002a,JavaScript,1,"function XO(str) {
 
     //code here
@@ -3913,12 +3948,12 @@ const greeting_json = {
 
   return x_count == o_count;
 
-}",https://www.codewars.com/kata/55908aad6620c066bc00002a,2023-03-10 11:40:16.708,7 kyu,Exes and Ohs,198653,joh_pot,['Fundamentals']
+}",https://www.codewars.com/kata/55908aad6620c066bc00002a,2023-03-10 11:40:16.708,Exes and Ohs,7 kyu,white,644726,199174,joh_pot,['Fundamentals'],2015-06-29T00:00:52.105Z,reference,1590,14202,1,4
 57f781872e3d8ca2a000007e,JavaScript,1,"function maps(x){
 
   return x.map(num => num * 2);
 
-}",https://www.codewars.com/kata/57f781872e3d8ca2a000007e,2023-03-09 11:27:04.881,8 kyu,Beginner - Lost Without a Map,129125,PG1,"['Fundamentals', 'Arrays']"
+}",https://www.codewars.com/kata/57f781872e3d8ca2a000007e,2023-03-09 11:27:04.881,Beginner - Lost Without a Map,8 kyu,white,265957,129707,PG1,"['Fundamentals', 'Arrays']",2016-10-07T11:05:43.393Z,reference,784,7699,3,0
 515e271a311df0350d00000f,JavaScript,2,"function squareSum(numbers){
 
   let sum = 0;
@@ -3931,12 +3966,12 @@ const greeting_json = {
 
   return sum;
 
-}",https://www.codewars.com/kata/515e271a311df0350d00000f,2023-03-09 10:49:15.158,8 kyu,Square(n) Sum,195642,jhoffner,"['Arrays', 'Lists', 'Fundamentals']"
+}",https://www.codewars.com/kata/515e271a311df0350d00000f,2023-03-09 10:49:15.158,Square(n) Sum,8 kyu,white,446159,196464,jhoffner,"['Arrays', 'Lists', 'Fundamentals']",2013-04-05T04:52:30.105Z,reference,1212,12400,1,3
 5772da22b89313a4d50012f7,JavaScript,1,"function greet (name, owner) {
 
   return name === owner ? ""Hello boss"" : ""Hello guest"";
 
-}",https://www.codewars.com/kata/5772da22b89313a4d50012f7,2023-03-09 13:08:16.999,8 kyu,Grasshopper - Personalized Message,78438,danleavitt0,"['Fundamentals', 'Strings']"
+}",https://www.codewars.com/kata/5772da22b89313a4d50012f7,2023-03-09 13:08:16.999,Grasshopper - Personalized Message,8 kyu,white,140877,78862,danleavitt0,"['Fundamentals', 'Strings']",2016-07-12T19:21:16.081Z,reference,291,4944,1,0
 5259b20d6021e9e14c0010d4,JavaScript,1,"function reverseWords(str) {
 
   // Split by space
@@ -3951,7 +3986,7 @@ const greeting_json = {
 
   return words.join("" "")
 
-}",https://www.codewars.com/kata/5259b20d6021e9e14c0010d4,2023-03-10 16:59:34.322,7 kyu,Reverse words,102236,jnicol,"['Strings', 'Fundamentals']"
+}",https://www.codewars.com/kata/5259b20d6021e9e14c0010d4,2023-03-10 16:59:34.322,Reverse words,7 kyu,white,401668,102655,jnicol,"['Strings', 'Fundamentals']",2013-10-12T20:44:55.489Z,reference,1724,6743,3,3
 577ff15ad648a14b780000e7,JavaScript,1,"function greet(language) {
 
   greeting_json = {
@@ -3994,12 +4029,12 @@ const greeting_json = {
 
   return (language in greeting_json) ? greeting_json[language] : greeting_json['english'];
 
-}",https://www.codewars.com/kata/577ff15ad648a14b780000e7,2023-05-09 08:14:55.671,8 kyu,Welcome!,36592,lucymonie,['Fundamentals']
+}",https://www.codewars.com/kata/577ff15ad648a14b780000e7,2023-05-09 08:14:55.671,Welcome!,8 kyu,white,111956,36703,lucymonie,['Fundamentals'],2016-07-08T21:12:04.106Z,reference,594,3537,1,1
 57f780909f7e8e3183000078,JavaScript,2,"function grow(x){
 
   return x.reduce((product, num) => product * num);
 
-}",https://www.codewars.com/kata/57f780909f7e8e3183000078,2023-03-09 11:23:24.232,8 kyu,Beginner - Reduce but Grow,99506,PG1,"['Fundamentals', 'Arrays']"
+}",https://www.codewars.com/kata/57f780909f7e8e3183000078,2023-03-09 11:23:24.232,Beginner - Reduce but Grow,8 kyu,white,184114,100177,PG1,"['Fundamentals', 'Arrays']",2016-10-07T11:01:36.161Z,reference,559,6375,1,2
 563b662a59afc2b5120000c6,JavaScript,1,"def nb_year(p0, percent, aug, p):
 
     years = 0
@@ -4016,7 +4051,7 @@ const greeting_json = {
 
 
 
-    return years",https://www.codewars.com/kata/563b662a59afc2b5120000c6,2023-03-24 07:59:46.597,7 kyu,Growth of a Population,133071,g964,['Fundamentals']
+    return years",https://www.codewars.com/kata/563b662a59afc2b5120000c6,2023-03-24 07:59:46.597,Growth of a Population,7 kyu,white,826693,133322,g964,['Fundamentals'],2015-11-05T14:22:34.296Z,reference,2074,9250,1,9
 523b4ff7adca849afe000035,JavaScript,2,"const greet = function() {
 
   let greeting = ""h"";
@@ -4059,7 +4094,7 @@ const greeting_json = {
 
   return greeting;
 
-}",https://www.codewars.com/kata/523b4ff7adca849afe000035,2023-03-09 11:59:34.795,8 kyu,Function 1 - hello world,186362,ineiti,['Fundamentals']
+}",https://www.codewars.com/kata/523b4ff7adca849afe000035,2023-03-09 11:59:34.795,Function 1 - hello world,8 kyu,white,423994,187171,ineiti,['Fundamentals'],2013-09-19T20:36:41.798Z,reference,776,7672,4,0
 5583090cbe83f4fd8c000051,JavaScript,1,"function digitize(n) {
 
   //code here
@@ -4078,13 +4113,13 @@ const greeting_json = {
 
   return outputArray;
 
-}",https://www.codewars.com/kata/5583090cbe83f4fd8c000051,2023-03-10 09:11:44.810,8 kyu,Convert number to reversed array of digits,129295,emporio,"['Arrays', 'Fundamentals']"
-53da3dbb4a5168369a0000fe,JavaScript,1,"const evenOrOdd = number => (number % 2 == 0) ? ""Even"" : ""Odd"";",https://www.codewars.com/kata/53da3dbb4a5168369a0000fe,2023-03-10 19:14:24.691,8 kyu,Even or Odd,367547,suuuzi,"['Mathematics', 'Fundamentals']"
+}",https://www.codewars.com/kata/5583090cbe83f4fd8c000051,2023-03-10 09:11:44.810,Convert number to reversed array of digits,8 kyu,white,390168,129908,emporio,"['Arrays', 'Fundamentals']",2015-06-18T18:08:24.254Z,reference,1433,8367,2,0
+53da3dbb4a5168369a0000fe,JavaScript,1,"const evenOrOdd = number => (number % 2 == 0) ? ""Even"" : ""Odd"";",https://www.codewars.com/kata/53da3dbb4a5168369a0000fe,2023-03-10 19:14:24.691,Even or Odd,8 kyu,white,744147,368876,suuuzi,"['Mathematics', 'Fundamentals']",2014-07-31T13:00:20.850Z,reference,1851,23519,2,1
 56676e8fabd2d1ff3000000c,JavaScript,2,"function findNeedle(haystack) {
 
   return ""found the needle at position "" + haystack.indexOf(""needle"");
 
-}",https://www.codewars.com/kata/56676e8fabd2d1ff3000000c,2023-03-09 12:22:30.652,8 kyu,A Needle in the Haystack,116652,andrewMacmurray,"['Arrays', 'Fundamentals']"
+}",https://www.codewars.com/kata/56676e8fabd2d1ff3000000c,2023-03-09 12:22:30.652,A Needle in the Haystack,8 kyu,white,266010,117128,andrewMacmurray,"['Arrays', 'Fundamentals']",2015-12-09T00:07:01.382Z,reference,905,7757,5,2
 5b077ebdaf15be5c7f000077,JavaScript,1,"var countSheep = function (num){
 
   let sheepString = """";
@@ -4097,26 +4132,26 @@ const greeting_json = {
 
   return sheepString;
 
-}",https://www.codewars.com/kata/5b077ebdaf15be5c7f000077,2023-03-09 11:10:53.448,8 kyu,"If you can't sleep, just count sheep!!",81168,joshra,"['Fundamentals', 'Strings']"
+}",https://www.codewars.com/kata/5b077ebdaf15be5c7f000077,2023-03-09 11:10:53.448,"If you can't sleep, just count sheep!!",8 kyu,white,209930,81571,joshra,"['Fundamentals', 'Strings']",2018-05-25T03:14:28.127Z,reference,708,5719,0,2
 5601409514fc93442500010b,JavaScript,1,"const betterThanAverage = (classPoints, yourPoints) => classPoints.reduce((i, point) => i + point, 0) / classPoints.length < yourPoints;
-",https://www.codewars.com/kata/5601409514fc93442500010b,2023-03-11 17:14:41.638,8 kyu,How good are you really?,96219,Jotha,['Fundamentals']
+",https://www.codewars.com/kata/5601409514fc93442500010b,2023-03-11 17:14:41.638,How good are you really?,8 kyu,white,221208,96727,Jotha,['Fundamentals'],2015-09-22T12:05:23.590Z,reference,581,6751,1,0
 55fab1ffda3e2e44f00000c6,JavaScript,1,"function cockroachSpeed(s) {
 
   return Math.floor((s * 10 ** 3) / 36)
 
-}",https://www.codewars.com/kata/55fab1ffda3e2e44f00000c6,2023-05-09 05:50:14.307,8 kyu,Beginner Series #4 Cockroach,57157,Vortus,['Fundamentals']
+}",https://www.codewars.com/kata/55fab1ffda3e2e44f00000c6,2023-05-09 05:50:14.307,Beginner Series #4 Cockroach,8 kyu,white,154366,57398,Vortus,['Fundamentals'],2015-09-17T12:42:24.636Z,reference,298,4180,1,4
 5265326f5fda8eb1160004c8,JavaScript,1,"function numberToString(num) {
 
   // Return a string of the number here!
 
   return num.toString();
 
-}",https://www.codewars.com/kata/5265326f5fda8eb1160004c8,2023-03-09 10:50:22.782,8 kyu,Convert a Number to a String!,260848,AKJ.IO,"['Strings', 'Fundamentals']"
+}",https://www.codewars.com/kata/5265326f5fda8eb1160004c8,2023-03-09 10:50:22.782,Convert a Number to a String!,8 kyu,white,446976,261783,AKJ.IO,"['Strings', 'Fundamentals']",2013-10-25T08:36:37.694Z,reference,827,13611,1,0
 55d24f55d7dd296eb9000030,JavaScript,1,"var summation = function (num) {
 
   return (num > 1)  ? num + summation(num - 1) : 1;
 
-}",https://www.codewars.com/kata/55d24f55d7dd296eb9000030,2023-03-09 10:59:10.563,8 kyu,Grasshopper - Summation,189879,danleavitt0,"['Fundamentals', 'Mathematics']"
+}",https://www.codewars.com/kata/55d24f55d7dd296eb9000030,2023-03-09 10:59:10.563,Grasshopper - Summation,8 kyu,white,373804,190648,danleavitt0,"['Fundamentals', 'Mathematics']",2015-09-03T18:12:44.351Z,reference,1168,11641,1,1
 5648b12ce68d9daa6b000099,JavaScript,1,"var number = function(busStops){
 
   //There's probably a way to do this with reduce
@@ -4131,10 +4166,10 @@ const greeting_json = {
 
   return people;
 
-}",https://www.codewars.com/kata/5648b12ce68d9daa6b000099,2023-03-11 20:55:05.435,7 kyu,Number of People in the Bus,111492,aryan-firouzian,['Fundamentals']
+}",https://www.codewars.com/kata/5648b12ce68d9daa6b000099,2023-03-11 20:55:05.435,Number of People in the Bus,7 kyu,white,216860,111841,aryan-firouzian,['Fundamentals'],2015-11-15T16:22:07.159Z,reference,1452,7951,1,1
 523b4ff7adca849afe000035,JavaScript,1,"// Write a function ""greet"" that returns ""hello world!""
 
-const greet = () => ""hello world!""",https://www.codewars.com/kata/523b4ff7adca849afe000035,2023-03-09 11:40:06.887,8 kyu,Function 1 - hello world,186362,ineiti,['Fundamentals']
+const greet = () => ""hello world!""",https://www.codewars.com/kata/523b4ff7adca849afe000035,2023-03-09 11:40:06.887,Function 1 - hello world,8 kyu,white,423994,187171,ineiti,['Fundamentals'],2013-09-19T20:36:41.798Z,reference,776,7672,4,0
 515e271a311df0350d00000f,JavaScript,1,"function squareSum(numbers){
 
   sum = 0;
@@ -4147,7 +4182,7 @@ const greet = () => ""hello world!""",https://www.codewars.com/kata/523b4ff7adca
 
   return sum;
 
-}",https://www.codewars.com/kata/515e271a311df0350d00000f,2023-03-09 10:46:28.417,8 kyu,Square(n) Sum,195644,jhoffner,"['Arrays', 'Lists', 'Fundamentals']"
+}",https://www.codewars.com/kata/515e271a311df0350d00000f,2023-03-09 10:46:28.417,Square(n) Sum,8 kyu,white,446160,196465,jhoffner,"['Arrays', 'Lists', 'Fundamentals']",2013-04-05T04:52:30.105Z,reference,1212,12400,1,3
 56269eb78ad2e4ced1000013,JavaScript,2,"function findNextSquare(sq) {
 
   // Return the next square if sq is a perfect square, -1 otherwise
@@ -4190,7 +4225,7 @@ const greet = () => ""hello world!""",https://www.codewars.com/kata/523b4ff7adca
 
   return -1
 
-}",https://www.codewars.com/kata/56269eb78ad2e4ced1000013,2023-05-10 05:31:36.232,7 kyu,Find the next perfect square!,130855,kphurley,"['Algebra', 'Fundamentals']"
+}",https://www.codewars.com/kata/56269eb78ad2e4ced1000013,2023-05-10 05:31:36.232,Find the next perfect square!,7 kyu,white,331008,131205,kphurley,"['Algebra', 'Fundamentals']",2015-10-20T20:16:03.142Z,reference,1061,9543,7,2
 563b662a59afc2b5120000c6,JavaScript,2,"function nbYear(p0, percent, aug, p) {
 
     // your code
@@ -4211,19 +4246,19 @@ const greet = () => ""hello world!""",https://www.codewars.com/kata/523b4ff7adca
 
   return years;
 
-}",https://www.codewars.com/kata/563b662a59afc2b5120000c6,2023-03-10 13:53:14.706,7 kyu,Growth of a Population,133071,g964,['Fundamentals']
+}",https://www.codewars.com/kata/563b662a59afc2b5120000c6,2023-03-10 13:53:14.706,Growth of a Population,7 kyu,white,826693,133322,g964,['Fundamentals'],2015-11-05T14:22:34.296Z,reference,2074,9250,1,9
 53ee5429ba190077850011d4,JavaScript,1,"function doubleInteger(i) {
 
   return i * 2;
 
-}",https://www.codewars.com/kata/53ee5429ba190077850011d4,2023-03-09 11:14:52.168,8 kyu,You Can't Code Under Pressure #1,150973,Kerrick,['Fundamentals']
-56dec885c54a926dcd001095,JavaScript,1,const opposite = number => -number;,https://www.codewars.com/kata/56dec885c54a926dcd001095,2023-03-10 16:07:51.330,8 kyu,Opposite number,262351,sergioet,['Fundamentals']
+}",https://www.codewars.com/kata/53ee5429ba190077850011d4,2023-03-09 11:14:52.168,You Can't Code Under Pressure #1,8 kyu,white,242079,151789,Kerrick,['Fundamentals'],2014-08-15T18:40:46.276Z,reference,346,5596,0,1
+56dec885c54a926dcd001095,JavaScript,1,const opposite = number => -number;,https://www.codewars.com/kata/56dec885c54a926dcd001095,2023-03-10 16:07:51.330,Opposite number,8 kyu,white,476610,263348,sergioet,['Fundamentals'],2016-03-08T15:12:28.753Z,reference,953,13416,1,1
 55d24f55d7dd296eb9000030,JavaScript,2,"var summation = function (num) {
 
   return 0.5 * num * (num + 1);
 
-}",https://www.codewars.com/kata/55d24f55d7dd296eb9000030,2023-03-09 11:03:00.229,8 kyu,Grasshopper - Summation,189879,danleavitt0,"['Fundamentals', 'Mathematics']"
-55f9b48403f6b87a7c0000bd,JavaScript,1,"const paperwork = (n, m) => {return (n < 0 || m < 0) ? 0 : n * m;}",https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd,2023-03-11 07:09:48.758,8 kyu,Beginner Series #1 School Paperwork,112294,Vortus,['Fundamentals']
+}",https://www.codewars.com/kata/55d24f55d7dd296eb9000030,2023-03-09 11:03:00.229,Grasshopper - Summation,8 kyu,white,373804,190648,danleavitt0,"['Fundamentals', 'Mathematics']",2015-09-03T18:12:44.351Z,reference,1168,11641,1,1
+55f9b48403f6b87a7c0000bd,JavaScript,1,"const paperwork = (n, m) => {return (n < 0 || m < 0) ? 0 : n * m;}",https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd,2023-03-11 07:09:48.758,Beginner Series #1 School Paperwork,8 kyu,white,230681,113312,Vortus,['Fundamentals'],2015-09-16T18:51:56.941Z,reference,423,6984,1,3
 554b4ac871d6813a03000035,JavaScript,1,"function highAndLow(numbers){
 
   numbers = numbers.split("" "");
@@ -4232,7 +4267,7 @@ const greet = () => ""hello world!""",https://www.codewars.com/kata/523b4ff7adca
 
   return String(Math.max.apply(Math, numbers)) + "" "" + String(Math.min.apply(Math, numbers));
 
-}",https://www.codewars.com/kata/554b4ac871d6813a03000035,2023-03-10 19:24:45.517,7 kyu,Highest and Lowest,237315,Deantwo,"['Fundamentals', 'Strings']"
+}",https://www.codewars.com/kata/554b4ac871d6813a03000035,2023-03-10 19:24:45.517,Highest and Lowest,7 kyu,white,803132,237929,Deantwo,"['Fundamentals', 'Strings']",2015-05-07T11:50:38.518Z,reference,2790,16905,0,0
 57f780909f7e8e3183000078,JavaScript,1,"function grow(x){
 
   return x.reduce((product, num) => {
@@ -4241,7 +4276,7 @@ const greet = () => ""hello world!""",https://www.codewars.com/kata/523b4ff7adca
 
   }, 1);
 
-}",https://www.codewars.com/kata/57f780909f7e8e3183000078,2023-03-09 11:20:03.958,8 kyu,Beginner - Reduce but Grow,99507,PG1,"['Fundamentals', 'Arrays']"
+}",https://www.codewars.com/kata/57f780909f7e8e3183000078,2023-03-09 11:20:03.958,Beginner - Reduce but Grow,8 kyu,white,184114,100177,PG1,"['Fundamentals', 'Arrays']",2016-10-07T11:01:36.161Z,reference,559,6375,1,2
 57a429e253ba3381850000fb,JavaScript,1,"function bmi(weight, height) {
 
   let bmi = weight / height ** 2;
@@ -4262,7 +4297,7 @@ const greet = () => ""hello world!""",https://www.codewars.com/kata/523b4ff7adca
 
   return ""Obese""
 
-}",https://www.codewars.com/kata/57a429e253ba3381850000fb,2023-03-12 08:29:23.016,8 kyu,Calculate BMI,99344,wichu,['Fundamentals']
+}",https://www.codewars.com/kata/57a429e253ba3381850000fb,2023-03-12 08:29:23.016,Calculate BMI,8 kyu,white,249200,99814,wichu,['Fundamentals'],2016-08-05T05:53:53.749Z,reference,531,6351,2,4
 523b4ff7adca849afe000035,JavaScript,3,"const greet = function()  {
 
   let greeting = """";
@@ -4295,12 +4330,12 @@ const greet = () => ""hello world!""",https://www.codewars.com/kata/523b4ff7adca
 
   return greeting;
 
-}",https://www.codewars.com/kata/523b4ff7adca849afe000035,2023-03-09 12:58:55.478,8 kyu,Function 1 - hello world,186362,ineiti,['Fundamentals']
+}",https://www.codewars.com/kata/523b4ff7adca849afe000035,2023-03-09 12:58:55.478,Function 1 - hello world,8 kyu,white,423994,187171,ineiti,['Fundamentals'],2013-09-19T20:36:41.798Z,reference,776,7672,4,0
 55f73be6e12baaa5900000d4,C,1,"int goals(int laLigaGoals, int copaDelReyGoals, int championsLeagueGoals) {
 
 	return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 
-}",https://www.codewars.com/kata/55f73be6e12baaa5900000d4,2023-03-11 15:51:20.213,8 kyu,Grasshopper - Messi goals function,63513,danleavitt0,['Fundamentals']
+}",https://www.codewars.com/kata/55f73be6e12baaa5900000d4,2023-03-11 15:51:20.213,Grasshopper - Messi goals function,8 kyu,white,91434,63887,danleavitt0,['Fundamentals'],2015-10-23T17:42:29.509Z,reference,193,3288,3,2
 53dc23c68a0c93699800041d,C,1,"#include <stdlib.h>
 
 #include <string.h>
@@ -4337,7 +4372,7 @@ char *smash (const char *const words[], size_t nb_words)
 
 	return sentence;
 
-}",https://www.codewars.com/kata/53dc23c68a0c93699800041d,2023-03-17 21:27:52.960,8 kyu,Sentence Smash,94314,richardhsu,"['Strings', 'Arrays', 'Fundamentals']"
+}",https://www.codewars.com/kata/53dc23c68a0c93699800041d,2023-03-17 21:27:52.960,Sentence Smash,8 kyu,white,188508,94862,richardhsu,"['Strings', 'Arrays', 'Fundamentals']",2014-08-01T23:33:34.894Z,reference,554,5751,1,4
 551b4501ac0447318f0009cd,C,1,"#include <stdbool.h>
 
 
@@ -4350,7 +4385,7 @@ const char *boolean_to_string(bool b)
 
     return (b == true) ? ""true"" : ""false"";
 
-}",https://www.codewars.com/kata/551b4501ac0447318f0009cd,2023-03-10 22:09:44.563,8 kyu,Convert a Boolean to a String,149870,btaitelb,"['Strings', 'Fundamentals']"
+}",https://www.codewars.com/kata/551b4501ac0447318f0009cd,2023-03-10 22:09:44.563,Convert a Boolean to a String,8 kyu,white,227460,150685,btaitelb,"['Strings', 'Fundamentals']",2015-04-01T01:08:58.056Z,reference,533,7220,0,2
 53dc54212259ed3d4f00071c,C,1,"#include <stddef.h>
 
 
@@ -4369,7 +4404,7 @@ int sum_array(const int *values, size_t count)  {
 
   return sum;
 
-}",https://www.codewars.com/kata/53dc54212259ed3d4f00071c,2023-03-10 20:51:30.118,8 kyu,Sum Arrays,112207,richardhsu,"['Arrays', 'Fundamentals']"
+}",https://www.codewars.com/kata/53dc54212259ed3d4f00071c,2023-03-10 20:51:30.118,Sum Arrays,8 kyu,white,211649,112809,richardhsu,"['Arrays', 'Fundamentals']",2014-08-02T02:59:47.534Z,reference,530,6684,3,2
 59ca8246d751df55cc00014c,C,1,"#include <stdbool.h>
 
 #include <stdint.h>
@@ -4380,7 +4415,7 @@ bool hero(uint32_t bullets, uint32_t dragons) {
 
   return (bullets >= dragons * 2) ? true : false;
 
-}",https://www.codewars.com/kata/59ca8246d751df55cc00014c,2023-03-13 18:32:54.494,8 kyu,Is he gonna survive?,96593,MMortaga,['Fundamentals']
+}",https://www.codewars.com/kata/59ca8246d751df55cc00014c,2023-03-13 18:32:54.494,Is he gonna survive?,8 kyu,white,191259,97506,MMortaga,['Fundamentals'],2017-09-26T16:37:29.064Z,reference,451,5946,0,9
 576bb71bbbcf0951d5000044,C,1,"#include <stddef.h>
 
 #include <stdlib.h>
@@ -4427,7 +4462,7 @@ int* count_positives_sum_negatives(
 
   return result;
 
-}  ",https://www.codewars.com/kata/576bb71bbbcf0951d5000044,2023-03-31 13:29:12.165,8 kyu,Count of positives / sum of negatives,104516,Dentzil,"['Fundamentals', 'Arrays', 'Lists']"
+}  ",https://www.codewars.com/kata/576bb71bbbcf0951d5000044,2023-03-31 13:29:12.165,Count of positives / sum of negatives,8 kyu,white,825725,104865,Dentzil,"['Fundamentals', 'Arrays', 'Lists']",2016-06-23T10:38:00.885Z,reference,1461,6889,8,9
 57356c55867b9b7a60000bd7,C,1,"#include <stdio.h>
 
 
@@ -4464,7 +4499,7 @@ int basic_op(char op, int value1, int value2) {
 
   return 0;
 
-}",https://www.codewars.com/kata/57356c55867b9b7a60000bd7,2023-03-31 09:01:12.001,8 kyu,Basic Mathematical Operations,146881,Quickz,"['Mathematics', 'Fundamentals']"
+}",https://www.codewars.com/kata/57356c55867b9b7a60000bd7,2023-03-31 09:01:12.001,Basic Mathematical Operations,8 kyu,white,272660,147522,Quickz,"['Mathematics', 'Fundamentals']",2016-05-13T06:28:25.363Z,reference,888,8798,5,5
 54edbc7200b811e956000556,C,1,"#include <stdbool.h>
 
 #include <stddef.h>
@@ -4487,7 +4522,7 @@ size_t count_sheep(const bool sheep[/* count */], size_t count)
 
   return num_sheep;
 
-}",https://www.codewars.com/kata/54edbc7200b811e956000556,2023-04-29 12:03:36.619,8 kyu,Counting sheep...,182296,tfKamran,"['Arrays', 'Fundamentals']"
+}",https://www.codewars.com/kata/54edbc7200b811e956000556,2023-04-29 12:03:36.619,Counting sheep...,8 kyu,white,514308,183009,tfKamran,"['Arrays', 'Fundamentals']",2015-02-25T12:17:31.741Z,reference,1302,10767,5,11
 55a2d7ebe362935a210000b2,C,1,"#include <stddef.h>
 
 
@@ -4514,7 +4549,7 @@ int find_smallest_int(const int array[/* len */], size_t len)
 
     return smallest;
 
-}",https://www.codewars.com/kata/55a2d7ebe362935a210000b2,2023-03-11 15:50:33.460,8 kyu,Find the smallest integer in the array,192977,dukeofgarda,['Fundamentals']
+}",https://www.codewars.com/kata/55a2d7ebe362935a210000b2,2023-03-11 15:50:33.460,Find the smallest integer in the array,8 kyu,white,376946,193744,dukeofgarda,['Fundamentals'],2015-07-12T21:11:22.672Z,reference,1061,11098,1,2
 57a0885cbb9944e24c00008e,C,1,"#include <string.h>
 
 
@@ -4541,7 +4576,7 @@ void remove_exclamation_marks(const char* str_in, char* str_out) {
 
   str_out[count] = '\0';
 
-}",https://www.codewars.com/kata/57a0885cbb9944e24c00008e,2023-03-11 15:56:53.707,8 kyu,Remove exclamation marks,72652,wichu,"['Fundamentals', 'Strings']"
+}",https://www.codewars.com/kata/57a0885cbb9944e24c00008e,2023-03-11 15:56:53.707,Remove exclamation marks,8 kyu,white,174560,73157,wichu,"['Fundamentals', 'Strings']",2016-08-02T11:48:46.317Z,reference,411,4757,0,1
 5715eaedb436cf5606000381,C#,1,"using System;
 
 using System.Linq;
@@ -4567,7 +4602,7 @@ public class Kata
   }
 
 }
-",https://www.codewars.com/kata/5715eaedb436cf5606000381,2023-05-03 14:16:10.209,8 kyu,Sum of positive,226853,JbPasquier,"['Arrays', 'Fundamentals']"
+",https://www.codewars.com/kata/5715eaedb436cf5606000381,2023-05-03 14:16:10.209,Sum of positive,8 kyu,white,499455,227767,JbPasquier,"['Arrays', 'Fundamentals']",2016-04-19T08:23:20.306Z,reference,1593,15331,1,1
 55cbc3586671f6aa070000fb,C#,1,"using System;
 
 
@@ -4584,7 +4619,7 @@ public class Kata
 
   }
 
-}",https://www.codewars.com/kata/55cbc3586671f6aa070000fb,2023-05-03 14:11:40.738,8 kyu,Grasshopper - Check for factor,52540,danleavitt0,"['Mathematics', 'Fundamentals']"
+}",https://www.codewars.com/kata/55cbc3586671f6aa070000fb,2023-05-03 14:11:40.738,Grasshopper - Check for factor,8 kyu,white,85099,52924,danleavitt0,"['Mathematics', 'Fundamentals']",2015-09-11T21:20:31.597Z,reference,216,3920,0,3
 557cd6882bfa3c8a9f0000c1,C#,1,"using System;
 
 
@@ -4603,39 +4638,4 @@ public class Kata
 
   }
 
-}",https://www.codewars.com/kata/557cd6882bfa3c8a9f0000c1,2023-05-03 12:55:15.402,8 kyu,Parse nice int from char problem,57474,Joz,['Fundamentals']
-56170e844da7c6f647000063,Python,1,"def people_with_age_drink(age):
-
-    ages = [14, 18, 21, 500000]
-
-    drinks = [""toddy"", ""coke"", ""beer"", ""whisky""]
-
-    for tuple in zip(ages, drinks):
-
-        if age < tuple[0]:
-
-            return f""drink {tuple[1]}""
-
-        
-
-    return ""You are dead""",https://www.codewars.com/kata/56170e844da7c6f647000063,2023-05-14 20:44:52.494,8 kyu,Drink about,28940,darlanmendonca,['Fundamentals']
-59a96d71dbe3b06c0200009c,BF,1,",[>>++++[<++++++++++>-]<+++
-
-<[>>+>+<<<-]
-
-++++++++++
-
->>[->>+<<<.>]
-
->>[<<+>>-]<-
-
-[<<<.>>[<.>->>+<<]>>[<<+>>-]<-]<<<[-]]",https://www.codewars.com/kata/59a96d71dbe3b06c0200009c,2023-05-15 10:16:06.091,7 kyu,Build a square,14606,Capocaccia,"['Fundamentals', 'ASCII Art']"
-596f7ec359f9e9b017000006,BF,1,",>,[<.>-]",https://www.codewars.com/kata/596f7ec359f9e9b017000006,2023-05-15 08:02:43.256,7 kyu,BF basics #2: Repeat the input,381,ice1000,['Fundamentals']
-596f80b5f468ae8daa000013,BF,1,.+[.+],https://www.codewars.com/kata/596f80b5f468ae8daa000013,2023-05-15 08:04:13.013,7 kyu,BF basics #1: All ascii characters,454,ice1000,['Fundamentals']
-596f7d99f468ae8daa00000b,BF,1,"++++>+++++++[<++++>-]++>+++++>+++++[<++++++>-]<[<++>-]+++++>++++>+++[<+++++>-]<[<+++++>-]
-
-<<.>+.+++++++..+++.<<.>+++++++++++++++.>.+++.------.--------.<<+.",https://www.codewars.com/kata/596f7d99f468ae8daa00000b,2023-05-15 07:54:40.541,7 kyu,BF basics #0: Hello World,420,ice1000,"['Fundamentals', 'Mathematics']"
-596f88f359f9e99030000012,BF,1,",>,[<+>-]<.",https://www.codewars.com/kata/596f88f359f9e99030000012,2023-05-15 09:35:43.460,7 kyu,BF basics #3: Plusing,383,ice1000,"['Fundamentals', 'Mathematics']"
-5a79601b373c2e3b4a00013c,BF,1,"++++++>++++++[<++++++>-]
-
-,[<.>,]",https://www.codewars.com/kata/5a79601b373c2e3b4a00013c,2023-05-15 08:09:03.498,7 kyu,[BF] Hide the Password,224,iNont,"['Fundamentals', 'Algorithms', 'Strings']"
+}",https://www.codewars.com/kata/557cd6882bfa3c8a9f0000c1,2023-05-03 12:55:15.402,Parse nice int from char problem,8 kyu,white,116281,57737,Joz,['Fundamentals'],2015-06-14T01:26:21.484Z,reference,264,3841,3,2
