@@ -26414,3 +26414,4463 @@ public class Kata
     }
 
 }",https://www.codewars.com/kata/57e921d8b36340f1fd000059,2023-05-19 08:39:51.796,Holiday VI - Shark Pontoon,8 kyu,white,82651,15128,PG1,"['Fundamentals', 'Mathematics']",2016-09-26T13:25:44.308Z,reference,254,1519,7,3
+50654ddff44f800200000004,Shell,1,"#!/bin/bash -e
+
+a=$1
+
+b=$2
+
+echo $(($1*$2))",https://www.codewars.com/kata/50654ddff44f800200000004,2023-06-02 08:29:49.221,Multiply,8 kyu,white,6658509,5478968,,"['Debugging', 'Fundamentals']",2013-05-18T18:40:17.975Z,bug_fixes,2198,18076,1,0
+52fba66badcd10859f00097e,Shell,1,"#!/bin/bash
+
+
+
+# your code here #input text as $1,output as result
+
+echo $1 | sed 's/[aeiou]//gI'",https://www.codewars.com/kata/52fba66badcd10859f00097e,2023-06-02 08:18:59.244,Disemvowel Trolls,7 kyu,white,812969,282103,osuushi,"['Strings', 'Regular Expressions', 'Fundamentals']",2014-02-12T16:54:28.937Z,reference,2650,19232,3,2
+5667e8f4e3f572a8f2000039,Shell,1,"#!/bin/bash
+
+accum () {
+
+    str=""""
+
+    num=0
+
+    for (( i=0; i<${#1}; i++ )); do
+
+      char=${1:$i:1}
+
+      str+=${char^}
+
+      for (( j=0; j<$num; j++ )); do
+
+        str+=${char,,}
+
+      done
+
+      str+=""-""
+
+      ((num++))
+
+    done
+
+    # Remove final character because there's an extra hyphen
+
+    echo ${str::-1}
+
+}
+
+accum ""$1""",https://www.codewars.com/kata/5667e8f4e3f572a8f2000039,2023-06-02 08:53:59.411,Mumbling,7 kyu,white,589270,190206,g964,"['Fundamentals', 'Strings', 'Puzzles']",2015-12-09T08:40:29.276Z,reference,2944,15484,0,1
+526571aae218b8ee490006f4,Shell,1,"#!/bin/bash
+
+n=$1
+
+echo ""$(echo ""ibase=10;obase=2;$n"" | bc | sed ""s/0//g"" | wc -c) - 1"" | bc",https://www.codewars.com/kata/526571aae218b8ee490006f4,2023-06-02 08:36:06.915,Bit Counting,6 kyu,yellow,485487,199990,xcthulhu,"['Bits', 'Algorithms']",2013-10-21T18:27:26.672Z,algorithms,2103,16431,4,1
+5ae62fcf252e66d44d00008e,Shell,1,"a=$1
+
+b=$2
+
+c=$3
+
+# your code here
+
+sum=0
+
+maxSeen=$((a + b + c))
+
+temp=$((a * b * c))
+
+# Fucking stupid dumb way of doing it cause I'm terrible at Bash
+
+if [ $temp -gt $maxSeen ]; then
+
+  maxSeen=$temp
+
+fi
+
+temp=$((a + b * c))
+
+if [ $temp -gt $maxSeen ]; then
+
+  maxSeen=$temp
+
+fi
+
+temp=$(((a + b) * c))
+
+if [ $temp -gt $maxSeen ]; then
+
+  maxSeen=$temp
+
+fi
+
+temp=$((a * (b + c)))
+
+if [ $temp -gt $maxSeen ]; then
+
+  maxSeen=$temp
+
+fi
+
+temp=$((a * b + c))
+
+if [ $temp -gt $maxSeen ]; then
+
+  maxSeen=$temp
+
+fi
+
+
+
+echo $maxSeen",https://www.codewars.com/kata/5ae62fcf252e66d44d00008e,2023-05-30 19:22:41.745,Expressions Matter ,8 kyu,white,121257,43771,MrZizoScream,"['Algorithms', 'Fundamentals']",2018-04-29T21:49:35.298Z,reference,776,3273,1,0
+53da3dbb4a5168369a0000fe,Shell,1,"# TODO: solution
+
+if [ $(expr $1 % 2) == ""0"" ]; then
+
+  echo ""Even""
+
+else
+
+  echo ""Odd""
+
+fi",https://www.codewars.com/kata/53da3dbb4a5168369a0000fe,2023-06-02 08:29:10.611,Even or Odd,8 kyu,white,755575,375354,suuuzi,"['Mathematics', 'Fundamentals']",2014-07-31T13:00:20.850Z,reference,1876,23753,2,1
+55225023e1be1ec8bc000390,Shell,1,"#!/bin/bash
+
+
+
+if [ $1 = ""Johnny"" ]; then
+
+  echo ""Hello. my Love!"";
+
+else
+
+  echo ""Hello, $1!""
+
+fi",https://www.codewars.com/kata/55225023e1be1ec8bc000390,2023-06-02 08:13:31.556,Jenny's secret message,8 kyu,white,139844,83367,bkaes,['Debugging'],2015-04-06T09:37:34.908Z,bug_fixes,394,5809,2,0
+5a3fe3dde1ce0e8ed6000097,Shell,1,"#!/bin/bash
+
+year=$1
+
+echo $((1 + ($1 - 1) / 100))",https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097,2023-05-31 10:14:16.943,Century From Year,8 kyu,white,388819,151252,MrZizoScream,"['Fundamentals', 'Mathematics']",2017-12-24T17:33:52.696Z,reference,1307,8842,1,1
+55edaba99da3a9c84000003b,Prolog,1,"divisible_by([], _, []).
+
+
+
+divisible_by([Number | Rest], Divisor, [Number | Result]) :- 
+
+  0 is Number mod Divisor,
+
+  divisible_by(Rest, Divisor, Result).
+
+  
+
+divisible_by([_|Rest], Divisor, Result) :-
+
+  divisible_by(Rest, Divisor, Result).",https://www.codewars.com/kata/55edaba99da3a9c84000003b,2023-05-25 18:04:57.615,Find numbers which are divisible by given number,8 kyu,white,83882,32059,XxxX88,"['Arrays', 'Algorithms']",2015-09-07T15:26:53.149Z,algorithms,272,3627,1,2
+55f9bca8ecaa9eac7100004a,Prolog,1,"past(H, M, S, Result) :- 
+
+  Result is H * 3600000 + M * 60000 + S * 1000.",https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a,2023-05-22 11:42:00.397,Beginner Series #2 Clock,8 kyu,white,196732,123977,Vortus,['Fundamentals'],2015-09-16T19:17:38.292Z,reference,604,7286,0,3
+5300901726d12b80e8000498,Prolog,1,"fizzify(N, Result) :-
+
+  fizzify(N, N, [], Result).
+
+  
+
+fizzify(0, _, Acc, Acc).  % Base case: unify Acc with Result
+
+  
+
+fizzify(Current, N, Acc, Result) :-
+
+  Current > 0,
+
+  (
+
+    Current mod 3 =:= 0,
+
+    Current mod 5 =:= 0 ->
+
+    NewElem = ""FizzBuzz""
+
+    ;
+
+    Current mod 5 =:= 0 ->
+
+    NewElem = ""Buzz""
+
+    ;
+
+    Current mod 3 =:= 0 ->
+
+    NewElem = ""Fizz""
+
+    ;
+
+    NewElem = Current
+
+  ),
+
+  NewAcc = [NewElem | Acc],
+
+  Next is Current - 1,
+
+  fizzify(Next, N, NewAcc, Result).",https://www.codewars.com/kata/5300901726d12b80e8000498,2023-05-22 10:31:11.952,Fizz Buzz,7 kyu,white,76286,22377,stephenyu,"['Algorithms', 'Fundamentals', 'Arrays']",2014-02-16T16:18:10.368Z,algorithms,227,1645,5,3
+55f9b48403f6b87a7c0000bd,Prolog,1,"paperwork(N, M, Result) :-
+
+  (N >= 0, M >=0) ->
+
+  Result is N * M
+
+  ;
+
+  Result is 0.",https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd,2023-05-22 11:45:25.657,Beginner Series #1 School Paperwork,8 kyu,white,239902,119132,Vortus,['Fundamentals'],2015-09-16T18:51:56.941Z,reference,459,7178,1,5
+5738f5ea9545204cec000155,Prolog,1,"count_letters_and_digits(Input, Result) :-
+
+    string_chars(Input, Chars),
+
+    count_letters_and_digits_helper(Chars, 0, Result).
+
+
+
+count_letters_and_digits_helper([], Count, Count).
+
+
+
+count_letters_and_digits_helper([Char|Rest], Count, Result) :-
+
+    (char_type(Char, alpha) ; char_type(Char, digit)),
+
+    NewCount is Count + 1,
+
+    count_letters_and_digits_helper(Rest, NewCount, Result).
+
+    
+
+count_letters_and_digits_helper([_|Rest], Count, Result) :-
+
+    count_letters_and_digits_helper(Rest, Count, Result).",https://www.codewars.com/kata/5738f5ea9545204cec000155,2023-05-20 16:59:16.384,Help Bob count letters and digits.,7 kyu,white,13949,4409,user4790725,"['Strings', 'Fundamentals']",2016-07-22T13:45:48.807Z,reference,44,664,0,0
+55f2b110f61eb01779000053,Prolog,1,"get_sum(A, B, Result) :-
+
+  (A < B) ->
+
+  get_sum_helper(A, B, 0, Result)
+
+  ;
+
+  get_sum_helper(B, A, 0, Result).
+
+  
+
+get_sum_helper(Current, End, Acc, Result) :-
+
+  Current =< End,
+
+  NewAcc is Acc + Current,
+
+  Next is Current + 1,
+
+  get_sum_helper(Next, End, NewAcc, Result).
+
+  
+
+get_sum_helper(Current, End, Acc, Acc) :-
+
+  Current > End.",https://www.codewars.com/kata/55f2b110f61eb01779000053,2023-05-22 11:56:50.353,Beginner Series #3 Sum of Numbers,7 kyu,white,728654,170574,Vortus,"['Fundamentals', 'Algorithms']",2015-09-11T10:50:22.676Z,reference,2027,11502,0,3
+5ce9c1000bab0b001134f5af,Prolog,1,"quarter_of(Month, Quarter) :-
+
+  Month =< 3,
+
+  Quarter is 1.
+
+  
+
+quarter_of(Month, Quarter) :-
+
+  Month > 3,
+
+  Month =< 6,
+
+  Quarter is 2.
+
+  
+
+quarter_of(Month, Quarter) :-
+
+  Month > 6,
+
+  Month =< 9,
+
+  Quarter is 3.
+
+  
+
+quarter_of(Month, Quarter) :-
+
+  Month > 9,
+
+  Month =< 12,
+
+  Quarter is 4.",https://www.codewars.com/kata/5ce9c1000bab0b001134f5af,2023-05-20 16:48:12.578,Quarter of the year,8 kyu,white,163748,80356,Orses,"['Fundamentals', 'Mathematics']",2019-05-25T22:43:07.584Z,reference,465,4655,1,1
+55fab1ffda3e2e44f00000c6,Prolog,1,"cockroach_speed(Speed, Result) :-
+
+  Result is floor(Speed * 100000 / 3600).",https://www.codewars.com/kata/55fab1ffda3e2e44f00000c6,2023-05-22 12:08:56.392,Beginner Series #4 Cockroach,8 kyu,white,157186,58561,Vortus,['Fundamentals'],2015-09-17T12:42:24.636Z,reference,309,4232,1,5
+563e320cee5dddcf77000158,Prolog,1,"get_average(List, Res) :-
+
+  sum_list(List, Sum),
+
+  count_elements(List, Elements),
+
+  Res is Sum // Elements.
+
+
+
+sum_list([], 0).
+
+
+
+sum_list([Num | List], Sum) :-
+
+  sum_list(List, RestSum),
+
+  Sum is RestSum + Num.
+
+  
+
+count_elements([], 0).
+
+
+
+count_elements([Elem | List], Elements) :-
+
+  count_elements(List, RestElements),
+
+  Elements is RestElements + 1.",https://www.codewars.com/kata/563e320cee5dddcf77000158,2023-05-25 18:15:53.062,Get the mean of an array,8 kyu,white,153472,70146,AzariasB,"['Arrays', 'Algorithms']",2015-11-07T17:46:35.687Z,algorithms,442,5333,1,1
+5ae62fcf252e66d44d00008e,PowerShell,1,"function ExpressionMatter([int] $a, [int] $b, [int] $c) {
+
+  # Create an array of the values from every possible combo
+
+  $values = ($a + $b + $c), ($a * $b * $c), (($a + $b) * $c), ($a * ($b + $c))
+
+  return ($values | Measure-Object -Maximum).Maximum
+
+}",https://www.codewars.com/kata/5ae62fcf252e66d44d00008e,2023-05-31 10:08:14.973,Expressions Matter ,8 kyu,white,121257,43771,MrZizoScream,"['Algorithms', 'Fundamentals']",2018-04-29T21:49:35.298Z,reference,776,3273,1,0
+59bd84b8a0640e7c49002398,PowerShell,1,"function Triangle-Area([string]$triangle)
+
+{
+
+  $count = ($triangle | Select-String -Pattern '\n' -AllMatches).Matches.Count
+
+  return [Math]::Pow($count - 2, 2) * 0.5
+
+}",https://www.codewars.com/kata/59bd84b8a0640e7c49002398,2023-05-30 12:03:41.494,Triangle area,7 kyu,white,6176,2568,crataegus,"['Mathematics', 'Fundamentals']",2017-09-16T20:08:24.544Z,reference,41,361,0,0
+569218bc919ccba77000000b,PowerShell,1,"function date-nb-days([int]$a0, [int]$a, [int]$p)
+
+{
+
+  $days = 0
+
+  [double]$p = 1 + $p / 36000
+
+  $a0 = [double]$a0
+
+  while ($a0 * [Math]::Pow($p, $days) -le $a)
+
+  {
+
+    $days++
+
+  }
+
+
+
+  # Now we know how many days have passed we can start constructing the date
+
+  $date = Get-Date -Year 2016 -Month 1 -Day 1
+
+  $newDate = $date.AddDays($days)
+
+  
+
+  $formattedDate = $newDate.ToString(""yyyy-MM-dd"")
+
+  return $formattedDate
+
+}",https://www.codewars.com/kata/569218bc919ccba77000000b,2023-05-29 19:44:37.255,Target Date,7 kyu,white,11229,2598,g964,"['Fundamentals', 'Mathematics']",2016-01-10T08:39:35.521Z,reference,148,287,0,0
+5ac6932b2f317b96980000ca,PowerShell,1,"function Get-MinValue ([int[]]$values)
+
+{
+
+  $values = $values | Sort-Object
+
+  $seen = New-Object System.Collections.ArrayList
+
+  $output = """"
+
+  foreach ($value in $values)
+
+  {
+
+    if (-Not ($value -in $seen))
+
+    {
+
+      $output += [string]$value
+
+      $seen += $value
+
+    }
+
+  }
+
+  return $output
+
+}",https://www.codewars.com/kata/5ac6932b2f317b96980000ca,2023-05-30 18:53:47.760,Form The Minimum,7 kyu,white,59280,22143,MrZizoScream,['Fundamentals'],2018-04-05T21:24:48.241Z,reference,307,2406,2,0
+569b5cec755dd3534d00000f,PowerShell,1,"function new-avg($arr, $navg)
+
+{
+
+   if ($arr.Length -eq 0)
+
+   {
+
+    return $navg
+
+   }
+
+   
+
+   $sum = 0
+
+   foreach ($item in $arr)
+
+   {
+
+    $sum += $item
+
+   }
+
+   
+
+   $donationRequired = $navg * ($arr.Length + 1) - $sum
+
+   if ($donationRequired -le 0)
+
+   {
+
+    return -1
+
+   }
+
+   return [Math]::Ceiling($donationRequired)
+
+}",https://www.codewars.com/kata/569b5cec755dd3534d00000f,2023-05-30 08:51:53.923,Looking for a benefactor,7 kyu,white,78052,8263,g964,"['Fundamentals', 'Arrays']",2016-01-17T09:20:44.168Z,reference,168,739,1,1
+5a2be17aee1aaefe2a000151,PowerShell,1,"function array_plus_array($arr1,$arr2){
+
+  $length = $arr1.Length
+
+  $sum = 0
+
+  for ($i = 0; $i -lt $length; $i++)
+
+  {
+
+    $sum += $arr1[$i] + $arr2[$i]
+
+  }
+
+  return $sum
+
+}",https://www.codewars.com/kata/5a2be17aee1aaefe2a000151,2023-05-30 17:51:35.452,Array plus array,8 kyu,white,117590,62183,Dmitry Kudla,"['Fundamentals', 'Arrays', 'Debugging']",2017-12-09T13:36:59.912Z,bug_fixes,351,5494,1,2
+588417e576933b0ec9000045,PowerShell,1,"function seats_in_theater {
+
+    [OutputType([int])]
+
+    Param ([int]$total_col, [int]$total_row, [int]$col, [int]$row)
+
+    
+
+    return ($total_col - $col + 1) * ($total_row - $row)
+
+}",https://www.codewars.com/kata/588417e576933b0ec9000045,2023-05-30 13:21:35.230,Simple Fun #1: Seats in Theater,8 kyu,white,33646,18187,myjinxin2015,"['Puzzles', 'Mathematics']",2017-01-22T02:40:33.141Z,games,217,2235,3,3
+5a2fd38b55519ed98f0000ce,PowerShell,1,"function Multi-Table ([int] $n) {
+
+  $output = """"
+
+  for ($i = 1; $i -lt 10; $i++)
+
+  {
+
+    $product = $i * $n
+
+    $output += ""${i} * ${n} = ${product}`n""
+
+  }
+
+  # Add the last line
+
+  $product = 10 * $n
+
+  $output += ""10 * ${n} = ${product}""
+
+  return $output
+
+}",https://www.codewars.com/kata/5a2fd38b55519ed98f0000ce,2023-05-31 10:21:27.059,Multiplication table for number,8 kyu,white,83193,28780,Dmitry Kudla,"['Fundamentals', 'Strings']",2017-12-12T14:19:36.801Z,reference,371,2323,1,0
+5f70c883e10f9e0001c89673,PowerShell,1,"function flip([char] $dir, [int[]] $arr) {
+
+  $arr = $arr | Sort-Object
+
+  if ($dir -eq 'R')
+
+  {
+
+    return $arr
+
+  }
+
+  $reversed = $arr.Clone()
+
+  [array]::Reverse($reversed)
+
+  return $reversed
+
+}",https://www.codewars.com/kata/5f70c883e10f9e0001c89673,2023-05-30 19:13:51.823,Gravity Flip,8 kyu,white,64816,26180,LogicalX,"['Puzzles', 'Arrays']",2020-09-27T17:14:43.893Z,games,501,2136,0,0
+562f91ff6a8b77dfe900006e,PowerShell,1,"function movie([int]$card, [int]$ticket, [double]$percent)
+
+{
+
+  $totalSpend = $card
+
+  $ticketsBought = 0
+
+  while ([Math]::Ceiling($totalSpend) -ge $ticketsBought * $ticket) 
+
+  {
+
+    $ticketsBought++
+
+    $totalSpend += $ticket * [Math]::Pow($percent, $ticketsBought)
+
+  }
+
+  return $ticketsBought
+
+}",https://www.codewars.com/kata/562f91ff6a8b77dfe900006e,2023-05-29 18:18:56.448,Going to the cinema,7 kyu,white,121627,10774,g964,['Fundamentals'],2015-10-27T15:05:42.380Z,reference,446,1049,1,6
+5a3fe3dde1ce0e8ed6000097,PowerShell,1,"function Get-CenturyFromYear ([int]$year)
+
+{
+
+  return [Math]::Floor(($year - 1) / 100) + 1
+
+}",https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097,2023-05-31 10:13:16.872,Century From Year,8 kyu,white,388819,151252,MrZizoScream,"['Fundamentals', 'Mathematics']",2017-12-24T17:33:52.696Z,reference,1307,8842,1,1
+550554fd08b86f84fe000a58,Python,1,"def in_array(array1, array2):
+
+    return sorted([word for word in set(array1) if word in "" "".join(array2)])",https://www.codewars.com/kata/550554fd08b86f84fe000a58,2023-05-23 10:39:16.681,Which are  in?,6 kyu,yellow,313395,69067,g964,"['Arrays', 'Lists', 'Strings', 'Refactoring']",2015-03-15T09:48:28.328Z,refactoring,1373,4760,6,5
+59c1302ecb7fb48757000013,Python,1,"import re
+
+def type_validation(variable, _type): 
+
+    return _type in re.search(r""'(.*)'"", str(type(variable))).group(1)",https://www.codewars.com/kata/59c1302ecb7fb48757000013,2023-05-24 11:22:43.431,For Twins: 1. Types,8 kyu,white,19999,5658,Mishaboo,['Fundamentals'],2017-09-19T16:53:50.094Z,reference,72,857,0,1
+62a611067274990047f431a8,Python,1,"import numpy as np
+
+def alternate(n, first_value, second_value):
+
+    a = np.array([first_value, second_value], dtype=object)
+
+    return np.tile(a, n).tolist()[:n]
+",https://www.codewars.com/kata/62a611067274990047f431a8,2023-05-24 14:15:49.013,Length and two values.,7 kyu,white,10951,5877,LonlehKitteh,"['Fundamentals', 'Arrays']",2022-06-12T17:18:58.846Z,reference,52,711,2,0
+534ea96ebb17181947000ada,Python,1,"def break_chocolate(n, m):
+
+    return max(0, n * m - 1)",https://www.codewars.com/kata/534ea96ebb17181947000ada,2023-05-24 18:13:21.564,Breaking chocolate problem,7 kyu,white,158782,44800,krikus,['Algorithms'],2014-04-16T16:12:04.612Z,algorithms,409,3286,1,3
+5270d0d18625160ada0000e4,Python,1,"def score(dice):
+
+    # Array mutation is banned lol
+
+    rolls = dice.copy()
+
+    score = 0
+
+    # Try and preferentially pick the highest scores
+
+    while rolls.count(1) >= 3:
+
+        score += 1000
+
+        for i in range(3):
+
+            rolls.pop(rolls.index(1))
+
+            
+
+    while rolls.count(6) >= 3:
+
+        score += 600
+
+        for i in range(3):
+
+            rolls.pop(rolls.index(6))
+
+            
+
+    while rolls.count(5) >= 3:
+
+        score += 500
+
+        for i in range(3):
+
+            rolls.pop(rolls.index(5))
+
+            
+
+    while rolls.count(4) >= 3:
+
+        score += 400
+
+        for i in range(3):
+
+            rolls.pop(rolls.index(4))
+
+            
+
+    while rolls.count(3) >= 3:
+
+        score += 300
+
+        for i in range(3):
+
+            rolls.pop(rolls.index(3))
+
+            
+
+    while rolls.count(2) >= 3:
+
+        score += 200
+
+        for i in range(3):
+
+            rolls.pop(rolls.index(2))
+
+            
+
+    while rolls.count(1) > 0:
+
+        score += 100
+
+        rolls.pop(rolls.index(1))
+
+        
+
+    while rolls.count(5) > 0:
+
+        score += 50
+
+        rolls.pop(rolls.index(5))
+
+        
+
+    return score",https://www.codewars.com/kata/5270d0d18625160ada0000e4,2023-05-24 18:00:03.914,Greed is Good,5 kyu,yellow,246243,42704,JulianNicholls,['Algorithms'],2013-10-30T09:55:38.723Z,algorithms,1363,2895,2,2
+56f699cd9400f5b7d8000b55,Python,1,"def fix_the_meerkat(arr):
+
+    arr[0], arr[2] = arr[2], arr[0]
+
+    return arr",https://www.codewars.com/kata/56f699cd9400f5b7d8000b55,2023-05-24 16:10:57.066,My head is at the wrong end!,8 kyu,white,75385,38165,PG1,"['Arrays', 'Lists', 'Algorithms']",2016-03-26T14:20:58.409Z,algorithms,285,3110,1,1
+55c28f7304e3eaebef0000da,Python,1,"def create_array(n):
+
+    res=[]
+
+    i=1
+
+    while i<=n:
+
+        res+=[i]
+
+        i+=1
+
+    return res",https://www.codewars.com/kata/55c28f7304e3eaebef0000da,2023-05-23 10:40:03.386,Unfinished Loop -  Bug Fixing #1,8 kyu,white,63157,38853,matt c,['Debugging'],2015-08-05T22:41:06.342Z,bug_fixes,217,3302,3,1
+5a431c0de1ce0ec33a00000c,Python,1,"def even_numbers(arr,n):
+
+    evens = []
+
+    count = 0
+
+    for num in arr[::-1]:
+
+        if num % 2 == 0:
+
+            count += 1
+
+            evens.append(num)
+
+            if count == n:
+
+                break
+
+                
+
+    return evens[::-1]",https://www.codewars.com/kata/5a431c0de1ce0ec33a00000c,2023-06-05 17:47:38.716,Even numbers in an array,7 kyu,white,35623,13314,Dmitry Kudla,"['Fundamentals', 'Arrays']",2017-12-27T04:26:07.530Z,reference,131,1692,1,1
+5ac6932b2f317b96980000ca,Python,1,"def min_value(digits):
+
+    digits = sorted(list(set(digits)))
+
+    num = """".join([str(num) for num in digits])
+
+    return int(num)
+
+    ",https://www.codewars.com/kata/5ac6932b2f317b96980000ca,2023-05-31 20:41:09.348,Form The Minimum,7 kyu,white,59280,22143,MrZizoScream,['Fundamentals'],2018-04-05T21:24:48.241Z,reference,307,2406,2,0
+5933a1f8552bc2750a0000ed,Python,1,"def nth_even(n):
+
+    return 2 * (n - 1)
+
+        ",https://www.codewars.com/kata/5933a1f8552bc2750a0000ed,2023-05-23 19:19:07.794,Get Nth Even Number,8 kyu,white,52156,28386,kodejuice,"['Mathematics', 'Puzzles', 'Algorithms']",2017-06-05T03:43:11.110Z,games,223,2777,0,2
+58db721b2f449efaf5000038,Python,1,"import re
+
+DIGIT_DICT = {
+
+    2: ("" _ "", "" _|"", ""|_ ""),
+
+    3: ("" _ "", "" _|"", "" _|""),
+
+    4: (""   "", ""|_|"", ""  |""),
+
+    5: ("" _ "", ""|_ "", "" _|""),
+
+    6: ("" _ "", ""|_ "", ""|_|""),
+
+    7: ("" _ "", ""  |"", ""  |""),
+
+    8: ("" _ "", ""|_|"", ""|_|""),
+
+    9: ("" _ "", ""|_|"", "" _|""),
+
+}
+
+
+
+# Ugly ass regex because I have to escape the pipe characters
+
+REGEX_DICT = {
+
+    2: r"" _ \n [_ ]\|\n\|[_ ] "",
+
+    3: r"" _ \n [_ ]\|\n [_ ]\|"",
+
+    4: r""   \n\|[_ ]\|\n  \|"",
+
+    5: r"" _ \n\|[_ ] \n [_ ]\|"",
+
+    6: r"" _ \n\|[_ ] \n\|[_ ]\|"",
+
+    7: r"" _ \n  \|\n  \|"",
+
+    8: r"" _ \n\|[_ ]\|\n\|[_ ]\|"",
+
+    9: r"" _ \n\|[_ ]\|\n [_ ]\|""
+
+}
+
+def recognize(s):
+
+    # Split on line breaks
+
+    s = s.split(""\n"")
+
+    # Each number is 3 wide
+
+    num_count = int(len(s[0]) / 3)
+
+    nums = []
+
+    # Extract each numbers
+
+    for i in range(num_count):
+
+        num = []
+
+        for j in range(3):
+
+            num.append(s[j][i * 3: i * 3 + 3])
+
+        nums.append(""\n"".join(num))
+
+        
+
+    # Now loop through - must match line 1 of DIGIT DICT and either line 2 or 3 of DIGIT DICT plus the regex dict
+
+    output = """"
+
+    for digit in nums:
+
+        # Assume undecipherable
+
+        number_recognised = ""?""
+
+        digit_split = digit.split(""\n"")
+
+        for i in range(2, 10):
+
+            # Find a candidate - must match the first line and one of the next two lines
+
+            if digit_split[0] == DIGIT_DICT[i][0] and (digit_split[1] == DIGIT_DICT[i][1] or digit_split[2] == DIGIT_DICT[i][2]):
+
+                # Make sure the regex matches
+
+                if bool(re.fullmatch(REGEX_DICT[i], digit)):
+
+                    number_recognised = i
+
+                    break
+
+
+
+        output = output + str(number_recognised)
+
+            
+
+    return output",https://www.codewars.com/kata/58db721b2f449efaf5000038,2023-06-01 12:36:42.540,License Plate Recognition,5 kyu,yellow,1215,137,chainsaw-maniac,['Fundamentals'],2017-03-29T11:02:29.056Z,reference,38,54,3,0
+544aed4c4a30184e960010f4,Python,1,"def divisors(integer):
+
+    factors = [i for i in range(2, integer // 2 + 1) if integer / i == integer // i]
+
+    return factors if factors != [] else str(integer) + "" is prime""
+
+        ",https://www.codewars.com/kata/544aed4c4a30184e960010f4,2023-05-25 16:17:51.132,Find the divisors! ,7 kyu,white,260256,77169,kwy95,"['Mathematics', 'Algorithms']",2014-10-25T03:21:08.406Z,algorithms,752,6509,1,3
+52a382ee44408cea2500074c,Python,1,"import numpy as np
+
+def determinant(matrix):
+
+    matrix = np.array(matrix)
+
+    size = len(matrix)
+
+    if size == 1:
+
+        return matrix[0, 0]
+
+    if size == 2:
+
+        return matrix[0, 0] * matrix[1, 1] - matrix[0, 1] * matrix[1, 0] 
+
+    
+
+    # For larger ones we'll use recursion
+
+    det = 0
+
+    for i, num in enumerate(matrix[0]):
+
+        sliced_matrix = np.concatenate((matrix[1:, :i], matrix[1:,i+1:]), axis=1)
+
+        det += num * determinant(sliced_matrix) * (-1) ** (i + 2)
+
+    
+
+    return det
+
+        ",https://www.codewars.com/kata/52a382ee44408cea2500074c,2023-05-22 05:56:56.230,Matrix Determinant,4 kyu,blue,85374,17566,pjfranzini,"['Matrix', 'Linear Algebra', 'Mathematics', 'Recursion', 'Algorithms']",2013-12-07T23:18:36.813Z,algorithms,1620,1646,7,5
+587731fda577b3d1b0001196,Python,1,"def camel_case(s):
+
+    return """".join(word.title() for word in s.split())",https://www.codewars.com/kata/587731fda577b3d1b0001196,2023-05-24 16:12:37.689,CamelCase Method,6 kyu,yellow,132418,37857,bestwebua,"['Fundamentals', 'Algorithms', 'Strings']",2017-01-12T07:36:29.907Z,algorithms,482,3216,7,6
+56a4addbfd4a55694100001f,Python,1,"def validate_hello(greetings):
+
+    return any(word in greetings.lower() for word in ['hello', 'ciao', 'salut', 'hallo', 'hola', 'ahoj', 'czesc'])",https://www.codewars.com/kata/56a4addbfd4a55694100001f,2023-06-05 07:30:56.944,Did she say hallo?,8 kyu,white,50676,10510,daymos,['Fundamentals'],2016-01-24T11:02:27.402Z,reference,185,964,2,3
+59cfc000aeb2844d16000075,Python,1,"def capitalize(s):
+
+    return ["""".join([char.upper() if i % 2 == 0 else char.lower() for i, char in enumerate(s)]), """".join([char.upper() if i % 2 == 1 else char.lower() for i, char in enumerate(s)])]",https://www.codewars.com/kata/59cfc000aeb2844d16000075,2023-05-22 09:43:46.330,Alternate capitalization,7 kyu,white,65075,23738,KenKamau,"['Strings', 'Fundamentals']",2017-09-30T19:11:24.066Z,reference,307,2269,2,0
+515e188a311df01cba000003,Python,1,"def get_planet_name(id):
+
+    # This doesn't work; Fix it!
+
+    name=""""
+
+    match id:
+
+        case 1: name = ""Mercury""
+
+        case 2: name = ""Venus""
+
+        case 3: name = ""Earth""
+
+        case 4: name = ""Mars""
+
+        case 5: name = ""Jupiter""
+
+        case 6: name = ""Saturn""
+
+        case 7: name = ""Uranus""  
+
+        case 8: name = ""Neptune""
+
+    return name",https://www.codewars.com/kata/515e188a311df01cba000003,2023-05-31 20:42:41.185,Get Planet Name By ID,8 kyu,white,103560,51346,jhoffner,['Debugging'],2013-04-05T00:19:26.829Z,bug_fixes,264,3951,1,3
+624fc787983b3500648faf11,Python,1,"def conceal(msg: str, pixels: list[list[int]]):
+
+    for i, char in enumerate(msg):
+
+        val = ord(char)
+
+        for j in range(8):
+
+            bit = (val >> 7 - j) & 1
+
+            try:
+
+                pixels[i * 3 + j // 3][j % 3] = pixels[i * 3 + j // 3][j % 3] >> 1 << 1 | bit
+
+            except:
+
+                return None
+
+    return pixels",https://www.codewars.com/kata/624fc787983b3500648faf11,2023-06-06 10:56:07.439,Steganography Part 1,6 kyu,yellow,191,71,bshore,"['Cryptography', 'Fundamentals']",2022-04-09T06:42:15.402Z,reference,13,23,1,0
+52b757663a95b11b3d00062d,Python,1,"def to_weird_case(words):
+
+    words = words.split()
+
+    for i, word in enumerate(words):
+
+        words[i] = """".join([letter.upper() if j % 2 == 0 else letter.lower() for j, letter in enumerate(word)])
+
+    return "" "".join(words)",https://www.codewars.com/kata/52b757663a95b11b3d00062d,2023-06-06 08:40:05.639,WeIrD StRiNg CaSe,6 kyu,yellow,160988,39555,xDranik,"['Strings', 'Algorithms']",2013-12-23T07:28:11.931Z,algorithms,630,2958,4,8
+5ad29cd95e8240dd85000b54,Python,1,"from math import floor, log2 as fdsbaufidahsiofdadssiofjasfohdasiofdajsfidjsaoivcdsa
+
+def friends(n):
+
+    print(n)
+
+    if n <= 2:
+
+        return 0
+
+    # I don't know what I'm doing
+
+    if n == 4:
+
+        return 1
+
+    if n == 16:
+
+        return 3
+
+    return floor(fdsbaufidahsiofdadssiofjasfohdasiofdajsfidjsaoivcdsa(n))",https://www.codewars.com/kata/5ad29cd95e8240dd85000b54,2023-06-06 07:33:25.244,Friends,7 kyu,white,13361,934,KacperKorban,"['Algorithms', 'Puzzles', 'Fundamentals']",2018-04-15T00:29:13.435Z,reference,59,123,1,0
+54ba84be607a92aa900000f1,Python,1,"def is_isogram(string):
+
+    return len(string) == len(set(string.lower()))",https://www.codewars.com/kata/54ba84be607a92aa900000f1,2023-05-24 18:15:13.706,Isograms,7 kyu,white,629355,203924,chunjef,"['Strings', 'Fundamentals']",2015-01-17T15:50:22.075Z,reference,2386,14812,5,4
+56f6ad906b88de513f000d96,Python,1,"def bonus_time(salary, bonus):
+
+    celery = salary
+
+    salary = celery * 10
+
+    if bonus:
+
+        celery = salary
+
+    return ""$"" + str(celery)",https://www.codewars.com/kata/56f6ad906b88de513f000d96,2023-06-01 14:02:27.945,Do I get a bonus?,8 kyu,white,107494,49757,PG1,"['Strings', 'Logic']",2016-03-26T15:42:31.269Z,algorithms,279,4876,1,0
+5962d557be3f8bb0ca000010,Python,1,"import numpy as np
+
+def clean_mean(sample, cutoff):
+
+    sample = np.array(sample)
+
+    # Initial calculation
+
+    mean = np.mean(sample)
+
+    std = np.std(sample)
+
+    
+
+    lower = mean - std * cutoff
+
+    upper = mean + std * cutoff
+
+    while not np.all((sample >= lower) & (sample <= upper)):
+
+        sample = sample[(sample >= lower) & (sample <= upper)]
+
+        mean = np.mean(sample)
+
+        std = np.std(sample)
+
+        lower = mean - std * cutoff
+
+        upper = mean + std * cutoff
+
+        
+
+    return round(mean, 2)",https://www.codewars.com/kata/5962d557be3f8bb0ca000010,2023-05-22 18:46:35.096,Mean without outliers,5 kyu,yellow,7625,511,kingcobra,"['Recursion', 'Statistics', 'Algorithms', 'Data Science']",2017-07-10T01:16:48.191Z,algorithms,49,87,0,0
+513e08acc600c94f01000001,Python,1,"def rgb(r, g, b):
+
+    return """".join(hex(min(255, max(0, c))).split('x')[1].rjust(2, '0').upper() for c in [r, g, b])",https://www.codewars.com/kata/513e08acc600c94f01000001,2023-05-26 20:17:39.963,RGB To Hex Conversion,5 kyu,yellow,388492,104570,jhoffner,['Algorithms'],2013-03-13T17:52:32.179Z,algorithms,1993,6195,8,3
+56b7f2f3f18876033f000307,Python,1,"def in_asc_order(arr):
+
+    # random_ is not allowed
+
+    return sorted(arr) == arr",https://www.codewars.com/kata/56b7f2f3f18876033f000307,2023-06-08 13:01:04.529,Are the numbers in order?,7 kyu,white,80005,24665,donaldsebleung,"['Fundamentals', 'Mathematics', 'Algorithms']",2016-02-08T03:29:11.419Z,algorithms,210,2258,4,2
+55edaba99da3a9c84000003b,Python,1,"def divisible_by(numbers, divisor):
+
+    return [num for num in numbers if num / divisor == num // divisor]",https://www.codewars.com/kata/55edaba99da3a9c84000003b,2023-05-26 20:13:13.217,Find numbers which are divisible by given number,8 kyu,white,83882,32059,XxxX88,"['Arrays', 'Algorithms']",2015-09-07T15:26:53.149Z,algorithms,272,3627,1,2
+569b5cec755dd3534d00000f,Python,1,"from math import ceil
+
+def new_avg(arr, newavg):
+
+    donation = ceil(newavg * (len(arr) + 1) - sum(arr))
+
+    if donation < 0:
+
+        raise ValueError
+
+    return donation",https://www.codewars.com/kata/569b5cec755dd3534d00000f,2023-05-30 10:43:03.746,Looking for a benefactor,7 kyu,white,78052,8263,g964,"['Fundamentals', 'Arrays']",2016-01-17T09:20:44.168Z,reference,168,739,1,1
+5bb0c58f484fcd170700063d,Python,1,"def pillars(num_pill, dist, width):
+
+    return (num_pill - 1) * dist * 100 + max(0, (num_pill - 2)) * width",https://www.codewars.com/kata/5bb0c58f484fcd170700063d,2023-05-23 07:09:39.483,Pillars,8 kyu,white,44174,17637,petrosernivka,"['Fundamentals', 'Mathematics']",2018-09-30T12:46:07.783Z,reference,184,1495,0,4
+565f5825379664a26b00007c,Python,1,"def get_size(w,h,d):
+
+    return [2 * (w * h + w * d + h * d), w * h * d]",https://www.codewars.com/kata/565f5825379664a26b00007c,2023-06-08 13:00:35.525,Surface  Area and Volume of a Box,8 kyu,white,43238,20582,KaraM,"['Geometry', 'Fundamentals']",2015-12-02T20:44:26.573Z,reference,119,1944,1,0
+5a805d8cafa10f8b930005ba,Python,1,"from math import sqrt
+
+def nearest_sq(n):
+
+    return round(sqrt(n)) ** 2",https://www.codewars.com/kata/5a805d8cafa10f8b930005ba,2023-06-01 13:17:49.413,Find Nearest square number,8 kyu,white,43971,18022,riyakayal,"['Fundamentals', 'Mathematics']",2018-02-11T15:13:16.193Z,reference,270,1747,0,0
+5d5ee4c35162d9001af7d699,Python,1,"def sum_of_minimums(numbers):
+
+    return sum([min(arr) for arr in numbers])",https://www.codewars.com/kata/5d5ee4c35162d9001af7d699,2023-05-22 09:44:43.275,Sum of Minimums!,7 kyu,white,42925,20576,Aizaz_Ahmad,"['Fundamentals', 'Arrays']",2019-08-22T18:54:16.208Z,reference,214,2230,1,0
+5567e7d0adb11174c50000a7,Python,1,"from preloaded import Node
+
+
+
+def search_k_from_end(linked_list : Node, k : int):
+
+    # We can get the length of the list in this jank-ass way
+
+    list_length = str(linked_list).count(""->"") + 1
+
+    
+
+    # Trivial - k is larger than list length
+
+    if k > list_length:
+
+        return None
+
+    
+
+    # Loop until we find the target node
+
+    elem = 0
+
+    target = list_length - k
+
+    node = linked_list.data
+
+    while elem < target:
+
+        linked_list = linked_list.next
+
+        node = linked_list.data
+
+        elem += 1
+
+
+
+    return node",https://www.codewars.com/kata/5567e7d0adb11174c50000a7,2023-06-07 09:01:55.395,Node Mania,6 kyu,yellow,2508,642,marcsantiago,"['Linked Lists', 'Algorithms', 'Data Structures']",2015-05-29T05:21:54.583Z,algorithms,36,137,2,1
+514b92a657cdc65150000006,Python,1,"import math
+
+def solution(number):
+
+    if number < 0:
+
+        return 0
+
+    
+
+    total = 0
+
+    interval = 30
+
+    r = number
+
+    # Have to reduce r by 1 because the sum is not supposed to be inclusive of r
+
+    for s in [3, 5, 6, 9, 10, 12, 15, 18, 20, 21, 24, 25, 27, 30]:
+
+        flr = math.floor((r - 1 - s) / interval)
+
+        total += s * (flr + 1) + 0.5 * interval * flr * (flr + 1)
+
+    return total",https://www.codewars.com/kata/514b92a657cdc65150000006,2023-06-02 08:26:51.778,Multiples of 3 or 5,6 kyu,yellow,1003959,341894,jhoffner,"['Mathematics', 'Algorithms']",2013-03-28T17:02:42.877Z,algorithms,3263,26635,4,6
+56eb16655250549e4b0013f4,Python,1,"import datetime
+
+def most_frequent_days(year):
+
+    DAYS_DICT = {
+
+        'Monday': 0,
+
+        'Tuesday': 0,
+
+        'Wednesday': 0,
+
+        'Thursday': 0,
+
+        'Friday': 0,
+
+        'Saturday': 0,
+
+        'Sunday': 0,
+
+    }
+
+    for month in range(1, 13):
+
+        for day in range(1, 32):
+
+            try:
+
+                date = datetime.date(year, month, day)
+
+                day_of_week = date.strftime('%A')
+
+                DAYS_DICT[day_of_week] += 1
+
+            except:
+
+                continue
+
+    
+
+    # Iterate over the dictionary
+
+    max_seen = 0
+
+    most_frequent_days = []
+
+    for key, value in DAYS_DICT.items():
+
+        if value > max_seen:
+
+            most_frequent_days = []
+
+            most_frequent_days.append(key)
+
+            max_seen = value
+
+            continue
+
+        if value == max_seen:
+
+            most_frequent_days.append(key)
+
+    
+
+    return most_frequent_days",https://www.codewars.com/kata/56eb16655250549e4b0013f4,2023-06-05 07:36:24.251,Most Frequent Weekdays,6 kyu,yellow,15278,3103,suic,['Fundamentals'],2016-03-17T20:58:00.392Z,reference,223,436,0,1
+51675d17e0c1bed195000001,Python,1,"def solution(digits):
+
+    leading_digit = digits[0]
+
+    largest_seen = digits[:5]
+
+    length = len(digits)
+
+    for i in range(1, length - 4):
+
+        if digits[i] >= leading_digit:
+
+            if digits[i:i + 5] > largest_seen:
+
+                leading_digit = digits[i]
+
+                largest_seen = digits[i:i + 5]
+
+                
+
+    return int(largest_seen)",https://www.codewars.com/kata/51675d17e0c1bed195000001,2023-06-01 07:32:24.410,Largest 5 digit number in a series,7 kyu,white,121549,26592,jhoffner,['Algorithms'],2013-04-12T16:38:59.611Z,algorithms,571,2274,1,2
+57089707fe2d01529f00024a,Python,1,"def check_alive(health):
+
+    return health > 0",https://www.codewars.com/kata/57089707fe2d01529f00024a,2023-05-24 18:14:10.889,Grasshopper - If/else syntax debug,8 kyu,white,52134,29716,danleavitt0,['Debugging'],2016-04-09T19:18:21.096Z,bug_fixes,128,2940,1,2
+5641a03210e973055a00000d,Python,1,"def two_decimal_places(n):
+
+    return round(n, 2)",https://www.codewars.com/kata/5641a03210e973055a00000d,2023-06-08 12:59:25.472,Formatting decimal places #0,8 kyu,white,31152,15564,coder4fun,['Fundamentals'],2015-11-10T08:15:08.539Z,reference,93,1698,3,1
+646254375cee7a000ffaa404,Python,1,"import numpy as np
+
+def verify_latin_square(array, m):
+
+    # For easier array operations
+
+    try:
+
+        array = np.array(array)
+
+    except:
+
+        return ""Array not square""
+
+    
+
+    # Trivial stuff
+
+    if array.shape[0] != array.shape[1]:
+
+        return ""Array not square""
+
+    if array.shape[0] != m:
+
+        return ""Array is wrong size""
+
+    
+
+    sum_should_be = int(0.5 * m * (m + 1))
+
+    set_of_values = set(range(1, m+1))
+
+    # Check rows
+
+    for row in range(array.shape[0]):
+
+        # Detect errors
+
+        if np.sum(array[row, :]) != sum_should_be:
+
+            leftovers = array[row, :].tolist()
+
+            for num in set_of_values:
+
+                if num in leftovers:
+
+                    leftovers.remove(num)
+
+            if leftovers[0] in set_of_values:
+
+                return f""{leftovers[0]} occurs more than once in row {row + 1}""
+
+            else:
+
+                for i, num in enumerate(array[row, :]):
+
+                    if num == leftovers[0]:
+
+                        return f""{leftovers[0]} at {row + 1},{i + 1} is not between 1 and {m}""
+
+    
+
+    # Repeat for columns
+
+    for column in range(array.shape[1]):
+
+        # Detect errors
+
+        if np.sum(array[:, column]) != sum_should_be:
+
+            leftovers = array[:, column].tolist()
+
+            for num in set_of_values:
+
+                if num in leftovers:
+
+                    leftovers.remove(num)
+
+            if leftovers[0] in set_of_values:
+
+                return f""{leftovers[0]} occurs more than once in column {column + 1}""
+
+            else:
+
+                for i, num in enumerate(array[:, column]):
+
+                    if num == leftovers[0]:
+
+                        return f""{leftovers[0]} at {i + 1},{column + 1} is not between 1 and {m}""
+
+    
+
+    return f""Valid latin square of size {m}""",https://www.codewars.com/kata/646254375cee7a000ffaa404,2023-05-23 12:07:01.983,Latin Square Validator,,,162,39,brodiemark,"['Strings', 'Arrays']",2023-05-17T14:33:09.254Z,algorithms,5,61,0,0
+51e0007c1f9378fa810002a9,Python,1,"def parse(data):
+
+    instructions = {
+
+        ""i"": lambda x: x.__setitem__(0, x[0] + 1),
+
+        ""d"": lambda x: x.__setitem__(0, x[0] - 1),
+
+        ""s"": lambda x: x.__setitem__(0, x[0] ** 2),
+
+        ""o"": lambda x: x.append(x[0])
+
+    }
+
+    bus = [0]
+
+    for instruction in data:
+
+        instructions.get(instruction, lambda x: None)(bus)
+
+            
+
+    return bus[1:]",https://www.codewars.com/kata/51e0007c1f9378fa810002a9,2023-06-12 10:24:40.051,Make the Deadfish Swim,6 kyu,yellow,71828,26681,NullData,"['Parsing', 'Algorithms']",2013-07-12T14:07:21.676Z,algorithms,359,2296,2,3
+59342039eb450e39970000a6,Python,1,"def odd_count(n):
+
+    return n // 2",https://www.codewars.com/kata/59342039eb450e39970000a6,2023-05-25 07:17:37.327,Count Odd Numbers below n,8 kyu,white,138792,39652,kodejuice,"['Performance', 'Mathematics']",2017-06-05T03:43:42.867Z,games,434,3661,0,1
+52bb6539a4cf1b12d90005b7,Python,1,"import numpy as np
+
+def validate_battlefield(field):
+
+    # keys are size of ship, values are length
+
+    SHIP_DICT = {
+
+        4: 1,
+
+        3: 2,
+
+        2: 3,
+
+        1: 4
+
+    }
+
+
+
+    ships_found = 0
+
+    field = np.array(field) # For easier slicing
+
+    # Let's start iterating over the array
+
+    for i in range(100):
+
+        row = i // 10
+
+        column = i % 10
+
+        # We've found what could be a ship - let's begin our search
+
+        # Since we go top left to bottom right, the ship can only be down or to the right
+
+        if field[row, column] == 1:
+
+            # Edge case 1: ship to the bottom left diagonally
+
+            if row < 9 and column > 0 and field[row + 1, column - 1] == 1:
+
+                return False
+
+            field[row, column] = 0
+
+            size = 1
+
+            orientation = """"
+
+            # Check column-wise
+
+            i = 1
+
+            while column + i < 10 and field[row, column + i] == 1:
+
+                field[row, column + i] = 0
+
+                size += 1
+
+                orientation = ""h""
+
+                i += 1
+
+            # Check row-wise if we haven't already found a ship
+
+            if orientation == """":
+
+                i = 1
+
+                while row + i < 10 and field[row + i, column] == 1:
+
+                    field[row + i, column] = 0
+
+                    size += 1
+
+                    orientation = ""v""
+
+                    i += 1
+
+                    
+
+            # Edge case 2: ship to the bottom right diagonally
+
+            rr, cc = row, column
+
+            if orientation == ""v"":
+
+                rr += size
+
+                cc += 1
+
+            else:
+
+                rr += 1
+
+                cc += size
+
+            
+
+            if rr < 10 and cc < 10:
+
+                if field[rr, cc] == 1:
+
+                    return False
+
+            
+
+            # Now we've found a ship, we can verify it
+
+            if size < 5:
+
+                SHIP_DICT[size] -= 1
+
+                if SHIP_DICT[size] < 0:
+
+                    print(""Too many ships"", row, column)
+
+                    return False
+
+            else:
+
+                print(""Ship too big"", row, column)
+
+                return False
+
+            
+
+            # Now we can check to the immediate right/below to make sure there's not any conflicts
+
+            if orientation == ""v"" and column < 9:
+
+                for i in range(size):
+
+                    if field[row + i, column + 1] == 1:
+
+                        print(""Ship found adjacent to vertical ship"", row, column)
+
+                        return False
+
+                    
+
+            if orientation == ""h"" and row < 9:
+
+                for i in range(size):
+
+                    if field[row + 1, column] == 1:
+
+                        print(""Ship found adjacent to horizontal ship"", row, column)
+
+                        return False
+
+                    
+
+    # Verify all dictionary values are 0
+
+    for value in SHIP_DICT.values():
+
+        if value != 0:
+
+            print(""Not enough ships found"")
+
+            return False
+
+                
+
+                
+
+            
+
+    return True",https://www.codewars.com/kata/52bb6539a4cf1b12d90005b7,2023-06-02 14:03:02.766,Battleship field validator,3 kyu,blue,136659,12234,romanzes,"['Games', 'Arrays', 'Algorithms']",2013-12-26T18:25:53.761Z,algorithms,1949,1727,6,16
+57ed30dde7728215300005fa,Python,1,"def bumps(road):
+
+    if road.count(""n"") > 15:
+
+        return ""Car Dead""
+
+    return ""Woohoo!""",https://www.codewars.com/kata/57ed30dde7728215300005fa,2023-06-01 11:59:32.500,Bumps in the Road,7 kyu,white,39873,15175,PG1,"['Fundamentals', 'Strings']",2016-09-29T15:21:38.340Z,reference,80,1670,1,0
+57ee99a16c8df7b02d00045f,Python,1,"import numpy as numerical_python_library
+
+def flatten_and_sort(array):
+
+    try:
+
+        return sorted(numerical_python_library.concatenate([sublist for sublist in array]).tolist())
+
+    except:
+
+        return []",https://www.codewars.com/kata/57ee99a16c8df7b02d00045f,2023-05-25 16:26:33.770,Flatten and sort an array,7 kyu,white,56980,22212,lilsweetcaligula,"['Arrays', 'Sorting', 'Fundamentals']",2016-09-30T17:58:15.626Z,reference,277,2222,1,4
+54ff0d1f355cfd20e60001fc,Python,1,"def factorial(n):
+
+    if n < 0:
+
+        raise ValueError(""You fucking idiot you can't factorial a negative number"")
+
+    if n > 12:
+
+        raise ValueError(""I dunno the Kata saying you can't factorial a number above 12 for some reason"")
+
+    if n == 0:
+
+        return 1
+
+    if n == 1:
+
+        return 1
+
+    return n * factorial(n - 1)",https://www.codewars.com/kata/54ff0d1f355cfd20e60001fc,2023-05-25 07:43:31.698,Factorial,7 kyu,white,240647,35380,zvytas,"['Algorithms', 'Fundamentals']",2015-03-10T15:27:17.653Z,reference,343,2427,1,1
+56d0a591c6c8b466ca00118b,Python,2,"from math import ceil
+
+def is_triangular(t):
+
+    # Binary search
+
+    max_n = ceil(t / 2)
+
+    
+
+    left = 0
+
+    right = max_n
+
+    while left <= right:
+
+        mid = (left + right) // 2
+
+        test_t = 0.5 * mid * (mid + 1)
+
+        if test_t == t:
+
+            return True
+
+        
+
+        if test_t < t:
+
+            left = mid + 1
+
+        else:
+
+            right = mid - 1
+
+    
+
+    return False",https://www.codewars.com/kata/56d0a591c6c8b466ca00118b,2023-05-23 07:19:20.463,Beginner Series #5 Triangular Numbers,7 kyu,white,10027,2719,Vortus,"['Mathematics', 'Fundamentals']",2016-02-26T19:44:42.801Z,reference,80,437,0,1
+55cb854deb36f11f130000e1,Python,1,"def weather_info (temp):
+
+    c = convert_to_celsius(temp)
+
+    if c < 0:
+
+        return str(c) + "" is freezing temperature""
+
+    
+
+    return str(c) + "" is above freezing temperature""
+
+    
+
+def convert_to_celsius(temperature):
+
+    return (temperature - 32) * (5/9)",https://www.codewars.com/kata/55cb854deb36f11f130000e1,2023-05-24 15:09:57.129,Grasshopper - Debug,8 kyu,white,107932,22037,danleavitt0,['Debugging'],2015-09-09T17:44:15.452Z,bug_fixes,160,2388,0,5
+56f695399400f5d9ef000af5,Python,1,"def correct_tail(body, tail):
+
+    return body.endswith(tail)",https://www.codewars.com/kata/56f695399400f5d9ef000af5,2023-05-31 14:24:49.058,Is this my tail?,8 kyu,white,60051,22445,PG1,['Debugging'],2016-03-26T13:57:16.417Z,bug_fixes,140,2382,0,0
+5970df092ef474680a0000c9,Python,1,"def alphabetized(s):
+
+    sorted_string = sorted(s, key=lambda x: (ord(x.lower()), s.index(s)))
+
+    return """".join(char for char in sorted_string if char.isalpha())",https://www.codewars.com/kata/5970df092ef474680a0000c9,2023-05-24 12:59:33.823,Alphabetized,6 kyu,yellow,19063,2599,kop,"['Strings', 'Sorting']",2017-07-20T18:16:52.246Z,games,117,460,0,1
+578aa45ee9fd15ff4600090d,Python,1,"def sort_array(source_array):
+
+    # Extract odds
+
+    odds = [num for num in source_array if num%2 == 1]
+
+    odds.sort()
+
+    # Put them back in
+
+    odd_index = 0
+
+    for i, num in enumerate(source_array):
+
+        if num%2 == 1:
+
+            source_array[i] = odds[odd_index]
+
+            odd_index += 1
+
+            
+
+    return source_array",https://www.codewars.com/kata/578aa45ee9fd15ff4600090d,2023-05-22 09:52:18.550,Sort the odd,6 kyu,yellow,321853,85240,fyvfyv,"['Fundamentals', 'Arrays', 'Sorting']",2016-07-16T21:30:19.943Z,reference,2580,6981,1,3
+57126304cdbf63c6770012bd,Python,1,"def isDigit(string):
+
+    try:
+
+        float(string.strip())
+
+        return True
+
+    except:
+
+        return False",https://www.codewars.com/kata/57126304cdbf63c6770012bd,2023-05-23 08:21:11.669,Is it a number?,8 kyu,white,104662,12307,provector,['Fundamentals'],2016-04-16T16:06:33.683Z,reference,271,1256,7,0
+5174a4c0f2769dd8b1000003,Python,1,"def solution(nums):
+
+    if nums:
+
+        return sorted(nums)
+
+    return []",https://www.codewars.com/kata/5174a4c0f2769dd8b1000003,2023-05-20 16:35:19.866,Sort Numbers,7 kyu,white,137092,46202,jhoffner,['Fundamentals'],2013-04-22T03:04:16.990Z,reference,285,2807,3,5
+5ce399e0047a45001c853c2b,Python,1,"def parts_sums(ls):
+
+    if not ls:
+
+        return [0]
+
+    
+
+    ls = ls[::-1]
+
+    sums = [0]
+
+    prev = 0
+
+    for elem in ls:
+
+        prev += elem
+
+        sums.append(prev)
+
+    
+
+    
+
+    return sums[::-1]",https://www.codewars.com/kata/5ce399e0047a45001c853c2b,2023-06-01 07:37:54.420,Sums of Parts,6 kyu,yellow,81275,20640,g964,"['Fundamentals', 'Performance', 'Algorithms']",2019-05-21T06:27:01.568Z,algorithms,738,2106,0,0
+5779624bae28070489000146,Python,1,"import numpy as np
+
+def logistic_map(width,height,xs,ys):
+
+    # Edge case
+
+    if xs == [] and ys == []:
+
+        arr = []
+
+        for i in range(height):
+
+            temp = []
+
+            for j in range(width):
+
+                temp.append(None)
+
+            arr.append(temp)
+
+        return arr
+
+    
+
+    arr = np.zeros([height, width])
+
+        
+
+    # Just measure distance from xs and ys
+
+    for i in range(height):
+
+        for j in range(width):
+
+            # Minimise distance
+
+            min_value = width * height  # first maximise distance
+
+            for k in range(len(xs)):
+
+                min_value = min(min_value, abs(xs[k] - j) + abs(ys[k] - i))
+
+            arr[i, j] = min_value
+
+            
+
+    print(arr)
+
+    return arr.tolist()",https://www.codewars.com/kata/5779624bae28070489000146,2023-06-05 14:56:48.813,Logistic Map,6 kyu,yellow,1316,302,GiacomoSorbi,"['Graph Theory', 'Matrix', 'Arrays', 'Lists', 'Algorithms']",2016-07-03T19:48:38.561Z,algorithms,36,111,2,2
+52449b062fb80683ec000024,Python,1,"def generate_hashtag(s):
+
+    return ""#"" + """".join(word.capitalize() for word in s.split()) if s and len(s) < 140 else False",https://www.codewars.com/kata/52449b062fb80683ec000024,2023-05-31 14:08:42.554,The Hashtag Generator,5 kyu,yellow,273064,74564,AKJ.IO,"['Strings', 'Algorithms']",2013-09-26T22:01:21.737Z,algorithms,919,4349,15,14
+57f222ce69e09c3630000212,Python,1,"def well(x):
+
+    goods = x.count(""good"")
+
+    return ""Fail!"" if goods == 0 else ""Publish!"" if goods <= 2 else ""I smell a series!""",https://www.codewars.com/kata/57f222ce69e09c3630000212,2023-05-24 16:14:05.181,Well of Ideas - Easy Version,8 kyu,white,83816,27720,PG1,"['Fundamentals', 'Arrays', 'Strings', 'Refactoring']",2016-10-03T09:39:30.022Z,refactoring,276,2956,4,0
+5302d846be2a9189af0001e4,Python,1,"def say_hello(name, city, state):
+
+    return f""Hello, {' '.join(name)}! Welcome to {city}, {state}!""",https://www.codewars.com/kata/5302d846be2a9189af0001e4,2023-06-12 10:16:58.316,Welcome to the City,8 kyu,white,55713,17966,troglodite,"['Strings', 'Fundamentals']",2014-02-18T03:56:56.377Z,reference,149,1880,3,4
+559a28007caad2ac4e000083,Python,1,"fib_cache = {
+
+        0: 1,
+
+        1: 1
+
+    }
+
+
+
+def generate_fibs(n):
+
+    for i in range(n):
+
+        if i not in fib_cache:
+
+            fib_cache[i] = fib_cache[i-1] + fib_cache[i-2]
+
+    
+
+def fib(n):
+
+    try:
+
+        return fib_cache[n]
+
+    except:
+
+        fib_cache[n] = fib(n-1) + fib(n-2)
+
+        return fib_cache[n]
+
+
+
+def perimeter(n):
+
+    generate_fibs(n)
+
+    return 4 * (fib(n + 2) - 1)",https://www.codewars.com/kata/559a28007caad2ac4e000083,2023-05-25 17:41:24.926,Perimeter of squares in a rectangle,5 kyu,yellow,118025,34218,g964,"['Mathematics', 'Algorithms']",2015-07-06T07:08:31.977Z,algorithms,899,2335,2,5
+5a29a0898f27f2d9c9000058,Python,1,"import re
+
+def solve(s):
+
+    uppers = re.sub(""[^A-Z]"", """", s)
+
+    lowers = re.sub(""[^a-z]"", """", s)
+
+    numbers = re.sub(""[^\d]"", """", s)
+
+    specials = re.sub(""[A-Z0-9]"", """", s, flags=re.IGNORECASE)
+
+    return [len(uppers), len(lowers), len(numbers), len(specials)]",https://www.codewars.com/kata/5a29a0898f27f2d9c9000058,2023-05-23 07:07:30.904,Simple string characters,7 kyu,white,26327,9613,KenKamau,['Fundamentals'],2017-12-08T05:06:23.827Z,reference,120,1141,2,2
+55c6126177c9441a570000cc,Python,1,"def order_weight(strng):
+
+    def sum_digits(s):
+
+        sum = 0
+
+        for char in s:
+
+            sum += int(char)
+
+        return sum
+
+    
+
+    return "" "".join(sorted(strng.split(), key=lambda x: (sum_digits(x), x)))",https://www.codewars.com/kata/55c6126177c9441a570000cc,2023-05-25 07:54:31.308,Weight for weight,5 kyu,yellow,335011,46565,g964,['Algorithms'],2015-08-08T14:33:36.178Z,algorithms,2503,3745,1,3
+55c04b4cc56a697bb0000048,Python,1,"from collections import Counter
+
+
+
+def scramble(s1, s2):
+
+    s1_counter = Counter(s1)
+
+    s2_counter = Counter(s2)
+
+    
+
+    for char, count in s2_counter.items():
+
+        if s1_counter[char] < count:
+
+            return False
+
+        
+
+    return True",https://www.codewars.com/kata/55c04b4cc56a697bb0000048,2023-05-24 18:24:05.817,Scramblies,5 kyu,yellow,301236,44834,joh_pot,"['Strings', 'Performance', 'Algorithms']",2015-08-04T05:22:22.567Z,algorithms,2280,3299,5,9
+59831e3575ca6c8aea00003a,Python,1,"def game(n, m): 
+
+    # Edge case
+
+    if m == 2:
+
+        return 'second'
+
+    return 'first' if n % 2 == 1 else 'second'",https://www.codewars.com/kata/59831e3575ca6c8aea00003a,2023-06-05 14:36:50.592,Simple Game,7 kyu,white,3616,340,arhigod,"['Games', 'Puzzles', 'Logic', 'Game Solvers']",2017-11-01T12:08:58.516Z,games,27,53,0,0
+515decfd9dcfc23bb6000006,Python,1,"import re
+
+def is_valid_IP(strng):
+
+    if strng.count(""."") != 3:
+
+        return False
+
+    invalid_chars = re.findall(r""[^0-9\.]"", strng)
+
+    if invalid_chars != []:
+
+        return False
+
+    
+
+    matches = re.findall(r""\.?(\d+)\.?"", strng)
+
+    
+
+    if len(matches) != 4:
+
+        return False
+
+    
+
+    for match in matches:
+
+        if int(match) < 0 or int(match) > 255 or match != str(int(match)):
+
+            return False
+
+    
+
+    return True",https://www.codewars.com/kata/515decfd9dcfc23bb6000006,2023-05-24 14:24:18.584,IP Validation,6 kyu,yellow,313126,35119,wink,"['Regular Expressions', 'Algorithms']",2013-04-04T22:48:18.892Z,algorithms,1130,2712,5,10
+595970246c9b8fa0a8000086,Python,1,"def capitalize_word(word):
+
+    return word[0].upper() + word[1:]",https://www.codewars.com/kata/595970246c9b8fa0a8000086,2023-05-24 16:16:56.168,Capitalization and Mutability,8 kyu,white,59492,31636,kolohelios,"['Strings', 'Debugging']",2017-07-02T22:14:45.374Z,bug_fixes,136,2512,4,2
+51fda2d95d6efda45e00004e,Python,1,"# TODO: create the User class
+
+# it must support rank, progress, and the inc_progress(rank) method
+
+ranks = [-8, -7, -6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, 8]
+
+class User:
+
+    def __init__(self):
+
+        self.rank = -8
+
+        self.progress = 0
+
+        
+
+    def inc_progress(self, rank):
+
+        rank_pos = ranks.index(self.rank)
+
+        challenge_rank_pos = ranks.index(rank)
+
+        diff = challenge_rank_pos - rank_pos
+
+        progress = 0
+
+        if diff == -1:
+
+            progress = 1
+
+        elif diff == 0:
+
+            progress = 3
+
+        elif diff > 0:
+
+            progress = 10 * diff * diff
+
+            
+
+        self.progress += progress
+
+        
+
+        while self.progress >= 100:
+
+            try:
+
+                self.rank = ranks[ranks.index(self.rank) + 1]
+
+                self.progress -= 100
+
+            except:
+
+                self.rank = ranks[len(ranks) - 1]
+
+                self.progress = 0
+
+                break
+
+                
+
+        if self.rank == 8:
+
+            self.progress = 0",https://www.codewars.com/kata/51fda2d95d6efda45e00004e,2023-05-22 20:53:51.940,Codewars style ranking system,4 kyu,blue,294994,13655,jhoffner,['Algorithms'],2013-08-22T20:52:33.085Z,algorithms,1611,1151,31,8
+5f70c883e10f9e0001c89673,Python,1,"def flip(d, a):
+
+    return sorted(a) if d == 'R' else sorted(a)[::-1]",https://www.codewars.com/kata/5f70c883e10f9e0001c89673,2023-05-26 16:30:24.463,Gravity Flip,8 kyu,white,64816,26180,LogicalX,"['Puzzles', 'Arrays']",2020-09-27T17:14:43.893Z,games,501,2136,0,0
+57cc40b2f8392dbf2a0003ce,Python,1,"def check(a, x): 
+
+    return x in a",https://www.codewars.com/kata/57cc40b2f8392dbf2a0003ce,2023-06-01 07:34:10.151,No Loops 2 - You only need one,8 kyu,white,23642,13461,PG1,"['Fundamentals', 'Arrays']",2016-09-04T16:06:01.461Z,reference,89,1930,0,2
+54d81488b981293527000c8f,Python,1,"def sum_pairs(ints, s):
+
+    seen = {}
+
+    for n in ints:
+
+        diff = s - n
+
+        if diff in seen:
+
+            return [diff, n]
+
+        if n not in seen:
+
+            seen[n] = 1 # we don't actually care about the index so 1 is arbitrary
+
+
+
+    return None",https://www.codewars.com/kata/54d81488b981293527000c8f,2023-05-24 12:20:27.088,Sum of Pairs,5 kyu,yellow,186094,22120,AlejandorLazaro,"['Memoization', 'Fundamentals', 'Performance']",2015-02-09T02:54:04.053Z,reference,3137,2066,5,15
+55eca815d0d20962e1000106,Python,1,"def generate_range(min, max, step):
+
+    return list(range(min, max+1, step))",https://www.codewars.com/kata/55eca815d0d20962e1000106,2023-05-26 16:27:14.821,Generate range of integers,8 kyu,white,66289,22138,XxxX88,['Algorithms'],2015-09-06T20:54:51.786Z,algorithms,240,2486,3,1
+54fb963d3fe32351f2000102,Python,1,"def collatz(n):
+
+    iters = 1
+
+    while n != 1:
+
+        n = n//2 if n%2 == 0 else n * 3 + 1
+
+        iters += 1
+
+        
+
+    return iters",https://www.codewars.com/kata/54fb963d3fe32351f2000102,2023-05-23 06:06:38.704,Collatz Conjecture Length,7 kyu,white,26992,8381,mandeepb,"['Mathematics', 'Algorithms']",2015-03-08T00:22:21.049Z,algorithms,116,634,0,1
+52f787eb172a8b4ae1000a34,Python,1,"def zeros(n):
+
+    # By observation
+
+    if n < 5:
+
+        return 0
+
+    zeros = 0
+
+    power = 5
+
+    while power < n:
+
+        zeros += n // power
+
+        power *= 5
+
+    return zeros",https://www.codewars.com/kata/52f787eb172a8b4ae1000a34,2023-05-25 08:34:35.249,Number of trailing zeros of N!,5 kyu,yellow,305728,44502,Ivan Diachenko,"['Algorithms', 'Logic', 'Mathematics']",2014-02-09T13:51:50.942Z,algorithms,1936,2783,2,12
+5277c8a221e209d3f6000b56,Python,1,"def valid_braces(string):
+
+    stack = """"
+
+    opening_braces = [""("", ""["", ""{""]
+
+    closing_braces = ["")"", ""]"", ""}""]
+
+
+
+    # Now we need to make sure every closing brace matches the final element on the stack
+
+    for char in string:
+
+        # If the stack is empty make sure we find opening braces
+
+        if stack == """":
+
+            if char in opening_braces:
+
+                stack = char
+
+            else:
+
+                return False
+
+        else:
+
+            # Either add a character to the stack or try and remove it
+
+            if char in opening_braces:
+
+                stack += char
+
+            else:
+
+                if opening_braces.index(stack[-1]) == closing_braces.index(char):
+
+                    stack = stack[:-1]
+
+                else:
+
+                    return False
+
+                
+
+    if stack == """":
+
+        return True
+
+    
+
+    return False",https://www.codewars.com/kata/5277c8a221e209d3f6000b56,2023-05-24 18:09:31.293,Valid Braces,6 kyu,yellow,421065,62465,xDranik,['Algorithms'],2013-11-05T00:07:31.399Z,algorithms,2819,5459,10,11
+52e1476c8147a7547a000811,Python,1,"regex=r""(?=.*[A-Z]{1,})(?=.*[a-z]{1,})(?=.*\d{1,})^[a-zA-Z0-9]{6,}$""",https://www.codewars.com/kata/52e1476c8147a7547a000811,2023-06-01 13:51:46.015,Regex Password Validation,5 kyu,yellow,207203,23951,EricFreeman,"['Regular Expressions', 'Fundamentals']",2014-01-23T17:03:54.783Z,reference,1753,1826,3,6
+585fc200db20cf20ab00018a,Python,1,"import numpy as np
+
+
+
+def max_sum(arr):
+
+    arr = np.array(arr)
+
+    max_sum = -1
+
+    max_subarray = []
+
+    rows, cols = arr.shape
+
+    
+
+    for start_row in range(rows):
+
+        row_sums = np.zeros(cols)
+
+        
+
+        for end_row in range(start_row, rows):
+
+            row_sums += arr[end_row]
+
+            
+
+            # Apply Kadane's algorithm to find the maximum sum subarray in the 1D array
+
+            current_sum = 0
+
+            max_sum_so_far = 0
+
+            start_col = 0
+
+            end_col = 0
+
+            
+
+            for j, num in enumerate(row_sums):
+
+                current_sum += num
+
+                
+
+                if current_sum < 0:
+
+                    current_sum = 0
+
+                    start_col = j + 1
+
+                elif current_sum > max_sum_so_far:
+
+                    max_sum_so_far = current_sum
+
+                    end_col = j
+
+            
+
+            # Check if the current subarray has the maximum sum
+
+            if max_sum_so_far > max_sum:
+
+                max_sum = max_sum_so_far
+
+                max_subarray = [start_col, start_row, end_col, end_row]
+
+    
+
+    return max_subarray + [max_sum]
+",https://www.codewars.com/kata/585fc200db20cf20ab00018a,2023-05-23 13:45:04.010,Maximum 2d subarray sum,,,230,18,MaLiN2223,"['Algorithms', 'Dynamic Programming']",2016-12-25T14:56:40.003Z,algorithms,16,12,5,0
+586c1cf4b98de0399300001d,Python,1,"def combat(health, damage):
+
+    return max(health - damage, 0)",https://www.codewars.com/kata/586c1cf4b98de0399300001d,2023-05-20 16:35:51.482,Grasshopper - Terminal game combat function,8 kyu,white,39214,21772,rom4eg,['Fundamentals'],2017-01-03T21:51:55.942Z,reference,94,2572,0,1
+563fb342f47611dae800003c,Python,1,"def trim(phrase, size):
+
+    if len(phrase) <= 3 or size <= 3:
+
+        if len(phrase) <= size:
+
+            return phrase
+
+        return phrase[:size] + ""...""
+
+    return phrase[:size - 3] + ""..."" if len(phrase) > size else phrase",https://www.codewars.com/kata/563fb342f47611dae800003c,2023-06-01 11:58:16.270,Trimming a string,7 kyu,white,39680,4840,jonbstrong,['Fundamentals'],2015-11-08T20:40:34.732Z,reference,77,441,0,2
+5506b230a11c0aeab3000c1f,Python,1,"def evaporator(content, evap_per_day, threshold):
+
+    threshold *= content * 0.01
+
+    days = 0
+
+    while content > threshold:
+
+        days += 1
+
+        content = content * (100 - evap_per_day) * 0.01
+
+    
+
+    return days",https://www.codewars.com/kata/5506b230a11c0aeab3000c1f,2023-05-22 09:49:21.674,Deodorant Evaporator,7 kyu,white,79684,23577,g964,['Fundamentals'],2015-03-16T10:53:57.119Z,reference,462,1646,1,4
+526d84b98f428f14a60008da,Python,1,"def hamming(n):
+
+    hammings = [1]  # Start with the first Hamming number
+
+    p2, p3, p5 = 0, 0, 0  # Pointers for the factors 2, 3, 5
+
+
+
+    for _ in range(n - 1):  # Generate the remaining (n-1) Hamming numbers
+
+        next_hamming = min(hammings[p2] * 2, hammings[p3] * 3, hammings[p5] * 5)
+
+        hammings.append(next_hamming)
+
+
+
+        # Increment the pointers based on the factors used
+
+        if next_hamming == hammings[p2] * 2:
+
+            p2 += 1
+
+        if next_hamming == hammings[p3] * 3:
+
+            p3 += 1
+
+        if next_hamming == hammings[p5] * 5:
+
+            p5 += 1
+
+
+
+    return hammings[-1]
+",https://www.codewars.com/kata/526d84b98f428f14a60008da,2023-05-23 06:01:19.059,Hamming Numbers,4 kyu,blue,61818,8879,xcthulhu,"['Number Theory', 'Algorithms']",2013-10-27T21:25:18.180Z,algorithms,1244,723,2,5
+5848cd33c3689be0dc00175c,Python,1,"def add(s1, s2):
+
+    return sum(ord(char) for char in s1) + sum(ord(char) for char in s2)",https://www.codewars.com/kata/5848cd33c3689be0dc00175c,2023-05-24 12:53:59.016,Noob Debug 1: Fix the string sum!,7 kyu,white,2329,840,user2514386,"['Debugging', 'Strings', 'Mathematics']",2016-12-08T03:02:11.346Z,bug_fixes,17,142,0,0
+561e9c843a2ef5a40c0000a4,Python,1,"from math import sqrt as blargh, ceil as bleep
+
+def is_prime(num):
+
+    for i in range(3, bleep(blargh(num)) + 1):
+
+        if num % i == 0:
+
+            return False
+
+        
+
+    return True
+
+                   
+
+def gap(g, m, n):
+
+    
+
+    prev = 0
+
+    # Start on an odd number
+
+    m = m - m % 2 + 1
+
+    prev = 0
+
+    # Begin search
+
+    for i in range(m, n + 1, 2):
+
+        if is_prime(i):
+
+            if prev == i - g and prev != 0:
+
+                return [i-g, i]
+
+            prev = i
+
+    
+
+    return None",https://www.codewars.com/kata/561e9c843a2ef5a40c0000a4,2023-06-08 12:30:00.710,Gap in Primes,5 kyu,yellow,108175,18066,g964,['Fundamentals'],2015-10-14T18:18:55.101Z,reference,1477,1735,1,3
+5813d19765d81c592200001a,Python,1,"def dont_give_me_five(start,end):
+
+    fives = 0
+
+    for i in range(start, end + 1):
+
+        if not ""5"" in str(i):
+
+            fives += 1
+
+    return fives
+",https://www.codewars.com/kata/5813d19765d81c592200001a,2023-05-24 04:49:32.639,Don't give me five!,7 kyu,white,228134,35737,user5036852,"['Mathematics', 'Arrays', 'Algorithms']",2016-10-28T22:30:56.758Z,algorithms,663,4044,0,1
+56e2f59fb2ed128081001328,Python,1,"def print_array(arr):
+
+    return "","".join([str(a) for a in arr])",https://www.codewars.com/kata/56e2f59fb2ed128081001328,2023-06-01 13:59:57.536,Printing Array elements with Comma delimiters,8 kyu,white,43742,18556,Javatlacati,"['Arrays', 'Fundamentals']",2016-03-15T15:15:31.398Z,reference,119,1772,1,1
+525f3eda17c7cd9f9e000b39,Python,1,"def zero(operation = None):
+
+    if operation:
+
+        return operation(0)
+
+    else:
+
+        return 0
+
+def one(operation = None):
+
+    if operation:
+
+        return operation(1)
+
+    else:
+
+        return 1
+
+def two(operation = None):
+
+    if operation:
+
+        return operation(2)
+
+    else:
+
+        return 2
+
+def three(operation = None):
+
+    if operation:
+
+        return operation(3)
+
+    else:
+
+        return 3
+
+def four(operation = None):
+
+    if operation:
+
+        return operation(4)
+
+    else:
+
+        return 4
+
+def five(operation = None):
+
+    if operation:
+
+        return operation(5)
+
+    else:
+
+        return 5
+
+def six(operation = None):
+
+    if operation:
+
+        return operation(6)
+
+    else:
+
+        return 6
+
+def seven(operation = None):
+
+    if operation:
+
+        return operation(7)
+
+    else:
+
+        return 7
+
+def eight(operation = None):
+
+    if operation:
+
+        return operation(8)
+
+    else:
+
+        return 8
+
+def nine(operation = None):
+
+    if operation:
+
+        return operation(9)
+
+    else:
+
+        return 9
+
+
+
+def plus(num):
+
+    return lambda x: x + num
+
+def minus(num):
+
+    return lambda x: x - num
+
+def times(num):
+
+    return lambda x: x * num
+
+def divided_by(num):
+
+    return lambda x: x // num
+
+    
+",https://www.codewars.com/kata/525f3eda17c7cd9f9e000b39,2023-05-23 09:53:46.400,Calculating with Functions,5 kyu,yellow,249337,66554,BattleRattle,['Functional Programming'],2013-10-17T02:26:16.943Z,reference,5248,5189,0,2
+58ca658cc0d6401f2700045f,Python,1,"def find_multiples(integer, limit):
+
+    return [integer * i for i in range(1, limit // integer + 1)]",https://www.codewars.com/kata/58ca658cc0d6401f2700045f,2023-05-24 16:16:17.413,Find Multiples of a Number,8 kyu,white,79386,31679,Spherixo,"['Fundamentals', 'Arrays']",2017-03-16T10:14:38.267Z,reference,329,2862,0,6
+596fba44963025c878000039,Python,1,"def contamination(text, char):
+
+    return char * len(text)",https://www.codewars.com/kata/596fba44963025c878000039,2023-06-05 19:55:09.071,Contamination #1 -String-,8 kyu,white,22055,11734,John Brekker,"['Strings', 'Fundamentals']",2017-07-19T20:00:35.192Z,reference,87,1532,2,5
+5263c6999e0f40dee200059d,Python,1,"PIN_DICT = {
+
+    ""1"": [""1"", ""2"", ""4""],
+
+    ""2"": [""1"", ""2"", ""3"", ""5""],
+
+    ""3"": [""2"", ""3"", ""6""],
+
+    ""4"": [""1"", ""4"", ""5"", ""7""],
+
+    ""5"": [""2"", ""4"", ""5"", ""6"", ""8""],
+
+    ""6"": [""3"", ""5"", ""6"", ""9""],
+
+    ""7"": [""4"", ""7"", ""8""],
+
+    ""8"": [""5"", ""7"", ""8"", ""9"", ""0""],
+
+    ""9"": [""6"", ""8"", ""9""],
+
+    ""0"": [""8"", ""0""]
+
+}
+
+def get_pins(observed):
+
+    possible_pins = []
+
+    # A depth search would be a good idea here
+
+    if len(observed) > 1:
+
+        pins = get_pins(observed[1:])
+
+        for num in PIN_DICT[observed[0]]:
+
+            for pin in pins:
+
+                possible_pins.append(num + pin)
+
+    else:
+
+        return PIN_DICT[observed]
+
+    
+
+    return possible_pins    ",https://www.codewars.com/kata/5263c6999e0f40dee200059d,2023-05-31 14:21:18.919,The observed PIN,4 kyu,blue,138500,29879,BattleRattle,['Algorithms'],2013-10-20T15:00:22.313Z,algorithms,3188,2989,8,7
+51ba717bb08c1cd60f00002f,Python,1,"def solution(args):
+
+    stack = []
+
+    prev = None
+
+    formatted_range = []
+
+    for num in args:
+
+        if stack == []:
+
+            stack.append(num)
+
+            prev = num
+
+            continue
+
+            
+
+        if num == prev + 1:
+
+            stack.append(num)
+
+        else:
+
+            # Collapse the stack
+
+            if len(stack) == 1:
+
+                formatted_range.append(str(stack[0]))
+
+            elif len(stack) == 2:
+
+                formatted_range.append(str(stack[0]))
+
+                formatted_range.append(str(stack[1]))
+
+            else:
+
+                formatted_range.append(str(stack[0]) + ""-"" + str(stack[-1]))
+
+            stack = []
+
+            stack.append(num)
+
+        prev = num
+
+    
+
+    # Collapse the stack for the final time
+
+    if len(stack) == 1:
+
+        formatted_range.append(str(stack[0]))
+
+    elif len(stack) == 2:
+
+        formatted_range.append(str(stack[0]))
+
+        formatted_range.append(str(stack[1]))
+
+    else:
+
+        formatted_range.append(str(stack[0]) + ""-"" + str(stack[-1]))
+
+    
+
+    return "","".join(formatted_range)
+
+       
+
+                ",https://www.codewars.com/kata/51ba717bb08c1cd60f00002f,2023-05-25 07:28:47.760,Range Extraction,4 kyu,blue,246143,46122,jhoffner,['Algorithms'],2013-06-14T06:14:30.219Z,algorithms,2415,3903,3,7
+57e92e91b63b6cbac20001e5,Python,1,"from math import ceil as take_the_ceiling_of_this_number_please
+
+def duty_free(price, discount, holiday_cost):
+
+    return take_the_ceiling_of_this_number_please(100 * holiday_cost / (price * discount)) - 1",https://www.codewars.com/kata/57e92e91b63b6cbac20001e5,2023-05-25 16:21:03.930,Holiday VIII - Duty Free,8 kyu,white,57050,23864,PG1,"['Fundamentals', 'Mathematics']",2016-09-26T14:21:05.060Z,reference,164,2105,9,3
+55466989aeecab5aac00003e,Python,1,"def sq_in_rect(lng, wdth, depth = 1):
+
+    if lng == wdth:
+
+        if depth == 1:
+
+            return None
+
+        return [lng]
+
+    
+
+    squares = [min(lng, wdth)]
+
+    if lng > wdth:
+
+        lng -= wdth
+
+    else:
+
+        wdth -= lng
+
+
+
+    if lng !=0 or wdth !=0:
+
+        squares += sq_in_rect(lng, wdth, depth+1)
+
+        
+
+    return squares",https://www.codewars.com/kata/55466989aeecab5aac00003e,2023-06-06 13:41:40.155,Rectangle into Squares,6 kyu,yellow,128316,28887,g964,"['Fundamentals', 'Geometry', 'Puzzles']",2015-05-03T18:33:29.701Z,games,1246,2839,1,8
+58bee820e9f98b215200007c,Python,1,"import re
+
+def select(memory):
+
+    pattern = re.compile(r'!([\w-]+ [\w-]+),? ?([\w-]+ [\w-]+)?,?')
+
+    matches = re.findall(pattern, memory)
+
+    if matches == []:
+
+        return memory
+
+    
+
+    hated_people = []
+
+    for match in matches:
+
+        for i in range(2):
+
+            if match[i] != '':
+
+                hated_people.append(match[i])
+
+    
+
+    memory = [memory for memory in memory.split("", "") if ""!"" not in memory and not any(person in memory for person in hated_people)]
+
+    return "", "".join(memory)
+
+    ",https://www.codewars.com/kata/58bee820e9f98b215200007c,2023-06-05 16:04:17.475,Selective memory,6 kyu,yellow,4533,409,cyril-lemaire,['Fundamentals'],2017-03-07T17:04:56.156Z,reference,31,157,1,0
+51b6249c4612257ac0000005,Python,1,"ROMAN_DICT = {
+
+    ""I"": 1,
+
+    ""V"": 5,
+
+    ""X"": 10,
+
+    ""L"": 50,
+
+    ""C"": 100,
+
+    ""D"": 500,
+
+    ""M"": 1000
+
+}
+
+def solution(roman):
+
+    value = 0
+
+    for i, c in enumerate(roman):
+
+        try:
+
+            if ROMAN_DICT[c] < ROMAN_DICT[roman[i + 1]]:
+
+                value -= ROMAN_DICT[c]
+
+                continue
+
+            value += ROMAN_DICT[c]
+
+        except:
+
+            value += ROMAN_DICT[c]
+
+            
+
+    return value",https://www.codewars.com/kata/51b6249c4612257ac0000005,2023-05-31 14:05:35.848,Roman Numerals Decoder,6 kyu,yellow,192992,40275,jhoffner,['Algorithms'],2013-06-10T19:30:49.732Z,algorithms,1722,3589,5,4
+5763bb0af716cad8fb000580,Python,1,"def count_squares(cuts):
+
+    return 1 if cuts == 0 else (cuts + 1) ** 3 - (cuts - 1) ** 3",https://www.codewars.com/kata/5763bb0af716cad8fb000580,2023-06-02 17:55:07.819,Count the number of cubes with paint on,8 kyu,white,29654,9730,jackchambers,['Puzzles'],2016-06-17T10:37:12.411Z,games,214,908,2,3
+524f5125ad9c12894e00003f,Python,1,"def remainder(a,b):
+
+    try:
+
+        return max(a, b) % min(a, b)
+
+    except:
+
+        return None",https://www.codewars.com/kata/524f5125ad9c12894e00003f,2023-05-22 09:46:31.987,Find the Remainder,8 kyu,white,77545,21468,constablebrew,"['Mathematics', 'Fundamentals']",2013-10-23T22:25:50.364Z,reference,182,1963,3,2
+5963c18ecb97be020b0000a2,Python,1,"def derive(coefficient, exponent): 
+
+    return """".join([str(coefficient * exponent), ""x^"", str(exponent - 1)])",https://www.codewars.com/kata/5963c18ecb97be020b0000a2,2023-05-22 10:00:45.104,Take the Derivative,8 kyu,white,28606,17817,K-Calderon-ASC,['Fundamentals'],2017-07-11T17:04:24.161Z,reference,89,2082,1,1
+58e24788e24ddee28e000053,Python,1,"def simple_assembler(program):
+
+    registers = {}
+
+    instruction_num = 0
+
+    program_len = len(program)
+
+    while instruction_num < program_len:
+
+        instruction = program[instruction_num].split()
+
+        if instruction[0] == ""mov"":
+
+            reg = instruction[1]
+
+            val = instruction[2]
+
+            try:
+
+                registers[reg] = int(val)
+
+            except:
+
+                registers[reg] = registers[val]
+
+        elif instruction[0] == ""inc"":
+
+            reg = instruction[1]
+
+            try:
+
+                registers[reg] += 1
+
+            except:
+
+                registers[reg] = 1
+
+        elif instruction[0] == ""dec"":
+
+            reg = instruction[1]
+
+            try:
+
+                registers[reg] -= 1
+
+            except:
+
+                registers[reg] = -1
+
+        elif instruction[0] == ""jnz"":
+
+            if instruction[1].isdigit() or registers.get(instruction[1], 0) != 0:
+
+                instruction_num += int(instruction[2])
+
+                continue
+
+            
+
+        instruction_num += 1
+
+
+
+    return registers",https://www.codewars.com/kata/58e24788e24ddee28e000053,2023-05-23 19:03:10.536,Simple assembler interpreter,5 kyu,yellow,62581,6732,ShinuToki,"['Interpreters', 'Algorithms']",2017-04-03T19:50:59.284Z,algorithms,949,1186,5,2
+569d488d61b812a0f7000015,Python,1,"def data_reverse(data):
+
+    # Group data
+
+    grouped_data = []
+
+    for i in range(int(len(data) / 8)):
+
+        grouped_data.append("""".join([str(num) for num in data[i * 8:(i + 1) * 8]]))
+
+    
+
+    print(grouped_data)
+
+    
+
+    grouped_data.reverse()
+
+    return [int(i) for datum in grouped_data for i in datum]",https://www.codewars.com/kata/569d488d61b812a0f7000015,2023-06-01 13:58:28.110,Data Reverse,6 kyu,yellow,66112,19787,sataman,"['Arrays', 'Fundamentals']",2016-01-19T21:10:02.927Z,reference,436,1844,3,1
+56d0a591c6c8b466ca00118b,Python,1,"from math import ceil
+
+def is_triangular(t):
+
+    # Binary search
+
+    max_n = ceil(t / 2)
+
+    
+
+    left = 0
+
+    right = max_n
+
+    while left <= right:
+
+        mid = (left + right) // 2
+
+        test_t = 0.5 * mid * (mid + 1)
+
+        if test_t == t:
+
+            return True
+
+        
+
+        if test_t < t:
+
+            left = mid + 1
+
+        else:
+
+            right = mid - 1
+
+    
+
+    return False",https://www.codewars.com/kata/56d0a591c6c8b466ca00118b,2023-05-23 07:17:49.740,Beginner Series #5 Triangular Numbers,7 kyu,white,10027,2719,Vortus,"['Mathematics', 'Fundamentals']",2016-02-26T19:44:42.801Z,reference,80,437,0,1
+6469e4c905eaefffd44b6504,Python,1,"def reverse_number(n, b):
+
+    if b == 0 or n == 0:
+
+        return 0
+
+    if b == 1:
+
+        return n
+
+    digits = []
+
+    while n:
+
+        digits.append(n % b)
+
+        n //= b
+
+    string_repr = """"
+
+    
+
+    for digit in digits:
+
+        string_repr += str(digit) if digit < 10 else chr(ord('A') + digit - 10)
+
+    
+
+    significance = 1
+
+    accumulator = 0
+
+    for char in string_repr[::-1]:
+
+        if char in [""0"", ""1"", ""2"", ""3"", ""4"", ""5"", ""6"", ""7"", ""8"", ""9""]:
+
+            accumulator += significance * int(char)
+
+        else:
+
+            accumulator += significance * (ord(char) + 10 - ord('A'))
+
+        
+
+        significance *= b
+
+            
+
+    return accumulator",https://www.codewars.com/kata/6469e4c905eaefffd44b6504,2023-05-23 08:44:09.578,Reverse a number in any base,7 kyu,white,3904,379,LuggiStruggi,['Algorithms'],2023-05-21T09:33:14.318Z,algorithms,37,69,0,0
+546e2562b03326a88e000020,Python,1,"def square_digits(num):
+
+    return int("""".join([str(int(dig) ** 2) for dig in str(num)]))",https://www.codewars.com/kata/546e2562b03326a88e000020,2023-05-23 07:10:47.557,Digit*Digit,7 kyu,white,724132,250771,MysteriousMagenta,"['Mathematics', 'Fundamentals']",2014-11-20T17:31:14.986Z,reference,2303,18924,3,2
+6375587af84854823ccd0e90,Python,1,"BLOCK_CHARS = """""" AAA  BBBB   CCC  DDDD  EEEEE FFFFF  GGG  H   H IIIII JJJJJ K   K L     M   M N   N  OOO  PPPP   QQQ  RRRR   SSS  TTTTT U   U V   V W   W X   X Y   Y ZZZZZ 
+
+A   A B   B C   C D   D E     F     G   G H   H   I       J K  K  L     MM MM NN  N O   O P   P Q   Q R   R S   S   T   U   U V   V W   W X   X Y   Y     Z 
+
+A   A B   B C     D   D E     F     G     H   H   I       J K K   L     M M M N   N O   O P   P Q   Q R   R S       T   U   U V   V W   W  X X   Y Y     Z  
+
+AAAAA BBBB  C     D   D EEEEE FFFFF G GGG HHHHH   I       J KK    L     M   M N N N O   O PPPP  Q   Q RRRR   SSS    T   U   U V   V W W W   X     Y     Z   
+
+A   A B   B C     D   D E     F     G   G H   H   I       J K K   L     M   M N   N O   O P     Q Q Q R R       S   T   U   U V   V W W W  X X    Y    Z    
+
+A   A B   B C   C D   D E     F     G   G H   H   I       J K  K  L     M   M N  NN O   O P     Q  QQ R  R  S   S   T   U   U  V V  W W W X   X   Y   Z     
+
+A   A BBBB   CCC  DDDD  EEEEE F      GGG  H   H IIIII JJJJ  K   K LLLLL M   M N   N  OOO  P      QQQQ R   R  SSS    T    UUU    V    W W  X   X   Y   ZZZZZ """"""
+
+
+
+def block_print(string):
+
+    string = string.strip()
+
+    block_string = """"
+
+    for i in range(7):
+
+        for letter in string:
+
+            if letter == "" "":
+
+                block_string += "" ""*6
+
+                continue
+
+            letter_num = ord(letter.upper()) - 65
+
+            start = letter_num * 6
+
+            end = start + 6
+
+            line = BLOCK_CHARS.split(""\n"")[i][start:end]
+
+            block_string += line
+
+        if i < 6:
+
+            block_string = block_string.rstrip() + ""\n""
+
+            
+
+    return block_string.rstrip()",https://www.codewars.com/kata/6375587af84854823ccd0e90,2023-05-23 15:06:12.169,Block Letter Printer,6 kyu,yellow,1067,203,Galvlbit,"['Strings', 'ASCII Art', 'Algorithms']",2022-11-16T22:13:33.564Z,algorithms,22,80,0,0
+55b42574ff091733d900002f,Python,1,"def friend(x):
+
+    return [friend for friend in x if len(friend) == 4]",https://www.codewars.com/kata/55b42574ff091733d900002f,2023-05-22 10:02:05.199,Friend or Foe?,7 kyu,white,319803,148448,Aweson1,['Fundamentals'],2015-07-26T00:12:43.788Z,reference,843,10146,1,6
+59491429952ac97ad9000106,SQL,1,"/*  SQl  */
+
+SELECT LENGTH(number1::TEXT) AS octnum1,
+
+LENGTH(number2::TEXT) AS octnum2,
+
+LENGTH(number3::TEXT) AS octnum3,
+
+LENGTH(number4::TEXT) AS octnum4,
+
+LENGTH(number5::TEXT) AS octnum5
+
+FROM numbers",https://www.codewars.com/kata/59491429952ac97ad9000106,2023-06-05 06:49:14.195,SQL: Bytes in String from Ints,7 kyu,white,12911,2938,PG1,"['Fundamentals', 'Strings', 'SQL']",2017-06-20T12:36:02.877Z,reference,23,245,0,0
+50654ddff44f800200000004,SQL,1,SELECT price * amount AS total FROM items,https://www.codewars.com/kata/50654ddff44f800200000004,2023-06-02 18:33:59.230,Multiply,8 kyu,white,6658511,5478968,,"['Debugging', 'Fundamentals']",2013-05-18T18:40:17.975Z,bug_fixes,2198,18076,1,0
+5943b797d8c9432eb7000066,SQL,1,"/*  SQL  */
+
+SELECT RPAD(md5, LENGTH(sha256), '1') AS md5,
+
+LPAD(sha1, LENGTH(sha256), '0') AS sha1,
+
+sha256
+
+FROM encryption",https://www.codewars.com/kata/5943b797d8c9432eb7000066,2023-06-05 07:00:58.084,SQL: Padding Encryption,7 kyu,white,13067,3433,PG1,"['Fundamentals', 'SQL']",2017-06-16T11:02:02.566Z,reference,59,387,0,0
+582cb0224e56e068d800003c,SQL,1,"SELECT id, hours, FLOOR(hours / 2) AS liters
+
+FROM cycling",https://www.codewars.com/kata/582cb0224e56e068d800003c,2023-06-02 17:30:49.883,Keep Hydrated!,8 kyu,white,304113,159831,paulrichard,"['Algorithms', 'Mathematics', 'Fundamentals']",2016-11-16T19:47:07.378Z,reference,758,8893,0,3
+55fd2d567d94ac3bc9000064,SQL,1,"/*
+
+the table ""nums"" contains an integer ""n"", the number
+
+return your result in a column ""res""
+
+*/
+
+SELECT (n ^ 3)::INTEGER as res
+
+FROM nums",https://www.codewars.com/kata/55fd2d567d94ac3bc9000064,2023-06-02 19:13:26.623,Sum of odd numbers,7 kyu,white,353864,135427,hhelwich,"['Arrays', 'Lists', 'Mathematics', 'Fundamentals']",2015-09-19T09:40:03.734Z,reference,2950,8623,0,1
+594800ba6fb152624300006d,SQL,1,"/*  SQL  */
+
+SELECT id, name, birthday, LOWER(race) AS race
+
+FROM demographics",https://www.codewars.com/kata/594800ba6fb152624300006d,2023-06-02 17:23:19.006,Easy SQL: LowerCase,8 kyu,white,30044,12847,PG1,"['Fundamentals', 'Strings', 'SQL']",2017-06-19T16:57:13.015Z,reference,31,1105,0,1
+64354b5b870c66000ff7f4c5,SQL,1,"SELECT category.name AS category_name,
+
+rating AS film_rating,
+
+ROUND(100 * COUNT(film.film_id) / SUM(COUNT(film.film_id)) OVER (PARTITION BY category.name), 3) AS percentage
+
+FROM film
+
+JOIN film_category ON film.film_id = film_category.film_id
+
+JOIN category ON film_category.category_id = category.category_id
+
+GROUP BY category.name, film.rating
+
+ORDER BY category.name ASC, percentage DESC, film.rating ASC",https://www.codewars.com/kata/64354b5b870c66000ff7f4c5,2023-05-21 08:46:57.936,Film Category Ratings Breakdown,6 kyu,yellow,774,71,bornForThis,"['SQL', 'Fundamentals', 'Databases']",2023-04-11T12:02:08.902Z,reference,5,27,0,0
+554e4a2f232cdd87d9000038,SQL,1,"--# write your SQL statement here: you are given a table 'dnastrand' with column 'dna'
+
+-- return a table with column 'dna' and your result in a column named 'res'.
+
+SELECT dna,
+
+TRANSLATE(dna, 'ACTG', 'TGAC') AS res
+
+FROM dnastrand",https://www.codewars.com/kata/554e4a2f232cdd87d9000038,2023-06-02 19:33:59.783,Complementary DNA,7 kyu,white,442311,182494,JustyFY,"['Strings', 'Fundamentals']",2015-05-09T18:11:08.627Z,reference,2094,13060,3,2
+5ad90fb688a0b74111000055,SQL,1,"--but on the land of Lórien no shadow lay--
+
+SELECT INITCAP(firstname) || ' ' || INITCAP(lastname) AS shortlist
+
+FROM Elves
+
+WHERE firstname LIKE '%tegil%'
+
+OR lastname LIKE '%astar%'",https://www.codewars.com/kata/5ad90fb688a0b74111000055,2023-06-03 09:35:11.057,SQL with LOTR: Elven Wildcards,7 kyu,white,38587,8264,sHale,"['Fundamentals', 'SQL', 'Databases', 'Data Science']",2018-04-19T21:53:30.883Z,reference,92,913,0,0
+5a3fe3dde1ce0e8ed6000097,SQL,1,"SELECT 1 + (yr - 1) / 100 AS century
+
+FROM years",https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097,2023-06-02 17:13:46.618,Century From Year,8 kyu,white,388819,151252,MrZizoScream,"['Fundamentals', 'Mathematics']",2017-12-24T17:33:52.696Z,reference,1307,8842,1,1
+5a8ed96bfd8c066e7f00011a,SQL,1,"-- Replace with your SQL Query
+
+SELECT COUNT(id) AS products, country
+
+FROM products
+
+WHERE country IN ('United States of America', 'Canada')
+
+GROUP BY country
+
+ORDER BY products DESC",https://www.codewars.com/kata/5a8ed96bfd8c066e7f00011a,2023-06-04 16:51:01.701,GROCERY STORE: Support Local Products,7 kyu,white,30481,7341,baaart,"['SQL', 'Databases', 'Fundamentals']",2018-02-22T15:25:12.762Z,reference,48,519,0,3
+56dec885c54a926dcd001095,SQL,1,"-- You will be given a table: ""opposite"", with a column: ""number"". Return a table with a column: ""res"".
+
+SELECT -number AS res
+
+FROM opposite",https://www.codewars.com/kata/56dec885c54a926dcd001095,2023-06-02 17:58:18.019,Opposite number,8 kyu,white,483833,267972,sergioet,['Fundamentals'],2016-03-08T15:12:28.753Z,reference,967,13508,1,1
+56bc28ad5bdaeb48760009b0,SQL,1,"-- # write your SQL statement here: you are given a table 'removechar' with column 's', 
+
+-- return a table with column 's' and your result in a column named 'res'.
+
+SELECT s, REGEXP_REPLACE(REGEXP_REPLACE(s, '^.', ''), '.$', '') AS res
+
+FROM removechar",https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0,2023-06-02 18:21:59.875,Remove First and Last Character,8 kyu,white,477831,220142,Steadyx,"['Strings', 'Fundamentals']",2016-02-11T21:14:31.636Z,reference,1209,13374,3,1
+5942b066db68b6f35f000084,SQL,1,"/*  SQL  */
+
+SELECT project, commits, contributors,
+
+REGEXP_REPLACE(address, '[[:digit:]]', '!', 'g') AS address
+
+FROM repositories",https://www.codewars.com/kata/5942b066db68b6f35f000084,2023-06-05 06:22:38.566,SQL: Regex Replace,7 kyu,white,29426,4903,PG1,"['Fundamentals', 'Regular Expressions', 'SQL']",2017-06-15T16:10:44.445Z,reference,81,497,2,0
+55cbc3586671f6aa070000fb,SQL,1,"-- you will be given a table 'kata' with columns 'id', 'base', and 'factor'. 
+
+-- return the 'id' and your result in a column named 'res'.
+
+SELECT id,
+
+CASE
+
+  WHEN base % factor = 0 THEN true
+
+  ELSE false
+
+END AS res
+
+FROM kata",https://www.codewars.com/kata/55cbc3586671f6aa070000fb,2023-06-02 18:28:11.863,Grasshopper - Check for factor,8 kyu,white,88003,54683,danleavitt0,"['Mathematics', 'Fundamentals']",2015-09-11T21:20:31.597Z,reference,221,3979,0,3
+525e5a1cb735154b320002c8,SQL,1,"--# write your SQL statement here: 
+
+-- you are given a table 'triangular' with column 'n'
+
+-- return a table with this column and your result in a column named 'res'.
+
+SELECT n,
+
+CASE
+
+  WHEN n <= 0 THEN
+
+    0
+
+  ELSE
+
+    CAST(0.5 * (n * n + n) AS BIGINT)
+
+  END res
+
+FROM triangular",https://www.codewars.com/kata/525e5a1cb735154b320002c8,2023-05-27 10:57:46.861,Triangular Treasure,7 kyu,white,87609,24263,JulianNicholls,"['Algorithms', 'Mathematics']",2013-10-16T09:31:13.323Z,algorithms,243,1573,2,4
+5763bb0af716cad8fb000580,SQL,1,"--# write your SQL statement here: 
+
+-- you are given a table 'squares' with column 'n' (numer of cubes).
+
+-- return a table with:
+
+--   this column and your result in a column named 'res'
+
+SELECT n,
+
+CASE
+
+  WHEN n = 0 THEN 1
+
+  ELSE ((n + 1) ^ 3 - (n - 1) ^ 3)::INTEGER
+
+END AS res
+
+FROM squares",https://www.codewars.com/kata/5763bb0af716cad8fb000580,2023-06-02 17:54:23.121,Count the number of cubes with paint on,8 kyu,white,29654,9730,jackchambers,['Puzzles'],2016-06-17T10:37:12.411Z,games,214,908,2,3
+5ce9c1000bab0b001134f5af,SQL,1,"-- # write your SQL statement here: you are given a table 'quarterof' with column 'month'
+
+-- return a table with column 'month' and your result in a column named 'res'.
+
+SELECT month, CAST(CEIL(CAST(month AS NUMERIC) / 3) AS INT) AS res
+
+from quarterof",https://www.codewars.com/kata/5ce9c1000bab0b001134f5af,2023-06-02 16:30:05.567,Quarter of the year,8 kyu,white,163748,80356,Orses,"['Fundamentals', 'Mathematics']",2019-05-25T22:43:07.584Z,reference,465,4655,1,1
+59cb550486a6fd10b50000ad,SQL,1,"--
+
+SELECT * FROM numbers
+
+ORDER BY random()",https://www.codewars.com/kata/59cb550486a6fd10b50000ad,2023-06-04 17:21:29.846,SQL: Disorder,7 kyu,white,16217,4346,Voile,"['Fundamentals', 'SQL']",2017-09-27T07:41:08.262Z,reference,38,330,0,0
+645362d917686c000f88a8fe,SQL,1,"-- Your SQL
+
+SELECT film_id, title, special_features
+
+FROM film
+
+WHERE ('Trailers' = ANY (special_features) AND 'Deleted Scenes' = ANY (special_features))
+
+ORDER BY title, film_id ASC",https://www.codewars.com/kata/645362d917686c000f88a8fe,2023-06-02 19:27:27.410,Filtering Films by Special Features in PostgreSQL: Part 1,7 kyu,white,534,153,bornForThis,"['Databases', 'SQL']",2023-05-04T07:48:59.259Z,reference,2,47,0,0
+5c0ae69d5f72394e130025f6,SQL,1,"SELECT name, greeting, (REGEXP_MATCHES(greeting, '#([0-9]+)'))[1] AS user_id
+
+FROM greetings",https://www.codewars.com/kata/5c0ae69d5f72394e130025f6,2023-06-03 09:10:35.649,SQL easy regex extraction,7 kyu,white,16665,2382,Javatlacati,"['Regular Expressions', 'Fundamentals', 'Data Science']",2018-12-07T21:31:09.487Z,reference,78,250,0,1
+595a3ba3843b0cbf8e000004,SQL,1,"/*  SQL  */
+
+SELECT
+
+CASE
+
+  WHEN SUM(number1) % 2 = 1 THEN MIN(number1)
+
+  ELSE MAX(number1)
+
+END AS number1,
+
+CASE
+
+  WHEN SUM(number2) % 2 = 1 THEN MIN(number2)
+
+  ELSE MAX(number2)
+
+END AS number2
+
+FROM numbers
+
+LIMIT 1",https://www.codewars.com/kata/595a3ba3843b0cbf8e000004,2023-06-04 20:01:20.379,SQL Basics: Up and Down,7 kyu,white,27404,6984,PG1,"['Fundamentals', 'SQL']",2017-07-03T13:01:59.755Z,reference,88,630,3,4
+58110da0009b4f7ef80000ad,SQL,1,"-- Create your SELECT statement here
+
+SELECT SUM(age) AS age_sum FROM people",https://www.codewars.com/kata/58110da0009b4f7ef80000ad,2023-06-02 17:32:58.107,SQL Basics: Simple SUM,8 kyu,white,28065,17469,matt c,"['SQL', 'Fundamentals']",2016-10-26T20:22:47.376Z,reference,39,1365,0,2
+5d50e3914861a500121e1958,SQL,1,"SELECT 
+
+CASE
+
+  WHEN CHR(((SUM(character) - 1) % 26 + 97)::INT) IS NULL THEN 'z'
+
+  ELSE CHR(((SUM(character) - 1) % 26 + 97)::INT)
+
+END AS letter
+
+FROM (
+
+  SELECT ASCII(UNNEST(string_to_array(letter, NULL))) - 96
+
+  AS character
+
+  FROM letters
+
+) AS subquery;",https://www.codewars.com/kata/5d50e3914861a500121e1958,2023-06-03 09:03:52.750,Alphabetical Addition,7 kyu,white,75295,10363,user8436785,['Algorithms'],2019-08-12T13:04:28.565Z,algorithms,319,1235,2,1
+59342039eb450e39970000a6,SQL,1,"-- # write your SQL statement here: you are given a table 'oddcount' with column 'n', return a table with column 'n' and your result in a column named 'res'.
+
+SELECT n, n / 2 AS res
+
+FROM oddcount",https://www.codewars.com/kata/59342039eb450e39970000a6,2023-06-02 17:27:42.980,Count Odd Numbers below n,8 kyu,white,138792,39652,kodejuice,"['Performance', 'Mathematics']",2017-06-05T03:43:42.867Z,games,434,3661,0,1
+57eae20f5500ad98e50002c5,SQL,1,"-- # write your SQL statement here: you are given a table 'nospace' with column 'x'
+
+-- return a table with column 'x' and your result in a column named 'res'.
+
+SELECT x, REPLACE(x, ' ', '') AS res
+
+FROM nospace",https://www.codewars.com/kata/57eae20f5500ad98e50002c5,2023-06-02 17:38:36.170,Remove String Spaces,8 kyu,white,382788,194608,PG1,"['Fundamentals', 'Strings']",2016-09-27T21:24:05.698Z,reference,1111,11717,0,0
+5933a1f8552bc2750a0000ed,SQL,1,"-- # write your SQL statement here: you are given a table 'ntheven' with column 'n'
+
+-- return a table with column 'n' and your result in a column named 'res'.
+
+
+
+SELECT n, (n - 1) * 2 AS res
+
+FROM ntheven",https://www.codewars.com/kata/5933a1f8552bc2750a0000ed,2023-06-02 17:28:54.331,Get Nth Even Number,8 kyu,white,52157,28387,kodejuice,"['Mathematics', 'Puzzles', 'Algorithms']",2017-06-05T03:43:11.110Z,games,223,2777,0,2
+5ab7a736edbcfc8e62000007,SQL,1,"SELECT sailorsenshi.senshi_name AS sailor_senshi,
+
+sailorsenshi.real_name_jpn AS real_name,
+
+cats.name AS cat,
+
+schools.school AS school
+
+FROM sailorsenshi
+
+LEFT JOIN cats
+
+ON sailorsenshi.cat_id = cats.id
+
+LEFT JOIN schools
+
+ON sailorsenshi.school_id = schools.id",https://www.codewars.com/kata/5ab7a736edbcfc8e62000007,2023-05-27 10:54:16.069,SQL with Sailor Moon: Thinking about JOINs...,7 kyu,white,24405,6987,sHale,"['Fundamentals', 'SQL', 'Databases']",2018-03-25T14:35:47.925Z,reference,67,734,1,0
+5aba780a6a176b029800041c,SQL,1,select bound - bound % divisor as res from max_multiple,https://www.codewars.com/kata/5aba780a6a176b029800041c,2023-06-02 19:12:32.813,Maximum Multiple,7 kyu,white,53899,26381,MrZizoScream,['Fundamentals'],2018-03-27T17:27:13.737Z,bug_fixes,208,2468,3,1
+581283eb0a5fb13e06000020,SQL,1,"CREATE TABLE hello_world (
+
+  ""Greeting"" TEXT
+
+);
+
+
+
+INSERT INTO hello_world (""Greeting"")
+
+VALUES ('hello world!');
+
+
+
+SELECT ""Greeting"" FROM hello_world;",https://www.codewars.com/kata/581283eb0a5fb13e06000020,2023-05-20 17:15:58.306,Hello SQL World!,7 kyu,white,49826,8936,Javatlacati,"['Fundamentals', 'SQL']",2016-10-27T22:47:07.044Z,reference,59,369,0,0
+594900e16fd782a607000059,SQL,1,"/*  SQL  */
+
+SELECT id,
+
+BIT_LENGTH(name) AS name,
+
+birthday,
+
+BIT_LENGTH(race) AS race
+
+FROM demographics",https://www.codewars.com/kata/594900e16fd782a607000059,2023-06-05 07:06:40.398,Easy SQL: Bit Length,7 kyu,white,20626,7288,PG1,"['Fundamentals', 'Strings', 'SQL']",2017-06-20T11:03:08.961Z,reference,40,666,0,1
+5a8eb3fb57c562110f0000a1,SQL,1,"-- select all of the items
+
+SELECT id, name, stock
+
+FROM products
+
+WHERE stock <= 2 AND producent = 'CompanyA'
+
+ORDER BY id ASC",https://www.codewars.com/kata/5a8eb3fb57c562110f0000a1,2023-06-04 16:55:40.484,GROCERY STORE: Inventory,7 kyu,white,36470,9143,baaart,"['SQL', 'Databases', 'Fundamentals']",2018-02-22T12:55:45.943Z,reference,42,719,0,4
+53da3dbb4a5168369a0000fe,SQL,1,"SELECT number, 
+
+CASE
+
+  WHEN number % 2 = 0 THEN 'Even'
+
+  ELSE 'Odd'
+
+END AS is_even
+
+FROM numbers",https://www.codewars.com/kata/53da3dbb4a5168369a0000fe,2023-06-02 18:38:32.438,Even or Odd,8 kyu,white,755578,375356,suuuzi,"['Mathematics', 'Fundamentals']",2014-07-31T13:00:20.850Z,reference,1876,23753,2,1
+55f9b48403f6b87a7c0000bd,SQL,1,"-- # write your SQL statement here: you are given a table 'paperwork' with columns 'id', n' and 'm'
+
+-- return a table with columns 'n', 'm' and your result in a column named 'res'.
+
+SELECT n, m,
+
+CASE
+
+  WHEN n > 0 AND m > 0 THEN n * m
+
+  ELSE 0
+
+END AS res
+
+FROM paperwork",https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd,2023-06-02 18:24:54.233,Beginner Series #1 School Paperwork,8 kyu,white,239902,119132,Vortus,['Fundamentals'],2015-09-16T18:51:56.941Z,reference,459,7178,1,5
+555086d53eac039a2a000083,SQL,1,"-- # write your SQL statement here: you are given a table 'love' with columns 'flower1' and 'flower2'
+
+-- return a table with all the columns and your result in a column named 'res'.
+
+SELECT flower1, flower2,
+
+CASE
+
+  WHEN (flower1 % 2 = 0 AND flower2 % 2 = 1) OR (flower1 % 2 = 1 AND flower2 % 2 = 0) THEN true
+
+  ELSE false
+
+END AS res
+
+FROM love",https://www.codewars.com/kata/555086d53eac039a2a000083,2023-06-02 18:30:16.643,Opposites Attract,8 kyu,white,262445,119422,jbarget,['Fundamentals'],2015-05-11T10:39:59.159Z,reference,599,7425,1,4
+594a6133704e4daf5d00003d,SQL,1,"/*  SQL  */
+
+SELECT FLOOR(number1) AS number1, CEIL(number2) AS number2
+
+FROM decimals",https://www.codewars.com/kata/594a6133704e4daf5d00003d,2023-06-02 17:22:32.764,Easy SQL: Rounding Decimals,8 kyu,white,32880,11238,PG1,"['Fundamentals', 'SQL']",2017-06-21T12:17:35.262Z,reference,46,1144,0,1
+5809b9ef88b750ab180001ec,SQL,1,"-- Type your query here
+
+SELECT id, FirstName, LastName FROM students
+
+WHERE IsActive = 1",https://www.codewars.com/kata/5809b9ef88b750ab180001ec,2023-06-02 17:35:37.642,1. Find all active students,8 kyu,white,35336,11850,raymartxx,"['Databases', 'SQL']",2016-10-21T07:08:00.524Z,algorithms,42,811,0,1
+594a8f2f7ca3c692a4000041,SQL,1,"/*  SQL  */
+
+SELECT abs(number1) AS abs,
+
+LOG(64.0, number2) AS log
+
+FROM decimals",https://www.codewars.com/kata/594a8f2f7ca3c692a4000041,2023-06-05 06:42:47.331,Easy SQL: Absolute Value and Log to Base,7 kyu,white,27816,6203,PG1,"['Fundamentals', 'Mathematics', 'SQL']",2017-06-21T15:47:25.348Z,reference,35,509,0,0
+594901ba44645fd7bd00005f,SQL,1,"/*  SQL  */
+
+SELECT LENGTH(name)*8 + LENGTH(race) AS calculation
+
+FROM demographics",https://www.codewars.com/kata/594901ba44645fd7bd00005f,2023-06-05 06:51:37.954,SQL Basics:  Maths with String Manipulations,7 kyu,white,25035,7981,PG1,"['Fundamentals', 'Strings', 'SQL']",2017-06-20T11:09:10.117Z,reference,39,651,0,0
+594a8fa5a2db9e5f290000c3,SQL,1,"/*  SQL  */
+
+SELECT TRUNC(number1+number2) AS towardzero
+
+FROM
+
+decimals",https://www.codewars.com/kata/594a8fa5a2db9e5f290000c3,2023-06-05 06:43:48.272,SQL Basics: Truncating,7 kyu,white,35448,6103,PG1,"['Fundamentals', 'Mathematics', 'SQL']",2017-06-21T15:38:57.570Z,reference,46,481,1,1
+563a631f7cbbc236cf0000c2,SQL,1,"--# write your statement here: you will be given a table 'moves' with columns 'position' and 'roll'
+
+-- return a table with a column 'res'. #--
+
+SELECT position + roll * 2 AS res
+
+FROM moves",https://www.codewars.com/kata/563a631f7cbbc236cf0000c2,2023-06-02 18:39:35.970,Grasshopper - Terminal game move function,8 kyu,white,64089,46201,danleavitt0,['Fundamentals'],2015-11-07T17:40:01.344Z,reference,158,3158,0,4
+5818d00a559ff57a2f000082,SQL,1,"WITH RECURSIVE pell_rec(n, prev, current) AS (
+
+  SELECT 1, 1::BIGINT, 0::BIGINT
+
+  UNION ALL
+
+  SELECT n + 1, current, 2 * current + prev
+
+  FROM pell_rec
+
+  WHERE n < 50
+
+)
+
+SELECT DISTINCT pell_rec.n, current AS res
+
+FROM pell_rec
+
+JOIN pell
+
+ON pell.n = pell_rec.n
+
+ORDER BY n ASC",https://www.codewars.com/kata/5818d00a559ff57a2f000082,2023-05-27 08:17:38.762,Pell Numbers,6 kyu,yellow,4452,825,Valek,['Algorithms'],2016-11-01T17:26:08.758Z,algorithms,35,175,4,0
+594a9592704e4d21bc000131,SQL,1,"/*  SQL  */
+
+SELECT MOD(number1, number2) AS mod
+
+FROM decimals",https://www.codewars.com/kata/594a9592704e4d21bc000131,2023-06-02 17:21:48.273,SQL Basics: Mod,8 kyu,white,23509,13428,PG1,"['Fundamentals', 'Mathematics', 'SQL']",2017-06-21T15:55:16.767Z,reference,59,1167,0,0
+55f9bca8ecaa9eac7100004a,SQL,1,select h*3600 * 1000 + m * 60 * 1000 + s * 1000 as res from past,https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a,2023-06-02 18:34:52.796,Beginner Series #2 Clock,8 kyu,white,196733,123978,Vortus,['Fundamentals'],2015-09-16T19:17:38.292Z,reference,604,7286,0,3
+5adadcb36edb07df5600092e,SQL,1,"-- # write your SQL statement here: 
+
+-- you are given a table 'seven_wonders_science' with columns 'id', 'compasses', 'gears' and 'tablets'
+
+-- return a table with columns 'id', 'compasses', 'gears' and 'tablets' and your result in a column named 'res'
+
+SELECT id, compasses, gears, tablets,
+
+LEAST(compasses, gears, tablets) * 7 + compasses * compasses + gears * gears + tablets * tablets AS res
+
+FROM seven_wonders_science",https://www.codewars.com/kata/5adadcb36edb07df5600092e,2023-05-27 15:47:22.666,Count up the points for the 7 Wonders board game! Easy version,7 kyu,white,2415,884,qwertyuu,['Puzzles'],2018-04-21T06:42:33.611Z,algorithms,11,115,0,2
+62c93765cef6f10030dfa92b,SQL,1,"--# write your SQL statement here: 
+
+-- you are given a table 'jumps' with columns 'a' (start) and 'b' (finish).
+
+-- return a table with:
+
+--   these columns and your result in a column named 'res'
+
+SELECT a, b,
+
+(b - a) / 3 + (b - a) % 3 AS res
+
+FROM jumps",https://www.codewars.com/kata/62c93765cef6f10030dfa92b,2023-06-02 19:32:32.874,Cats and shelves,7 kyu,white,51990,9842,RealSup,['Algorithms'],2022-07-10T03:51:59.565Z,algorithms,279,729,0,1
+59440034e94fae05b2000073,SQL,1,"/*  SQL  */
+
+SELECT prefix || ' ' || first || ' ' || last || ' ' || suffix AS title
+
+FROM names",https://www.codewars.com/kata/59440034e94fae05b2000073,2023-06-05 06:56:07.398,SQL: Concatenating Columns,7 kyu,white,31751,11665,PG1,"['Fundamentals', 'Strings', 'SQL']",2017-06-16T16:05:38.114Z,reference,53,1103,0,1
+6456759b00c6791f4342bf18,SQL,1,"-- Your SQL
+
+SELECT film_id, title, special_features
+
+FROM film
+
+WHERE (('Deleted Scenes' = ANY (special_features) AND 'Behind the Scenes' != ALL (special_features))
+
+   OR ('Behind the Scenes' = ANY (special_features) AND 'Deleted Scenes' != ALL (special_features)))
+
+   AND 'Commentaries' != ALL (special_features)
+
+ORDER BY title, film_id ASC",https://www.codewars.com/kata/6456759b00c6791f4342bf18,2023-06-02 19:09:16.608,Filtering Films by Special Features in PostgreSQL: Part 3,7 kyu,white,596,126,bornForThis,"['SQL', 'Databases']",2023-05-06T15:43:39.270Z,reference,6,41,0,0
+5545f109004975ea66000086,SQL,1,"-- You will be given a table 'kata' with columns 'id', 'n', 'x', and 'y'. 
+
+-- Return the 'id' and your result in a column named 'res' using a SELECT statement.
+
+-- You DON'T need to create a function, that's for other languages.
+
+SELECT id, n % x = 0 AND n % y = 0 AS res
+
+FROM kata",https://www.codewars.com/kata/5545f109004975ea66000086,2023-06-02 18:32:10.394,Is n divisible by x and y?,8 kyu,white,190708,99846,naaz,['Refactoring'],2015-05-03T09:57:41.202Z,refactoring,481,8419,0,2
+582365c18917435ab3000020,SQL,1,"-- Type your SQL here
+
+SELECT custid, custname, custstate FROM customers",https://www.codewars.com/kata/582365c18917435ab3000020,2023-06-02 17:32:19.726,SQL Grasshopper: Select Columns,8 kyu,white,23423,16083,MorganJr,"['SQL', 'Fundamentals']",2016-11-11T18:13:45.215Z,reference,37,1253,0,0
+64536dc25d1ebb000fa7b9b3,SQL,1,"-- Your SQL
+
+SELECT film_id, title, special_features
+
+FROM film
+
+WHERE special_features @> ARRAY['Deleted Scenes', 'Trailers'] AND CARDINALITY(special_features) = 2
+
+ORDER BY title, film_id ASC",https://www.codewars.com/kata/64536dc25d1ebb000fa7b9b3,2023-06-02 19:30:44.225,Filtering Films by Special Features in PostgreSQL: Part 2,7 kyu,white,509,117,bornForThis,"['Databases', 'SQL']",2023-05-04T08:34:06.987Z,reference,5,42,0,0
+594a389387a7c6a77a000005,SQL,1,"SELECT LENGTH(name) AS id,
+
+LENGTH(CAST(legs AS TEXT)) AS name,
+
+LENGTH(CAST(arms AS TEXT)) AS legs,
+
+LENGTH(characteristics) AS arms,
+
+LENGTH(CAST(id AS TEXT)) AS characteristics
+
+FROM monsters",https://www.codewars.com/kata/594a389387a7c6a77a000005,2023-05-21 12:40:32.096,Easy SQL: Moving Values,7 kyu,white,21361,4185,PG1,"['Fundamentals', 'Strings', 'SQL']",2017-06-21T10:49:01.412Z,reference,56,383,0,1
+594a6ad320ac16a54400007f,SQL,1,"/*  SQL  */
+
+SELECT CBRT(number1) AS cuberoot,
+
+LN(number2) AS logarithm
+
+FROM decimals",https://www.codewars.com/kata/594a6ad320ac16a54400007f,2023-06-05 06:46:01.702,Easy SQL: Cube Root and Natural Log,7 kyu,white,29088,6103,PG1,"['Fundamentals', 'Mathematics', 'SQL']",2017-06-21T13:00:31.166Z,reference,27,496,0,0
+55a70521798b14d4750000a4,SQL,1,"--person table has name data
+
+SELECT 'Hello, ' || name || ' how are you doing today?' AS greeting
+
+FROM person",https://www.codewars.com/kata/55a70521798b14d4750000a4,2023-06-02 18:26:31.943,Returning Strings,8 kyu,white,271576,156263,Aweson1,"['Strings', 'Fundamentals']",2015-07-16T01:30:45.770Z,reference,491,8017,0,1
+642d3e2c6555a30d83798f54,SQL,1,"SELECT store_id, category, num_rentals
+
+FROM (
+
+  SELECT
+
+    inventory.store_id AS store_id,
+
+    category.name AS category, 
+
+    COUNT(film_category.category_id) AS num_rentals,
+
+    ROW_NUMBER() OVER (PARTITION BY inventory.store_id ORDER BY COUNT(film_category.category_id) DESC, category.name ASC) AS rn
+
+  FROM rental
+
+    JOIN inventory
+
+    ON rental.inventory_id = inventory.inventory_id
+
+    JOIN film_category
+
+    ON inventory.film_id = film_category.film_id
+
+    JOIN category
+
+    ON film_category.category_id = category.category_id
+
+  GROUP BY inventory.store_id, category.name
+
+  ) AS subquery
+
+WHERE rn <= 5
+
+ORDER BY store_id, num_rentals DESC, category",https://www.codewars.com/kata/642d3e2c6555a30d83798f54,2023-06-12 11:41:26.243,Top Five Movie Categories Rented At Each Store ,5 kyu,yellow,470,75,bornForThis,"['SQL', 'Databases', 'Fundamentals']",2023-04-05T09:29:49.000Z,reference,4,21,0,0
+5abcf0f930488ff1a6000b66,SQL,1,"/* Oh you may not think I'm pretty,
+
+But don't judge on what you see,
+
+I'll eat myself if you can find
+
+A smarter hat than me. */
+
+SELECT * FROM students
+
+WHERE (quality1 = 'evil' AND quality2 = 'cunning') OR (quality1 = 'cunning' AND quality2 = 'evil')
+
+OR (quality1 = 'brave' AND quality2 != 'evil')
+
+OR quality1 = 'studious'
+
+OR quality2 = 'intelligent'
+
+OR quality1 = 'hufflepuff'
+
+OR quality2 = 'hufflepuff'",https://www.codewars.com/kata/5abcf0f930488ff1a6000b66,2023-06-03 14:51:43.897,SQL with Harry Potter: Sorting Hat Comparators,7 kyu,white,33600,7882,sHale,"['Fundamentals', 'SQL', 'Databases', 'Data Science']",2018-03-29T14:00:17.420Z,reference,86,713,0,1
+6357825a00fba284e0189798,SQL,1,"--# write your SQL statement here: 
+
+-- you are given a table 'trianglesum' with column 'n' (the bounds in SQL translation: 0 <= n <= 10^5)
+
+-- return a table with this column and your result in a column named 'res'.
+
+SELECT n,
+
+((n + 1) * (n^2 + 2*n + 1) - n * (n + 1) * (2 * n + 1) / 6)::BIGINT AS res
+
+FROM trianglesum
+
+-- Blathering notes just incase anybody wants to read them, this took me HOURS to work out
+
+-- n = 0:
+
+-- 1
+
+-- n = 1:
+
+-- 1 2
+
+--   4
+
+-- n = 2:
+
+-- 1 2 3
+
+--   4 5
+
+--     7
+
+-- n = 3:
+
+-- 1 2 3 4
+
+--   4 5 6
+
+--     7 8
+
+--       10
+
+-- The diag is 1, 4, 7, 10 i.e. row*3 + 1
+
+-- Should I be summing diags?
+
+
+
+-- so we start with n = 2:
+
+-- n + 1, n + 1 + 4, n + 1 + 4 + 5
+
+-- grouping (n + 1) * (n + 1) + (n + 2) * n + (n + 3) * (n - 1)
+
+-- n = 3:
+
+-- n +1, n + 1 + 5, n + 1 + 5 + 6, n + 1 + 5 + 6 + 7
+
+-- grouping (n + 1) * (n + 1) + 5 * n + 6 * (n - 1) + 7
+
+-- (n + 1) * (n + 1) + (n + 2) * n + (n + 3) * (n - 1) + (n + 4) * (n - 2)
+
+-- from x = 0 to n:
+
+-- (n + 1 + x) * (n + 1 - x) = n ^ 2 + n + n + 1 - x^2
+
+-- reduces to n^2 + 2n + 1 - x^2
+
+-- This is still summed from 0 to n
+
+-- so we need (n + 1) * (n^2 + 2n + 1) - the sum of the first n squares",https://www.codewars.com/kata/6357825a00fba284e0189798,2023-06-02 20:55:02.569,Summation Triangle #1,7 kyu,white,3494,622,groskowski,"['Mathematics', 'Performance']",2022-10-25T06:50:10.331Z,games,68,86,0,1
+59401c25c15cbeb58d000028,SQL,1,"/*  SQL  */
+
+SELECT id,
+
+name,
+
+(REGEXP_MATCHES(characteristics, '^(\w*) ?,?'))[1] AS characteristic
+
+FROM monsters
+
+ORDER BY id",https://www.codewars.com/kata/59401c25c15cbeb58d000028,2023-06-05 07:04:10.356,SQL Basics - Trimming the Field,7 kyu,white,37499,6475,PG1,"['Fundamentals', 'SQL']",2017-06-13T17:10:05.568Z,reference,95,582,0,1
+52fba66badcd10859f00097e,SQL,1,"-- # write your SQL statement here: you are given a table 'disemvowel' with column 'str'
+
+-- return a table with column 'str' and your result in a column named 'res'.
+
+SELECT str,
+
+-- This is really dumb but it works
+
+REPLACE(
+
+  REPLACE(
+
+    REPLACE(
+
+      REPLACE(
+
+        REPLACE(
+
+          REPLACE(
+
+            REPLACE(
+
+              REPLACE(
+
+                REPLACE(
+
+                  REPLACE(str, 'a', '')
+
+                  , 'e', '')
+
+                , 'i', '')
+
+              , 'o', '')
+
+            , 'u', '')
+
+          , 'A', '')
+
+        , 'E', '')
+
+      , 'I', '')
+
+    , 'O', '')
+
+  , 'U', '') AS res
+
+FROM disemvowel",https://www.codewars.com/kata/52fba66badcd10859f00097e,2023-06-02 18:59:05.800,Disemvowel Trolls,7 kyu,white,812973,282106,osuushi,"['Strings', 'Regular Expressions', 'Fundamentals']",2014-02-12T16:54:28.937Z,reference,2650,19232,3,2
+5943a58f95d5f72cb900006a,SQL,1,"SELECT LEFT(project, commits) AS project,
+
+RIGHT(address, contributors) AS address
+
+FROM repositories",https://www.codewars.com/kata/5943a58f95d5f72cb900006a,2023-05-27 15:39:27.422,SQL: Right and Left,7 kyu,white,26544,6111,PG1,"['Fundamentals', 'SQL']",2017-06-16T09:41:38.926Z,reference,73,634,0,1
+5ac698cdd325ad18a3000170,SQL,1,"--- 3, 2, 1, fight! ---
+
+SELECT f.name, SUM(f.won) AS won, SUM(f.lost) AS lost
+
+FROM (
+
+  SELECT fighters.name, fighters.won, fighters.lost
+
+  FROM fighters
+
+  JOIN winning_moves
+
+  ON fighters.move_id = winning_moves.id
+
+  WHERE winning_moves.move != 'Hadoken' AND winning_moves.move != 'Shouoken' AND winning_moves.move != 'Kikoken'
+
+) AS f
+
+GROUP BY f.name
+
+ORDER BY won DESC
+
+LIMIT 6",https://www.codewars.com/kata/5ac698cdd325ad18a3000170,2023-06-03 10:40:09.952,SQL with Street Fighter: Total Wins,7 kyu,white,66025,7632,sHale,"['Fundamentals', 'SQL', 'Databases', 'Data Science']",2018-04-05T21:44:51.137Z,reference,140,755,3,3
+523b623152af8a30c6000027,SQL,1,"--# write your SQL statement here: 
+
+-- you are given a table 'square' with column 'n'
+
+-- return a table with:
+
+--   this column and your result in a column named 'res'
+
+SELECT n, (n ^ 2)::INTEGER AS res
+
+FROM square",https://www.codewars.com/kata/523b623152af8a30c6000027,2023-06-02 18:36:38.186,Function 2 - squaring an argument,8 kyu,white,86949,55355,ineiti,['Fundamentals'],2013-09-19T20:50:51.837Z,reference,158,3124,3,0
+594804a218e96caa8d00051b,SQL,1,"/*  SQL  */
+
+SELECT id,
+
+ASCII(SUBSTRING(name FROM 1 FOR 1)) AS name,
+
+birthday,
+
+ASCII(SUBSTRING(race FROM 1 FOR 1)) AS race
+
+FROM demographics",https://www.codewars.com/kata/594804a218e96caa8d00051b,2023-06-05 06:54:48.575,Easy SQL: ASCII Converter,7 kyu,white,12487,5548,PG1,"['Fundamentals', 'Strings', 'SQL']",2017-06-19T17:08:46.148Z,reference,28,523,0,0
+593ed37c93350098d600001d,SQL,1,"/*  SQL  */
+
+SELECT * FROM companies
+
+ORDER BY employees DESC",https://www.codewars.com/kata/593ed37c93350098d600001d,2023-06-02 17:24:11.505,Easy SQL - Ordering,8 kyu,white,25213,16608,PG1,"['Fundamentals', 'SQL']",2017-06-12T17:51:09.777Z,reference,43,1761,0,0
+5a03b3f6a1c9040084001765,SQL,1,select (n - 2) * 180 as res from angle,https://www.codewars.com/kata/5a03b3f6a1c9040084001765,2023-06-02 19:10:20.355,Sum of angles,7 kyu,white,53193,28047,DemonKing,"['Geometry', 'Fundamentals']",2017-11-09T01:48:38.732Z,reference,157,1842,2,0
+5ae62fcf252e66d44d00008e,SQL,1,"SELECT GREATEST(s1, s2, s3, s4) AS res
+
+FROM  (
+
+  SELECT
+
+  a + b + c AS s1,
+
+  a * (b + c) AS s2,
+
+  (a + b) * c AS s3,
+
+  a * b * c AS s4
+
+  FROM expression_matter
+
+) AS blah",https://www.codewars.com/kata/5ae62fcf252e66d44d00008e,2023-06-02 17:09:17.446,Expressions Matter ,8 kyu,white,121258,43772,MrZizoScream,"['Algorithms', 'Fundamentals']",2018-04-29T21:49:35.298Z,reference,776,3273,1,0
+57a0556c7cb1f31ab3000ad7,SQL,1,"--# write your SQL statement here: you are given a table 'makeuppercase' with column 's'
+
+-- return a table with column 's' and your result in a column named 'res'.
+
+SELECT s, UPPER(s) AS res
+
+FROM makeuppercase",https://www.codewars.com/kata/57a0556c7cb1f31ab3000ad7,2023-06-02 17:43:50.007,MakeUpperCase,8 kyu,white,182785,116095,wichu,"['Fundamentals', 'Strings']",2016-08-02T08:10:24.014Z,reference,366,6158,2,3
+56c5847f27be2c3db20009c3,SQL,1,"
+
+SELECT 'apple' AS res
+
+FROM sub_sum",https://www.codewars.com/kata/56c5847f27be2c3db20009c3,2023-06-02 18:02:36.336,Subtract the Sum,8 kyu,white,81035,17904,aryan-firouzian,"['Puzzles', 'Strings', 'Number Theory', 'Mathematics']",2016-02-18T08:57:13.348Z,games,674,683,0,1
+57a0e5c372292dd76d000d7e,SQL,1,"--# write your SQL statement here: you are given a table 'repeatstr' with columns 'n' and 's'
+
+-- return a table with all columns and your result in a column named 'res'.
+
+SELECT s, n,
+
+REPEAT(s, n) AS res
+
+FROM repeatstr",https://www.codewars.com/kata/57a0e5c372292dd76d000d7e,2023-06-02 17:42:03.659,String repeat,8 kyu,white,460039,231285,wichu,"['Fundamentals', 'Strings']",2016-08-02T18:26:32.109Z,reference,1306,12890,2,2
+644258f853c27ca88cfc29b0,SQL,1,"-- The plan:
+
+-- Join customers with rental on customer.customer_id = rental.customer_id where rental date is in May, June and July of 2005
+
+-- Join rental table with inventory on rental.inventory_id = inventory.inventory_id
+
+-- Join inventory table with film_category on inventory.film_id = film_category.film_id
+
+-- Join film_category to category on film_category.category_id = category.category_id
+
+-- Group by the category and return category.name as genre and count(category.name) as total_rentals
+
+-- Order by total_rentals DESC and then genre ASC
+
+SELECT category.name AS genre, COUNT(category.name) AS total_rentals
+
+FROM  (
+
+  SELECT customer.customer_id
+
+  FROM customer
+
+  INNER JOIN rental
+
+  ON customer.customer_id = rental.customer_id
+
+  WHERE DATE_PART('year', rental.rental_date) = 2005
+
+  AND DATE_PART('month', rental.rental_date) IN (5, 6, 7)
+
+  GROUP BY customer.customer_id
+
+  HAVING COUNT(DISTINCT DATE_PART('month', rental.rental_date)) = 3
+
+) AS customers_restricted
+
+JOIN rental
+
+ON customers_restricted.customer_id = rental.customer_id
+
+JOIN inventory
+
+ON rental.inventory_id = inventory.inventory_id
+
+JOIN film_category
+
+ON inventory.film_id = film_category.film_id
+
+JOIN category
+
+ON film_category.category_id = category.category_id
+
+GROUP BY category.name
+
+ORDER BY total_rentals DESC, genre ASC
+
+LIMIT 5",https://www.codewars.com/kata/644258f853c27ca88cfc29b0,2023-06-02 16:07:28.071,Analyzing Customer Rental Trends: Identifying Popular Movie Genres Across Multiple Months,6 kyu,yellow,405,33,bornForThis,"['Databases', 'SQL', 'Fundamentals']",2023-04-21T09:39:22.566Z,reference,7,24,0,0
+594a8f653b5b4e8f3d000035,SQL,1,"SELECT
+
+number1 ^ number2 AS result
+
+FROM decimals",https://www.codewars.com/kata/594a8f653b5b4e8f3d000035,2023-05-20 19:53:00.521,SQL Basics: Raise to the Power,7 kyu,white,16369,10289,PG1,"['Fundamentals', 'Mathematics', 'SQL']",2017-06-21T15:42:31.333Z,reference,35,945,0,0
+5816a3ecf54413a113000074,SQL,1,"SELECT
+
+  month,
+
+  COUNT(payment_id) AS total_count,
+
+  SUM(amount) AS total_amount,
+
+  SUM(CASE WHEN staff_id = 1 THEN 1 ELSE 0 END) AS mike_count,
+
+  SUM(CASE WHEN staff_id = 1 THEN amount ELSE 0 END) AS mike_amount,
+
+  SUM(CASE WHEN staff_id = 2 THEN 1 ELSE 0 END) AS jon_count,
+
+  SUM(CASE WHEN staff_id = 2 THEN amount ELSE 0 END) AS jon_amount
+
+FROM (
+
+  SELECT
+
+    payment_id,
+
+    amount,
+
+    EXTRACT(MONTH FROM payment_date) AS month,
+
+    staff_id
+
+  FROM payment
+
+) AS subquery
+
+GROUP BY month
+
+ORDER BY month;",https://www.codewars.com/kata/5816a3ecf54413a113000074,2023-05-26 19:21:39.693,Conditional Count,6 kyu,yellow,38792,6314,pmatseykanets,"['SQL', 'Fundamentals', 'Databases']",2016-10-31T01:57:19.983Z,reference,228,788,2,0
+5817b124e7f4576fd00020a2,SQL,1,"SELECT film.title AS title
+
+FROM film
+
+INNER JOIN (
+
+  SELECT film.title, film.film_id
+
+  FROM film
+
+  JOIN
+
+  film_actor
+
+  ON film.film_id = film_actor.film_id
+
+  WHERE film_actor.actor_id = 105
+
+) AS sidney_crowe_films
+
+  ON sidney_crowe_films.film_id = film.film_id
+
+INNER JOIN (
+
+  SELECT film.title, film.film_id
+
+  FROM film
+
+  JOIN
+
+  film_actor
+
+  ON film.film_id = film_actor.film_id
+
+  WHERE film_actor.actor_id = 122
+
+) AS salma_nolte_films
+
+  ON salma_nolte_films.film_id = film.film_id
+
+ORDER BY film.title ASC",https://www.codewars.com/kata/5817b124e7f4576fd00020a2,2023-05-27 14:19:19.335,Relational division: Find all movies two actors cast in together,5 kyu,yellow,28931,6553,pmatseykanets,"['Fundamentals', 'Databases', 'SQL']",2016-10-31T21:11:40.343Z,reference,183,720,0,1
+5802e32dd8c944e562000020,SQL,1,"SELECT products.*, companies.name AS company_name FROM products
+
+JOIN companies ON products.company_id = companies.id",https://www.codewars.com/kata/5802e32dd8c944e562000020,2023-05-26 19:05:48.750,SQL Basics: Simple JOIN,7 kyu,white,67543,18790,jhoffner,"['Databases', 'Fundamentals', 'SQL']",2016-10-16T02:34:48.192Z,reference,103,1639,1,4
+5fb856190d5230001d48d721,SQL,1,"--# write your SQL statement here: 
+
+-- you are given a table 'pentagonal' with column 'n' (the bounds in SQL translation: -1000 <= n <= 10^5)
+
+-- return a table with all this column and your result in a column named 'res'.
+
+SELECT n,
+
+CASE
+
+  WHEN n > 0 THEN (1 + n * (n - 1) * 2.5)::BIGINT
+
+  ELSE -1
+
+END AS res
+
+FROM pentagonal",https://www.codewars.com/kata/5fb856190d5230001d48d721,2023-06-03 07:26:22.158,Centered pentagonal number: ,7 kyu,white,4667,812,Abdel_kztik,"['Performance', 'Logic', 'Fundamentals']",2020-11-20T23:50:30.555Z,reference,17,220,1,0
+55f73be6e12baaa5900000d4,SQL,1,"-- you will be given a table, goals, with columns la_liga_goals, copa_del_rey_goals, and champions_league_goals
+
+-- Return a table with a column, res.
+
+SELECT la_liga_goals + copa_del_rey_goals + champions_league_goals AS res
+
+FROM goals
+",https://www.codewars.com/kata/55f73be6e12baaa5900000d4,2023-06-02 18:37:23.663,Grasshopper - Messi goals function,8 kyu,white,93897,65709,danleavitt0,['Fundamentals'],2015-10-23T17:42:29.509Z,reference,203,3325,4,2
+57a0885cbb9944e24c00008e,SQL,1,"-- # write your SQL statement here: you are given a table 'removeexclamationmarks' with column 's'
+
+-- return a table with column 's' and your result in a column named 'res'.
+
+SELECT s, REPLACE(s, '!', '') AS res
+
+FROM removeexclamationmarks",https://www.codewars.com/kata/57a0885cbb9944e24c00008e,2023-06-02 17:43:05.774,Remove exclamation marks,8 kyu,white,178725,75226,wichu,"['Fundamentals', 'Strings']",2016-08-02T11:48:46.317Z,reference,416,4825,0,1
+5a8d94d3ba1bb569e5000198,SQL,1,"-- Replace with your SQL Query
+
+SELECT first_name, last_name
+
+FROM names
+
+WHERE first_name LIKE '%______%'",https://www.codewars.com/kata/5a8d94d3ba1bb569e5000198,2023-05-27 10:51:35.845,BASICS: Length based SELECT  with LIKE,7 kyu,white,26703,8805,baaart,"['Fundamentals', 'SQL', 'Databases']",2018-02-21T16:30:53.322Z,reference,46,732,0,0
+5a8ec692b17101bfc70001ba,SQL,1,"-- Replace with your SQL Query
+
+SELECT COUNT(id) AS count_products_types, producer
+
+FROM products
+
+GROUP BY producer
+
+ORDER BY count_products_types DESC, producer ASC",https://www.codewars.com/kata/5a8ec692b17101bfc70001ba,2023-06-04 16:53:44.417,GROCERY STORE:  Logistic Optimisation,7 kyu,white,20657,5416,baaart,"['SQL', 'Databases', 'Fundamentals']",2018-02-22T13:42:10.331Z,reference,46,305,2,1
+5a8f00745084d718940000c5,SQL,1,"-- Replace with your SQL Query
+
+SELECT name, weight, price,
+
+ROUND((1000 * price / weight)::numeric, 2)::float AS price_per_kg
+
+FROM Products
+
+ORDER BY price_per_kg, name ASC",https://www.codewars.com/kata/5a8f00745084d718940000c5,2023-06-03 16:04:33.825,GROCERY STORE: Real Price!,7 kyu,white,56075,3430,baaart,"['SQL', 'Databases', 'Fundamentals']",2018-02-22T18:30:12.394Z,reference,66,78,2,1
+55d24f55d7dd296eb9000030,SQL,1,"-- # write your SQL statement here: you are given a table 'kata' with a column 'n'
+
+-- return a table with 'n' and your result stored in a column naed 'res'.
+
+SELECT n, (n * (n + 1) * 0.5)::INTEGER AS res
+
+FROM kata",https://www.codewars.com/kata/55d24f55d7dd296eb9000030,2023-06-02 18:35:53.953,Grasshopper - Summation,8 kyu,white,380732,194676,danleavitt0,"['Fundamentals', 'Mathematics']",2015-09-03T18:12:44.351Z,reference,1186,11761,1,1
+58941fec8afa3618c9000184,SQL,1,"WITH RECURSIVE plant_growth(id, day, plant_height, up_speed, down_speed, desired_height) AS (
+
+  SELECT ROW_NUMBER() OVER (), 1, up_speed, up_speed, down_speed, desired_height
+
+  FROM growing_plant
+
+  UNION ALL
+
+  SELECT plant_growth.id, plant_growth.day + 1, plant_growth.plant_height + up_speed - down_speed, up_speed, down_speed, desired_height
+
+  FROM plant_growth
+
+  WHERE plant_growth.plant_height < desired_height
+
+)
+
+SELECT id,
+
+day AS num_days
+
+FROM plant_growth
+
+WHERE plant_height >= desired_height
+
+ORDER BY id",https://www.codewars.com/kata/58941fec8afa3618c9000184,2023-06-03 08:01:15.660,Simple Fun #74: Growing Plant,7 kyu,white,46493,9593,myjinxin2015,['Algorithms'],2017-02-03T06:18:45.261Z,algorithms,193,1108,0,2
+571edea4b625edcb51000d8e,CoffeeScript,1,"a1=""A""
+
+a2=""a""
+
+b1=""B""
+
+b2=""b""
+
+c1=""C""
+
+c2=""c""
+
+d1=""D""
+
+d2=""d""
+
+e1=""E""
+
+e2=""e""
+
+n1=""N""
+
+n2=""n""
+
+Dad=()->
+
+  #select some variable to combine ""Dad""
+
+  return d1 + a2 + d2 
+
+
+
+Bee=()->
+
+  #select some variable to combine ""Bee""
+
+  return b1 + e2 + e2
+
+
+
+banana=()->
+
+  #select some variable to combine ""banana""
+
+  return b2 + a2 + n2 + a2 + n2 + a2
+
+
+
+
+
+#answer some questions if you finished works above
+
+answer1=()->
+
+  #the answer should be ""yes"" or ""no""
+
+  return ""no""
+
+
+
+answer2=()->
+
+  #the answer should be ""yes"" or ""no""
+
+  return ""no""
+
+
+
+answer3=()->
+
+  #the answer should be ""yes"" or ""no""
+
+  return ""yes""
+",https://www.codewars.com/kata/571edea4b625edcb51000d8e,2023-06-02 11:58:52.061,Training JS #3:  Basic data types--String,8 kyu,white,59079,16543,myjinxin2015,"['Fundamentals', 'Tutorials']",2016-04-26T06:21:54.172Z,reference,171,1835,1,1
+5502c9e7b3216ec63c0001aa,JavaScript,1,"function openOrSenior(data){
+
+  return data.map(datum => {
+
+    if (datum[0] >= 55 && datum[1] >7 )
+
+      return ""Senior"";
+
+    else
+
+      return ""Open"";
+
+  });
+
+}",https://www.codewars.com/kata/5502c9e7b3216ec63c0001aa,2023-06-02 09:39:11.680,Categorize New Member,7 kyu,white,330656,131669,Brynx,['Fundamentals'],2015-03-13T11:28:39.032Z,reference,1267,9920,2,7
+5262119038c0985a5b00029f,JavaScript,1,"function isPrime(num) {
+
+  // Trivial cases
+
+  if (num < 2)
+
+    return false;
+
+  
+
+  if (num === 2)
+
+    return true;
+
+  
+
+  if (num % 2 === 0)
+
+    return false;
+
+  
+
+  
+
+  for (let i = 3; i <= Math.ceil(Math.sqrt(num)); i+=2)  {
+
+    if (num % i === 0)
+
+      return false;
+
+  }
+
+  return true;
+
+}
+",https://www.codewars.com/kata/5262119038c0985a5b00029f,2023-06-02 14:45:18.048,Is a number prime?,6 kyu,yellow,563702,94410,arithmetric,"['Mathematics', 'Algorithms']",2013-10-19T05:05:52.970Z,algorithms,2142,5401,2,2
+526571aae218b8ee490006f4,JavaScript,1,"let powers_of_two = {
+
+  0: 1
+
+};
+
+
+
+var countBits = function(n) {
+
+  let exponent = 0;
+
+  let value = 2 ** exponent;
+
+  while (value < n) {
+
+    value *= 2;
+
+    exponent++;
+
+    powers_of_two[exponent] = value;
+
+  };
+
+  
+
+  
+
+  let bits = 0;
+
+  while (exponent >= 0) {
+
+    if (n - powers_of_two[exponent] >= 0)  {
+
+      bits++;
+
+      n -= powers_of_two[exponent];
+
+    }
+
+    exponent--;
+
+  };
+
+  return bits;
+
+};",https://www.codewars.com/kata/526571aae218b8ee490006f4,2023-06-01 14:52:47.839,Bit Counting,6 kyu,yellow,485491,199993,xcthulhu,"['Bits', 'Algorithms']",2013-10-21T18:27:26.672Z,algorithms,2103,16431,4,1
+56ff6a70e1a63ccdfa0001b1,JavaScript,1,"function arrayMadness(a, b) {
+
+  if (a.map(x => x ** 2).reduce((sum, i) => sum + i, 0) > b.map(x => x ** 3).reduce((sum, i) => sum + i, 0))
+
+    return true;
+
+  
+
+  return false;
+
+}",https://www.codewars.com/kata/56ff6a70e1a63ccdfa0001b1,2023-06-01 17:19:18.197,SpeedCode #2 - Array Madness,8 kyu,white,50629,14393,donaldsebleung,"['Arrays', 'Puzzles']",2016-04-02T07:18:22.279Z,games,136,2158,0,2
+5848565e273af816fb000449,JavaScript,1,"var encryptThis = function(text) {
+
+  let encryptWord = function(word) {
+
+    let len = word.length;
+
+    if (len === 0)
+
+      return """";
+
+    if (len === 1)
+
+      return word.charCodeAt(0).toString();
+
+    if (len === 2)
+
+      return word.charCodeAt(0).toString() + word.slice(1);
+
+    if (len == 3)
+
+      return word.charCodeAt(0).toString() + word.slice(-1) + word.slice(1, 2);
+
+    return word.charCodeAt(0).toString() + word.slice(-1) + word.slice(2, -1) + word.slice(1, 2);
+
+  }
+
+  let arr = text.split("" "");
+
+  arr = arr.map(encryptWord);
+
+  return arr.join("" "");
+
+}",https://www.codewars.com/kata/5848565e273af816fb000449,2023-06-02 10:01:55.321,Encrypt this!,6 kyu,yellow,82367,18737,suic,"['Fundamentals', 'Strings', 'Regular Expressions', 'Arrays', 'Ciphers', 'Algorithms', 'Cryptography', 'Security']",2016-12-07T20:11:20.171Z,reference,728,1878,0,1
+55a5befdf16499bffb00007b,JavaScript,1,"function add(a,b){
+
+    return a+b;
+
+}
+
+
+
+function divide(a,b){
+
+    return a/b;
+
+}
+
+
+
+function multiply(a,b){
+
+    return a*b;
+
+}
+
+
+
+function mod(a,b){
+
+    return a%b;
+
+}
+
+   
+
+function exponent(a,b){
+
+    return a**b;
+
+}
+
+    
+
+function subt(a,b){
+
+    return a-b;
+
+}",https://www.codewars.com/kata/55a5befdf16499bffb00007b,2023-06-02 09:26:56.222,Fundamentals: Return,8 kyu,white,33764,13111,JasonFTW,['Fundamentals'],2015-07-15T02:02:41.156Z,reference,78,1694,0,0
+52de553ebb55d1fca3000371,JavaScript,1,"var findMissing = function (list) {  
+
+  // We have to iterate over minimum the first 3 elements
+
+  let diff = 1000000; // Arbitrarily large
+
+  for (let i = 1; i < 3; i++) {
+
+    // Negative progressions need accounting for
+
+    diff = Math.min(Math.abs(list[i] - list[i - 1]), Math.abs(diff));
+
+    diff *= Math.sign(list[i] - list[i - 1]);
+
+  }
+
+  // Now we know what each term should be
+
+  for (let i = 1; i < list.length; i++) {
+
+    if (list[i] - list[i - 1] != diff)
+
+        return list[i] - diff;
+
+  }
+
+}",https://www.codewars.com/kata/52de553ebb55d1fca3000371,2023-06-02 10:44:14.478,Find the missing term in an Arithmetic Progression,6 kyu,yellow,137723,17527,Coldberg,"['Algorithms', 'Mathematics']",2014-01-21T14:21:09.271Z,algorithms,826,1956,8,4
+52b7ed099cdc285c300001cd,JavaScript,1,"function sumIntervals(intervals) {
+
+  let sortedIntervals = intervals.sort((a, b) => a[0] - b[0]);
+
+  let result = 0;
+
+  let [start, end] = sortedIntervals[0];
+
+
+
+  for (let i = 1; i < sortedIntervals.length; i++) {
+
+    let [nextStart, nextEnd] = sortedIntervals[i];
+
+
+
+    if (nextStart <= end) {
+
+      end = Math.max(end, nextEnd);
+
+    } else {
+
+      result += end - start;
+
+      start = nextStart;
+
+      end = nextEnd;
+
+    }
+
+  }
+
+
+
+  result += end - start;
+
+  return result;
+
+}",https://www.codewars.com/kata/52b7ed099cdc285c300001cd,2023-06-02 14:57:32.750,Sum of Intervals,4 kyu,blue,257905,31009,xDranik,"['Algorithms', 'Performance']",2013-12-23T11:12:52.610Z,algorithms,2350,2742,1,4
+52bc74d4ac05d0945d00054e,JavaScript,1,"function firstNonRepeatingLetter(s) {
+
+  if (!s)
+
+    return '';
+
+  
+
+  let letter_cache = [];
+
+  let singles = [];
+
+  [...s].forEach((c, i) => {
+
+    if (!letter_cache.includes(c.toLowerCase())) {
+
+      letter_cache.push(c.toLowerCase());
+
+      singles.push(c);
+
+    }
+
+    else {
+
+      if (singles.includes(c.toLowerCase()))
+
+        singles.splice(singles.indexOf(c.toLowerCase()), 1);
+
+      else if (singles.includes(c.toUpperCase()))
+
+        singles.splice(singles.indexOf(c.toUpperCase()), 1);
+
+    }
+
+  });
+
+  
+
+  return (singles.length > 0) ? singles[0] : """";
+
+}",https://www.codewars.com/kata/52bc74d4ac05d0945d00054e,2023-06-01 15:42:04.660,First non-repeating character,5 kyu,yellow,327083,53172,OverZealous,"['Strings', 'Algorithms']",2013-12-26T18:26:33.268Z,algorithms,1055,3786,8,11
+53697be005f803751e0015aa,JavaScript,1,"const substitutions = {
+
+  ""a"": ""1"",
+
+  ""e"": ""2"",
+
+  ""i"": ""3"",
+
+  ""o"": ""4"",
+
+  ""u"": ""5"",
+
+  ""1"": ""a"",
+
+  ""2"": ""e"",
+
+  ""3"": ""i"",
+
+  ""4"": ""o"",
+
+  ""5"": ""u""
+
+}
+
+function encode(string) {
+
+  const regex = /[aeiou]/g;
+
+  return string.replace(regex, match => substitutions[match]);
+
+}
+
+
+
+function decode(string) {
+
+  const regex = /[12345]/g;
+
+  return string.replace(regex, match => substitutions[match]);
+
+}",https://www.codewars.com/kata/53697be005f803751e0015aa,2023-06-02 09:34:42.602,The Vowel Code,6 kyu,yellow,42147,15787,yaphi1,"['Arrays', 'Strings', 'Regular Expressions', 'Fundamentals']",2014-05-07T00:21:17.338Z,reference,336,1535,1,0
+5a360620f28b82a711000047,JavaScript,1,"SUITS = {
+
+  '♣': 'clubs',
+
+  '♦': 'diamonds',
+
+  '♥': 'hearts',
+
+  '♠': 'spades'
+
+}
+
+function defineSuit(card) {
+
+  return SUITS[card.slice(-1)];
+
+}",https://www.codewars.com/kata/5a360620f28b82a711000047,2023-06-02 09:29:46.879,Define a card suit,8 kyu,white,37252,14616,Dmitry Kudla,"['Fundamentals', 'Strings']",2017-12-17T06:13:06.087Z,reference,112,1680,0,3
+5704aea738428f4d30000914,JavaScript,1,"function tripleTrouble(one, two, three){
+
+  let combined_string = """";
+
+  for (let i = 0; i < one.length; i++) {
+
+    combined_string += one[i] + two[i] + three[i];
+
+  }
+
+  return combined_string;
+
+ }",https://www.codewars.com/kata/5704aea738428f4d30000914,2023-06-02 11:52:41.403,Triple Trouble,8 kyu,white,31654,14828,G0ldenSp00n,['Puzzles'],2016-04-06T06:39:28.028Z,games,175,2343,0,1
+527a6e602a7db3456e000a2b,JavaScript,1,"// return the nested property value if it exists,
+
+// otherwise return undefined
+
+Object.prototype.hash = function(string) {
+
+  let keys = string.split('.');
+
+  let value = this;
+
+  try {
+
+    for (const key of keys) {
+
+      value = value[key];
+
+    }
+
+    return value;
+
+  }
+
+  catch {
+
+    return undefined;
+
+  }
+
+}",https://www.codewars.com/kata/527a6e602a7db3456e000a2b,2023-06-12 13:03:37.104,Extract Nested Object Reference,6 kyu,yellow,34574,8590,maruf89,['Refactoring'],2013-11-06T16:31:33.642Z,refactoring,75,321,1,0
+571edea4b625edcb51000d8e,JavaScript,1,"var a1=""A"",a2=""a"",b1=""B"",b2=""b"",c1=""C"",c2=""c"",d1=""D"",d2=""d"",e1=""E"",e2=""e"",n1=""N"",n2=""n""
+
+function Dad(){
+
+  //select some variable to combine ""Dad""
+
+  return d1 + a2 + d2;
+
+}
+
+function Bee(){
+
+  //select some variable to combine ""Bee""
+
+  return b1 + e2 + e2;
+
+}
+
+function banana(){
+
+  //select some variable to combine ""banana""
+
+  return b2 + a2 + n2 + a2 + n2 + a2;
+
+}
+
+
+
+//answer some questions if you finished works above
+
+function answer1(){
+
+  //the answer should be ""yes"" or ""no""
+
+  return ""no"";
+
+}
+
+function answer2(){
+
+  //the answer should be ""yes"" or ""no""
+
+  return ""no"";
+
+}
+
+function answer3(){
+
+  //the answer should be ""yes"" or ""no""
+
+  return ""yes"";
+
+}
+
+
+",https://www.codewars.com/kata/571edea4b625edcb51000d8e,2023-06-02 11:55:56.810,Training JS #3:  Basic data types--String,8 kyu,white,59079,16543,myjinxin2015,"['Fundamentals', 'Tutorials']",2016-04-26T06:21:54.172Z,reference,171,1835,1,1
+545991b4cbae2a5fda000158,JavaScript,1,"function include(arr, item){
+
+  return arr.includes(item);
+
+}",https://www.codewars.com/kata/545991b4cbae2a5fda000158,2023-06-02 09:26:23.413,Enumerable Magic - Does My List Include This?,8 kyu,white,31547,18101,bellmyer,['Fundamentals'],2014-11-05T02:56:05.592Z,reference,95,2021,2,3
+5680781b6b7c2be860000036,JavaScript,1,"function vowelIndices(word){
+
+  let letters = Array.from(word);
+
+  let indices = [];
+
+  let vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+
+  letters.forEach((char, i) => {
+
+    if (vowels.includes(char.toLowerCase()))
+
+      indices.push(i + 1);
+
+  });
+
+  return indices;
+
+}",https://www.codewars.com/kata/5680781b6b7c2be860000036,2023-06-02 09:48:58.050,Find the vowels,7 kyu,white,70038,15782,willjharmer,['Fundamentals'],2015-12-28T00:41:44.706Z,reference,221,1641,0,2
+56d19b2ac05aed1a20000430,JavaScript,1,"function betweenExtremes(numbers) {
+
+  return Math.max(...numbers) - Math.min(...numbers);
+
+}",https://www.codewars.com/kata/56d19b2ac05aed1a20000430,2023-06-12 19:05:56.585,Between Extremes,7 kyu,white,10999,6660,TroyMaeder,"['Algorithms', 'Fundamentals', 'Arrays']",2016-02-27T19:50:57.992Z,algorithms,50,795,0,1
+52a89c2ea8ddc5547a000863,JavaScript,1,"function loop_size(node){
+
+  let slow = node;
+
+  let fast = node;
+
+
+
+  do {
+
+    slow = slow.next;
+
+    fast = fast.next.next;
+
+  } while (slow !== fast);
+
+
+
+  let count = 1;
+
+  slow = slow.next;
+
+  while (slow !== fast) {
+
+    count++;
+
+    slow = slow.next;
+
+  }
+
+
+
+  return count;
+
+}",https://www.codewars.com/kata/52a89c2ea8ddc5547a000863,2023-06-01 15:18:01.779,Can you get the loop ?,5 kyu,yellow,218767,24685,Devouring,"['Algorithms', 'Linked Lists', 'Performance']",2013-12-12T11:21:21.557Z,algorithms,1747,2061,15,11
+56f69d9f9400f508fb000ba7,JavaScript,1,"function monkeyCount(n) {
+
+  return Array.from({length: n}, (e,i) => i + 1);
+
+}",https://www.codewars.com/kata/56f69d9f9400f508fb000ba7,2023-06-02 11:49:33.266,Count the Monkeys!,8 kyu,white,125045,54188,PG1,"['Arrays', 'Fundamentals', 'Lists', 'Algorithms']",2016-03-26T14:33:11.430Z,algorithms,404,5083,2,3
+55d277882e139d0b6000005d,JavaScript,1,"var findAverage = function (nums) {
+
+  return nums.reduce((a, e) => a + e) / nums.length;
+
+}",https://www.codewars.com/kata/55d277882e139d0b6000005d,2023-06-02 14:59:30.744,Grasshopper - Array Mean,8 kyu,white,34374,17008,danleavitt0,"['Arrays', 'Lists', 'Fundamentals']",2015-08-25T19:22:58.888Z,reference,124,2004,1,0
+56747fd5cb988479af000028,JavaScript,1,"function getMiddle(s)
+
+{
+
+  return (s.length % 2 == 0) ? s.substr(Math.floor(s.length / 2) - 1, 2) :  s.substr((s.length + 1) / 2 - 1, 1);
+
+}",https://www.codewars.com/kata/56747fd5cb988479af000028,2023-06-12 13:07:10.863,Get the Middle Character,7 kyu,white,611653,220241,Shivo,"['Fundamentals', 'Strings']",2015-12-18T22:20:26.345Z,reference,1888,15580,0,5
+51b62bf6a9c58071c600001b,JavaScript,1,"const numerals = {
+
+  1: ""I"",
+
+  4: ""IV"",
+
+  5: ""V"",
+
+  9: ""IX"",
+
+  10: ""X"",
+
+  40: ""XL"",
+
+  50: ""L"",
+
+  90: ""XC"",
+
+  100: ""C"",
+
+  400: ""CD"",
+
+  500: ""D"",
+
+  900: ""CM"",
+
+  1000: ""M""
+
+}
+
+
+
+function solution(number){
+
+  let keys = Object.keys(numerals).reverse();
+
+  let numeral_representation = """";
+
+  for (let i = 0; i < keys.length; i++) {
+
+    let value = keys[i]
+
+    let count = Math.floor(number / value);
+
+    numeral_representation += numerals[value].repeat(count);
+
+    number -= value * count;
+
+  }
+
+  
+
+  return numeral_representation;
+
+}",https://www.codewars.com/kata/51b62bf6a9c58071c600001b,2023-06-01 14:39:20.144,Roman Numerals Encoder,6 kyu,yellow,187065,45903,jhoffner,['Algorithms'],2013-06-10T19:46:29.515Z,algorithms,2883,3903,1,7
